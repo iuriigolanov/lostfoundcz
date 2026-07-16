@@ -1,0 +1,6 @@
+# HTML всегда как текст -> нормальный построчный diff
+*.html diff text eol=lf
+# Бинарники не диффим
+*.png binary
+*.jpg binary
+*.pdf binary
