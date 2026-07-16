@@ -4,12 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Lost &amp; Found Bar Prague | Cocktail Bar &amp; Hookah Lounge in Prague</title>
-<meta name="description" content="Lost &amp; Found is a cocktail bar and hookah lounge in the heart of Prague, Nové Město. 955+ Google reviews, rated 4.9★. Signature craft cocktails, premium hookah, craft beer and a late-night terrace on Žitná. Reserve your table online.">
+<meta name="description" content="Lost &amp; Found is a cocktail bar and hookah lounge in the heart of Prague, Nové Město. 960+ Google reviews, rated 4.9★. Signature craft cocktails, premium hookah, craft beer and a late-night terrace on Žitná. Reserve your table online.">
 <meta name="keywords" content="cocktail bar Prague, Lost and Found Bar Prague, craft cocktails Prague, hookah lounge Prague, bar Žitná, nightlife Prague, shisha Prague, cocktails Nové Město">
 <link rel="canonical" href="https://lostfoundcz.com/">
 <meta property="og:type" content="bar">
 <meta property="og:title" content="Lost &amp; Found Bar Prague — Cocktail Bar &amp; Hookah Lounge">
-<meta property="og:description" content="Craft cocktails, premium hookah and late-night vibes in the heart of Prague. Rated 4.9★ across 955+ Google reviews.">
+<meta property="og:description" content="Craft cocktails, premium hookah and late-night vibes in the heart of Prague. Rated 4.9★ across 960+ Google reviews.">
 <meta property="og:image" content="https://lostfoundcz.com/og-image.png">
 <meta property="og:locale" content="en_US">
 <meta name="theme-color" content="#000000">
@@ -35,7 +35,7 @@
   "aggregateRating": {
     "@type": "AggregateRating",
     "ratingValue": "4.9",
-    "reviewCount": "955",
+    "reviewCount": "960",
     "bestRating": "5"
   },
   "openingHoursSpecification": [
@@ -177,8 +177,16 @@ section{padding:84px 0;position:relative}
 .about-tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
 .tag{
   font-size:12px;letter-spacing:.06em;text-transform:uppercase;font-weight:600;
-  padding:7px 14px;border-radius:999px;border:1px solid var(--line);
-  color:var(--muted);background:var(--card);
+  padding:7px 14px;border-radius:999px;
+  border:1px solid rgba(var(--tc),.55);
+  color:rgb(var(--tc));
+  background:rgba(var(--tc),.10);
+  transition:background .25s, box-shadow .25s, transform .15s;
+}
+.tag:hover{
+  background:rgba(var(--tc),.22);
+  box-shadow:0 0 14px rgba(var(--tc),.45);
+  transform:translateY(-2px);
 }
 .about-card{
   border:1px solid var(--line);border-radius:20px;padding:30px;
@@ -339,7 +347,7 @@ footer .fine{color:var(--muted);font-size:12px;margin-top:16px;line-height:1.8}
   </div>
   <div class="rating-strip">
     <div class="stat"><div class="num">4.9★</div><div class="lbl">Google Rating</div></div>
-    <div class="stat"><div class="num">955+</div><div class="lbl">Reviews</div></div>
+    <div class="stat"><div class="num">960+</div><div class="lbl">Reviews</div></div>
     <div class="stat"><div class="num">till 3 a.m.</div><div class="lbl">Late Weekends</div></div>
   </div>
 </section>
@@ -349,23 +357,18 @@ footer .fine{color:var(--muted);font-size:12px;margin-top:16px;line-height:1.8}
 <!-- GOOGLE MAPS CTA -->
 <section class="google-maps-featured">
   <div class="wrap">
-    <a href="https://www.google.com/maps/place/Lost+and+Found+Bar+Prague/@50.077631,14.423096,16z/data=!4m15!1m8!3m7!1s0x470b94f31905dbd9:0x15d71dab3cf121fd!2zxb1pdG7DoSAxNzY0LzExLCAxMTAgMDAgTm92w6kgTcSbc3RvLCDEjGVza2E!3b1!8m2!3d50.0776314!4d14.4230964!16s%2Fg%2F11xn3v02qd?hl=en" target="_blank" rel="noopener" class="google-maps-link">
+    <a href="https://www.google.com/maps/place/Lost+and+Found+Bar+Prague/@50.077631,14.423096,16z/data=!4m8!3m7!1s0x470b94f3191a10d7:0xb230ecc2b3e5aa1b!8m2!3d50.0776314!4d14.4230964!9m1!1b1!16s%2Fg%2F11xn3v02qd?hl=en&amp;entry=ttu&amp;g_ep=EgoyMDI2MDcxMy4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener" class="google-maps-link">
       <div class="google-maps-content">
-        <svg class="google-maps-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-          <defs>
-            <linearGradient id="googleMapGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" style="stop-color:#4285F4;stop-opacity:1" />
-              <stop offset="25%" style="stop-color:#EA4335;stop-opacity:1" />
-              <stop offset="50%" style="stop-color:#FBBC04;stop-opacity:1" />
-              <stop offset="75%" style="stop-color:#34A853;stop-opacity:1" />
-            </linearGradient>
-          </defs>
-          <circle cx="12" cy="12" r="11" fill="url(#googleMapGrad)" opacity="0.15" stroke="url(#googleMapGrad)" stroke-width="2.5"/>
-          <path d="M12 3C6.48 3 2 7.48 2 13s4.48 10 10 10 10-4.48 10-10S17.52 3 12 3m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8" fill="url(#googleMapGrad)"/>
+        <svg class="google-maps-icon" viewBox="0 0 24 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M12 0C5.37 0 0 5.37 0 12c0 8.5 10.4 18.9 11 19.5.3.3.7.3 1 0 .6-.6 11-11 11-19.5C23 5.37 18.63 0 12 0z" fill="#34A853"/>
+          <path d="M12 0C5.37 0 0 5.37 0 12c0 2.4.85 4.9 2.1 7.2L14.6 4.3A11.9 11.9 0 0 0 12 0z" fill="#1A73E8"/>
+          <path d="M2.1 19.2 14.6 4.3A11.96 11.96 0 0 1 21.5 5.5L6.6 26.1a55 55 0 0 1-4.5-6.9z" fill="#FBBC04"/>
+          <path d="M21.5 5.5 6.6 26.1c1.9 2.6 3.8 4.7 4.4 5.4.3.3.7.3 1 0 .6-.6 11-11 11-19.5 0-2.5-.8-4.8-1.5-6.5z" fill="#EA4335"/>
+          <circle cx="12" cy="12" r="4.5" fill="#FFFFFF"/>
         </svg>
         <div class="google-maps-text">
           <div class="google-maps-label">View on Google Maps</div>
-          <div class="google-maps-location">Žitná Street, Prague</div>
+          <div class="google-maps-location">Žitná 11, Nové Město, Praha 1</div>
         </div>
         <div class="google-maps-arrow">→</div>
       </div>
@@ -471,15 +474,18 @@ footer .fine{color:var(--muted);font-size:12px;margin-top:16px;line-height:1.8}
   <div class="about-grid">
     <div>
       <p>Lost &amp; Found is a cocktail bar and hookah lounge just minutes from Wenceslas Square in the heart of Prague's Nové Město. We pour signature drinks you won't find anywhere else, keep the hookah premium and the lighting just right — the kind of spot you stumble into once and keep coming back to.</p>
-      <p>Come for after-work drinks, a date night, or the long weekend hours. Board games, darts, table football and our boxing machine keep the energy going. Rated <strong>4.9★ across 955+ Google reviews</strong> — one of the highest-rated cocktail bars in Prague and a top-rated late-night destination in Nové Město.</p>
+      <p>Come for after-work drinks, a date night, or the long weekend hours. Board games, darts, table football and our boxing machine keep the energy going. Rated <strong>4.9★ across 960+ Google reviews</strong> — one of the highest-rated cocktail bars in Prague and a top-rated late-night destination in Nové Město.</p>
       <div class="about-tags">
-        <span class="tag">Craft Cocktails</span>
-        <span class="tag">Premium Hookah</span>
-        <span class="tag">Craft Beer</span>
-        <span class="tag">Board Games</span>
-        <span class="tag">Darts &amp; Football</span>
-        <span class="tag">Event Spaces</span>
-        <span class="tag">Late Night</span>
+        <span class="tag" style="--tc:200,85,181">Craft Cocktails</span>
+        <span class="tag" style="--tc:178,98,186">Premium Hookah</span>
+        <span class="tag" style="--tc:156,111,191">Craft Beer</span>
+        <span class="tag" style="--tc:133,123,195">Board Games</span>
+        <span class="tag" style="--tc:111,136,200">Darts &amp; Football</span>
+        <span class="tag" style="--tc:89,149,205">Event Spaces</span>
+        <span class="tag" style="--tc:67,162,210">Late Night</span>
+        <span class="tag" style="--tc:44,174,214">Arcade &amp; Boxing</span>
+        <span class="tag" style="--tc:22,187,219">Walk-ins Welcome</span>
+        <span class="tag" style="--tc:0,200,224">Central Prague</span>
       </div>
     </div>
     <div class="about-card">
@@ -646,7 +652,7 @@ footer .fine{color:var(--muted);font-size:12px;margin-top:16px;line-height:1.8}
 <!-- REVIEWS -->
 <section id="reviews" class="wrap">
   <div class="sec-head">
-    <span class="kicker">4.9★ · 955+ Google reviews</span>
+    <span class="kicker">4.9★ · 960+ Google reviews</span>
     <h2>What guests say</h2>
     <p>Real reviews from real guests — see why Lost &amp; Found is Prague's top-rated cocktail bar</p>
   </div>
@@ -683,7 +689,7 @@ footer .fine{color:var(--muted);font-size:12px;margin-top:16px;line-height:1.8}
     </div>
   </div>
   <div style="text-align:center;margin-top:34px">
-    <a class="btn btn-ghost" href="https://www.google.com/maps/place/Lost+and+Found+Bar+Prague/@50.077631,14.423096,16z/data=!4m15!1m8!3m7!1s0x470b94f31905dbd9:0x15d71dab3cf121fd!2zxb1pdG7DoSAxNzY0LzExLCAxMTAgMDAgTm92w6kgTcSbc3RvLCDEjGVza2E!3b1!8m2!3d50.0776314!4d14.4230964!16s%2Fg%2F11c5bsx2lz!3m5!1s0x470b94f3191a10d7:0xb230ecc2b3e5aa1b!8m2!3d50.0776314!4d14.4230964!16s%2Fg%2F11xn3v02qd?hl=en" target="_blank" rel="noopener">Read all 955+ reviews on Google</a>
+    <a class="btn btn-ghost" href="https://www.google.com/maps/place/Lost+and+Found+Bar+Prague/@50.077631,14.423096,16z/data=!4m15!1m8!3m7!1s0x470b94f31905dbd9:0x15d71dab3cf121fd!2zxb1pdG7DoSAxNzY0LzExLCAxMTAgMDAgTm92w6kgTcSbc3RvLCDEjGVza2E!3b1!8m2!3d50.0776314!4d14.4230964!16s%2Fg%2F11c5bsx2lz!3m5!1s0x470b94f3191a10d7:0xb230ecc2b3e5aa1b!8m2!3d50.0776314!4d14.4230964!16s%2Fg%2F11xn3v02qd?hl=en" target="_blank" rel="noopener">Read all 960+ reviews on Google</a>
   </div>
 </section>
 
@@ -740,7 +746,8 @@ footer .fine{color:var(--muted);font-size:12px;margin-top:16px;line-height:1.8}
       Lost &amp; Found Bar Prague — Cocktail Bar &amp; Hookah Lounge<br>
       Žitná 1764/11, Nové Město, 110 00 Praha 1 · +420 724 188 537<br>
       Open: Sun–Tue 18–00 | Wed–Thu 17–01 | Fri–Sat 17–03<br>
-      Rated 4.9★ across 955+ Google reviews
+      Rated 4.9★ across 960+ Google reviews<br>
+      Legal info: IČO 19209002, IURII GOLANOV
     </div>
   </div>
 </footer>
