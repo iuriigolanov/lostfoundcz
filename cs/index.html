@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Lost &amp; Found Bar Praha | Koktejlový bar a vodní dýmka v Praze</title>
-<meta name="description" content="Lost &amp; Found je koktejlový bar a hookah lounge v srdci Prahy, Nové Město. 1 000+ recenzí na Googlu, hodnocení 4,9★. Autorské koktejly, prémiová vodní dýmka, craft pivo a noční atmosféra na Žitné. Rezervuj si stůl online.">
+<meta name="description" content="Lost &amp; Found je koktejlový bar a hookah lounge v srdci Prahy, Nové Město. 1 085+ recenzí na Googlu, hodnocení 4,9★. Autorské koktejly, prémiová vodní dýmka, craft pivo a noční atmosféra na Žitné. Rezervuj si stůl online.">
 <meta name="keywords" content="cocktail bar Prague, Lost and Found Bar Prague, craft cocktails Prague, hookah lounge Prague, bar Žitná, nightlife Prague, shisha Prague, cocktails Nové Město, private events Prague, party venue Prague, bar buyout Prague, corporate events Prague, birthday venue Prague, catering Prague">
 <link rel="preload" as="image" href="../img/hero-bg.jpg" fetchpriority="high">
 <link rel="preload" as="image" href="../img/logo.png" fetchpriority="high">
@@ -14,7 +14,7 @@
 <link rel="canonical" href="https://lostfoundcz.com/cs/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Lost &amp; Found Bar Praha — Koktejlový bar a vodní dýmka">
-<meta property="og:description" content="Autorské koktejly, prémiová vodní dýmka a noční atmosféra v srdci Prahy. Hodnocení 4,9★ z 1 000+ recenzí na Googlu.">
+<meta property="og:description" content="Autorské koktejly, prémiová vodní dýmka a noční atmosféra v srdci Prahy. Hodnocení 4,9★ z 1 085+ recenzí na Googlu.">
 <meta property="og:image" content="https://lostfoundcz.com/og-image.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -76,8 +76,8 @@
   "sameAs": [
     "https://www.instagram.com/lostfoundcz/",
     "https://www.facebook.com/lostandfoundcz/",
-    "https://www.tiktok.com/@LostFoundCZ",
-    "https://t.me/LostFoundCZbot",
+    "https://www.tiktok.com/@lostfoundcz",
+    "https://t.me/LostFoundCZ",
     "https://wa.me/420724188537",
     "https://beacons.ai/lostfoundcz"
   ]
@@ -477,6 +477,14 @@ footer .fine{color:var(--muted);font-size:12px;margin-top:16px;line-height:1.8}
 .lang-switch a:hover{color:#fff;border-color:rgba(0,200,224,.5)}
 .flag{width:20px;height:14px;border-radius:2px;display:block;box-shadow:0 0 0 1px rgba(255,255,255,.15)}
 @media(max-width:860px){.lang-switch{margin:8px 0 0}}
+
+/* --- Plovoucí tlačítko rezervace (jen mobil) --- */
+.fab-reserve{display:none}
+@media(max-width:860px){
+  .fab-reserve{display:inline-flex;align-items:center;gap:8px;position:fixed;left:50%;transform:translateX(-50%);bottom:18px;z-index:60;padding:14px 26px;border-radius:999px;background:linear-gradient(90deg,var(--violet),var(--magenta));color:#fff;font-weight:700;font-size:15px;letter-spacing:.03em;text-decoration:none;box-shadow:0 6px 24px rgba(200,85,181,.5),0 2px 8px rgba(0,0,0,.4);transition:transform .15s,box-shadow .2s}
+  .fab-reserve:active{transform:translateX(-50%) scale(.96)}
+  .fab-reserve svg{width:18px;height:18px}
+}
 </style>
 
 <!-- Google Analytics -->
@@ -509,7 +517,7 @@ footer .fine{color:var(--muted);font-size:12px;margin-top:16px;line-height:1.8}
       <a class="nav-cta" href="https://app.resmio.com/lost-and-found-bar-prague/widget?source=GoogleCTA" target="_blank" rel="noopener">Rezervace</a>
       <div class="lang-switch"><a href="/" class="" hreflang="en"><svg viewBox="0 0 60 30" class="flag"><clipPath id="gb"><path d="M0 0v30h60V0z"/></clipPath><g clip-path="url(#gb)"><path d="M0 0v30h60V0z" fill="#012169"/><path d="M0 0l60 30m0-30L0 30" stroke="#fff" stroke-width="6"/><path d="M0 0l60 30m0-30L0 30" stroke="#C8102E" stroke-width="4" clip-path="url(#gb)"/><path d="M30 0v30M0 15h60" stroke="#fff" stroke-width="10"/><path d="M30 0v30M0 15h60" stroke="#C8102E" stroke-width="6"/></g></svg>EN</a><a href="/cs/" class="active" hreflang="cs"><svg viewBox="0 0 60 40" class="flag"><path fill="#fff" d="M0 0h60v20H0z"/><path fill="#D7141A" d="M0 20h60v20H0z"/><path fill="#11457E" d="M0 0l30 20L0 40z"/></svg>CZ</a></div>
     </div>
-    <button class="burger" aria-label="Menu" onclick="document.getElementById('navlinks').classList.toggle('open')">☰</button>
+    <button class="burger" aria-label="Menu" onclick="toggleNav(event)">☰</button>
   </nav>
 </header>
 
@@ -526,7 +534,7 @@ footer .fine{color:var(--muted);font-size:12px;margin-top:16px;line-height:1.8}
   </div>
   <div class="rating-strip">
     <div class="stat"><div class="num">4.9★</div><div class="lbl">Hodnocení Google</div></div>
-    <div class="stat"><div class="num">1 000+</div><div class="lbl">Recenzí</div></div>
+    <div class="stat"><div class="num">1 085+</div><div class="lbl">Recenzí</div></div>
     <div class="stat"><div class="num">do 3:00 nebo déle — na vyžádání</div><div class="lbl">O víkendech dlouho do rána</div></div>
   </div>
 </section>
@@ -653,7 +661,7 @@ footer .fine{color:var(--muted);font-size:12px;margin-top:16px;line-height:1.8}
   <div class="about-grid">
     <div>
       <p>Lost &amp; Found je koktejlový bar a hookah lounge pár minut od Václavského náměstí v pražském Novém Městě. Autorské koktejly, prémiová vodní dýmka, deskové hry, šipky a náš boxovací automat — místo, kam jednou zabloudíš a pak se vracíš.</p>
-      <p>Pořádáme také <strong>soukromé akce v Praze</strong>: narozeniny, firemní večírky a hudební večery, s cateringem a koktejlovým menu na míru. Hodnocení <strong>4,9★ z 1 000+ recenzí na Googlu</strong> — jeden z nejlépe hodnocených koktejlových barů v Praze a špičkové místo pro noční život v Novém Městě.</p>
+      <p>Pořádáme také <strong>soukromé akce v Praze</strong>: narozeniny, firemní večírky a hudební večery, s cateringem a koktejlovým menu na míru. Hodnocení <strong>4,9★ z 1 085+ recenzí na Googlu</strong> — jeden z nejlépe hodnocených koktejlových barů v Praze a špičkové místo pro noční život v Novém Městě.</p>
       <div class="about-tags">
         <span class="tag" style="--tc:200,85,181">Autorské koktejly</span>
         <span class="tag" style="--tc:178,98,186">Prémiová vodní dýmka</span>
@@ -873,7 +881,7 @@ footer .fine{color:var(--muted);font-size:12px;margin-top:16px;line-height:1.8}
 <!-- REVIEWS -->
 <section id="reviews" class="wrap">
   <div class="sec-head">
-    <span class="kicker">4,9★ · 1 000+ recenzí na Googlu</span>
+    <span class="kicker">4,9★ · 1 085+ recenzí na Googlu</span>
     <h2>Co říkají hosté</h2>
     <p>Skutečné recenze od skutečných hostů — podívej se, proč je Lost &amp; Found nejlépe hodnocený koktejlový bar v Praze</p>
   </div>
@@ -910,7 +918,7 @@ footer .fine{color:var(--muted);font-size:12px;margin-top:16px;line-height:1.8}
     </div>
   </div>
   <div style="text-align:center;margin-top:34px">
-    <a class="btn btn-ghost" href="https://www.google.com/maps/place/Lost+and+Found+Bar+Prague/@50.077631,14.423096,16z/data=!4m15!1m8!3m7!1s0x470b94f31905dbd9:0x15d71dab3cf121fd!2zxb1pdG7DoSAxNzY0LzExLCAxMTAgMDAgTm92w6kgTcSbc3RvLCDEjGVza2E!3b1!8m2!3d50.0776314!4d14.4230964!16s%2Fg%2F11c5bsx2lz!3m5!1s0x470b94f3191a10d7:0xb230ecc2b3e5aa1b!8m2!3d50.0776314!4d14.4230964!16s%2Fg%2F11xn3v02qd?hl=en" target="_blank" rel="noopener">Přečti si všech 1 000+ recenzí on Google</a>
+    <a class="btn btn-ghost" href="https://www.google.com/maps/place/Lost+and+Found+Bar+Prague/@50.077631,14.423096,16z/data=!4m15!1m8!3m7!1s0x470b94f31905dbd9:0x15d71dab3cf121fd!2zxb1pdG7DoSAxNzY0LzExLCAxMTAgMDAgTm92w6kgTcSbc3RvLCDEjGVza2E!3b1!8m2!3d50.0776314!4d14.4230964!16s%2Fg%2F11c5bsx2lz!3m5!1s0x470b94f3191a10d7:0xb230ecc2b3e5aa1b!8m2!3d50.0776314!4d14.4230964!16s%2Fg%2F11xn3v02qd?hl=en" target="_blank" rel="noopener">Přečti si všech 1 085+ recenzí on Google</a>
   </div>
 </section>
 
@@ -994,7 +1002,7 @@ footer .fine{color:var(--muted);font-size:12px;margin-top:16px;line-height:1.8}
           <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421-7.403h-.004a8.06 8.06 0 00-4.255 1.111l-.305.175-.316-.048-1.041-.208.212 1.244.139.434-.225.272a8.056 8.056 0 001.226 13.038l.294.203.272-.044 1.2-.192-.134-.859-.099-.609.532-.413a8.003 8.003 0 001.048-15.025zm0-2.982c2.25 0 4.418.878 6.03 2.474 1.613 1.596 2.501 3.73 2.501 5.984 0 1.355-.26 2.682-.768 3.941-.507 1.259-1.241 2.367-2.169 3.274-1.929 1.85-4.511 2.883-7.235 2.883-1.5 0-2.968-.29-4.349-.848l-3.12 1.001 1.079-4.003A7.995 7.995 0 012.5 12c0-4.411 3.589-8 8-8z"/></svg>
           WhatsApp
         </a>
-        <a href="https://t.me/+420724188537" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:4px;padding:6px 12px;background:#0088cc;color:white;border-radius:6px;text-decoration:none;font-size:12px" title="Telegram">
+        <a href="https://t.me/LostFoundCZ" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:4px;padding:6px 12px;background:#0088cc;color:white;border-radius:6px;text-decoration:none;font-size:12px" title="Telegram">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.336-.373-.123l-6.869 4.332-2.96-.924c-.643-.204-.657-.643.136-.954l11.566-4.461c.538-.196 1.006.128.832.941z"/></svg>
           Telegram
         </a>
@@ -1058,8 +1066,8 @@ footer .fine{color:var(--muted);font-size:12px;margin-top:16px;line-height:1.8}
     <div class="socials">
       <a href="https://www.instagram.com/lostfoundcz/" target="_blank" rel="noopener">Instagram</a>
       <a href="https://www.facebook.com/lostandfoundcz/" target="_blank" rel="noopener">Facebook</a>
-      <a href="https://www.tiktok.com/@LostFoundCZ" target="_blank" rel="noopener">TikTok</a>
-      <a href="https://t.me/LostFoundCZbot" target="_blank" rel="noopener">Telegram</a>
+      <a href="https://www.tiktok.com/@lostfoundcz" target="_blank" rel="noopener">TikTok</a>
+      <a href="https://t.me/LostFoundCZ" target="_blank" rel="noopener">Telegram</a>
       <a href="https://wa.me/420724188537" target="_blank" rel="noopener">WhatsApp</a>
       <a href="https://beacons.ai/lostfoundcz" target="_blank" rel="noopener">Beacons</a>
     
@@ -1068,7 +1076,7 @@ footer .fine{color:var(--muted);font-size:12px;margin-top:16px;line-height:1.8}
       Lost &amp; Found Bar Praha — Koktejlový bar a vodní dýmka<br>
       Žitná 1764/11, Nové Město, 110 00 Praha 1 · +420 724 188 537<br>
       Open: Sun–Tue 18–00 | Wed–Thu 17–01 | Fri–Sat 17–03<br>
-      Hodnocení 4,9★ z 1 000+ recenzí na Googlu<br>
+      Hodnocení 4,9★ z 1 085+ recenzí na Googlu<br>
       Legal info: IČO 19209002, IURII GOLANOV
     </div>
   </div>
@@ -1093,6 +1101,19 @@ document.getElementById('lightbox').addEventListener('click', function(e) {
     closeLightbox();
   }
 });
+
+// --- mobilní menu: zavření po kliknutí na položku a mimo menu ---
+function toggleNav(e){ if(e) e.stopPropagation(); document.getElementById('navlinks').classList.toggle('open'); }
+document.addEventListener('click', function(e){
+  var nav = document.getElementById('navlinks'); var burger = document.querySelector('.burger');
+  if(!nav || !nav.classList.contains('open')) return;
+  if(e.target.closest('#navlinks a')){ nav.classList.remove('open'); return; }
+  if(!nav.contains(e.target) && e.target!==burger){ nav.classList.remove('open'); }
+});
 </script>
+<a class="fab-reserve" href="https://app.resmio.com/lost-and-found-bar-prague/widget?source=GoogleCTA" target="_blank" rel="noopener" aria-label="Rezervovat stůl">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+  Rezervovat stůl
+</a>
 </body>
 </html>
