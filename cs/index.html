@@ -478,8 +478,8 @@ footer .fine{color:var(--muted);font-size:12px;margin-top:16px;line-height:1.8}
 /* --- Plovoucí tlačítko rezervace (jen mobil) --- */
 .fab-reserve{display:none}
 @media(max-width:860px){
-  .fab-reserve{display:inline-flex;align-items:center;gap:8px;position:fixed;left:50%;transform:translateX(-50%);bottom:18px;z-index:60;padding:14px 26px;border-radius:999px;background:linear-gradient(90deg,var(--violet),var(--magenta));color:#fff;font-weight:700;font-size:15px;letter-spacing:.03em;text-decoration:none;box-shadow:0 6px 24px rgba(200,85,181,.5),0 2px 8px rgba(0,0,0,.4);transition:transform .15s,box-shadow .2s}
-  .fab-reserve:active{transform:translateX(-50%) scale(.96)}
+  .fab-reserve{display:flex;align-items:center;justify-content:center;gap:8px;position:fixed;left:16px;right:16px;bottom:16px;z-index:60;padding:15px 26px;border-radius:999px;background:linear-gradient(90deg,var(--violet),var(--magenta));color:#fff;font-weight:700;font-size:16px;letter-spacing:.03em;text-decoration:none;white-space:nowrap;box-shadow:0 6px 24px rgba(200,85,181,.5),0 2px 8px rgba(0,0,0,.4);transition:transform .15s,box-shadow .2s}
+  .fab-reserve:active{transform:scale(.98)}
   .fab-reserve svg{width:18px;height:18px}
 }
 
@@ -544,6 +544,19 @@ footer .fine{color:var(--muted);font-size:12px;margin-top:16px;line-height:1.8}
   font-family:'Bebas Neue';font-size:14px;letter-spacing:.28em;text-transform:uppercase;
   color:var(--cyan);margin-top:4px;
 }
+
+/* --- Pride баннер (временный, снять после 9.8.2026) --- */
+.pride-banner{
+  display:block;text-align:center;text-decoration:none;
+  padding:9px 16px;font-size:13.5px;font-weight:600;line-height:1.4;color:#fff;
+  background:linear-gradient(90deg,#e40303,#ff8c00,#ffed00,#008026,#004dff,#750787);
+  position:relative;z-index:70;
+}
+.pride-banner-text{text-shadow:0 1px 3px rgba(0,0,0,.45)}
+.pride-banner strong{font-weight:800;text-decoration:underline}
+.pride-banner:hover{filter:brightness(1.08)}
+@media(max-width:600px){.pride-banner{font-size:12px;padding:8px 12px}}
+.pride-about{border-left:3px solid;border-image:linear-gradient(#e40303,#750787) 1;padding-left:14px;margin-top:18px}
 </style>
 
 <!-- Google Analytics -->
@@ -562,6 +575,9 @@ footer .fine{color:var(--muted);font-size:12px;margin-top:16px;line-height:1.8}
   <img class="lightbox-img" id="lightbox-img" alt="">
 </div>
 
+<a class="pride-banner" href="https://www.qalendar.cz/doporucene-podniky/" target="_blank" rel="noopener" aria-label="Prague Pride 2026 — oficiální partner, 10% sleva s kódem LGBT10">
+  <span class="pride-banner-text">🏳️‍🌈 Prague Pride 3.–9. 8. 2026 · Jsme oficiální partner · Kód <strong>LGBT10</strong> pro 10% slevu na celé menu</span>
+</a>
 <header>
   <nav class="wrap nav">
     <img loading="eager" decoding="async" src="../img/logo-rainbow.png" alt="Lost and Found Bar Prague logo">
@@ -651,6 +667,7 @@ footer .fine{color:var(--muted);font-size:12px;margin-top:16px;line-height:1.8}
     <div>
       <p>Lost &amp; Found je koktejlový bar a hookah lounge pár minut od Václavského náměstí v pražském Novém Městě. Autorské koktejly, prémiová vodní dýmka, deskové hry, šipky a náš boxovací automat — místo, kam jednou zabloudíš a pak se vracíš.</p>
       <p>Pořádáme také <strong>soukromé akce v Praze</strong>: narozeniny, firemní večírky a hudební večery, s cateringem a koktejlovým menu na míru. Hodnocení <strong>4,9★ z 1 085+ recenzí na Googlu</strong> — jeden z nejlépe hodnocených koktejlových barů v Praze a špičkové místo pro noční život v Novém Městě.</p>
+      <p class="pride-about">Lost &amp; Found je hrdě <strong>LGBT-friendly bar</strong> a <a href="https://www.qalendar.cz/doporucene-podniky/" target="_blank" rel="noopener">oficiální partner Prague Pride</a>. Děkujeme, že jste přišli na festival Prague Pride — těšíme se na tebe v Lost &amp; Found <strong>3.–9. srpna 2026</strong> i kdykoli potom. Použij kód <strong>LGBT10</strong> pro 10% slevu na celé menu.</p>
       <div class="about-tags">
         <span class="tag" style="--tc:200,85,181">Autorské koktejly</span>
         <span class="tag" style="--tc:178,98,186">Prémiová vodní dýmka</span>
