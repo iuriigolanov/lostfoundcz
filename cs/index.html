@@ -246,17 +246,7 @@ header{
 }
 .btn-ghost:hover{background:rgba(0,200,224,.08);transform:translateY(-2px)}
 
-.rating-strip{
-  display:flex;gap:34px;justify-content:center;flex-wrap:wrap;margin-top:44px;
-  padding-top:30px;border-top:1px solid var(--line);width:min(560px,90vw);
-}
-.rating-strip .stat{text-align:center}
-.rating-strip .num{
-  font-family:'Bebas Neue';font-size:40px;line-height:1;
-  background:linear-gradient(90deg,var(--cyan),var(--violet));
-  -webkit-background-clip:text;background-clip:text;color:transparent;
-}
-.rating-strip .lbl{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-top:6px}
+
 
 section{padding:84px 0;position:relative}
 .sec-head{margin-bottom:44px;text-align:center}
@@ -501,6 +491,59 @@ footer .fine{color:var(--muted);font-size:12px;margin-top:16px;line-height:1.8}
   .nav .lang-switch a{padding:4px 7px;font-size:11px}
   .nav .lang-switch .flag{width:18px}
 }
+
+/* --- Google Review плашка (v1.18) --- */
+.google-review-plaque{
+  display:flex;align-items:center;justify-content:space-between;gap:20px;
+  width:min(440px,90vw);margin:8px auto 26px;padding:14px 20px;
+  border-radius:16px;text-decoration:none;
+  background:linear-gradient(135deg,rgba(200,85,181,.14),rgba(0,200,224,.10));
+  border:1px solid rgba(200,85,181,.35);
+  box-shadow:0 4px 24px rgba(200,85,181,.18);
+  transition:transform .18s,box-shadow .25s,border-color .25s;
+}
+.google-review-plaque:hover{
+  transform:translateY(-3px);
+  box-shadow:0 8px 34px rgba(0,200,224,.32);
+  border-color:rgba(0,200,224,.55);
+}
+.grp-left{display:flex;align-items:center;gap:14px}
+.grp-g{flex-shrink:0}
+.grp-stars{text-align:left}
+.grp-rating-row{display:flex;align-items:baseline;gap:8px}
+.grp-num{font-family:'Bebas Neue';font-size:32px;line-height:1;color:var(--ink)}
+.grp-star-icons{color:#FFC107;font-size:17px;letter-spacing:1px}
+.grp-count{font-size:12.5px;color:var(--muted);margin-top:2px}
+.grp-cta{
+  flex-shrink:0;font-weight:700;font-size:13px;letter-spacing:.02em;
+  padding:9px 16px;border-radius:999px;color:#fff;
+  background:linear-gradient(90deg,var(--violet),var(--magenta));
+  white-space:nowrap;
+}
+
+.grp-left{text-decoration:none;cursor:pointer}
+.grp-cta{cursor:pointer;transition:transform .15s,box-shadow .2s}
+.grp-cta:hover{transform:scale(1.05);box-shadow:0 4px 16px rgba(224,48,192,.5)}
+.grp-left:hover .grp-num{color:var(--cyan)}
+
+@media(max-width:480px){
+  .google-review-plaque{flex-direction:column;gap:12px;text-align:center}
+  .grp-left{flex-direction:column;gap:8px}
+  .grp-stars{text-align:center}
+  .grp-rating-row{justify-content:center}
+}
+
+.hero-late{margin-top:20px;text-align:center}
+.hero-late-val{
+  font-family:'Bebas Neue';font-size:clamp(24px,4vw,38px);line-height:1.05;letter-spacing:.04em;
+  background:linear-gradient(90deg,var(--cyan),var(--violet));
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+  text-shadow:0 0 22px rgba(0,200,224,.28);
+}
+.hero-late-lbl{
+  font-family:'Bebas Neue';font-size:14px;letter-spacing:.28em;text-transform:uppercase;
+  color:var(--cyan);margin-top:4px;
+}
 </style>
 
 <!-- Google Analytics -->
@@ -543,130 +586,59 @@ footer .fine{color:var(--muted);font-size:12px;margin-top:16px;line-height:1.8}
 <section class="hero">
   <img loading="eager" decoding="async" class="hero-logo" src="../img/logo-rainbow.png" alt="Lost and Found Cocktail Bar Prague">
   <h1 class="visually-hidden">Lost &amp; Found — Koktejlový bar a vodní dýmka v Praze, Žitná 11</h1>
-  <span class="eyebrow">Koktejlový bar · Vodní dýmka · Akce a soukromé rezervace · Catering · Deskové a stolní hry · Praha</span>
+  <span class="eyebrow">Koktejlový &amp; pivní bar a vodní dýmka · Praha</span>
+  <div class="google-review-plaque">
+    <a class="grp-left" href="https://www.google.com/maps/place/Lost+and+Found+Bar+Prague/@50.0776314,14.4230964,17z/data=!4m8!3m7!1s0x470b94f3191a10d7:0xb230ecc2b3e5aa1b!8m2!3d50.0776314!4d14.4230964!9m1!1b1!16s%2Fg%2F11xn3v02qd!18m1!1e1?hl=en" target="_blank" rel="noopener" aria-label="Přečíst recenze na Googlu">
+      <svg class="grp-g" viewBox="0 0 24 24" width="26" height="26"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84A11 11 0 0 0 12 23z"/><path fill="#FBBC05" d="M5.84 14.1a6.6 6.6 0 0 1 0-4.2V7.06H2.18a11 11 0 0 0 0 9.88l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84C6.71 7.3 9.14 5.38 12 5.38z"/></svg>
+      <div class="grp-stars">
+        <div class="grp-rating-row"><span class="grp-num">4.9</span><span class="grp-star-icons">★★★★★</span></div>
+        <div class="grp-count">1 085+ recenzí na Googlu</div>
+      </div>
+    </a>
+    <a class="grp-cta" href="https://g.page/r/CRuq5bPC7DCyEBM/review" target="_blank" rel="noopener" aria-label="Napsat recenzi na Googlu">Ohodnotit nás</a>
+  </div>
   <p class="lede">Skrytý neonový kout v srdci Nového Města. Autorské koktejly, prémiová vodní dýmka, craft pivo a noční atmosféra na Žitné.</p>
   <div class="hero-actions">
     <a class="btn btn-primary hero-reserve" href="https://app.resmio.com/lost-and-found-bar-prague/widget?source=GoogleCTA" target="_blank" rel="noopener">Rezervovat stůl</a>
     <a class="btn btn-ghost" href="#menu">Zobrazit menu</a>
   </div>
-  <div class="rating-strip">
-    <div class="stat"><div class="num">4.9★</div><div class="lbl">Hodnocení Google</div></div>
-    <div class="stat"><div class="num">1 085+</div><div class="lbl">Recenzí</div></div>
-    <div class="stat"><div class="num">do 3:00 nebo déle — na vyžádání</div><div class="lbl">O víkendech dlouho do rána</div></div>
+  <div class="hero-late">
+    <div class="hero-late-val">do 3:00 nebo déle — na vyžádání</div>
+    <div class="hero-late-lbl">O víkendech dlouho do rána</div>
   </div>
 </section>
 
 <!-- ABOUT -->
 
-<!-- GOOGLE MAPS CTA -->
-<section class="google-maps-featured">
-  <div class="wrap">
-    <a href="https://www.google.com/maps/place/Lost+and+Found+Bar+Prague/@50.077631,14.423096,16z/data=!4m8!3m7!1s0x470b94f3191a10d7:0xb230ecc2b3e5aa1b!8m2!3d50.0776314!4d14.4230964!9m1!1b1!16s%2Fg%2F11xn3v02qd?hl=en&amp;entry=ttu&amp;g_ep=EgoyMDI2MDcxMy4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener" class="google-maps-link">
-      <div class="google-maps-content">
-        <svg class="google-maps-icon" viewBox="0 0 24 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <path d="M12 0C5.37 0 0 5.37 0 12c0 8.5 10.4 18.9 11 19.5.3.3.7.3 1 0 .6-.6 11-11 11-19.5C23 5.37 18.63 0 12 0z" fill="#34A853"/>
-          <path d="M12 0C5.37 0 0 5.37 0 12c0 2.4.85 4.9 2.1 7.2L14.6 4.3A11.9 11.9 0 0 0 12 0z" fill="#1A73E8"/>
-          <path d="M2.1 19.2 14.6 4.3A11.96 11.96 0 0 1 21.5 5.5L6.6 26.1a55 55 0 0 1-4.5-6.9z" fill="#FBBC04"/>
-          <path d="M21.5 5.5 6.6 26.1c1.9 2.6 3.8 4.7 4.4 5.4.3.3.7.3 1 0 .6-.6 11-11 11-19.5 0-2.5-.8-4.8-1.5-6.5z" fill="#EA4335"/>
-          <circle cx="12" cy="12" r="4.5" fill="#FFFFFF"/>
-        </svg>
-        <div class="google-maps-text">
-          <div class="google-maps-label">View on Google Maps</div>
-          <div class="google-maps-location">Žitná 11, Nové Město, Praha 1</div>
-        </div>
-        <div class="google-maps-arrow">→</div>
-      </div>
-    </a>
-  </div>
-</section>
-
 <!-- CSS for Google Maps Banner -->
 <style>
-.google-maps-featured {
-  background: linear-gradient(135deg, rgba(66,133,244,.06), rgba(52,168,83,.06));
-  border-top: 2px solid #4285F4;
-  border-bottom: 2px solid #34A853;
-  padding: 40px 0;
-  margin: 20px 0 40px 0;
-}
 
-.google-maps-link {
-  display: flex;
-  text-decoration: none;
-  transition: all .3s;
-}
 
-.google-maps-link:hover {
-  transform: translateY(-4px);
-}
 
-.google-maps-content {
-  display: flex;
-  align-items: center;
-  gap: 32px;
-  background: linear-gradient(135deg, rgba(66,133,244,.1), rgba(52,168,83,.08));
-  border: 2px solid #4285F4;
-  border-radius: 20px;
-  padding: 32px 40px;
-  width: 100%;
-  transition: all .3s;
-}
 
-.google-maps-link:hover .google-maps-content {
-  background: linear-gradient(135deg, rgba(66,133,244,.15), rgba(52,168,83,.12));
-  box-shadow: 0 12px 40px rgba(66,133,244,.3);
-}
 
-.google-maps-icon {
-  width: 80px;
-  height: 80px;
-  flex-shrink: 0;
-}
 
-.google-maps-text {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
 
-.google-maps-label {
-  font-size: 13px;
-  letter-spacing: .12em;
-  text-transform: uppercase;
-  color: var(--cyan);
-  font-weight: 700;
-}
 
-.google-maps-location {
-  font-size: 18px;
-  font-weight: 700;
-  color: var(--ink);
-  line-height: 1;
-}
 
-.google-maps-arrow {
-  font-size: 32px;
-  color: #4285F4;
-  font-weight: 700;
-  flex-shrink: 0;
-  transition: transform .3s;
-}
 
-.google-maps-link:hover .google-maps-arrow {
-  transform: translateX(8px);
-}
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 768px) {
-  .google-maps-content {
-    gap: 20px;
-    padding: 24px 20px;
-    flex-direction: column;
-    text-align: center;
-  }
-  .google-maps-icon { width: 60px; height: 60px; }
-  .google-maps-location { font-size: 16px; }
-  .google-maps-arrow { display: none; }
+  
+  
+  
+  
 }
 </style>
 
