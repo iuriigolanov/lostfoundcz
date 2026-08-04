@@ -4,5 +4,4 @@
 User-agent: *
 Allow: /
 
-# Sitemap
 Sitemap: https://lostfoundcz.com/sitemap.xml
