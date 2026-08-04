@@ -8,7 +8,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Lost &amp; Found Bar Prague | Cocktail Bar &amp; Hookah Lounge in Prague</title>
-<meta name="description" content="Lost &amp; Found is a cocktail bar and hookah lounge in the heart of Prague, Nové Město. 1,085+ Google reviews, rated 4.9★. Signature craft cocktails, premium hookah, craft beer and late-night vibes on Žitná. Reserve your table online.">
+<meta name="description" content="Lost &amp; Found is a cocktail bar and hookah lounge in the heart of Prague, Nové Město. 1,090+ Google reviews, rated 4.9★. Signature craft cocktails, premium hookah, craft beer and late-night vibes on Žitná. Reserve your table online.">
 <meta name="keywords" content="cocktail bar Prague, Lost and Found Bar Prague, craft cocktails Prague, hookah lounge Prague, bar Žitná, nightlife Prague, shisha Prague, cocktails Nové Město, private events Prague, party venue Prague, bar buyout Prague, corporate events Prague, birthday venue Prague, catering Prague">
 <link rel="preload" as="image" href="img/hero-bg.jpg" fetchpriority="high">
 <link rel="preload" as="image" href="img/logo.png" fetchpriority="high">
@@ -22,7 +22,7 @@
 <link rel="canonical" href="https://lostfoundcz.com/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Lost &amp; Found Bar Prague — Cocktail Bar &amp; Hookah Lounge">
-<meta property="og:description" content="Craft cocktails, premium hookah and late-night vibes in the heart of Prague. Rated 4.9★ across 1,085+ Google reviews.">
+<meta property="og:description" content="Craft cocktails, premium hookah and late-night vibes in the heart of Prague. Rated 4.9★ across 1,090+ Google reviews.">
 <meta property="og:image" content="https://lostfoundcz.com/og-image.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -375,9 +375,9 @@ section{padding:84px 0;position:relative}
 .lightbox-img{max-width:90%;max-height:90%;object-fit:contain;border-radius:8px;cursor:default}
 .lightbox-close{position:absolute;top:20px;right:30px;font-size:40px;color:#fff;cursor:pointer;background:none;border:none}
 
-.signature-block{grid-column:1/-1;margin-bottom:40px}
-.signature-block h3{margin-bottom:24px}
-.signature-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px 34px}
+
+
+
 .item{padding:8px 0;border-bottom:1px solid rgba(255,255,255,.04)}
 .item-head{display:flex;align-items:baseline;gap:8px}
 .item-name{font-weight:700;font-size:15px;color:var(--ink);white-space:nowrap}
@@ -567,6 +567,39 @@ footer .fine{color:var(--muted);font-size:12px;margin-top:16px;line-height:1.8}
 .pride-banner:hover{filter:brightness(1.08)}
 @media(max-width:600px){.pride-banner{font-size:12px;padding:8px 12px}}
 .pride-about{border-left:3px solid;border-image:linear-gradient(#e40303,#750787) 1;padding-left:14px;margin-top:18px}
+
+/* --- Меню-аккордеон (v1.20) --- */
+.menu-accordion{max-width:900px;margin:8px auto 30px;display:flex;flex-direction:column;gap:10px}
+.menu-cat{border:1px solid rgba(200,85,181,.22);border-radius:14px;background:rgba(255,255,255,.02);overflow:hidden}
+.cat-summary{display:flex;align-items:center;gap:12px;cursor:pointer;list-style:none;padding:16px 20px;font-family:'Bebas Neue';font-size:23px;letter-spacing:.03em;color:var(--ink);transition:background .2s}
+.cat-summary::-webkit-details-marker{display:none}
+.cat-summary:hover{background:rgba(200,85,181,.08)}
+.cat-title{flex:1}
+.cat-flat{font-size:15px;color:var(--cyan);font-family:system-ui;font-weight:700;letter-spacing:0}
+.cat-arrow{font-size:20px;color:var(--violet);transition:transform .25s}
+.menu-cat[open] .cat-arrow{transform:rotate(180deg)}
+.cat-items{padding:4px 20px 18px;display:grid;grid-template-columns:1fr 1fr;gap:2px 32px}
+.mi{padding:9px 0;border-bottom:1px solid rgba(255,255,255,.05)}
+.mi-head{display:flex;align-items:baseline;gap:6px}
+.mi-name{font-weight:700;font-size:14.5px;color:var(--ink);white-space:nowrap}
+.mi-dots{flex:1;border-bottom:1px dotted rgba(255,255,255,.2);transform:translateY(-3px)}
+.mi-price{font-weight:700;font-size:14px;color:var(--cyan);white-space:nowrap}
+.mi-desc{font-size:12.5px;color:var(--muted);line-height:1.45;margin-top:2px}
+/* Вариант C: фото как "полное меню" — компактная свёрнутая секция */
+.menu-photos-toggle{max-width:900px;margin:0 auto 30px}
+.menu-photos-toggle summary{cursor:pointer;list-style:none;text-align:center;padding:14px;border:1px dashed rgba(0,200,224,.4);border-radius:12px;color:var(--cyan);font-weight:700;font-size:14px;letter-spacing:.03em;transition:background .2s}
+.menu-photos-toggle summary::-webkit-details-marker{display:none}
+.menu-photos-toggle summary:hover{background:rgba(0,200,224,.06)}
+.menu-photos-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin-top:18px}
+.menu-photos-grid .menu-section{text-align:center}
+.menu-photos-grid h3{font-size:15px;margin-bottom:6px}
+.menu-photos-grid .sub{display:none}
+@media(max-width:640px){
+  .cat-items{grid-template-columns:1fr;gap:0}
+  .cat-summary{font-size:20px;padding:14px 16px}
+  .cat-items{padding:4px 16px 14px}
+}
+a[href*="firmy.cz"]::before{background-image:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="11" fill="%23CC0000"/><text x="12" y="17" font-size="15" font-weight="bold" fill="white" text-anchor="middle" font-family="Arial">S</text></svg>')}
 </style>
 
 <!-- Google Analytics -->
@@ -618,7 +651,7 @@ footer .fine{color:var(--muted);font-size:12px;margin-top:16px;line-height:1.8}
       <svg class="grp-g" viewBox="0 0 24 24" width="26" height="26"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84A11 11 0 0 0 12 23z"/><path fill="#FBBC05" d="M5.84 14.1a6.6 6.6 0 0 1 0-4.2V7.06H2.18a11 11 0 0 0 0 9.88l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84C6.71 7.3 9.14 5.38 12 5.38z"/></svg>
       <div class="grp-stars">
         <div class="grp-rating-row"><span class="grp-num">4.9</span><span class="grp-star-icons">★★★★★</span></div>
-        <div class="grp-count">1,085+ Google reviews</div>
+        <div class="grp-count">1,090+ Google reviews</div>
       </div>
     </a>
     <a class="grp-cta" href="https://g.page/r/CRuq5bPC7DCyEBM/review" target="_blank" rel="noopener" aria-label="Leave a Google review">Rate Us</a>
@@ -676,7 +709,7 @@ footer .fine{color:var(--muted);font-size:12px;margin-top:16px;line-height:1.8}
   <div class="about-grid">
     <div>
       <p>Lost &amp; Found is a cocktail bar and hookah lounge minutes from Wenceslas Square in Prague's Nové Město. Signature craft cocktails, premium hookah, board games, darts and our boxing machine — the kind of late-night room you stumble into once and keep coming back to.</p>
-      <p>We also host <strong>private events in Prague</strong>: birthdays, company parties and music nights, with catering and a bespoke cocktail menu. Rated <strong>4.9★ across 1,085+ Google reviews</strong> — one of the highest-rated cocktail bars in Prague and a top-rated nightlife spot in Nové Město.</p>
+      <p>We also host <strong>private events in Prague</strong>: birthdays, company parties and music nights, with catering and a bespoke cocktail menu. Rated <strong>4.9★ across 1,090+ Google reviews</strong> — one of the highest-rated cocktail bars in Prague and a top-rated nightlife spot in Nové Město.</p>
       <p class="pride-about">Lost &amp; Found is a proud <strong>LGBT-friendly bar</strong> and an <a href="https://www.qalendar.cz/recommended-businesses/?lang=en" target="_blank" rel="noopener">official partner of Prague Pride</a>. Thank you for coming to the Prague Pride Festival — we look forward to seeing you at Lost &amp; Found on <strong>3–9 August 2026</strong> and anytime after. Use code <strong>LGBT10</strong> for 10% off the entire menu.</p>
       <div class="about-tags">
         <span class="tag" style="--tc:200,85,181">Craft Cocktails</span>
@@ -713,85 +746,430 @@ footer .fine{color:var(--muted);font-size:12px;margin-top:16px;line-height:1.8}
 
   <p class="menu-intro">Our signature cocktails are exclusive creations designed by our bartenders. For the full menu of classics, wine cocktails, shots, premium hookah blends and alcohol-free options — see the detailed menu images below.</p>
 
-  <div class="signature-block">
-    <h3>Signature Cocktails <span style="font-size:18px;color:var(--muted);font-weight:normal">· CZK</span></h3>
-    <div class="signature-grid">
-      <div class="item">
-        <div class="item-head"><span class="item-name">Ferrari</span><span class="dots"></span><span class="item-price">290</span></div>
-        <div class="item-desc">Stroh, Bacardi Spiced, triple sec, grenadine, blue Curaçao</div>
+  <div class="menu-accordion">
+  <details class="menu-cat" open>
+    <summary class="cat-summary"><span class="cat-title">🍸 Signature Cocktails</span><span class="cat-arrow">⌄</span></summary>
+    <div class="cat-items">
+      <div class="mi">
+        <div class="mi-head"><span class="mi-name">Ferrari</span><span class="mi-dots"></span><span class="mi-price">290</span></div>
+        <div class="mi-desc">Stroh, Bacardi Spiced, Triple sec liqueur, Grenadine, Blue Curaçao</div>
       </div>
-      <div class="item">
-        <div class="item-head"><span class="item-name">Lamborghini</span><span class="dots"></span><span class="item-price">250</span></div>
-        <div class="item-desc">Baileys, Kahlua, Sambuca, blue Curaçao</div>
+      <div class="mi">
+        <div class="mi-head"><span class="mi-name">Lamborghini</span><span class="mi-dots"></span><span class="mi-price">250</span></div>
+        <div class="mi-desc">Baileys, Kahlua, Sambuca, Blue Curaçao</div>
       </div>
-      <div class="item">
-        <div class="item-head"><span class="item-name">Long Island</span><span class="dots"></span><span class="item-price">245</span></div>
-        <div class="item-desc">Vodka, gin, tequila, rum, triple sec, lemon juice, Pepsi</div>
+      <div class="mi">
+        <div class="mi-head"><span class="mi-name">Long Island</span><span class="mi-dots"></span><span class="mi-price">245</span></div>
+        <div class="mi-desc">Vodka, gin, tequila, rum, Triple sec liqueur, lemon juice, Pepsi</div>
       </div>
-      <div class="item">
-        <div class="item-head"><span class="item-name">Skittles</span><span class="dots"></span><span class="item-price">200</span></div>
-        <div class="item-desc">Limoncello, Koskenkorva, honey syrup, lemon juice, strawberry purée, Skittles</div>
+      <div class="mi">
+        <div class="mi-head"><span class="mi-name">Skittles</span><span class="mi-dots"></span><span class="mi-price">200</span></div>
+        <div class="mi-desc">Limoncello, Koskenkorva liqueur, honey syrup, lemon juice, strawberry puree, Skittles</div>
       </div>
-      <div class="item">
-        <div class="item-head"><span class="item-name">Apple Whiskey Sour</span><span class="dots"></span><span class="item-price">200</span></div>
-        <div class="item-desc">Jack Daniel's Apple, lemon & apple juice, sugar syrup</div>
+      <div class="mi">
+        <div class="mi-head"><span class="mi-name">Apple Whiskey Sour</span><span class="mi-dots"></span><span class="mi-price">200</span></div>
+        <div class="mi-desc">Jack Daniel&#x27;s Apple, lemon &amp; apple juice, sugar syrup</div>
       </div>
-      <div class="item">
-        <div class="item-head"><span class="item-name">Cherry Aperol</span><span class="dots"></span><span class="item-price">205</span></div>
-        <div class="item-desc">Aperol, vodka, cherry purée, lemon juice, cream</div>
+      <div class="mi">
+        <div class="mi-head"><span class="mi-name">Cherry Aperol</span><span class="mi-dots"></span><span class="mi-price">205</span></div>
+        <div class="mi-desc">Aperol, vodka, cherry puree, lemon juice, cream</div>
       </div>
-      <div class="item">
-        <div class="item-head"><span class="item-name">Killer</span><span class="dots"></span><span class="item-price">230</span></div>
-        <div class="item-desc">Vodka, Koskenkorva peach, lemon & apple juice</div>
+      <div class="mi">
+        <div class="mi-head"><span class="mi-name">Killer</span><span class="mi-dots"></span><span class="mi-price">230</span></div>
+        <div class="mi-desc">Vodka, Koskenkorva peach liqueur, lemon &amp; apple juice</div>
       </div>
-      <div class="item">
-        <div class="item-head"><span class="item-name">Tropical Paradise</span><span class="dots"></span><span class="item-price">200</span></div>
-        <div class="item-desc">Bacardi Bianco, Malibu, lime & pineapple juice, mango purée</div>
+      <div class="mi">
+        <div class="mi-head"><span class="mi-name">Tropical Paradise</span><span class="mi-dots"></span><span class="mi-price">200</span></div>
+        <div class="mi-desc">Bacardi Bianco, Malibu, lime &amp; pineapple juice, mango puree</div>
       </div>
-      <div class="item">
-        <div class="item-head"><span class="item-name">Shrek</span><span class="dots"></span><span class="item-price">255</span></div>
-        <div class="item-desc">Vodka, melon liqueur, Malibu, blue Curaçao, pineapple juice</div>
+      <div class="mi">
+        <div class="mi-head"><span class="mi-name">Shrek</span><span class="mi-dots"></span><span class="mi-price">255</span></div>
+        <div class="mi-desc">Vodka, Melon liqueur, Malibu, Blue Curaçao, pineapple juice</div>
       </div>
-      <div class="item">
-        <div class="item-head"><span class="item-name">Jager Bomb</span><span class="dots"></span><span class="item-price">200</span></div>
-        <div class="item-desc">Jägermeister, Red Bull</div>
+      <div class="mi">
+        <div class="mi-head"><span class="mi-name">Jager Bomb</span><span class="mi-dots"></span><span class="mi-price">200</span></div>
+        <div class="mi-desc">Jägermeister, Red Bull</div>
       </div>
-      <div class="item">
-        <div class="item-head"><span class="item-name">Crimson Kiss</span><span class="dots"></span><span class="item-price">270</span></div>
-        <div class="item-desc">Bacardi Bianco, Amaretto, grenadine, lime & orange & cranberry juice</div>
+      <div class="mi">
+        <div class="mi-head"><span class="mi-name">Crimson Kiss</span><span class="mi-dots"></span><span class="mi-price">270</span></div>
+        <div class="mi-desc">Bacardi Bianco, Amaretto, Grenadine, lime &amp; orange &amp; cranberry juice</div>
       </div>
-      <div class="item">
-        <div class="item-head"><span class="item-name">Cold Night</span><span class="dots"></span><span class="item-price">220</span></div>
-        <div class="item-desc">Bacardi Spiced, triple sec, apple juice, orange</div>
+      <div class="mi">
+        <div class="mi-head"><span class="mi-name">Cold Night</span><span class="mi-dots"></span><span class="mi-price">220</span></div>
+        <div class="mi-desc">Bacardi Spiced, Triple sec liqueur, apple juice, orange</div>
       </div>
-      <div class="item">
-        <div class="item-head"><span class="item-name">Panagel Tonic</span><span class="dots"></span><span class="item-price">200</span></div>
-        <div class="item-desc">Gin Bombay Sapphire, blue Curaçao, coconut syrup, tonic, lime juice</div>
+      <div class="mi">
+        <div class="mi-head"><span class="mi-name">Panagel Tonic</span><span class="mi-dots"></span><span class="mi-price">200</span></div>
+        <div class="mi-desc">Gin Bombay Sapphire, Blue Curaçao, Coconut syrup, tonic, lime juice</div>
       </div>
-      <div class="item">
-        <div class="item-head"><span class="item-name">Wolf Blood</span><span class="dots"></span><span class="item-price">195</span></div>
-        <div class="item-desc">Spiced rum, cranberry & lime juice, lime, cherry syrup</div>
+      <div class="mi">
+        <div class="mi-head"><span class="mi-name">Wolf Blood</span><span class="mi-dots"></span><span class="mi-price">195</span></div>
+        <div class="mi-desc">Spice rum, cranberry &amp; lime juice, lime, cherry syrup</div>
       </div>
-      <div class="item">
-        <div class="item-head"><span class="item-name">Pirate Dream</span><span class="dots"></span><span class="item-price">215</span></div>
-        <div class="item-desc">Bacardi Bianco, Malibu, passion fruit syrup, cranberry & lime juice</div>
+      <div class="mi">
+        <div class="mi-head"><span class="mi-name">Pirate Dream</span><span class="mi-dots"></span><span class="mi-price">215</span></div>
+        <div class="mi-desc">Bacardi Bianco, Malibu, passion fruit syrup, cranberry &amp; lime juice</div>
       </div>
-      <div class="item">
-        <div class="item-head"><span class="item-name">Fitness</span><span class="dots"></span><span class="item-price">190</span></div>
-        <div class="item-desc">Vodka, gin, rum, pineapple & lemon juice</div>
+      <div class="mi">
+        <div class="mi-head"><span class="mi-name">Fitness</span><span class="mi-dots"></span><span class="mi-price">190</span></div>
+        <div class="mi-desc">Vodka, gin, rum, pineapple &amp; lemon juice</div>
       </div>
-      <div class="item">
-        <div class="item-head"><span class="item-name">Strawberry Boom</span><span class="dots"></span><span class="item-price">195</span></div>
-        <div class="item-desc">Gin, strawberry purée, lemon & cranberry juice</div>
+      <div class="mi">
+        <div class="mi-head"><span class="mi-name">Strawberry Boom</span><span class="mi-dots"></span><span class="mi-price">195</span></div>
+        <div class="mi-desc">Gin, strawberry puree, lemon &amp; cranberry juice</div>
       </div>
-      <div class="item">
-        <div class="item-head"><span class="item-name">Sponge Bob</span><span class="dots"></span><span class="item-price">185</span></div>
-        <div class="item-desc">Limoncello, Prosecco, pineapple juice</div>
+      <div class="mi">
+        <div class="mi-head"><span class="mi-name">Sponge Bob</span><span class="mi-dots"></span><span class="mi-price">185</span></div>
+        <div class="mi-desc">Limoncello, Prosecco, pineapple juice</div>
       </div>
     </div>
-  </div>
+  </details>
+  <details class="menu-cat">
+    <summary class="cat-summary"><span class="cat-title">🍹 Classic Cocktails</span><span class="cat-arrow">⌄</span></summary>
+    <div class="cat-items">
+      <div class="mi">
+        <div class="mi-head"><span class="mi-name">Skinny Bitch / Fruity</span><span class="mi-dots"></span><span class="mi-price">175 / 185</span></div>
+        <div class="mi-desc">Vodka, lime juice, soda / +fruit puree</div>
+      </div>
+      <div class="mi">
+        <div class="mi-head"><span class="mi-name">Espresso Martini</span><span class="mi-dots"></span><span class="mi-price">220</span></div>
+        <div class="mi-desc">Vodka, Baileys, Kahlua, espresso</div>
+      </div>
+      <div class="mi">
+        <div class="mi-head"><span class="mi-name">Moscow Mule</span><span class="mi-dots"></span><span class="mi-price">195</span></div>
+        <div class="mi-desc">Vodka, lime juice, ginger beer</div>
+      </div>
+      <div class="mi">
+        <div class="mi-head"><span class="mi-name">Sex on the Bitch</span><span class="mi-dots"></span><span class="mi-price">195</span></div>
+        <div class="mi-desc">Vodka, peach liqueur, orange &amp; cranberry juice, almond syrup</div>
+      </div>
+      <div class="mi">
+        <div class="mi-head"><span class="mi-name">Cosmopolitan</span><span class="mi-dots"></span><span class="mi-price">195</span></div>
+        <div class="mi-desc">Vodka, Triple sec liqueur, lime &amp; cranberry juice</div>
+      </div>
+      <div class="mi">
+        <div class="mi-head"><span class="mi-name">Porn Star Martini</span><span class="mi-dots"></span><span class="mi-price">195</span></div>
+        <div class="mi-desc">Vodka, lemon juice, passion fruit puree, vanilla syrup, prosecco</div>
+      </div>
+      <div class="mi">
+        <div class="mi-head"><span class="mi-name">Bloody Mary</span><span class="mi-dots"></span><span class="mi-price">185</span></div>
+        <div class="mi-desc">Vodka, tomato juice, pepper, tabasco, celery</div>
+      </div>
+      <div class="mi">
+        <div class="mi-head"><span class="mi-name">White Russian</span><span class="mi-dots"></span><span class="mi-price">210</span></div>
+        <div class="mi-desc">Vodka, Kahlua, Baileys, cream</div>
+      </div>
+      <div class="mi">
+        <div class="mi-head"><span class="mi-name">Blue Lagoon</span><span class="mi-dots"></span><span class="mi-price">215</span></div>
+        <div class="mi-desc">Vodka, Triple sec liqueur, blue Curaçao, Sprite</div>
+      </div>
+      <div class="mi">
+        <div class="mi-head"><span class="mi-name">Vodka Redbull</span><span class="mi-dots"></span><span class="mi-price">195</span></div>
+        <div class="mi-desc">Vodka, Red Bull</div>
+      </div>
+      <div class="mi">
+        <div class="mi-head"><span class="mi-name">Gin Tonic</span><span class="mi-dots"></span><span class="mi-price">190</span></div>
+        <div class="mi-desc">Gin, tonic</div>
+      </div>
+      <div class="mi">
+        <div class="mi-head"><span class="mi-name">Hendricks GT Premium</span><span class="mi-dots"></span><span class="mi-price">235</span></div>
+        <div class="mi-desc">Gin Hendricks, tonic botanical</div>
+      </div>
+      <div class="mi">
+        <div class="mi-head"><span class="mi-name">Gin Mare GT Premium</span><span class="mi-dots"></span><span class="mi-price">255</span></div>
+        <div class="mi-desc">Gin Mare, tonic Thomas Henry</div>
+      </div>
+      <div class="mi">
+        <div class="mi-head"><span class="mi-name">Negroni</span><span class="mi-dots"></span><span class="mi-price">195</span></div>
+        <div class="mi-desc">Gin Bombay Sapphire, Martini Rosso, Campari</div>
+      </div>
+      <div class="mi">
+        <div class="mi-head"><span class="mi-name">Gin Garden</span><span class="mi-dots"></span><span class="mi-price">210</span></div>
+        <div class="mi-desc">Gin Bombay Sapphire, lemon juice, ginger beer</div>
+      </div>
+      <div class="mi">
+        <div class="mi-head"><span class="mi-name">Caipirinha</span><span class="mi-dots"></span><span class="mi-price">195</span></div>
+        <div class="mi-desc">Cachaça, Brown sugar, Lime</div>
+      </div>
+      <div class="mi">
+        <div class="mi-head"><span class="mi-name">Mai Tai</span><span class="mi-dots"></span><span class="mi-price">220</span></div>
+        <div class="mi-desc">Bacardi Spiced, apricot brandy, almond syrup, lime &amp; pineapple juice</div>
+      </div>
+      <div class="mi">
+        <div class="mi-head"><span class="mi-name">Pina Colada</span><span class="mi-dots"></span><span class="mi-price">195</span></div>
+        <div class="mi-desc">Bacardi Bianco rum, coconut syrup, pineapple juice, cream</div>
+      </div>
+      <div class="mi">
+        <div class="mi-head"><span class="mi-name">Cuba Libre</span><span class="mi-dots"></span><span class="mi-price">185</span></div>
+        <div class="mi-desc">Bacardi Bianco rum, lime juice, Pepsi</div>
+      </div>
+      <div class="mi">
+        <div class="mi-head"><span class="mi-name">Daiquiri</span><span class="mi-dots"></span><span class="mi-price">175</span></div>
+        <div class="mi-desc">Bacardi Bianco rum, lime juice, sugar syrup</div>
+      </div>
+      <div class="mi">
+        <div class="mi-head"><span class="mi-name">Bengal</span><span class="mi-dots"></span><span class="mi-price">195</span></div>
+        <div class="mi-desc">Bacardi Spice rum, Triple sec liqueur, pineapple juice, lime, Angostura</div>
+      </div>
+      <div class="mi">
+        <div class="mi-head"><span class="mi-name">Mojito</span><span class="mi-dots"></span><span class="mi-price">195</span></div>
+        <div class="mi-desc">Bacardi Bianco rum, Lime, Brown sugar, Tonic, Cordial syrup</div>
+      </div>
+      <div class="mi">
+        <div class="mi-head"><span class="mi-name">Tequila Sunrise</span><span class="mi-dots"></span><span class="mi-price">195</span></div>
+        <div class="mi-desc">Tequila, grenadine syrup, orange juice</div>
+      </div>
+      <div class="mi">
+        <div class="mi-head"><span class="mi-name">Margarita / Fruity</span><span class="mi-dots"></span><span class="mi-price">185 / 190</span></div>
+        <div class="mi-desc">Tequila, lime juice, sugar / fruit puree</div>
+      </div>
+      <div class="mi">
+        <div class="mi-head"><span class="mi-name">Paloma</span><span class="mi-dots"></span><span class="mi-price">215</span></div>
+        <div class="mi-desc">Tequila, lime &amp; grapefruit juice, soda</div>
+      </div>
+      <div class="mi">
+        <div class="mi-head"><span class="mi-name">Envy</span><span class="mi-dots"></span><span class="mi-price">205</span></div>
+        <div class="mi-desc">Tequila, Blue Curaçao, pineapple &amp; lime juice</div>
+      </div>
+      <div class="mi">
+        <div class="mi-head"><span class="mi-name">Manhattan</span><span class="mi-dots"></span><span class="mi-price">190</span></div>
+        <div class="mi-desc">Jameson, Martini Rosso, Angostura</div>
+      </div>
+      <div class="mi">
+        <div class="mi-head"><span class="mi-name">Old Fashioned</span><span class="mi-dots"></span><span class="mi-price">200</span></div>
+        <div class="mi-desc">Jack Daniel&#x27;s, sugar syrup, Angostura</div>
+      </div>
+      <div class="mi">
+        <div class="mi-head"><span class="mi-name">Whiskey Sour Español</span><span class="mi-dots"></span><span class="mi-price">200</span></div>
+        <div class="mi-desc">Whiskey Jameson, sugar syrup, lemon juice</div>
+      </div>
+    </div>
+  </details>
+  <details class="menu-cat">
+    <summary class="cat-summary"><span class="cat-title">🍷 Wine Cocktails &amp; Spritz</span><span class="cat-arrow">⌄</span></summary>
+    <div class="cat-items">
+      <div class="mi">
+        <div class="mi-head"><span class="mi-name">Mimosa</span><span class="mi-dots"></span><span class="mi-price">165</span></div>
+        <div class="mi-desc">Prosecco, orange juice</div>
+      </div>
+      <div class="mi">
+        <div class="mi-head"><span class="mi-name">Aperol Spritz</span><span class="mi-dots"></span><span class="mi-price">195</span></div>
+        <div class="mi-desc">Aperol, prosecco, soda</div>
+      </div>
+      <div class="mi">
+        <div class="mi-head"><span class="mi-name">Hugo Spritz</span><span class="mi-dots"></span><span class="mi-price">195</span></div>
+        <div class="mi-desc">Prosecco, elderflower syrup, soda</div>
+      </div>
+      <div class="mi">
+        <div class="mi-head"><span class="mi-name">Limoncello Spritz</span><span class="mi-dots"></span><span class="mi-price">195</span></div>
+        <div class="mi-desc">Limoncello, Prosecco, soda</div>
+      </div>
+      <div class="mi">
+        <div class="mi-head"><span class="mi-name">Campari Spritz</span><span class="mi-dots"></span><span class="mi-price">195</span></div>
+        <div class="mi-desc">Campari, Prosecco, soda</div>
+      </div>
+      <div class="mi">
+        <div class="mi-head"><span class="mi-name">Kalimotxo</span><span class="mi-dots"></span><span class="mi-price">165</span></div>
+        <div class="mi-desc">Red wine, Pepsi, Lemon</div>
+      </div>
+      <div class="mi">
+        <div class="mi-head"><span class="mi-name">Calypso</span><span class="mi-dots"></span><span class="mi-price">165</span></div>
+        <div class="mi-desc">White wine, Pineapple juice, Coconut syrup</div>
+      </div>
+      <div class="mi">
+        <div class="mi-head"><span class="mi-name">Berry Muscade</span><span class="mi-dots"></span><span class="mi-price">195</span></div>
+        <div class="mi-desc">Prosecco, Vodka, Strawberry puree, Cranberry &amp; lime juice</div>
+      </div>
+      <div class="mi">
+        <div class="mi-head"><span class="mi-name">Tinto Verano</span><span class="mi-dots"></span><span class="mi-price">190</span></div>
+        <div class="mi-desc">Red wine, Tonic, Strawberry puree, Cranberry &amp; lime juice</div>
+      </div>
+      <div class="mi">
+        <div class="mi-head"><span class="mi-name">Duoma</span><span class="mi-dots"></span><span class="mi-price">185</span></div>
+        <div class="mi-desc">Kahlua, Red wine, Espresso</div>
+      </div>
+      <div class="mi">
+        <div class="mi-head"><span class="mi-name">Luna Sanguinia</span><span class="mi-dots"></span><span class="mi-price">185</span></div>
+        <div class="mi-desc">Red wine, Orange rum, Passion fruit syrup, Orange juice</div>
+      </div>
+      <div class="mi">
+        <div class="mi-head"><span class="mi-name">Sarti Spritz</span><span class="mi-dots"></span><span class="mi-price">205</span></div>
+        <div class="mi-desc">Sarti, prosecco, soda</div>
+      </div>
+    </div>
+  </details>
+  <details class="menu-cat">
+    <summary class="cat-summary"><span class="cat-title">🥃 Special Shots</span><span class="cat-arrow">⌄</span></summary>
+    <div class="cat-items">
+      <div class="mi">
+        <div class="mi-head"><span class="mi-name">Lost</span><span class="mi-dots"></span><span class="mi-price">110</span></div>
+        <div class="mi-desc">Vodka, triple sec, grenadine, blue Curaçao, cherry</div>
+      </div>
+      <div class="mi">
+        <div class="mi-head"><span class="mi-name">B-52</span><span class="mi-dots"></span><span class="mi-price">120</span></div>
+        <div class="mi-desc">Kahlua, Baileys, triple sec</div>
+      </div>
+      <div class="mi">
+        <div class="mi-head"><span class="mi-name">B-53</span><span class="mi-dots"></span><span class="mi-price">130</span></div>
+        <div class="mi-desc">Kahlua, Baileys, Absinthe</div>
+      </div>
+      <div class="mi">
+        <div class="mi-head"><span class="mi-name">BMW</span><span class="mi-dots"></span><span class="mi-price">165</span></div>
+        <div class="mi-desc">Baileys, Malibu, Whiskey</div>
+      </div>
+      <div class="mi">
+        <div class="mi-head"><span class="mi-name">Stoplights (3 shots)</span><span class="mi-dots"></span><span class="mi-price">165</span></div>
+        <div class="mi-desc">Lime &amp; cranberry juice + vodka; passion fruit puree + Bacardi Bianco; lemon juice + mint liqueur + tequila</div>
+      </div>
+      <div class="mi">
+        <div class="mi-head"><span class="mi-name">Chupito 1+1</span><span class="mi-dots"></span><span class="mi-price">180</span></div>
+        <div class="mi-desc">Vodka, lime juice, cordial syrup</div>
+      </div>
+      <div class="mi">
+        <div class="mi-head"><span class="mi-name">Boyarskiy</span><span class="mi-dots"></span><span class="mi-price">100</span></div>
+        <div class="mi-desc">Vodka, grenadine, tabasco</div>
+      </div>
+      <div class="mi">
+        <div class="mi-head"><span class="mi-name">Blow Job</span><span class="mi-dots"></span><span class="mi-price">110</span></div>
+        <div class="mi-desc">Amaretto, Baileys, cream on top</div>
+      </div>
+      <div class="mi">
+        <div class="mi-head"><span class="mi-name">Sparta</span><span class="mi-dots"></span><span class="mi-price">175</span></div>
+        <div class="mi-desc">Stroh, Absinthe, Tequila Silver</div>
+      </div>
+      <div class="mi">
+        <div class="mi-head"><span class="mi-name">Jäger Heaven</span><span class="mi-dots"></span><span class="mi-price">165</span></div>
+        <div class="mi-desc">Jägermeister, Baileys</div>
+      </div>
+    </div>
+  </details>
+  <details class="menu-cat">
+    <summary class="cat-summary"><span class="cat-title">🌿 Hookah</span> <span class="cat-flat">495 CZK</span><span class="cat-arrow">⌄</span></summary>
+    <div class="cat-items">
+      <div class="mi">
+        <div class="mi-head"><span class="mi-name">Tropical Mix</span><span class="mi-dots"></span></div>
+        <div class="mi-desc">Mango, peach, melon, and refreshing tropical notes — sweet &amp; fruity</div>
+      </div>
+      <div class="mi">
+        <div class="mi-head"><span class="mi-name">Berry Madness</span><span class="mi-dots"></span></div>
+        <div class="mi-desc">Raspberry, blueberry, and forest fruits — sweet &amp; juicy</div>
+      </div>
+      <div class="mi">
+        <div class="mi-head"><span class="mi-name">Citrus Fresh</span><span class="mi-dots"></span></div>
+        <div class="mi-desc">Sweet and sour grapefruit with a touch of refreshing mint — citrusy &amp; fresh</div>
+      </div>
+      <div class="mi">
+        <div class="mi-head"><span class="mi-name">Sweet Dream</span><span class="mi-dots"></span></div>
+        <div class="mi-desc">A creamy dessert with strawberry hints and Belgian waffles — smooth &amp; sweet</div>
+      </div>
+      <div class="mi">
+        <div class="mi-head"><span class="mi-name">Exotic Ice</span><span class="mi-dots"></span></div>
+        <div class="mi-desc">A refreshing duo of sweet peach and banana — sweet &amp; fresh</div>
+      </div>
+      <div class="mi">
+        <div class="mi-head"><span class="mi-name">Hookah of the Day</span><span class="mi-dots"></span></div>
+        <div class="mi-desc">Our Hookah Master can craft a unique mix just for you, with love )))</div>
+      </div>
+    </div>
+  </details>
+  <details class="menu-cat">
+    <summary class="cat-summary"><span class="cat-title">🥤 Non-Alcoholic &amp; Food</span><span class="cat-arrow">⌄</span></summary>
+    <div class="cat-items">
+      <div class="mi">
+        <div class="mi-head"><span class="mi-name">Virgin Colada 0.0%</span><span class="mi-dots"></span><span class="mi-price">155</span></div>
+        <div class="mi-desc">Coconut syrup, pineapple juice, cream</div>
+      </div>
+      <div class="mi">
+        <div class="mi-head"><span class="mi-name">Miami 0.0%</span><span class="mi-dots"></span><span class="mi-price">145</span></div>
+        <div class="mi-desc">Pineapple &amp; orange &amp; lime juice, grenadine</div>
+      </div>
+      <div class="mi">
+        <div class="mi-head"><span class="mi-name">Flamingo 0.0%</span><span class="mi-dots"></span><span class="mi-price">145</span></div>
+        <div class="mi-desc">Grapefruit, orange &amp; lime juice, grenadine</div>
+      </div>
+      <div class="mi">
+        <div class="mi-head"><span class="mi-name">Gin Tonic 0.0%</span><span class="mi-dots"></span><span class="mi-price">165</span></div>
+        <div class="mi-desc">Gin (Non-alco), tonic, cucumber syrup</div>
+      </div>
+      <div class="mi">
+        <div class="mi-head"><span class="mi-name">Cuba Libre 0.0%</span><span class="mi-dots"></span><span class="mi-price">160</span></div>
+        <div class="mi-desc">Rum (Non-alco), lime juice, Pepsi</div>
+      </div>
+      <div class="mi">
+        <div class="mi-head"><span class="mi-name">Mojito Fruity 0.0%</span><span class="mi-dots"></span><span class="mi-price">180</span></div>
+        <div class="mi-desc">Rum (Non-alco), Lime, Brown sugar, Tonic, Cordial &amp; fruity syrup</div>
+      </div>
+      <div class="mi">
+        <div class="mi-head"><span class="mi-name">Strawberry Boom 0.0%</span><span class="mi-dots"></span><span class="mi-price">180</span></div>
+        <div class="mi-desc">Gin (Non-alco), strawberry puree, lemon &amp; cranberry juice</div>
+      </div>
+      <div class="mi">
+        <div class="mi-head"><span class="mi-name">Lemonade</span><span class="mi-dots"></span><span class="mi-price">85</span></div>
+        <div class="mi-desc">Mango, Cherry, Cucumber, Strawberry, others</div>
+      </div>
+      <div class="mi">
+        <div class="mi-head"><span class="mi-name">Almonds / Cashew / Peanuts</span><span class="mi-dots"></span><span class="mi-price">90</span></div>
+        <div class="mi-desc">Mixed nuts</div>
+      </div>
+      <div class="mi">
+        <div class="mi-head"><span class="mi-name">Chips 60g</span><span class="mi-dots"></span><span class="mi-price">85</span></div>
+        <div class="mi-desc">Cheese, Onion, Salted</div>
+      </div>
+      <div class="mi">
+        <div class="mi-head"><span class="mi-name">Nachos</span><span class="mi-dots"></span><span class="mi-price">145</span></div>
+        <div class="mi-desc">Cheese, Salsa, Guacamole (100g + 100g sauce)</div>
+      </div>
+      <div class="mi">
+        <div class="mi-head"><span class="mi-name">Pizza Funghi</span><span class="mi-dots"></span><span class="mi-price">255</span></div>
+        <div class="mi-desc">Tomato sauce, mozzarella, fresh mushrooms, oregano</div>
+      </div>
+      <div class="mi">
+        <div class="mi-head"><span class="mi-name">Pizza Inferno (Hot)</span><span class="mi-dots"></span><span class="mi-price">280</span></div>
+        <div class="mi-desc">Tomato sauce, mozzarella, spicy salami, chilli, black olives</div>
+      </div>
+      <div class="mi">
+        <div class="mi-head"><span class="mi-name">Pizza Napoleta</span><span class="mi-dots"></span><span class="mi-price">280</span></div>
+        <div class="mi-desc">Tomato sauce, mozzarella, ham, mushrooms, sweetcorn</div>
+      </div>
+      <div class="mi">
+        <div class="mi-head"><span class="mi-name">Pizza Picante (Spicy)</span><span class="mi-dots"></span><span class="mi-price">285</span></div>
+        <div class="mi-desc">Tomato sauce, mozzarella, ham, chilli peppers, black olives</div>
+      </div>
+      <div class="mi">
+        <div class="mi-head"><span class="mi-name">Pizza Quattro Formagio</span><span class="mi-dots"></span><span class="mi-price">285</span></div>
+        <div class="mi-desc">Cream base, mozzarella, gorgonzola, parmesan, edam</div>
+      </div>
+      <div class="mi">
+        <div class="mi-head"><span class="mi-name">Pizza Salami</span><span class="mi-dots"></span><span class="mi-price">270</span></div>
+        <div class="mi-desc">Tomato sauce, mozzarella, salami, oregano, basil</div>
+      </div>
+      <div class="mi">
+        <div class="mi-head"><span class="mi-name">Pizza Tonno</span><span class="mi-dots"></span><span class="mi-price">280</span></div>
+        <div class="mi-desc">Tomato sauce, mozzarella, tuna, red onion, green olives, capers, oregano</div>
+      </div>
+      <div class="mi">
+        <div class="mi-head"><span class="mi-name">Quesadilla Cheese</span><span class="mi-dots"></span><span class="mi-price">180</span></div>
+        <div class="mi-desc">Ham, cheddar, melted cheese</div>
+      </div>
+      <div class="mi">
+        <div class="mi-head"><span class="mi-name">Quesadilla Chicken</span><span class="mi-dots"></span><span class="mi-price">195</span></div>
+        <div class="mi-desc">Chicken breast, BBQ sauce, cheddar</div>
+      </div>
+      <div class="mi">
+        <div class="mi-head"><span class="mi-name">Quesadilla Spinach</span><span class="mi-dots"></span><span class="mi-price">195</span></div>
+        <div class="mi-desc">Spinach, cheese</div>
+      </div>
+      <div class="mi">
+        <div class="mi-head"><span class="mi-name">Additional Sauce</span><span class="mi-dots"></span><span class="mi-price">45</span></div>
+        <div class="mi-desc">Salsa, Cheese, Guacamole, Cream</div>
+      </div>
+    </div>
+  </details>
+</div>
 
-  <div class="menu-grid">
+  <details class="menu-photos-toggle">
+    <summary>📸 View full menu (photos)</summary>
+    <div class="menu-photos-grid">
     <div class="menu-section">
       <h3>Signature Cocktails</h3>
       <p class="sub">Complete recipe guide</p>
@@ -823,6 +1201,7 @@ footer .fine{color:var(--muted);font-size:12px;margin-top:16px;line-height:1.8}
       <img class="menu-image" src="img/menu-6.jpg" alt="Lost and Found Bar Prague - Shots, Wine and Beer menu" onclick="openLightbox(this)" loading="lazy" decoding="async">
     </div>
   </div>
+  </details>
 
   <div class="menu-cta-wrap">
     <a class="menu-cta" href="#menu">→ Full Menu</a>
@@ -897,7 +1276,7 @@ footer .fine{color:var(--muted);font-size:12px;margin-top:16px;line-height:1.8}
 <!-- REVIEWS -->
 <section id="reviews" class="wrap">
   <div class="sec-head">
-    <span class="kicker">4.9★ · 1,085+ Google reviews</span>
+    <span class="kicker">4.9★ · 1,090+ Google reviews</span>
     <h2>What guests say</h2>
     <p>Real reviews from real guests — see why Lost &amp; Found is Prague's top-rated cocktail bar</p>
   </div>
@@ -934,7 +1313,7 @@ footer .fine{color:var(--muted);font-size:12px;margin-top:16px;line-height:1.8}
     </div>
   </div>
   <div style="text-align:center;margin-top:34px">
-    <a class="btn btn-ghost" href="https://www.google.com/maps/place/Lost+and+Found+Bar+Prague/@50.077631,14.423096,16z/data=!4m15!1m8!3m7!1s0x470b94f31905dbd9:0x15d71dab3cf121fd!2zxb1pdG7DoSAxNzY0LzExLCAxMTAgMDAgTm92w6kgTcSbc3RvLCDEjGVza2E!3b1!8m2!3d50.0776314!4d14.4230964!16s%2Fg%2F11c5bsx2lz!3m5!1s0x470b94f3191a10d7:0xb230ecc2b3e5aa1b!8m2!3d50.0776314!4d14.4230964!16s%2Fg%2F11xn3v02qd?hl=en" target="_blank" rel="noopener">Read all 1,085+ reviews on Google</a>
+    <a class="btn btn-ghost" href="https://www.google.com/maps/place/Lost+and+Found+Bar+Prague/@50.077631,14.423096,16z/data=!4m15!1m8!3m7!1s0x470b94f31905dbd9:0x15d71dab3cf121fd!2zxb1pdG7DoSAxNzY0LzExLCAxMTAgMDAgTm92w6kgTcSbc3RvLCDEjGVza2E!3b1!8m2!3d50.0776314!4d14.4230964!16s%2Fg%2F11c5bsx2lz!3m5!1s0x470b94f3191a10d7:0xb230ecc2b3e5aa1b!8m2!3d50.0776314!4d14.4230964!16s%2Fg%2F11xn3v02qd?hl=en" target="_blank" rel="noopener">Read all 1,090+ reviews on Google</a>
   </div>
 </section>
 
@@ -1086,12 +1465,13 @@ footer .fine{color:var(--muted);font-size:12px;margin-top:16px;line-height:1.8}
       <a href="https://t.me/LostFoundCZ" target="_blank" rel="noopener">Telegram</a>
       <a href="https://wa.me/420724188537" target="_blank" rel="noopener">WhatsApp</a>
     
-      <a href="https://www.tripadvisor.com/Attraction_Review-g274707-d33996115-Reviews-Lost_and_Found_Bar_Prague-Prague_Bohemia.html" target="_blank" rel="noopener">TripAdvisor</a></div>
+      <a href="https://www.tripadvisor.com/Attraction_Review-g274707-d33996115-Reviews-Lost_and_Found_Bar_Prague-Prague_Bohemia.html" target="_blank" rel="noopener">TripAdvisor</a>
+      <a href="https://www.firmy.cz/detail/13535209-lost-and-found-bar-praha-nove-mesto.html" target="_blank" rel="noopener">Seznam</a></div>
     <div class="fine">
       Lost &amp; Found Bar Prague — Cocktail Bar &amp; Hookah Lounge<br>
       Žitná 1764/11, Nové Město, 110 00 Praha 1 · +420 724 188 537<br>
       Open: Sun–Tue 18–00 | Wed–Thu 17–01 | Fri–Sat 17–03<br>
-      Rated 4.9★ across 1,085+ Google reviews<br>
+      Rated 4.9★ across 1,090+ Google reviews<br>
       Legal info: IČO 19209002, IURII GOLANOV
     </div>
   </div>
