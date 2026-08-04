@@ -1,0 +1,10 @@
+/* TEAM */
+Bar: Lost & Found Bar Prague
+Site: https://lostfoundcz.com
+Location: Žitná 1764/11, Nové Město, 110 00 Praha 1, Czech Republic
+Contact: LostFoundCZ@gmail.com
+
+/* SITE */
+Language: English, Čeština
+Standards: HTML5, CSS3
+Components: Vanilla JS, JSON-LD structured data

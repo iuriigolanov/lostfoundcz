@@ -1,0 +1,14 @@
+{
+  "name": "Lost & Found Bar Prague",
+  "short_name": "Lost & Found",
+  "description": "Cocktail bar and hookah lounge in the heart of Prague, Nové Město.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#C855B5",
+  "icons": [
+    { "src": "/img/fav-32.png", "sizes": "32x32", "type": "image/png" },
+    { "src": "/img/fav-48.png", "sizes": "48x48", "type": "image/png" },
+    { "src": "/img/fav-180.png", "sizes": "180x180", "type": "image/png" }
+  ]
+}
