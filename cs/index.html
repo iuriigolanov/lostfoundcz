@@ -594,6 +594,25 @@ footer .fine{color:var(--muted);font-size:12px;margin-top:16px;line-height:1.8}
   .cat-items{padding:4px 16px 14px}
 }
 a[href*="firmy.cz"]::before{background-image:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="11" fill="%23CC0000"/><text x="12" y="17" font-size="15" font-weight="bold" fill="white" text-anchor="middle" font-family="Arial">S</text></svg>')}
+
+/* --- Age Gate 18+ (v1.22) --- */
+#age-gate{position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,.92);backdrop-filter:blur(8px);display:flex;align-items:center;justify-content:center;padding:20px}
+#age-gate.hidden{display:none}
+.ag-card{max-width:440px;width:100%;background:linear-gradient(160deg,#0d0d12,#050507);border:1px solid rgba(200,85,181,.3);border-radius:24px;padding:40px 32px;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,.6),0 0 40px rgba(200,85,181,.15)}
+.ag-logo{width:74px;height:74px;border-radius:18px;background:rgba(0,0,0,.5);border:1px solid rgba(0,200,224,.25);padding:10px;margin:0 auto 22px;display:block;object-fit:contain}
+.ag-q{font-family:'Bebas Neue';font-size:34px;letter-spacing:.03em;color:var(--ink);margin:0 0 6px}
+.ag-divider{width:48px;height:1px;background:rgba(200,85,181,.5);margin:14px auto 18px}
+.ag-sub{color:var(--muted);font-size:14.5px;line-height:1.6;margin:0}
+.ag-btns{display:flex;gap:12px;margin:26px 0 16px}
+.ag-btn{flex:1;padding:15px 10px;border-radius:12px;font-weight:700;font-size:14px;letter-spacing:.02em;cursor:pointer;border:none;transition:transform .15s,box-shadow .2s,background .2s;font-family:inherit}
+.ag-yes{background:linear-gradient(90deg,var(--violet),var(--magenta));color:#fff}
+.ag-yes:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(200,85,181,.45)}
+.ag-no{background:transparent;color:var(--muted);border:1px solid var(--line)}
+.ag-no:hover{color:var(--ink);border-color:rgba(200,85,181,.5)}
+.ag-foot{font-size:12px;color:var(--muted);margin-top:8px}
+.ag-foot a{color:var(--violet);text-decoration:none}
+.ag-foot a:hover{text-decoration:underline}
+@media(max-width:420px){.ag-btns{flex-direction:column}.ag-q{font-size:29px}}
 </style>
 
 <!-- Google Analytics -->
@@ -607,6 +626,20 @@ a[href*="firmy.cz"]::before{background-image:url('data:image/svg+xml;utf8,<svg x
 
 </head>
 <body>
+<div id="age-gate" class="hidden" role="dialog" aria-modal="true" aria-labelledby="ag-q">
+  <div class="ag-card">
+    <img class="ag-logo" src="../img/logo-rainbow.png" alt="Lost and Found Bar Prague">
+    <h2 class="ag-q" id="ag-q">Je ti 18 nebo více?</h2>
+    <div class="ag-divider"></div>
+    <p class="ag-sub">Tento podnik podává alkoholické nápoje.<br>Pro vstup musíš být plnoletý/á.</p>
+    <div class="ag-btns">
+      <button class="ag-btn ag-yes" onclick="ageConfirm()">Ano, je mi 18+</button>
+      <button class="ag-btn ag-no" onclick="ageDeny()">Ne, je mi méně než 18</button>
+    </div>
+    <div class="ag-foot"><a href="/cs/privacy.html">Zásady ochrany soukromí</a> · Alkohol podáváme pouze osobám 18+</div>
+  </div>
+</div>
+
 <div id="lightbox" class="lightbox">
   <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
   <img class="lightbox-img" id="lightbox-img" alt="">
@@ -1467,7 +1500,7 @@ a[href*="firmy.cz"]::before{background-image:url('data:image/svg+xml;utf8,<svg x
       Open: Sun–Tue 18–00 | Wed–Thu 17–01 | Fri–Sat 17–03<br>
       Hodnocení 4,9★ z 1 090+ recenzí na Googlu<br>
       Legal info: IČO 19209002, IURII GOLANOV
-    </div>
+    <br><a href="/cs/privacy.html" style="color:var(--muted);text-decoration:underline">Zásady ochrany soukromí</a></div>
   </div>
 </footer>
 
@@ -1504,5 +1537,22 @@ document.addEventListener('click', function(e){
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
   Rezervovat stůl
 </a>
+<script>
+(function(){
+  try{
+    if(localStorage.getItem('lf_age_ok')==='1') return;
+  }catch(e){}
+  var g=document.getElementById('age-gate');
+  if(g){g.classList.remove('hidden');document.body.style.overflow='hidden';}
+})();
+function ageConfirm(){
+  try{localStorage.setItem('lf_age_ok','1');}catch(e){}
+  var g=document.getElementById('age-gate');
+  if(g){g.classList.add('hidden');document.body.style.overflow='';}
+}
+function ageDeny(){
+  window.location.href='https://maps.app.goo.gl/pfJ5txVBgmuriNQh9';
+}
+</script>
 </body>
 </html>
