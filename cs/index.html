@@ -549,17 +549,7 @@ footer .fine{color:var(--muted);font-size:12px;margin-top:16px;line-height:1.8}
   color:var(--cyan);margin-top:4px;
 }
 
-/* --- Pride баннер (временный, снять после 9.8.2026) --- */
-.pride-banner{
-  display:block;text-align:center;text-decoration:none;
-  padding:9px 16px;font-size:13.5px;font-weight:600;line-height:1.4;color:#fff;
-  background:linear-gradient(90deg,#e40303,#ff8c00,#ffed00,#008026,#004dff,#750787);
-  position:relative;z-index:70;
-}
-.pride-banner-text{text-shadow:0 1px 3px rgba(0,0,0,.45)}
-.pride-banner strong{font-weight:800;text-decoration:underline}
-.pride-banner:hover{filter:brightness(1.08)}
-@media(max-width:600px){.pride-banner{font-size:12px;padding:8px 12px}}
+
 .pride-about{border-left:3px solid;border-image:linear-gradient(#e40303,#750787) 1;padding-left:14px;margin-top:18px}
 
 /* --- Меню-аккордеон (v1.20) --- */
@@ -613,6 +603,19 @@ a[href*="firmy.cz"]::before{background-image:url('data:image/svg+xml;utf8,<svg x
 .ag-foot a{color:var(--violet);text-decoration:none}
 .ag-foot a:hover{text-decoration:underline}
 @media(max-width:420px){.ag-btns{flex-direction:column}.ag-q{font-size:29px}}
+
+.visit-transport{margin-top:18px}
+.visit-transport .k{margin-bottom:8px}
+.vt-walk{display:flex;align-items:center;gap:8px;color:var(--ink);font-size:14px;margin-bottom:12px}
+.vt-walk svg{width:18px;height:18px;color:var(--cyan);flex-shrink:0}
+.vt-metro{display:flex;flex-direction:column;gap:7px}
+.vt-metro-item{display:flex;align-items:center;gap:10px;font-size:13.5px}
+.vt-line{display:inline-flex;align-items:center;justify-content:center;min-width:22px;height:22px;border-radius:50%;font-weight:700;font-size:11px;color:#fff;flex-shrink:0}
+.vt-line.b{background:#fbc02d;color:#222}
+.vt-line.c{background:#e53935}
+.vt-line.a{background:#43a047}
+.vt-station{color:var(--ink);font-weight:600}
+.vt-time{color:var(--muted);margin-left:auto;font-size:12.5px}
 </style>
 
 <!-- Google Analytics -->
@@ -628,7 +631,7 @@ a[href*="firmy.cz"]::before{background-image:url('data:image/svg+xml;utf8,<svg x
 <body>
 <div id="age-gate" class="hidden" role="dialog" aria-modal="true" aria-labelledby="ag-q">
   <div class="ag-card">
-    <img class="ag-logo" src="../img/logo-rainbow.png" alt="Lost and Found Bar Prague">
+    <img class="ag-logo" src="../img/logo.png" alt="Lost and Found Bar Prague">
     <h2 class="ag-q" id="ag-q">Je ti 18 nebo více?</h2>
     <div class="ag-divider"></div>
     <p class="ag-sub">Tento podnik podává alkoholické nápoje.<br>Pro vstup musíš být plnoletý/á.</p>
@@ -645,12 +648,9 @@ a[href*="firmy.cz"]::before{background-image:url('data:image/svg+xml;utf8,<svg x
   <img class="lightbox-img" id="lightbox-img" alt="">
 </div>
 
-<a class="pride-banner" href="https://www.qalendar.cz/doporucene-podniky/" target="_blank" rel="noopener" aria-label="Prague Pride 2026 — oficiální partner, 10% sleva s kódem LGBT10">
-  <span class="pride-banner-text">🏳️‍🌈 Prague Pride 3.–9. 8. 2026 · Jsme oficiální partner · Kód <strong>LGBT10</strong> pro 10% slevu na celé menu</span>
-</a>
 <header>
   <nav class="wrap nav">
-    <img loading="eager" decoding="async" src="../img/logo-rainbow.png" alt="Lost and Found Bar Prague logo">
+    <img loading="eager" decoding="async" src="../img/logo.png" alt="Lost and Found Bar Prague logo">
     <div class="nav-links" id="navlinks">
       <a href="#about">O nás</a>
       <a href="#menu">Menu</a>
@@ -670,7 +670,7 @@ a[href*="firmy.cz"]::before{background-image:url('data:image/svg+xml;utf8,<svg x
 <main>
 <!-- HERO -->
 <section class="hero">
-  <img loading="eager" decoding="async" class="hero-logo" src="../img/logo-rainbow.png" alt="Lost and Found Cocktail Bar Prague">
+  <img loading="eager" decoding="async" class="hero-logo" src="../img/logo.png" alt="Lost and Found Cocktail Bar Prague">
   <h1 class="visually-hidden">Lost &amp; Found — Koktejlový bar a vodní dýmka v Praze, Žitná 11</h1>
   <span class="eyebrow">Koktejlový &amp; pivní bar a vodní dýmka · Praha</span>
   <div class="google-review-plaque">
@@ -737,7 +737,7 @@ a[href*="firmy.cz"]::before{background-image:url('data:image/svg+xml;utf8,<svg x
     <div>
       <p>Lost &amp; Found je koktejlový bar a hookah lounge pár minut od Václavského náměstí v pražském Novém Městě. Autorské koktejly, prémiová vodní dýmka, deskové hry, šipky a náš boxovací automat — místo, kam jednou zabloudíš a pak se vracíš.</p>
       <p>Pořádáme také <strong>soukromé akce v Praze</strong>: narozeniny, firemní večírky a hudební večery, s cateringem a koktejlovým menu na míru. Hodnocení <strong>4,9★ z 1 090+ recenzí na Googlu</strong> — jeden z nejlépe hodnocených koktejlových barů v Praze a špičkové místo pro noční život v Novém Městě.</p>
-      <p class="pride-about">Lost &amp; Found je hrdě <strong>LGBT-friendly bar</strong> a <a href="https://www.qalendar.cz/doporucene-podniky/" target="_blank" rel="noopener">oficiální partner Prague Pride</a>. Děkujeme, že jste přišli na festival Prague Pride — těšíme se na tebe v Lost &amp; Found <strong>3.–9. srpna 2026</strong> i kdykoli potom. Použij kód <strong>LGBT10</strong> pro 10% slevu na celé menu.</p>
+      <p class="pride-about">Lost &amp; Found je hrdě <strong>LGBT-friendly bar</strong> a <a href="https://www.qalendar.cz/doporucene-podniky/" target="_blank" rel="noopener">oficiální partner Prague Pride</a>. Všichni jsou u nás vítáni, po celý rok. 💜</p>
       <div class="about-tags">
         <span class="tag" style="--tc:200,85,181">Autorské koktejly</span>
         <span class="tag" style="--tc:178,98,186">Prémiová vodní dýmka</span>
@@ -1310,37 +1310,19 @@ a[href*="firmy.cz"]::before{background-image:url('data:image/svg+xml;utf8,<svg x
   <div class="reviews-grid">
     <div class="review">
       <div class="stars">★★★★★</div>
-      <p>"The bartender made drinks to us based on our names! I specially recommend the apple whiskey sour. Do recommend!"</p>
-      <div class="who">— Guest review</div>
+      <p>"One of the best and most original bars in Prague. 10/10 for me. I will always be happy to come back."</p>
+      <div class="who">— Kryštof Hlaváč, Google Review</div>
     </div>
     <div class="review">
       <div class="stars">★★★★★</div>
-      <p>"Unbelievable range of cocktails, unbelievable service, great atmosphere and a great venue. Recommend to anybody visiting Prague."</p>
-      <div class="who">— Seb, Google Review</div>
+      <p>"Great place, cozy interior, we had Strawberry Boom and Skittles drinks and both were great. Very friendly staff, especially Yury, looking forward to our next visit. 🫶🏻"</p>
+      <div class="who">— Tomasko Molcanyi, Google Review</div>
     </div>
     <div class="review">
       <div class="stars">★★★★★</div>
-      <p>"Creative house cocktails like the high-octane Ferrari, relaxed atmosphere with carefully curated mood lighting, friendly staff and genuine hospitality."</p>
-      <div class="who">— TravelPal Guide</div>
+      <p>"Artur je ten nejlepší bartender a dělá nejlepší koktejly. Je milej a sympaťák. Díky Arture!"</p>
+      <div class="who">— Markéta Turičíková, Google Review</div>
     </div>
-    <div class="review">
-      <div class="stars">★★★★★</div>
-      <p>"A hidden gem in the heart of Prague just minutes from Wenceslas Square. Enjoy signature cocktails, premium hookah, craft beer, board games, darts and table football in a welcoming atmosphere."</p>
-      <div class="who">— Prague Nightlife Guide</div>
-    </div>
-    <div class="review">
-      <div class="stars">★★★★★</div>
-      <p>"The best bar in Prague ever. I will come again, for sure."</p>
-      <div class="who">— Tripadvisor Review</div>
-    </div>
-    <div class="review">
-      <div class="stars">★★★★★</div>
-      <p>"Perfect for dates or low-key gatherings. The bar offers high-quality hookah and a welcoming environment where staff is frequently praised for genuine hospitality."</p>
-      <div class="who">— Travel Guide</div>
-    </div>
-  </div>
-  <div style="text-align:center;margin-top:34px">
-    <a class="btn btn-ghost" href="https://www.google.com/maps/place/Lost+and+Found+Bar+Prague/@50.077631,14.423096,16z/data=!4m15!1m8!3m7!1s0x470b94f31905dbd9:0x15d71dab3cf121fd!2zxb1pdG7DoSAxNzY0LzExLCAxMTAgMDAgTm92w6kgTcSbc3RvLCDEjGVza2E!3b1!8m2!3d50.0776314!4d14.4230964!16s%2Fg%2F11c5bsx2lz!3m5!1s0x470b94f3191a10d7:0xb230ecc2b3e5aa1b!8m2!3d50.0776314!4d14.4230964!16s%2Fg%2F11xn3v02qd?hl=en" target="_blank" rel="noopener">Přečti si všech 1 090+ recenzí on Google</a>
   </div>
 </section>
 
@@ -1484,7 +1466,7 @@ a[href*="firmy.cz"]::before{background-image:url('data:image/svg+xml;utf8,<svg x
 
 <footer>
   <div class="wrap">
-    <img loading="lazy" decoding="async" src="../img/logo-rainbow.png" alt="Lost and Found Bar Prague">
+    <img loading="lazy" decoding="async" src="../img/logo.png" alt="Lost and Found Bar Prague">
     <div class="socials">
       <a href="https://www.instagram.com/lostfoundcz/" target="_blank" rel="noopener">Instagram</a>
       <a href="https://www.facebook.com/lostandfoundcz/" target="_blank" rel="noopener">Facebook</a>
@@ -1555,4 +1537,14 @@ function ageDeny(){
 }
 </script>
 </body>
-</html>
+</html
+      <div class="visit-transport">
+        <div class="k">Jak se k nám dostat</div>
+        <div class="vt-walk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="13" cy="4" r="2"/><path d="M15 7l-3 2-2 4-3 5M12 13l2 3 1 5M9 9l-3 1"/></svg>5 minut pěšky od Václavského náměstí</div>
+        <div class="k" style="margin-top:6px">Metro</div>
+        <div class="vt-metro">
+        <div class="vt-metro-item"><span class="vt-line b">B</span><span class="vt-station">Karlovo náměstí</span><span class="vt-time">3 min</span></div>
+        <div class="vt-metro-item"><span class="vt-line c">C</span><span class="vt-station">I. P. Pavlova</span><span class="vt-time">7 min</span></div>
+        <div class="vt-metro-item"><span class="vt-line a">A</span><span class="vt-station">Muzeum</span><span class="vt-time">10 min</span></div>
+        </div>
+      </div>>
