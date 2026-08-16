@@ -212,7 +212,7 @@
     <!-- BLOCK 4 — Catering packages + Compare packages (merged)       -->
     <!-- ============================================================ -->
     <section aria-labelledby="packages-heading" class="py-12 border-b border-brand-border">
-      <h2 id="packages-heading" class="font-heading text-2xl font-semibold text-white mb-4" data-i18n="packages.heading">Catering Packages</h2>
+      <h2 id="packages-heading" class="font-heading text-2xl font-semibold text-white mb-4" data-i18n="packages.heading">Bar Packages</h2>
 
       <div class="mb-8">
         <div class="flex items-center justify-between mb-2">
@@ -236,9 +236,11 @@
       </fieldset>
 
       <p class="mt-5 text-sm bg-brand-pink/10 border border-brand-pink/30 rounded-lg p-3 text-white">
-        <span data-i18n="packages.selectedCostLabel">Selected package cost:</span> <strong data-field="catering-total" class="text-brand-pink">— CZK</strong>
+        <span data-i18n="packages.selectedCostLabel">Selected package cost:</span> <strong data-field="catering-total" class="text-brand-pink">—</strong>
         <span class="text-xs text-brand-muted block sm:inline sm:ml-1" data-i18n="packages.selectedCostNote">(Guests × price per person)</span>
       </p>
+
+      <p class="mt-3 text-xs text-brand-muted" data-i18n="packages.portionsNote">Portions are an average per guest. Event duration: up to 5 hours.</p>
 
       <!-- Compare packages — TEMPORARILY HIDDEN (remove the `hidden` class below to restore). -->
       <div class="mt-10 pt-8 border-t border-brand-border hidden">
@@ -257,6 +259,29 @@
           </table>
         </div>
       </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- BLOCK 4b — Food packages (optional, separate from bar)        -->
+    <!-- ============================================================ -->
+    <section aria-labelledby="food-heading" class="py-12 border-b border-brand-border">
+      <h2 id="food-heading" class="font-heading text-2xl font-semibold text-white mb-1" data-i18n="food.heading">Food Packages</h2>
+      <p class="text-sm text-brand-muted mb-4" data-i18n="food.subtitle">Optional — add a food package per guest, or keep drinks only.</p>
+
+      <fieldset id="food-list" class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <legend class="sr-only" data-i18n="food.legend">Choose a food package</legend>
+        <!-- rendered by renderFood() -->
+      </fieldset>
+
+      <label class="mt-4 flex items-center gap-2 cursor-pointer text-sm text-brand-muted">
+        <input type="radio" name="food" value="none" class="accent-brand-pink w-4 h-4" checked />
+        <span data-i18n="food.none">No food package — drinks only</span>
+      </label>
+
+      <p class="mt-5 text-sm bg-brand-pink/10 border border-brand-pink/30 rounded-lg p-3 text-white">
+        <span data-i18n="food.selectedCostLabel">Selected food cost:</span> <strong data-field="food-total" class="text-brand-pink">—</strong>
+        <span class="text-xs text-brand-muted block sm:inline sm:ml-1" data-i18n="food.selectedCostNote">(Guests × price per person)</span>
+      </p>
     </section>
 
     <!-- ============================================================ -->
@@ -282,7 +307,7 @@
         </ul>
       </fieldset>
       <p class="mt-4 text-sm">
-        <span data-i18n="addons.totalLabel">Add-ons total:</span> <strong data-field="addons-total" class="text-brand-pink">— CZK</strong>
+        <span data-i18n="addons.totalLabel">Add-ons total:</span> <strong data-field="addons-total" class="text-brand-pink">—</strong>
         <span class="text-xs text-brand-muted block sm:inline sm:ml-1" data-i18n="addons.totalNote">(fixed price per event — not multiplied by guest count)</span>
       </p>
     </section>
@@ -337,13 +362,15 @@
     <section aria-labelledby="grand-total-heading" class="py-12 border-b border-brand-border">
       <h2 id="grand-total-heading" class="font-heading text-2xl font-semibold text-white mb-4" data-i18n="grandTotal.heading">Grand Total</h2>
       <dl class="text-sm space-y-3 bg-brand-surface border border-brand-border rounded-xl p-6">
-        <div class="flex justify-between"><dt class="text-brand-muted" data-i18n="grandTotal.catering">Catering</dt><dd class="text-white" data-field="summary-catering">— CZK</dd></div>
-        <div class="flex justify-between"><dt class="text-brand-muted" data-i18n="grandTotal.addons">Add-on services</dt><dd class="text-white" data-field="summary-addons">— CZK</dd></div>
-        <div class="flex justify-between font-semibold border-t border-brand-border pt-3"><dt class="text-white" data-i18n="grandTotal.grand">Grand Total (excl. VAT)</dt><dd class="text-white" data-field="summary-grand">— CZK</dd></div>
-        <div class="flex justify-between"><dt class="text-brand-muted" data-i18n="grandTotal.vat">VAT (21%)</dt><dd class="text-white" data-field="summary-vat">— CZK</dd></div>
-        <div class="flex justify-between font-heading font-bold text-xl border-t border-brand-border pt-3"><dt class="text-white" data-i18n="grandTotal.totalVat">Total incl. VAT</dt><dd class="text-brand-pink" data-field="summary-total-vat">— CZK</dd></div>
+        <div class="flex justify-between"><dt class="text-brand-muted" data-i18n="grandTotal.catering">Bar package</dt><dd class="text-white" data-field="summary-catering">—</dd></div>
+        <div class="flex justify-between"><dt class="text-brand-muted" data-i18n="grandTotal.food">Food package</dt><dd class="text-white" data-field="summary-food">—</dd></div>
+        <div class="flex justify-between"><dt class="text-brand-muted" data-i18n="grandTotal.addons">Add-on services</dt><dd class="text-white" data-field="summary-addons">—</dd></div>
+        <div class="flex justify-between font-semibold border-t border-brand-border pt-3"><dt class="text-white" data-i18n="grandTotal.grand">Grand Total (excl. VAT)</dt><dd class="text-white" data-field="summary-grand">—</dd></div>
+        <div class="flex justify-between"><dt class="text-brand-muted" data-i18n="grandTotal.vat">VAT (21%)</dt><dd class="text-white" data-field="summary-vat">—</dd></div>
+        <div class="flex justify-between font-heading font-bold text-xl border-t border-brand-border pt-3"><dt class="text-white" data-i18n="grandTotal.totalVat">Total incl. VAT</dt><dd class="text-brand-pink" data-field="summary-total-vat">—</dd></div>
+        <div class="flex justify-between items-baseline border-t border-brand-border pt-3 mt-1"><dt class="text-brand-cyan" data-i18n="grandTotal.discount">Your personal discount</dt><dd class="text-brand-cyan text-sm text-right" data-i18n="grandTotal.discountValue">will be discussed personally</dd></div>
       </dl>
-      <p class="mt-3 text-xs text-brand-muted" data-i18n="grandTotal.note">All amounts in CZK, calculated live. Add-ons shown with a price range or "on demand" are counted at their minimum (or as 0) here — the final figure is confirmed with your quote.</p>
+      <p class="mt-3 text-xs text-brand-muted" data-i18n="grandTotal.note">Prices are calculated live. Add-ons shown with a price range or "on demand" are counted at their minimum (or as 0) here — the final figure is confirmed with your quote.</p>
     </section>
 
     <!-- ============================================================ -->
@@ -414,7 +441,7 @@
   <div class="md:hidden fixed inset-x-0 bottom-0 z-40 bg-brand-surface/95 backdrop-blur border-t border-brand-border px-4 py-3 flex items-center justify-between">
     <div>
       <p class="text-[11px] text-brand-muted uppercase tracking-wide" data-i18n="sticky.estimatedTotal">Estimated total</p>
-      <p class="text-base font-heading font-bold text-brand-pink" data-field="sticky-total">— CZK</p>
+      <p class="text-base font-heading font-bold text-brand-pink" data-field="sticky-total">—</p>
     </div>
     <a href="#contact-heading" class="px-5 py-2 bg-brand-pink text-black rounded-full font-heading font-semibold text-sm" data-i18n="sticky.getQuote">Get a quote</a>
   </div>
@@ -446,56 +473,73 @@
         {
           id: 'economy',
           name: { en: 'Basic', cz: 'Basic' },
-          description: { en: 'A relaxed, budget-friendly setup — house cocktails, beer, wine and simple snacks. Great for casual get-togethers and smaller corporate mixers.', cz: 'Uvolněná a cenově dostupná varianta — domácí koktejly, pivo, víno a jednoduché občerstvení. Skvělá volba pro neformální sešlosti a menší firemní akce.' },
+          description: { en: 'A relaxed, budget-friendly bar setup — house cocktails, beer, wine and soft drinks. Great for casual corporate get-togethers and smaller mixers.', cz: 'Uvolněná a cenově dostupná barová varianta — domácí koktejly, pivo, víno a nealkoholické nápoje. Skvělá volba pro neformální firemní sešlosti a menší akce.' },
           pricePerPerson: 899,
           details: {
-            drinks: { en: 'House cocktail selection (6 recipes), craft beer on tap, house wine, soft drinks.', cz: 'Výběr domácích koktejlů (6 receptur), craft pivo, domácí víno, nealkoholické nápoje.' },
-            starters: { en: 'Nachos, chips & dips, mixed snack bowls.', cz: 'Nachos, chipsy s dipy, mix slaného pečiva.' },
-            mains: { en: 'Choice of 2 pizzas per event, served family-style.', cz: 'Výběr ze 2 druhů pizzy na akci, servírováno k volnému nabírání.' },
-            desserts: { en: 'Not included — can be added as an add-on.', cz: 'Není součástí — lze doobjednat jako doplněk.' },
+            drinks: { en: 'House cocktail selection (15 recipes, choose from menu), craft beer on tap, house wine, soft drinks.', cz: 'Výběr domácích koktejlů (15 receptur, výběr z menu), craft pivo, domácí víno, nealkoholické nápoje.' },
             alcohol: { en: 'Approx. 70% alcoholic / 30% non-alcoholic drinks.', cz: 'Přibližně 70 % alkoholických / 30 % nealkoholických nápojů.' },
-            portions: { en: '3 drinks + 1 food portion per guest.', cz: '3 nápoje + 1 porce jídla na hosta.' },
+            portions: { en: '3 drinks per guest.', cz: '3 nápoje na hosta.' },
           },
         },
         {
           id: 'standard',
           name: { en: 'Casual', cz: 'Casual' },
-          description: { en: 'Our most popular package — a wider cocktail menu and variety of snacks. Fits birthdays, presentations and receptions.', cz: 'Náš nejoblíbenější balíček — širší nabídka koktejlů a pestrá nabídka občerstvení. Vhodné pro oslavy, prezentace a recepce.' },
+          description: { en: 'Our most popular bar package — a wider cocktail menu, wine, spritz and spirits. Fits birthdays, presentations and receptions.', cz: 'Náš nejoblíbenější barový balíček — širší nabídka koktejlů, víno, spritz a lihoviny. Vhodné pro oslavy, prezentace a recepce.' },
           pricePerPerson: 1299,
           details: {
             drinks: { en: 'Full classic cocktail menu, wine & spritz, craft beer, spirits, non-alcoholic cocktails.', cz: 'Kompletní nabídka klasických koktejlů, víno a spritz, craft pivo, lihoviny, nealkoholické koktejly.' },
-            starters: { en: 'Nachos, quesadillas, mixed hot & cold snack platters.', cz: 'Nachos, quesadillas, mix studených a teplých předkrmů.' },
-            mains: { en: 'Choice of 3 pizzas + quesadilla station, served throughout the event.', cz: 'Výběr ze 3 druhů pizzy + quesadilla stanice, servírováno po celou dobu akce.' },
-            desserts: { en: "Mini dessert platter, chef's selection.", cz: 'Mini dezertní mísa, výběr šéfkuchaře.' },
             alcohol: { en: 'Approx. 80% alcoholic / 20% non-alcoholic drinks.', cz: 'Přibližně 80 % alkoholických / 20 % nealkoholických nápojů.' },
-            portions: { en: '5 drinks + 2 food portions per guest.', cz: '5 nápojů + 2 porce jídla na hosta.' },
+            portions: { en: '5 drinks per guest.', cz: '5 nápojů na hosta.' },
           },
         },
         {
           id: 'premium',
           name: { en: 'Premium', cz: 'Premium' },
-          description: { en: 'The full Lost & Found experience — signature cocktails, personalized drinks, a gourmet food menu and dedicated service for your guests.', cz: 'Kompletní zážitek Lost & Found — signature koktejly, koktejly na míru se jménem hosta, gurmánské menu a vyhrazená obsluha pro vaše hosty.' },
+          description: { en: 'The full Lost & Found bar experience — signature cocktails, personalized named drinks, premium spirits and dedicated bartender service.', cz: 'Kompletní barový zážitek Lost & Found — signature koktejly, koktejly na míru se jménem hosta, prémiové lihoviny a vyhrazená obsluha barmana.' },
           pricePerPerson: 1999,
           details: {
-            drinks: { en: "Full signature menu (Ferrari, Lamborghini, Long Island, Skittles & more), classics, wine & spritz, premium spirits, personalized named cocktails.", cz: 'Kompletní signature menu (Ferrari, Lamborghini, Long Island, Skittles a další), klasické koktejly, víno a spritz, prémiové lihoviny, koktejly na míru se jménem hosta.' },
-            starters: { en: "Full starter selection — nachos, quesadillas, chef's snack board.", cz: 'Plná nabídka předkrmů — nachos, quesadillas, mísa specialit šéfkuchaře.' },
-            mains: { en: 'Full pizza menu + quesadilla station + hot mains, continuously served.', cz: 'Plné menu pizz + quesadilla stanice + teplá hlavní jídla, servírováno po celou dobu akce.' },
-            desserts: { en: 'Full dessert selection, plated per guest.', cz: 'Plná nabídka dezertů, servírováno každému hostu zvlášť.' },
+            drinks: { en: 'Full signature menu (Ferrari, Lamborghini, Long Island, Skittles & more), classics, wine & spritz, premium spirits, personalized named cocktails.', cz: 'Kompletní signature menu (Ferrari, Lamborghini, Long Island, Skittles a další), klasické koktejly, víno a spritz, prémiové lihoviny, koktejly na míru se jménem hosta.' },
             alcohol: { en: 'Approx. 85% alcoholic / 15% non-alcoholic drinks — adjustable on request.', cz: 'Přibližně 85 % alkoholických / 15 % nealkoholických nápojů — lze upravit na přání.' },
-            portions: { en: '7 drinks + 2 food portions per guest (full buffet).', cz: '7 nápojů + 2 porce jídla na hosta (plný bufet).' },
+            portions: { en: '7 drinks per guest, dedicated bartender included.', cz: '7 nápojů na hosta, vyhrazený barman v ceně.' },
           },
         },
       ],
+      food: [
+        {
+          id: 'food-lite',
+          name: { en: 'Lite — finger food', cz: 'Lite — fingerfood' },
+          description: { en: 'Light snacks to nibble by hand — nachos, chips & dips, mixed savoury bites. Perfect alongside drinks without a full meal.', cz: 'Lehké občerstvení k zakousnutí rukou — nachos, chipsy s dipy, mix slaných snacků. Ideální k drinkům bez plnohodnotného jídla.' },
+          pricePerPerson: 299,
+          items: { en: 'Nachos, chips & dips, mixed savoury snack bowls, finger bites.', cz: 'Nachos, chipsy s dipy, mísy slaných snacků, jednohubky.' },
+          portions: { en: '1 food portion per guest.', cz: '1 porce jídla na hosta.' },
+        },
+        {
+          id: 'food-middle',
+          name: { en: 'Middle — canapés & pizza', cz: 'Middle — kanapky a pizza' },
+          description: { en: 'A fuller spread — assorted canapés, pizza and quesadillas, warm and cold bites served through the event.', cz: 'Bohatší nabídka — výběr kanapek, pizza a quesadillas, teplé i studené předkrmy servírované po celou dobu akce.' },
+          pricePerPerson: 599,
+          items: { en: 'Assorted canapés, choice of pizza (approx. 0.5–1 per guest), quesadillas, warm & cold platters.', cz: 'Výběr kanapek, pizza dle výběru (přibližně 0,5–1 na hosta), quesadillas, teplé a studené mísy.' },
+          portions: { en: '2 food portions per guest.', cz: '2 porce jídla na hosta.' },
+        },
+        {
+          id: 'food-premium',
+          name: { en: 'Premium — hot buffet', cz: 'Premium — teplý bufet' },
+          description: { en: 'A full hot buffet — hot mains, pizza and quesadilla stations, and a dessert selection, continuously served.', cz: 'Plný teplý bufet — teplá hlavní jídla, pizza a quesadilla stanice a výběr dezertů, servírováno po celou dobu akce.' },
+          pricePerPerson: 999,
+          items: { en: 'Hot mains, pizza station (approx. 0.5–1 per guest), quesadilla station, dessert selection.', cz: 'Teplá hlavní jídla, pizza stanice (přibližně 0,5–1 na hosta), quesadilla stanice, výběr dezertů.' },
+          portions: { en: '2 food portions + dessert per guest (full buffet).', cz: '2 porce jídla + dezert na hosta (plný bufet).' },
+        },
+      ],
       addons: [
-        { id: 'dj', name: { en: 'DJ / live music', cz: 'DJ / živá hudba' }, price: 14900, priceLabel: { en: '14,900–25,900 Kč', cz: '14 900–25 900 Kč' }, note: { en: 'Price range depends on the day and time of the event.', cz: 'Cenové rozpětí závisí na dni a čase akce.' } },
-        { id: 'photo-video', name: { en: 'Photo / video', cz: 'Foto / video' }, price: 13000, priceLabel: { en: '13,000–18,500 Kč', cz: '13 000–18 500 Kč' }, note: { en: 'Price range depends on the day and time of the event.', cz: 'Cenové rozpětí závisí na dni a čase akce.' } },
+        { id: 'dj', name: { en: 'DJ / live music', cz: 'DJ / živá hudba' }, price: 14900, priceLabel: { en: '14,900–25,900', cz: '14 900–25 900' }, note: { en: 'Price range depends on the day and time of the event. The minimal price is applied in the calculation.', cz: 'Cenové rozpětí závisí na dni a čase akce. Ve výpočtu je použita minimální cena.' } },
+        { id: 'photo-video', name: { en: 'Photo / video', cz: 'Foto / video' }, price: 13000, priceLabel: { en: '13,000–18,500', cz: '13 000–18 500' }, note: { en: 'Price range depends on the day and time of the event. The minimal price is applied in the calculation.', cz: 'Cenové rozpětí závisí na dni a čase akce. Ve výpočtu je použita minimální cena.' } },
         { id: 'entertainers', name: { en: 'Entertainers / host', cz: 'Animátoři / moderátor' }, price: 0, priceLabel: { en: 'on demand', cz: 'na vyžádání' }, note: { en: 'Priced on demand — tell us what you need and we will quote it.', cz: 'Cena na vyžádání — dejte nám vědět, co potřebujete, a připravíme nabídku.' } },
         { id: 'menu-printing', name: { en: 'Branded menu printing (40 pcs)', cz: 'Tisk menu s logem (40 ks)' }, price: 4800, note: { en: 'Menus printed with your branding, 40 pieces.', cz: 'Menu s vaším brandingem, 40 kusů.' } },
-        { id: 'gift-sets', name: { en: 'Gift sets', cz: 'Dárkové sety' }, price: 3000, note: { en: 'Details to be provided.', cz: 'Podrobnosti budou doplněny.' } },
+        { id: 'gift-sets', name: { en: 'Gift sets', cz: 'Dárkové sety' }, price: 0, priceLabel: { en: 'on demand', cz: 'na vyžádání' }, note: { en: 'Priced per event by arrangement — quantity depends on the number of guests. Discussed personally.', cz: 'Cena za akci po domluvě — množství závisí na počtu hostů. Řešeno individuálně.' } },
         { id: 'waiter-service', name: { en: 'Premium waiter service', cz: 'Prémiový servis číšníků' }, price: 6500, note: { en: 'Details to be provided.', cz: 'Podrobnosti budou doplněny.' } },
-        { id: 'security', name: { en: 'Security and admission control', cz: 'Ostraha a kontrola vstupu' }, price: 6500, priceLabel: { en: '6,500–9,700 Kč', cz: '6 500–9 700 Kč' }, note: { en: 'Price range depends on the day and time of the event.', cz: 'Cenové rozpětí závisí na dni a čase akce.' } },
+        { id: 'security', name: { en: 'Security and admission control', cz: 'Ostraha a kontrola vstupu' }, price: 6500, priceLabel: { en: '6,500–9,700', cz: '6 500–9 700' }, note: { en: 'Price range depends on the day and time of the event. The minimal price is applied in the calculation.', cz: 'Cenové rozpětí závisí na dni a čase akce. Ve výpočtu je použita minimální cena.' } },
         { id: 'punch-bowl', name: { en: 'Punch bowl (20L)', cz: 'Punčová mísa (20L)' }, price: 14500, note: { en: 'Details to be provided.', cz: 'Podrobnosti budou doplněny.' } },
-        { id: 'taxi', name: { en: 'Taxi within Prague', cz: 'Taxi v rámci Prahy' }, price: 750, note: { en: 'One taxi ride within Prague city limits.', cz: 'Jedna jízda taxi v rámci Prahy.' } },
+        { id: 'taxi', name: { en: 'Taxi within Prague', cz: 'Taxi v rámci Prahy' }, price: 750, note: { en: 'One taxi ride within Prague city limits. Additional rides on demand.', cz: 'Jedna jízda taxi v rámci Prahy. Další jízdy na vyžádání.' } },
         { id: 'photo-zone', name: { en: 'Photo zone', cz: 'Fotozóna' }, price: 0, priceLabel: { en: 'by demand', cz: 'na vyžádání' }, note: { en: 'Priced on demand — tell us what you need and we will quote it.', cz: 'Cena na vyžádání — dejte nám vědět, co potřebujete, a připravíme nabídku.' } },
       ],
       // Real 5★ Google Maps reviews (shortened where needed), sourced
@@ -603,15 +647,23 @@
         'atmosphere.photo2': '[ Photo: lounge seating ]',
         'atmosphere.photo3': '[ Photo: crowd / late-night party ]',
         'atmosphere.photo4': '[ Photo: signature cocktails ]',
-        'packages.heading': 'Catering Packages',
+        'packages.heading': 'Bar Packages',
         'packages.guestsLabel': 'Number of guests',
         'packages.guestsWord': 'guests',
         'packages.sliderNote': 'Guest count and pricing update live as you move the slider.',
         'packages.legend': 'Choose a catering package',
         'packages.perPerson': '/ person',
+        'food.heading': 'Food Packages',
+        'food.subtitle': 'Optional — add a food package per guest, or keep drinks only.',
+        'food.legend': 'Choose a food package',
+        'food.none': 'No food package — drinks only',
+        'food.includes': 'Includes',
+        'food.selectedCostLabel': 'Selected food cost:',
+        'food.selectedCostNote': '(Guests × price per person)',
         'packages.detailsLink': 'Details',
         'packages.selectedCostLabel': 'Selected package cost:',
         'packages.selectedCostNote': '(Guests × price per person)',
+        'packages.portionsNote': 'Portions are an average per guest. Event duration: up to 5 hours.',
         'compare.heading': 'Compare Packages',
         'compare.category': 'Category',
         'compare.dishCategories': 'Dish categories',
@@ -640,12 +692,15 @@
         'reviews.rating': '4.9★ · 1,090+ Google reviews',
         'reviews.seeAllLink': 'See all reviews on Google Maps →',
         'grandTotal.heading': 'Grand Total',
-        'grandTotal.catering': 'Catering',
+        'grandTotal.catering': 'Bar package',
+        'grandTotal.food': 'Food package',
         'grandTotal.addons': 'Add-on services',
         'grandTotal.grand': 'Grand Total (excl. VAT)',
         'grandTotal.vat': 'VAT (21%)',
         'grandTotal.totalVat': 'Total incl. VAT',
-        'grandTotal.note': 'All amounts in CZK, calculated live. Add-ons shown with a price range or "on demand" are counted at their minimum (or as 0) here — the final figure is confirmed with your quote.',
+        'grandTotal.discount': 'Your personal discount',
+        'grandTotal.discountValue': 'will be discussed personally',
+        'grandTotal.note': 'Prices are calculated live. Add-ons shown with a price range or "on demand" are counted at their minimum (or as 0) here — the final figure is confirmed with your quote.',
         'contact.heading': 'Your Details',
         'contact.name': 'Name',
         'contact.phone': 'Phone',
@@ -687,15 +742,23 @@
         'atmosphere.photo2': '[ Foto: sezení v lounge ]',
         'atmosphere.photo3': '[ Foto: dav / noční párty ]',
         'atmosphere.photo4': '[ Foto: signature koktejly ]',
-        'packages.heading': 'Cateringové balíčky',
+        'packages.heading': 'Barové balíčky',
         'packages.guestsLabel': 'Počet hostů',
         'packages.guestsWord': 'hostů',
         'packages.sliderNote': 'Počet hostů a cena se aktualizují živě podle posuvníku.',
         'packages.legend': 'Vyberte cateringový balíček',
         'packages.perPerson': '/ osoba',
+        'food.heading': 'Jídelní balíčky',
+        'food.subtitle': 'Volitelné — přidejte jídelní balíček na hosta, nebo ponechte pouze nápoje.',
+        'food.legend': 'Vyberte jídelní balíček',
+        'food.none': 'Bez jídelního balíčku — pouze nápoje',
+        'food.includes': 'Obsahuje',
+        'food.selectedCostLabel': 'Cena vybraného jídla:',
+        'food.selectedCostNote': '(počet hostů × cena za osobu)',
         'packages.detailsLink': 'Podrobnosti',
         'packages.selectedCostLabel': 'Cena vybraného balíčku:',
         'packages.selectedCostNote': '(počet hostů × cena za osobu)',
+        'packages.portionsNote': 'Porce jsou průměrné na hosta. Délka akce: až 5 hodin.',
         'compare.heading': 'Porovnání balíčků',
         'compare.category': 'Kategorie',
         'compare.dishCategories': 'Kategorie pokrmů',
@@ -724,12 +787,15 @@
         'reviews.rating': '4,9★ · 1 090+ recenzí na Google',
         'reviews.seeAllLink': 'Zobrazit všechny recenze na Google Maps →',
         'grandTotal.heading': 'Celková cena',
-        'grandTotal.catering': 'Catering',
+        'grandTotal.catering': 'Barový balíček',
+        'grandTotal.food': 'Jídelní balíček',
         'grandTotal.addons': 'Doplňkové služby',
         'grandTotal.grand': 'Celkem (bez DPH)',
         'grandTotal.vat': 'DPH (21 %)',
         'grandTotal.totalVat': 'Celkem s DPH',
-        'grandTotal.note': 'Všechny částky v CZK, počítané živě. Doplňky uvedené s cenovým rozpětím nebo "na vyžádání" se zde počítají v minimální výši (nebo jako 0) — konečná částka se potvrdí v nabídce.',
+        'grandTotal.discount': 'Vaše osobní sleva',
+        'grandTotal.discountValue': 'bude projednána individuálně',
+        'grandTotal.note': 'Ceny se počítají živě. Doplňky uvedené s cenovým rozpětím nebo "na vyžádání" se zde počítají v minimální výši (nebo jako 0) — konečná částka se potvrdí v nabídce.',
         'contact.heading': 'Vaše údaje',
         'contact.name': 'Jméno',
         'contact.phone': 'Telefon',
@@ -757,7 +823,7 @@
 
     function fmtPrice(n) {
       const locale = currentLang === 'cz' ? 'cs-CZ' : 'en-US';
-      return n.toLocaleString(locale) + ' CZK';
+      return n.toLocaleString(locale);
     }
 
     // ---- render functions -------------------------------------------------
@@ -766,6 +832,25 @@
       document.querySelectorAll('[data-i18n]').forEach(function (el) {
         el.textContent = t(el.getAttribute('data-i18n'));
       });
+    }
+
+    function renderFood() {
+      const el = document.getElementById('food-list');
+      if (!el) return;
+      el.innerHTML = LF_DATA.food.map(function (pkg) {
+        return '' +
+          '<div class="flex flex-col border border-brand-border bg-brand-surface rounded-xl p-5 transition has-[:checked]:border-brand-pink has-[:checked]:ring-1 has-[:checked]:ring-brand-pink has-[:checked]:bg-brand-pink/5">' +
+            '<label class="flex items-start gap-3 cursor-pointer">' +
+              '<input type="radio" name="food" value="' + pkg.id + '" class="mt-1 accent-brand-pink w-4 h-4" />' +
+              '<span>' +
+                '<span class="block font-heading font-semibold text-white">' + pkg.name[currentLang] + '</span>' +
+                '<span class="block text-sm text-brand-muted mt-1">' + pkg.description[currentLang] + '</span>' +
+                '<span class="block text-sm text-brand-muted mt-2"><strong class="text-white">' + t('food.includes') + ':</strong> ' + pkg.items[currentLang] + '</span>' +
+                '<span class="block text-sm mt-3"><strong class="text-brand-cyan font-semibold">' + fmtPrice(pkg.pricePerPerson) + '</strong> ' + t('packages.perPerson') + '</span>' +
+              '</span>' +
+            '</label>' +
+          '</div>';
+      }).join('');
     }
 
     function renderPackages() {
@@ -880,9 +965,6 @@
             '</summary>' +
             '<div class="px-4 pb-4 text-sm grid grid-cols-1 sm:grid-cols-2 gap-3 border-t border-brand-border pt-4">' +
               '<div><h3 class="font-medium text-white mb-1">' + t('details.drinks') + '</h3><p class="text-brand-muted">' + pkg.details.drinks[currentLang] + '</p></div>' +
-              '<div><h3 class="font-medium text-white mb-1">' + t('details.starters') + '</h3><p class="text-brand-muted">' + pkg.details.starters[currentLang] + '</p></div>' +
-              '<div><h3 class="font-medium text-white mb-1">' + t('details.mains') + '</h3><p class="text-brand-muted">' + pkg.details.mains[currentLang] + '</p></div>' +
-              '<div><h3 class="font-medium text-white mb-1">' + t('details.desserts') + '</h3><p class="text-brand-muted">' + pkg.details.desserts[currentLang] + '</p></div>' +
               '<div><h3 class="font-medium text-white mb-1">' + t('details.alcoholSplit') + '</h3><p class="text-brand-muted">' + pkg.details.alcohol[currentLang] + '</p></div>' +
               '<div><h3 class="font-medium text-white mb-1">' + t('details.portionsPerGuest') + '</h3><p class="text-brand-muted">' + pkg.details.portions[currentLang] + '</p></div>' +
             '</div>' +
@@ -1089,25 +1171,31 @@
 
       const cateringTotal = pkg ? guests * pkg.pricePerPerson : 0;
 
+      const checkedFoodId = (document.querySelector('input[name="food"]:checked') || {}).value;
+      const foodPkg = LF_DATA.food.find(function (p) { return p.id === checkedFoodId; });
+      const foodTotal = foodPkg ? guests * foodPkg.pricePerPerson : 0;
+
       const addonsTotal = Array.from(document.querySelectorAll('.addon-checkbox:checked'))
         .map(function (cb) { return LF_DATA.addons.find(function (a) { return a.id === cb.dataset.addonId; }); })
         .filter(Boolean)
         .reduce(function (sum, a) { return sum + a.price; }, 0);
 
-      const grandTotal = cateringTotal + addonsTotal;
+      const grandTotal = cateringTotal + foodTotal + addonsTotal;
       const vat = Math.round(grandTotal * 0.21);
       const totalWithVat = grandTotal + vat;
 
       setText('[data-field="catering-total"]', fmtPrice(cateringTotal));
+      setText('[data-field="food-total"]', fmtPrice(foodTotal));
       setText('[data-field="addons-total"]', fmtPrice(addonsTotal));
       setText('[data-field="summary-catering"]', fmtPrice(cateringTotal));
+      setText('[data-field="summary-food"]', fmtPrice(foodTotal));
       setText('[data-field="summary-addons"]', fmtPrice(addonsTotal));
       setText('[data-field="summary-grand"]', fmtPrice(grandTotal));
       setText('[data-field="summary-vat"]', fmtPrice(vat));
       setText('[data-field="summary-total-vat"]', fmtPrice(totalWithVat));
       setText('[data-field="sticky-total"]', fmtPrice(totalWithVat));
 
-      return { guests: guests, cateringTotal: cateringTotal, addonsTotal: addonsTotal, grandTotal: grandTotal, vat: vat, totalWithVat: totalWithVat };
+      return { guests: guests, cateringTotal: cateringTotal, foodTotal: foodTotal, addonsTotal: addonsTotal, grandTotal: grandTotal, vat: vat, totalWithVat: totalWithVat };
     }
 
     function setText(selector, value) {
@@ -1131,9 +1219,11 @@
 
     function captureState() {
       const checkedPkg = document.querySelector('input[name="package"]:checked');
+      const checkedFood = document.querySelector('input[name="food"]:checked');
       return {
         guests: document.getElementById('guest-count').value,
         pkg: checkedPkg ? checkedPkg.value : null,
+        food: checkedFood ? checkedFood.value : 'none',
         addonIds: Array.from(document.querySelectorAll('.addon-checkbox:checked')).map(function (cb) { return cb.dataset.addonId; }),
         openPkgIds: Array.from(document.querySelectorAll('#details-accordion details')).filter(function (d) { return d.open; }).map(function (d) { return d.dataset.pkg; }),
       };
@@ -1146,6 +1236,8 @@
         const radio = document.querySelector('input[name="package"][value="' + state.pkg + '"]');
         if (radio) radio.checked = true;
       }
+      var foodRadio = document.querySelector('input[name="food"][value="' + (state.food || 'none') + '"]');
+      if (foodRadio) foodRadio.checked = true;
       state.addonIds.forEach(function (id) {
         const cb = document.querySelector('.addon-checkbox[data-addon-id="' + id + '"]');
         if (cb) cb.checked = true;
@@ -1159,6 +1251,7 @@
     function renderAll() {
       applyStaticI18n();
       renderPackages();
+      renderFood();
       renderComparison();
       renderDetails();
       renderReviews();
@@ -1206,15 +1299,18 @@
       const totals = calculateTotals();
       const checkedPkg = document.querySelector('input[name="package"]:checked');
       const pkg = checkedPkg ? LF_DATA.catering.find(function (p) { return p.id === checkedPkg.value; }) : null;
+      const checkedFood = document.querySelector('input[name="food"]:checked');
+      const foodPkg = (checkedFood && checkedFood.value !== 'none') ? LF_DATA.food.find(function (p) { return p.id === checkedFood.value; }) : null;
       const checkedAddons = Array.from(document.querySelectorAll('.addon-checkbox:checked'))
         .map(function (cb) { return LF_DATA.addons.find(function (a) { return a.id === cb.dataset.addonId; }); })
         .filter(Boolean);
 
       return {
-        eventDate: document.querySelector('[data-field="event-date"]').textContent.trim(),
         guests: totals.guests,
         package: pkg ? pkg.name.en : null,
         cateringTotal: totals.cateringTotal,
+        foodPackage: foodPkg ? foodPkg.name.en : 'None',
+        foodTotal: totals.foodTotal,
         addons: checkedAddons.map(function (a) { return a.name.en; }),
         addonsTotal: totals.addonsTotal,
         grandTotal: totals.grandTotal,
@@ -1295,6 +1391,14 @@
       document.getElementById('packages-list').addEventListener('change', function (e) {
         if (e.target.name === 'package') calculateTotals();
       });
+      // Food package radios live inside #food-list (re-rendered by
+      // renderFood, so bound via delegation on the stable container), plus
+      // a "none" radio that sits outside it (bound directly).
+      document.getElementById('food-list').addEventListener('change', function (e) {
+        if (e.target.name === 'food') calculateTotals();
+      });
+      const foodNone = document.querySelector('input[name="food"][value="none"]');
+      if (foodNone) foodNone.addEventListener('change', function () { calculateTotals(); });
       document.getElementById('addons-list').addEventListener('change', function (e) {
         if (e.target.classList.contains('addon-checkbox')) calculateTotals();
       });
