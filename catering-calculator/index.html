@@ -77,6 +77,22 @@
   .no-scrollbar::-webkit-scrollbar {
     display: none;
   }
+
+  /* Neon logo — same flicker + glow as the main site (lostfoundcz.com). */
+  .hero-logo {
+    width: min(520px, 82vw);
+    height: auto;
+    filter: drop-shadow(0 0 26px rgba(200, 85, 181, 0.55)) drop-shadow(0 0 60px rgba(0, 200, 224, 0.28));
+    animation: flicker 6s infinite;
+  }
+  @keyframes flicker {
+    0%, 19%, 21%, 23%, 80%, 100% { opacity: 1; }
+    20%, 22% { opacity: 0.72; }
+    82% { opacity: 0.86; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .hero-logo { animation: none; }
+  }
 </style>
 <!--
   PHASE 3 — EN/CZ LOCALIZATION + DATA-DRIVEN RENDER (v7)
@@ -129,30 +145,15 @@
          flow — logos first, text taking the remaining space — makes that
          overlap structurally impossible at any header height. -->
     <div class="absolute inset-0 flex flex-col bg-black/65">
-      <!-- Logo row — left/right edges align with the max-w-4xl content
-           column used by every section below (main's px-4 sm:px-6 gutters
-           match exactly, so this isn't just visually close, it's the same
-           grid). Bar's own logo sits left, partner/client logo sits right. -->
-      <div class="w-full max-w-4xl mx-auto px-4 sm:px-6 pt-5 flex items-center justify-between shrink-0">
-        <div class="relative w-32 h-16 border border-dashed border-brand-border/80 bg-black/30 rounded-lg overflow-hidden">
-          <img src="img/logo-venue.png" alt="" class="absolute inset-0 w-full h-full object-contain p-2" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
-          <div class="hidden absolute inset-0 w-full h-full items-center justify-center text-xs text-brand-muted text-center px-2" data-i18n="hero.venueLogoPlaceholder">
-            [ Lost & Found logo ]
-          </div>
-        </div>
-        <div class="relative w-32 h-16 border border-dashed border-brand-border/80 bg-black/30 rounded-lg overflow-hidden">
-          <img src="img/logo-partner.png" alt="" class="absolute inset-0 w-full h-full object-contain p-2" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
-          <div class="hidden absolute inset-0 w-full h-full items-center justify-center text-xs text-brand-muted text-center px-2" data-i18n="hero.partnerLogoPlaceholder">
-            [ Partner logo ]
-          </div>
-        </div>
-      </div>
-
-      <!-- Text block fills whatever space is left below the logo row and
-           centers within it, so it can never climb above the logos. -->
+      <!-- Single centered venue logo (neon wordmark), clickable to the
+           main site. Replaces the earlier two-logo placeholder row. -->
       <div class="flex-1 flex flex-col items-center justify-center text-center px-4">
+        <a href="https://lostfoundcz.com/" target="_blank" rel="noopener" aria-label="Lost & Found — lostfoundcz.com" class="block mb-5 shrink-0">
+          <img src="img/logo.png" alt="Lost & Found Bar Prague" class="hero-logo mx-auto" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
+          <span class="hidden text-brand-cyan font-heading text-3xl font-bold">Lost &amp; Found</span>
+        </a>
         <h1 class="hero-text-shadow font-heading text-white text-3xl md:text-5xl font-bold mb-3 leading-tight">
-          Lost & Found — <span class="text-brand-cyan" data-i18n="hero.subtitle">Venue For Your Perfect Event</span>
+          Lost & Found — <span class="text-brand-cyan" data-i18n="hero.subtitle">Venue For Your Perfect Event (November, December)</span>
         </h1>
         <p class="hero-text-shadow text-white/85 max-w-xl text-sm md:text-base" data-i18n="hero.tagline">
           Placeholder marketing copy: 2–3 lines introducing the venue and the catering offer for the partner/client.
@@ -163,33 +164,6 @@
 
   <main class="max-w-4xl mx-auto px-4 sm:px-6">
 
-    <!-- ============================================================ -->
-    <!-- BLOCK 2 — Event details                                       -->
-    <!-- ============================================================ -->
-    <section aria-labelledby="event-details-heading" class="py-12 border-b border-brand-border">
-      <h2 id="event-details-heading" class="font-heading text-2xl font-semibold text-white mb-5" data-i18n="eventDetails.heading">Event Details</h2>
-      <dl class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm bg-brand-surface border border-brand-border rounded-xl p-6">
-        <div>
-          <dt class="text-brand-muted text-xs uppercase tracking-wide mb-1" data-i18n="eventDetails.date">Date</dt>
-          <dd class="font-medium text-white" data-field="event-date">20 December 2026</dd>
-        </div>
-        <div>
-          <dt class="text-brand-muted text-xs uppercase tracking-wide mb-1" data-i18n="eventDetails.guests">Guests</dt>
-          <dd class="font-medium text-white" data-field="event-guests">40</dd>
-        </div>
-        <div>
-          <dt class="text-brand-muted text-xs uppercase tracking-wide mb-1" data-i18n="eventDetails.format">Format</dt>
-          <dd class="font-medium text-white" data-i18n="eventDetails.formatValue">Corporate party</dd>
-        </div>
-        <div>
-          <dt class="text-brand-muted text-xs uppercase tracking-wide mb-1" data-i18n="eventDetails.details">Additional details</dt>
-          <dd class="font-medium text-white" data-i18n="eventDetails.detailsValue">Placeholder — filled in from the partner's brief.</dd>
-        </div>
-      </dl>
-      <p class="mt-3 text-xs text-brand-muted" data-i18n="eventDetails.note">
-        Note: these fields render from a static JSON object supplied per event (wired in Phase 3).
-      </p>
-    </section>
 
     <!-- ============================================================ -->
     <!-- BLOCK 3 — VISUAL: "Feel the Room" photo gallery               -->
@@ -253,7 +227,7 @@
                       [&::-moz-range-track]:h-2 [&::-moz-range-track]:rounded-full [&::-moz-range-track]:bg-brand-surface2
                       [&::-moz-range-thumb]:w-6 [&::-moz-range-thumb]:h-6 [&::-moz-range-thumb]:border-0 [&::-moz-range-thumb]:rounded-full [&::-moz-range-thumb]:bg-brand-pink [&::-moz-range-thumb]:cursor-pointer"
                aria-describedby="guest-count-value" />
-        <p class="text-xs text-brand-muted mt-2" data-i18n="packages.sliderNote">Guest count updates live below. Price recalculation is wired in Phase 4.</p>
+        <p class="text-xs text-brand-muted mt-2" data-i18n="packages.sliderNote">Guest count and pricing update live as you move the slider.</p>
       </div>
 
       <fieldset id="packages-list" class="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -263,11 +237,11 @@
 
       <p class="mt-5 text-sm bg-brand-pink/10 border border-brand-pink/30 rounded-lg p-3 text-white">
         <span data-i18n="packages.selectedCostLabel">Selected package cost:</span> <strong data-field="catering-total" class="text-brand-pink">— CZK</strong>
-        <span class="text-xs text-brand-muted block sm:inline sm:ml-1" data-i18n="packages.selectedCostNote">(calculated in Phase 4: Guests × Price per person)</span>
+        <span class="text-xs text-brand-muted block sm:inline sm:ml-1" data-i18n="packages.selectedCostNote">(Guests × price per person)</span>
       </p>
 
-      <!-- Compare packages — merged into this block, always visible below the selector -->
-      <div class="mt-10 pt-8 border-t border-brand-border">
+      <!-- Compare packages — TEMPORARILY HIDDEN (remove the `hidden` class below to restore). -->
+      <div class="mt-10 pt-8 border-t border-brand-border hidden">
         <h3 id="comparison-heading" class="font-heading text-lg font-semibold text-white mb-3" data-i18n="compare.heading">Compare Packages</h3>
         <div class="overflow-x-auto rounded-xl border border-brand-border">
           <table class="w-full text-sm">
@@ -299,7 +273,8 @@
     <!-- BLOCK 6 — Add-on services                                     -->
     <!-- ============================================================ -->
     <section aria-labelledby="addons-heading" class="py-12 border-b border-brand-border">
-      <h2 id="addons-heading" class="font-heading text-2xl font-semibold text-white mb-4" data-i18n="addons.heading">Additional Services</h2>
+      <h2 id="addons-heading" class="font-heading text-2xl font-semibold text-white mb-1" data-i18n="addons.heading">Additional Services</h2>
+      <p class="text-sm text-brand-muted mb-4" data-i18n="addons.subtitle">The range depends on the day/time.</p>
       <fieldset>
         <legend class="sr-only" data-i18n="addons.legend">Choose additional services</legend>
         <ul id="addons-list" class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
@@ -348,7 +323,7 @@
         </button>
       </div>
 
-      <a href="https://www.google.com/maps/place/Lost+and+Found+Bar+Prague/@50.0776314,14.4230964,17z/data=!4m8!3m7!1s0x470b94f3191a10d7:0xb230ecc2b3e5aa1b!8m2!3d50.0776314!4d14.4230964!9m1!1b1!16s%2Fg%2F11xn3v02qd"
+      <a href="https://www.google.com/maps/place/Lost+and+Found+Bar+Prague/@50.0776314,14.4230964,17z/data=!4m8!3m7!1s0x470b94f3191a10d7:0xb230ecc2b3e5aa1b!8m2!3d50.0776314!4d14.4230964!9m1!1b1!16s%2Fg%2F11xn3v02qd!18m1!1e1?hl=en"
          target="_blank" rel="noopener noreferrer"
          class="mt-4 inline-flex items-center gap-1 text-sm font-medium text-brand-cyan hover:text-brand-pink transition"
          data-i18n="reviews.seeAllLink">
@@ -368,7 +343,7 @@
         <div class="flex justify-between"><dt class="text-brand-muted" data-i18n="grandTotal.vat">VAT (21%)</dt><dd class="text-white" data-field="summary-vat">— CZK</dd></div>
         <div class="flex justify-between font-heading font-bold text-xl border-t border-brand-border pt-3"><dt class="text-white" data-i18n="grandTotal.totalVat">Total incl. VAT</dt><dd class="text-brand-pink" data-field="summary-total-vat">— CZK</dd></div>
       </dl>
-      <p class="mt-3 text-xs text-brand-muted" data-i18n="grandTotal.note">All amounts in CZK. Live calculation wired in Phase 4.</p>
+      <p class="mt-3 text-xs text-brand-muted" data-i18n="grandTotal.note">All amounts in CZK, calculated live. Add-ons shown with a price range or "on demand" are counted at their minimum (or as 0) here — the final figure is confirmed with your quote.</p>
     </section>
 
     <!-- ============================================================ -->
@@ -418,10 +393,19 @@
       </div>
 
       <!-- Direct contact fallback -->
-      <p class="mt-6 text-sm text-brand-muted">
-        <span data-i18n="contact.directContact">You can also reach us directly:</span>
-        <a href="tel:+420724188537" class="text-white hover:text-brand-pink transition">+420 724 188 537</a>
-      </p>
+      <div class="mt-6 text-sm text-brand-muted">
+        <p class="mb-2" data-i18n="contact.directContact">You can also reach us directly:</p>
+        <div class="flex flex-col gap-1">
+          <span>Žitná 1764/11, Nové Město, 110 00 Praha 1</span>
+          <span>Phone: <a href="tel:+420724188537" class="text-white hover:text-brand-pink transition">+420 724 188 537</a></span>
+          <span>Email: <a href="mailto:LostFoundCZ@gmail.com" class="text-white hover:text-brand-pink transition">LostFoundCZ@gmail.com</a></span>
+          <span class="flex flex-wrap gap-3 mt-1">
+            <a href="https://wa.me/420724188537" target="_blank" rel="noopener" class="text-brand-cyan hover:text-brand-pink transition">WhatsApp</a>
+            <a href="https://t.me/LostFoundCZ" target="_blank" rel="noopener" class="text-brand-cyan hover:text-brand-pink transition">Telegram</a>
+            <a href="https://www.instagram.com/lostfoundcz/" target="_blank" rel="noopener" class="text-brand-cyan hover:text-brand-pink transition">Instagram</a>
+          </span>
+        </div>
+      </div>
     </section>
 
   </main>
@@ -439,11 +423,14 @@
     <div class="max-w-4xl mx-auto px-4 sm:px-6">
       <div class="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-6 text-sm mb-3">
         <span>Žitná 1764/11, Nové Město, 110 00 Praha 1</span>
+        <a href="tel:+420724188537" class="hover:text-brand-pink transition">+420 724 188 537</a>
+        <a href="mailto:LostFoundCZ@gmail.com" class="hover:text-brand-pink transition">LostFoundCZ@gmail.com</a>
       </div>
       <div class="flex items-center justify-center gap-4 mb-4">
-        <a href="https://wa.me/420724188537" class="text-brand-muted hover:text-brand-pink transition">WhatsApp</a>
-        <a href="https://t.me/LostFoundCZ" class="text-brand-muted hover:text-brand-pink transition">Telegram</a>
-        <a href="https://www.instagram.com/lostfoundcz/" class="text-brand-muted hover:text-brand-pink transition">Instagram</a>
+        <a href="https://wa.me/420724188537" target="_blank" rel="noopener" class="text-brand-muted hover:text-brand-pink transition">WhatsApp</a>
+        <a href="https://t.me/LostFoundCZ" target="_blank" rel="noopener" class="text-brand-muted hover:text-brand-pink transition">Telegram</a>
+        <a href="https://www.instagram.com/lostfoundcz/" target="_blank" rel="noopener" class="text-brand-muted hover:text-brand-pink transition">Instagram</a>
+        <a href="https://lostfoundcz.com/" target="_blank" rel="noopener" class="text-brand-muted hover:text-brand-pink transition">lostfoundcz.com</a>
       </div>
       <p data-i18n="footer.text">Lost & Found Bar Prague — Event Catering Calculator</p>
     </div>
@@ -460,56 +447,56 @@
           id: 'economy',
           name: { en: 'Basic', cz: 'Basic' },
           description: { en: 'A relaxed, budget-friendly setup — house cocktails, beer, wine and simple snacks. Great for casual get-togethers and smaller corporate mixers.', cz: 'Uvolněná a cenově dostupná varianta — domácí koktejly, pivo, víno a jednoduché občerstvení. Skvělá volba pro neformální sešlosti a menší firemní akce.' },
-          pricePerPerson: 590,
+          pricePerPerson: 899,
           details: {
             drinks: { en: 'House cocktail selection (6 recipes), craft beer on tap, house wine, soft drinks.', cz: 'Výběr domácích koktejlů (6 receptur), craft pivo, domácí víno, nealkoholické nápoje.' },
             starters: { en: 'Nachos, chips & dips, mixed snack bowls.', cz: 'Nachos, chipsy s dipy, mix slaného pečiva.' },
             mains: { en: 'Choice of 2 pizzas per event, served family-style.', cz: 'Výběr ze 2 druhů pizzy na akci, servírováno k volnému nabírání.' },
             desserts: { en: 'Not included — can be added as an add-on.', cz: 'Není součástí — lze doobjednat jako doplněk.' },
             alcohol: { en: 'Approx. 70% alcoholic / 30% non-alcoholic drinks.', cz: 'Přibližně 70 % alkoholických / 30 % nealkoholických nápojů.' },
-            portions: { en: '2 drinks + 1 snack portion per guest.', cz: '2 nápoje + 1 porce občerstvení na hosta.' },
+            portions: { en: '3 drinks + 1 food portion per guest.', cz: '3 nápoje + 1 porce jídla na hosta.' },
           },
         },
         {
           id: 'standard',
           name: { en: 'Casual', cz: 'Casual' },
           description: { en: 'Our most popular package — a wider cocktail menu and variety of snacks. Fits birthdays, presentations and receptions.', cz: 'Náš nejoblíbenější balíček — širší nabídka koktejlů a pestrá nabídka občerstvení. Vhodné pro oslavy, prezentace a recepce.' },
-          pricePerPerson: 790,
+          pricePerPerson: 1299,
           details: {
             drinks: { en: 'Full classic cocktail menu, wine & spritz, craft beer, spirits, non-alcoholic cocktails.', cz: 'Kompletní nabídka klasických koktejlů, víno a spritz, craft pivo, lihoviny, nealkoholické koktejly.' },
             starters: { en: 'Nachos, quesadillas, mixed hot & cold snack platters.', cz: 'Nachos, quesadillas, mix studených a teplých předkrmů.' },
             mains: { en: 'Choice of 3 pizzas + quesadilla station, served throughout the event.', cz: 'Výběr ze 3 druhů pizzy + quesadilla stanice, servírováno po celou dobu akce.' },
             desserts: { en: "Mini dessert platter, chef's selection.", cz: 'Mini dezertní mísa, výběr šéfkuchaře.' },
             alcohol: { en: 'Approx. 80% alcoholic / 20% non-alcoholic drinks.', cz: 'Přibližně 80 % alkoholických / 20 % nealkoholických nápojů.' },
-            portions: { en: '3 drinks + 2 food portions per guest.', cz: '3 nápoje + 2 porce jídla na hosta.' },
+            portions: { en: '5 drinks + 2 food portions per guest.', cz: '5 nápojů + 2 porce jídla na hosta.' },
           },
         },
         {
           id: 'premium',
           name: { en: 'Premium', cz: 'Premium' },
           description: { en: 'The full Lost & Found experience — signature cocktails, personalized drinks, a gourmet food menu and dedicated service for your guests.', cz: 'Kompletní zážitek Lost & Found — signature koktejly, koktejly na míru se jménem hosta, gurmánské menu a vyhrazená obsluha pro vaše hosty.' },
-          pricePerPerson: 1090,
+          pricePerPerson: 1999,
           details: {
             drinks: { en: "Full signature menu (Ferrari, Lamborghini, Long Island, Skittles & more), classics, wine & spritz, premium spirits, personalized named cocktails.", cz: 'Kompletní signature menu (Ferrari, Lamborghini, Long Island, Skittles a další), klasické koktejly, víno a spritz, prémiové lihoviny, koktejly na míru se jménem hosta.' },
             starters: { en: "Full starter selection — nachos, quesadillas, chef's snack board.", cz: 'Plná nabídka předkrmů — nachos, quesadillas, mísa specialit šéfkuchaře.' },
             mains: { en: 'Full pizza menu + quesadilla station + hot mains, continuously served.', cz: 'Plné menu pizz + quesadilla stanice + teplá hlavní jídla, servírováno po celou dobu akce.' },
             desserts: { en: 'Full dessert selection, plated per guest.', cz: 'Plná nabídka dezertů, servírováno každému hostu zvlášť.' },
             alcohol: { en: 'Approx. 85% alcoholic / 15% non-alcoholic drinks — adjustable on request.', cz: 'Přibližně 85 % alkoholických / 15 % nealkoholických nápojů — lze upravit na přání.' },
-            portions: { en: '4+ drinks + full food service per guest, dedicated bartender included.', cz: '4+ nápoje + plný servis jídla na hosta, vyhrazený barman v ceně.' },
+            portions: { en: '7 drinks + 2 food portions per guest (full buffet).', cz: '7 nápojů + 2 porce jídla na hosta (plný bufet).' },
           },
         },
       ],
       addons: [
-        { id: 'dj', name: { en: 'DJ / live music', cz: 'DJ / živá hudba' }, price: 4500, note: { en: 'Details to be provided.', cz: 'Podrobnosti budou doplněny.' } },
-        { id: 'photo-video', name: { en: 'Photo / video', cz: 'Foto / video' }, price: 6000, note: { en: 'Details to be provided.', cz: 'Podrobnosti budou doplněny.' } },
-        { id: 'venue-branding', name: { en: 'Venue branding', cz: 'Brandování prostoru' }, price: 3500, note: { en: 'Details to be provided.', cz: 'Podrobnosti budou doplněny.' } },
-        { id: 'entertainers', name: { en: 'Entertainers / host', cz: 'Animátoři / moderátor' }, price: 5000, note: { en: 'Details to be provided.', cz: 'Podrobnosti budou doplněny.' } },
-        { id: 'menu-printing', name: { en: 'Branded menu printing', cz: 'Tisk menu s logem' }, price: 800, note: { en: 'Details to be provided.', cz: 'Podrobnosti budou doplněny.' } },
+        { id: 'dj', name: { en: 'DJ / live music', cz: 'DJ / živá hudba' }, price: 14900, priceLabel: { en: '14,900–25,900 Kč', cz: '14 900–25 900 Kč' }, note: { en: 'Price range depends on the day and time of the event.', cz: 'Cenové rozpětí závisí na dni a čase akce.' } },
+        { id: 'photo-video', name: { en: 'Photo / video', cz: 'Foto / video' }, price: 13000, priceLabel: { en: '13,000–18,500 Kč', cz: '13 000–18 500 Kč' }, note: { en: 'Price range depends on the day and time of the event.', cz: 'Cenové rozpětí závisí na dni a čase akce.' } },
+        { id: 'entertainers', name: { en: 'Entertainers / host', cz: 'Animátoři / moderátor' }, price: 0, priceLabel: { en: 'on demand', cz: 'na vyžádání' }, note: { en: 'Priced on demand — tell us what you need and we will quote it.', cz: 'Cena na vyžádání — dejte nám vědět, co potřebujete, a připravíme nabídku.' } },
+        { id: 'menu-printing', name: { en: 'Branded menu printing (40 pcs)', cz: 'Tisk menu s logem (40 ks)' }, price: 4800, note: { en: 'Menus printed with your branding, 40 pieces.', cz: 'Menu s vaším brandingem, 40 kusů.' } },
         { id: 'gift-sets', name: { en: 'Gift sets', cz: 'Dárkové sety' }, price: 3000, note: { en: 'Details to be provided.', cz: 'Podrobnosti budou doplněny.' } },
-        { id: 'waiter-service', name: { en: 'Premium waiter service', cz: 'Prémiový servis číšníků' }, price: 3500, note: { en: 'Details to be provided.', cz: 'Podrobnosti budou doplněny.' } },
-        { id: 'security', name: { en: 'Security and admission control', cz: 'Ostraha a kontrola vstupu' }, price: 3000, note: { en: 'Details to be provided.', cz: 'Podrobnosti budou doplněny.' } },
-        { id: 'ny-accessories', name: { en: 'NY accessories (100 pcs)', cz: 'Silvestrovské doplňky (100 ks)' }, price: 10000, note: { en: 'Details to be provided.', cz: 'Podrobnosti budou doplněny.' } },
-        { id: 'punch-bowl', name: { en: 'Punch bowl (20L)', cz: 'Punčová mísa (20L)' }, price: 15000, note: { en: 'Details to be provided.', cz: 'Podrobnosti budou doplněny.' } },
+        { id: 'waiter-service', name: { en: 'Premium waiter service', cz: 'Prémiový servis číšníků' }, price: 6500, note: { en: 'Details to be provided.', cz: 'Podrobnosti budou doplněny.' } },
+        { id: 'security', name: { en: 'Security and admission control', cz: 'Ostraha a kontrola vstupu' }, price: 6500, priceLabel: { en: '6,500–9,700 Kč', cz: '6 500–9 700 Kč' }, note: { en: 'Price range depends on the day and time of the event.', cz: 'Cenové rozpětí závisí na dni a čase akce.' } },
+        { id: 'punch-bowl', name: { en: 'Punch bowl (20L)', cz: 'Punčová mísa (20L)' }, price: 14500, note: { en: 'Details to be provided.', cz: 'Podrobnosti budou doplněny.' } },
+        { id: 'taxi', name: { en: 'Taxi within Prague', cz: 'Taxi v rámci Prahy' }, price: 750, note: { en: 'One taxi ride within Prague city limits.', cz: 'Jedna jízda taxi v rámci Prahy.' } },
+        { id: 'photo-zone', name: { en: 'Photo zone', cz: 'Fotozóna' }, price: 0, priceLabel: { en: 'by demand', cz: 'na vyžádání' }, note: { en: 'Priced on demand — tell us what you need and we will quote it.', cz: 'Cena na vyžádání — dejte nám vědět, co potřebujete, a připravíme nabídku.' } },
       ],
       // Real 5★ Google Maps reviews (shortened where needed), sourced
       // directly from the venue's listing — EN originals + CZ translation.
@@ -593,9 +580,7 @@
     // ============================================================
     const LF_I18N = {
       en: {
-        'hero.partnerLogoPlaceholder': '[ Partner logo ]',
-        'hero.venueLogoPlaceholder': '[ Lost & Found logo ]',
-        'hero.subtitle': 'Venue For Your Perfect Event',
+        'hero.subtitle': 'Venue For Your Perfect Event (November, December)',
         'hero.tagline': "A neon‑lit craft‑cocktail bar just off Karlovo Náměstí (4.9★, 1,090+ reviews) — signature drinks, warm energy, and a relaxed, easy‑going atmosphere. Lost & Found is where nights feel natural and unpretentious.",
         'eventDetails.heading': 'Event Details',
         'eventDetails.date': 'Date',
@@ -645,6 +630,7 @@
         'details.portionsPerGuest': 'Portions per guest',
         'details.photoPlaceholder': '[ Dish photos placeholder ]',
         'addons.heading': 'Additional Services',
+        'addons.subtitle': 'The range depends on the day/time.',
         'addons.legend': 'Choose additional services',
         'addons.moreInfo': 'More info',
         'addons.totalLabel': 'Add-ons total:',
@@ -659,7 +645,7 @@
         'grandTotal.grand': 'Grand Total (excl. VAT)',
         'grandTotal.vat': 'VAT (21%)',
         'grandTotal.totalVat': 'Total incl. VAT',
-        'grandTotal.note': 'All amounts in CZK, calculated live.',
+        'grandTotal.note': 'All amounts in CZK, calculated live. Add-ons shown with a price range or "on demand" are counted at their minimum (or as 0) here — the final figure is confirmed with your quote.',
         'contact.heading': 'Your Details',
         'contact.name': 'Name',
         'contact.phone': 'Phone',
@@ -678,9 +664,7 @@
         'footer.text': 'Lost & Found Bar Prague — Event Catering Calculator',
       },
       cz: {
-        'hero.partnerLogoPlaceholder': '[ Logo partnera ]',
-        'hero.venueLogoPlaceholder': '[ Logo Lost & Found ]',
-        'hero.subtitle': 'Prostor pro vaši dokonalou akci',
+        'hero.subtitle': 'Prostor pro vaši dokonalou akci (listopad, prosinec)',
         'hero.tagline': 'Neonový craft cocktail bar kousek od Karlova náměstí (4,9★, 1 090+ recenzí) — signature drinky, vřelá energie a uvolněná, nenucená atmosféra. Lost & Found je místo, kde se noci prožívají přirozeně a bez přetvářky.',
         'eventDetails.heading': 'Informace o akci',
         'eventDetails.date': 'Datum',
@@ -730,6 +714,7 @@
         'details.portionsPerGuest': 'Porce na hosta',
         'details.photoPlaceholder': '[ Zástupné fotky pokrmů ]',
         'addons.heading': 'Doplňkové služby',
+        'addons.subtitle': 'Rozpětí závisí na dni/čase.',
         'addons.legend': 'Vyberte doplňkové služby',
         'addons.moreInfo': 'Více informací',
         'addons.totalLabel': 'Celkem doplňky:',
@@ -744,7 +729,7 @@
         'grandTotal.grand': 'Celkem (bez DPH)',
         'grandTotal.vat': 'DPH (21 %)',
         'grandTotal.totalVat': 'Celkem s DPH',
-        'grandTotal.note': 'Všechny částky v CZK, počítané živě.',
+        'grandTotal.note': 'Všechny částky v CZK, počítané živě. Doplňky uvedené s cenovým rozpětím nebo "na vyžádání" se zde počítají v minimální výši (nebo jako 0) — konečná částka se potvrdí v nabídce.',
         'contact.heading': 'Vaše údaje',
         'contact.name': 'Jméno',
         'contact.phone': 'Telefon',
@@ -1047,7 +1032,7 @@
                 // toggling the checkbox underneath it.
                 '<button type="button" class="addon-info-btn shrink-0 w-4 h-4 rounded-full border border-brand-muted text-brand-muted text-[10px] leading-none flex items-center justify-center hover:border-brand-cyan hover:text-brand-cyan transition" data-addon-note-id="' + addon.id + '" aria-label="' + t('addons.moreInfo') + ': ' + addon.name[currentLang] + '" aria-expanded="false">i</button>' +
               '</span>' +
-              '<em class="not-italic text-brand-cyan font-medium">' + fmtPrice(addon.price) + '</em>' +
+              '<em class="not-italic text-brand-cyan font-medium">' + (addon.priceLabel ? addon.priceLabel[currentLang] : fmtPrice(addon.price)) + '</em>' +
             '</label>' +
             '<div class="addon-note hidden absolute z-10 left-0 top-full mt-1 w-64 max-w-[calc(100vw-2rem)] bg-brand-surface2 border border-brand-border rounded-lg p-3 text-xs text-brand-muted shadow-lg" data-addon-note-panel="' + addon.id + '" role="tooltip">' +
               addon.note[currentLang] +
