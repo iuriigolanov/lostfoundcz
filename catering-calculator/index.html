@@ -80,13 +80,13 @@
 
   /* Neon logo — same flicker + glow as the main site (lostfoundcz.com). */
   .hero-logo {
-    width: min(340px, 68vw);
+    width: min(227px, 45vw);
     height: auto;
     filter: drop-shadow(0 0 26px rgba(200, 85, 181, 0.55)) drop-shadow(0 0 60px rgba(0, 200, 224, 0.28));
     animation: flicker 6s infinite;
   }
   @media (min-width: 768px) {
-    .hero-logo { width: 380px; }
+    .hero-logo { width: 253px; }
   }
   @keyframes flicker {
     0%, 19%, 21%, 23%, 80%, 100% { opacity: 1; }
@@ -241,12 +241,13 @@
 
       <p class="mt-3 text-xs text-brand-muted" data-i18n="packages.portionsNote">Portions are an average per guest. Event duration: up to 5 hours.</p>
 
-      <!-- Compare packages — TEMPORARILY HIDDEN (remove the `hidden` class below to restore). -->
-      <div class="mt-10 pt-8 border-t border-brand-border hidden">
-        <h3 id="comparison-heading" class="font-heading text-lg font-semibold text-white mb-3" data-i18n="compare.heading">Compare Packages</h3>
+      <!-- Package details as a side-by-side comparison table, directly
+           under Bar Packages (replaces the old separate accordion block). -->
+      <div class="mt-10 pt-8 border-t border-brand-border">
+        <h3 id="comparison-heading" class="font-heading text-lg font-semibold text-white mb-3" data-i18n="details.heading">Package Details</h3>
         <div class="overflow-x-auto rounded-xl border border-brand-border">
           <table class="w-full text-sm">
-            <caption class="sr-only">Comparison of the three catering packages</caption>
+            <caption class="sr-only">Side-by-side comparison of the bar packages</caption>
             <thead class="bg-brand-surface2">
               <tr id="compare-head-row">
                 <!-- rendered by renderComparison() -->
@@ -267,7 +268,7 @@
       <h2 id="food-heading" class="font-heading text-2xl font-semibold text-white mb-1" data-i18n="food.heading">Food Packages</h2>
       <p class="text-sm text-brand-muted mb-4" data-i18n="food.subtitle">Optional — add a food package per guest, or keep drinks only.</p>
 
-      <fieldset id="food-list" class="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <fieldset id="food-list" class="grid grid-cols-1 md:grid-cols-2 gap-4">
         <legend class="sr-only" data-i18n="food.legend">Choose a food package</legend>
         <!-- rendered by renderFood() -->
       </fieldset>
@@ -281,16 +282,6 @@
         <span data-i18n="food.selectedCostLabel">Selected food cost:</span> <strong data-field="food-total" class="text-brand-pink">—</strong>
         <span class="text-xs text-brand-muted block sm:inline sm:ml-1" data-i18n="food.selectedCostNote">(Guests × price per person)</span>
       </p>
-    </section>
-
-    <!-- ============================================================ -->
-    <!-- BLOCK 5 — Package details (accordion)                         -->
-    <!-- ============================================================ -->
-    <section aria-labelledby="details-heading" class="py-12 border-b border-brand-border">
-      <h2 id="details-heading" class="font-heading text-2xl font-semibold text-white mb-4" data-i18n="details.heading">Package Details</h2>
-      <div id="details-accordion">
-        <!-- rendered by renderDetails() -->
-      </div>
     </section>
 
     <!-- ============================================================ -->
@@ -524,14 +515,6 @@
           items: { en: 'Assorted canapés, choice of pizza (approx. 0.5–1 per guest), quesadillas, warm & cold platters.', cz: 'Výběr kanapek, pizza dle výběru (přibližně 0,5–1 na hosta), quesadillas, teplé a studené mísy.' },
           portions: { en: '2 food portions per guest.', cz: '2 porce jídla na hosta.' },
         },
-        {
-          id: 'food-premium',
-          name: { en: 'Premium — hot buffet', cz: 'Premium — teplý bufet' },
-          description: { en: 'A full hot buffet — hot mains, pizza and quesadilla stations, and a dessert selection, continuously served.', cz: 'Plný teplý bufet — teplá hlavní jídla, pizza a quesadilla stanice a výběr dezertů, servírováno po celou dobu akce.' },
-          pricePerPerson: 999,
-          items: { en: 'Hot mains, pizza station (approx. 0.5–1 per guest), quesadilla station, dessert selection.', cz: 'Teplá hlavní jídla, pizza stanice (přibližně 0,5–1 na hosta), quesadilla stanice, výběr dezertů.' },
-          portions: { en: '2 food portions + dessert per guest (full buffet).', cz: '2 porce jídla + dezert na hosta (plný bufet).' },
-        },
       ],
       addons: [
         { id: 'dj', name: { en: 'DJ / live music', cz: 'DJ / živá hudba' }, price: 14900, priceLabel: { en: '14,900–25,900', cz: '14 900–25 900' }, note: { en: 'Price range depends on the day and time of the event. The minimal price is applied in the calculation.', cz: 'Cenové rozpětí závisí na dni a čase akce. Ve výpočtu je použita minimální cena.' } },
@@ -542,7 +525,7 @@
         { id: 'waiter-service', name: { en: 'Premium waiter service', cz: 'Prémiový servis číšníků' }, price: 6500, note: { en: 'Details to be provided.', cz: 'Podrobnosti budou doplněny.' } },
         { id: 'security', name: { en: 'Security and admission control', cz: 'Ostraha a kontrola vstupu' }, price: 6500, priceLabel: { en: '6,500–9,700', cz: '6 500–9 700' }, note: { en: 'Price range depends on the day and time of the event. The minimal price is applied in the calculation.', cz: 'Cenové rozpětí závisí na dni a čase akce. Ve výpočtu je použita minimální cena.' } },
         { id: 'punch-bowl', name: { en: 'Punch bowl (20L)', cz: 'Punčová mísa (20L)' }, price: 14500, note: { en: 'Details to be provided.', cz: 'Podrobnosti budou doplněny.' } },
-        { id: 'taxi', name: { en: 'Taxi within Prague', cz: 'Taxi v rámci Prahy' }, price: 750, note: { en: 'One taxi ride within Prague city limits. Additional rides on demand.', cz: 'Jedna jízda taxi v rámci Prahy. Další jízdy na vyžádání.' } },
+        { id: 'taxi', name: { en: 'Taxi within Prague', cz: 'Taxi v rámci Prahy' }, price: 750, perGuest: true, priceLabel: { en: '750 / person (will be calculated)', cz: '750 / osoba (bude vypočítáno)' }, note: { en: 'Taxi within Prague city limits, 750 per guest. Final count confirmed with your quote.', cz: 'Taxi v rámci Prahy, 750 na hosta. Konečný počet potvrdíme v nabídce.' } },
         { id: 'photo-zone', name: { en: 'Photo zone', cz: 'Fotozóna' }, price: 0, priceLabel: { en: 'on demand', cz: 'na vyžádání' }, note: { en: 'Priced on demand — tell us what you need and we will quote it.', cz: 'Cena na vyžádání — dejte nám vědět, co potřebujete, a připravíme nabídku.' } },
       ],
       // Real 5★ Google Maps reviews (shortened where needed), sourced
@@ -873,7 +856,6 @@
                 '<span class="block text-sm mt-3"><strong class="text-brand-cyan font-semibold">' + fmtPrice(pkg.pricePerPerson) + '</strong> ' + t('packages.perPerson') + '</span>' +
               '</span>' +
             '</label>' +
-            '<a href="#details-heading" class="mt-auto pt-3 self-start text-xs font-medium text-brand-cyan hover:text-brand-pink transition" onclick="openPackageDetails(event, \'' + pkg.id + '\')">' + t('packages.detailsLink') + ' →</a>' +
           '</div>';
       }).join('');
     }
@@ -915,29 +897,6 @@
     // Jumps from a package card's "Details" link to the matching accordion
     // item in the Package Details section, expanding it along the way so
     // the user doesn't land on a collapsed panel and have to click again.
-    function openPackageDetails(e, pkgId) {
-      e.preventDefault();
-      const details = document.querySelector('#details-accordion details[data-pkg="' + pkgId + '"]');
-      if (!details) return;
-      details.open = true;
-      // Opening <details> changes the page's layout height immediately, but
-      // measuring in the same tick can still see the pre-expansion
-      // position on some browsers. A single rAF isn't always enough either
-      // — some browsers still haven't finished layout/paint by the next
-      // frame — so we wait two frames (the standard "double rAF" pattern)
-      // before measuring, which reliably lands after reflow everywhere.
-      requestAnimationFrame(function () {
-        requestAnimationFrame(function () {
-          const myToken = ++pageScrollToken;
-          const startY = window.scrollY;
-          const targetY = startY + details.getBoundingClientRect().top - 16;
-          animateScrollValue(startY, targetY, 600, function (y) {
-            window.scrollTo(0, y);
-          }, function () { return pageScrollToken === myToken; });
-        });
-      });
-    }
-
     function renderComparison() {
       const head = document.getElementById('compare-head-row');
       head.innerHTML = '<th scope="col" class="text-left p-3 text-brand-cyan text-xs uppercase tracking-wide font-semibold">' + t('compare.category') + '</th>' +
@@ -946,40 +905,16 @@
         }).join('');
 
       const rows = [
-        { label: t('compare.dishCategories'), values: LF_DATA.catering.map(function () { return '—'; }) },
-        { label: t('compare.itemCount'), values: LF_DATA.catering.map(function () { return '—'; }) },
-        { label: t('compare.alcoholBrands'), values: LF_DATA.catering.map(function () { return '—'; }) },
-        { label: t('compare.portions'), values: LF_DATA.catering.map(function () { return '—'; }) },
+        { label: t('details.drinks'), values: LF_DATA.catering.map(function (p) { return p.details.drinks[currentLang]; }) },
+        { label: t('details.alcoholSplit'), values: LF_DATA.catering.map(function (p) { return p.details.alcohol[currentLang]; }) },
+        { label: t('details.portionsPerGuest'), values: LF_DATA.catering.map(function (p) { return p.details.portions[currentLang]; }) },
         { label: t('compare.pricePerPerson'), values: LF_DATA.catering.map(function (p) { return fmtPrice(p.pricePerPerson); }) },
-        { label: t('compare.totalCost'), values: LF_DATA.catering.map(function () { return '—'; }) },
       ];
       const body = document.getElementById('compare-body');
       body.innerHTML = rows.map(function (row) {
-        return '<tr><th scope="row" class="text-left p-3 font-normal text-brand-muted">' + row.label + '</th>' +
-          row.values.map(function (v) { return '<td class="p-3 text-white">' + v + '</td>'; }).join('') +
+        return '<tr><th scope="row" class="text-left p-3 font-normal text-brand-muted align-top">' + row.label + '</th>' +
+          row.values.map(function (v) { return '<td class="p-3 text-white align-top">' + v + '</td>'; }).join('') +
           '</tr>';
-      }).join('');
-    }
-
-    function renderDetails() {
-      const el = document.getElementById('details-accordion');
-      el.innerHTML = LF_DATA.catering.map(function (pkg) {
-        return '' +
-          '<details class="group border border-brand-border bg-brand-surface rounded-xl mb-3 overflow-hidden" data-pkg="' + pkg.id + '">' +
-            '<summary class="font-heading font-medium text-white cursor-pointer px-4 py-3 flex items-center justify-between list-none [&::-webkit-details-marker]:hidden">' +
-              pkg.name[currentLang] + ' — ' + t('details.fullBreakdown') +
-              '<span class="text-brand-pink transition-transform group-open:rotate-180">⌄</span>' +
-            '</summary>' +
-            '<div class="px-4 pb-4 text-sm grid grid-cols-1 sm:grid-cols-2 gap-3 border-t border-brand-border pt-4">' +
-              '<div><h3 class="font-medium text-white mb-1">' + t('details.drinks') + '</h3><p class="text-brand-muted">' + pkg.details.drinks[currentLang] + '</p></div>' +
-              '<div><h3 class="font-medium text-white mb-1">' + t('details.alcoholSplit') + '</h3><p class="text-brand-muted">' + pkg.details.alcohol[currentLang] + '</p></div>' +
-              '<div><h3 class="font-medium text-white mb-1">' + t('details.portionsPerGuest') + '</h3><p class="text-brand-muted">' + pkg.details.portions[currentLang] + '</p></div>' +
-            '</div>' +
-            '<div class="relative mx-4 mb-4 h-24 rounded-lg overflow-hidden border border-brand-border">' +
-              '<img src="img/pkg-' + pkg.id + '.jpg" alt="" class="absolute inset-0 w-full h-full object-cover" onerror="this.style.display=\'none\'; this.nextElementSibling.style.display=\'flex\';" />' +
-              '<div class="hidden absolute inset-0 w-full h-full bg-brand-surface2 items-center justify-center text-xs text-brand-muted">' + t('details.photoPlaceholder') + '</div>' +
-            '</div>' +
-          '</details>';
       }).join('');
     }
 
@@ -1028,7 +963,7 @@
       // Measuring position in the same synchronous tick as the innerHTML
       // write can catch the cards still unstyled. Waiting two animation
       // frames (the same "double rAF" reflow-wait pattern used in
-      // openPackageDetails above) gives that a chance to finish first.
+      // the reviews carousel) gives that a chance to finish first.
       requestAnimationFrame(function () {
         requestAnimationFrame(function () {
           const firstReal = el.children[1];
@@ -1071,7 +1006,7 @@
     // Scrolls the reviews carousel by exactly one card, left or right,
     // wrapping seamlessly from the last review back to the first (or the
     // first back to the last) instead of stopping. Uses the manual
-    // animateScrollValue() helper (see openPackageDetails above) rather
+    // animateScrollValue() helper rather
     // than el.scrollBy({behavior:'smooth'}) — native smooth-scroll is
     // silently downgraded to an instant jump on any device with the OS
     // "reduce motion" setting on, and CSS scroll-snap can short-circuit
@@ -1185,7 +1120,7 @@
       const addonsTotal = Array.from(document.querySelectorAll('.addon-checkbox:checked'))
         .map(function (cb) { return LF_DATA.addons.find(function (a) { return a.id === cb.dataset.addonId; }); })
         .filter(Boolean)
-        .reduce(function (sum, a) { return sum + a.price; }, 0);
+        .reduce(function (sum, a) { return sum + (a.perGuest ? a.price * guests : a.price); }, 0);
 
       const grandTotal = cateringTotal + foodTotal + addonsTotal;
       const vat = Math.round(grandTotal * 0.21);
@@ -1232,7 +1167,6 @@
         pkg: checkedPkg ? checkedPkg.value : null,
         food: checkedFood ? checkedFood.value : 'none',
         addonIds: Array.from(document.querySelectorAll('.addon-checkbox:checked')).map(function (cb) { return cb.dataset.addonId; }),
-        openPkgIds: Array.from(document.querySelectorAll('#details-accordion details')).filter(function (d) { return d.open; }).map(function (d) { return d.dataset.pkg; }),
       };
     }
 
@@ -1249,10 +1183,6 @@
         const cb = document.querySelector('.addon-checkbox[data-addon-id="' + id + '"]');
         if (cb) cb.checked = true;
       });
-      state.openPkgIds.forEach(function (id) {
-        const d = document.querySelector('#details-accordion details[data-pkg="' + id + '"]');
-        if (d) d.open = true;
-      });
     }
 
     function renderAll() {
@@ -1260,7 +1190,6 @@
       renderPackages();
       renderFood();
       renderComparison();
-      renderDetails();
       renderReviews();
       renderAddons();
       updateGuestOutput();
