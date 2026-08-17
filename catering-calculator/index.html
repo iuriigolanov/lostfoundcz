@@ -218,7 +218,7 @@
           <label for="guest-count" class="block text-sm font-medium text-brand-muted" data-i18n="packages.guestsLabel">Number of guests</label>
           <output id="guest-count-value" for="guest-count" class="text-sm font-semibold text-brand-pink bg-brand-pink/10 px-2 py-0.5 rounded-full">40 guests</output>
         </div>
-        <input type="range" id="guest-count" name="guest-count" min="10" max="100" value="40" step="1"
+        <input type="range" id="guest-count" name="guest-count" min="20" max="100" value="40" step="1"
                class="appearance-none w-full h-2 rounded-full bg-brand-surface2 cursor-pointer align-middle
                       [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:w-6 [&::-webkit-slider-thumb]:h-6 [&::-webkit-slider-thumb]:-mt-2
                       [&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:bg-brand-pink [&::-webkit-slider-thumb]:shadow-[0_0_10px_rgba(255,47,192,0.7)] [&::-webkit-slider-thumb]:cursor-pointer [&::-webkit-slider-thumb]:border-0
@@ -468,7 +468,7 @@
           id: 'economy',
           name: { en: 'Basic', cz: 'Basic' },
           description: { en: 'A relaxed, budget-friendly bar setup — house cocktails, beer, wine and soft drinks. Great for casual corporate get-togethers and smaller mixers.', cz: 'Uvolněná a cenově dostupná barová varianta — domácí koktejly, pivo, víno a nealkoholické nápoje. Skvělá volba pro neformální firemní sešlosti a menší akce.' },
-          pricePerPerson: 899,
+          pricePerPerson: 999,
           details: {
             drinks: { en: 'House cocktail selection (15 recipes, choose from menu), craft beer on tap, house wine, soft drinks.', cz: 'Výběr domácích koktejlů (15 receptur, výběr z menu), craft pivo, domácí víno, nealkoholické nápoje.' },
             alcohol: { en: 'Approx. 70% alcoholic / 30% non-alcoholic drinks.', cz: 'Přibližně 70 % alkoholických / 30 % nealkoholických nápojů.' },
@@ -479,7 +479,7 @@
           id: 'standard',
           name: { en: 'Casual', cz: 'Casual' },
           description: { en: 'Our most popular bar package — a wider cocktail menu, wine, spritz and spirits. Fits birthdays, presentations and receptions.', cz: 'Náš nejoblíbenější barový balíček — širší nabídka koktejlů, víno, spritz a lihoviny. Vhodné pro oslavy, prezentace a recepce.' },
-          pricePerPerson: 1299,
+          pricePerPerson: 1399,
           details: {
             drinks: { en: 'Full classic cocktail menu, wine & spritz, craft beer, spirits, non-alcoholic cocktails.', cz: 'Kompletní nabídka klasických koktejlů, víno a spritz, craft pivo, lihoviny, nealkoholické koktejly.' },
             alcohol: { en: 'Approx. 80% alcoholic / 20% non-alcoholic drinks.', cz: 'Přibližně 80 % alkoholických / 20 % nealkoholických nápojů.' },
@@ -1098,7 +1098,7 @@
     // ============================================================
     // PRICING — Phase 4.
     //   CateringTotal = Guests × PricePerPerson (0 until a package is picked)
-    //   AddonsTotal   = Σ checked add-on prices (flat per event, NOT × guests)
+    //   AddonsTotal   = Σ checked add-ons (flat per event, or × guests when perGuest)
     //   GrandTotal    = CateringTotal + AddonsTotal
     //   VAT           = GrandTotal × 0.21 (standard Czech rate, per ТЗ)
     //   TotalWithVAT  = GrandTotal + VAT
