@@ -80,10 +80,13 @@
 
   /* Neon logo — same flicker + glow as the main site (lostfoundcz.com). */
   .hero-logo {
-    width: min(520px, 82vw);
+    width: min(340px, 68vw);
     height: auto;
     filter: drop-shadow(0 0 26px rgba(200, 85, 181, 0.55)) drop-shadow(0 0 60px rgba(0, 200, 224, 0.28));
     animation: flicker 6s infinite;
+  }
+  @media (min-width: 768px) {
+    .hero-logo { width: 380px; }
   }
   @keyframes flicker {
     0%, 19%, 21%, 23%, 80%, 100% { opacity: 1; }
@@ -130,35 +133,31 @@
   <!-- ============================================================ -->
   <!-- BLOCK 1 — Hero / Intro                                        -->
   <!-- ============================================================ -->
-  <header class="relative">
-    <div class="relative h-72 md:h-96 w-full overflow-hidden">
-      <img src="img/hero-bg.jpg" alt="" class="absolute inset-0 w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
-      <div class="hidden absolute inset-0 w-full h-full bg-gradient-to-b from-brand-surface to-brand-bg items-center justify-center text-brand-muted text-sm px-4 text-center">
-        [ Hero background photo placeholder — drop a file at img/hero-bg.jpg ]
-      </div>
-    </div>
-    <!-- Logo row and text block share ONE flex column instead of being
-         independently absolutely-positioned. This is deliberate: two
-         separately-positioned overlays can collide on short/wide
-         viewports (e.g. landscape phones) where the vertically-centered
-         heading rides up into the logo row. Stacking them in normal flex
-         flow — logos first, text taking the remaining space — makes that
-         overlap structurally impossible at any header height. -->
-    <div class="absolute inset-0 flex flex-col bg-black/65">
-      <!-- Single centered venue logo (neon wordmark), clickable to the
-           main site. Replaces the earlier two-logo placeholder row. -->
-      <div class="flex-1 flex flex-col items-center justify-center text-center px-4">
-        <a href="https://lostfoundcz.com/" target="_blank" rel="noopener" aria-label="Lost & Found — lostfoundcz.com" class="block mb-5 shrink-0">
-          <img src="img/logo.png" alt="Lost & Found Bar Prague" class="hero-logo mx-auto" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
-          <span class="hidden text-brand-cyan font-heading text-3xl font-bold">Lost &amp; Found</span>
-        </a>
-        <h1 class="hero-text-shadow font-heading text-white text-3xl md:text-5xl font-bold mb-3 leading-tight">
-          Lost & Found — <span class="text-brand-cyan" data-i18n="hero.subtitle">Venue For Your Perfect Event (November, December)</span>
-        </h1>
-        <p class="hero-text-shadow text-white/85 max-w-xl text-sm md:text-base" data-i18n="hero.tagline">
-          Placeholder marketing copy: 2–3 lines introducing the venue and the catering offer for the partner/client.
-        </p>
-      </div>
+  <header class="relative overflow-hidden">
+    <!-- Background image sits behind the content (absolute), while the
+         content itself is in normal flow and DEFINES the header height.
+         The previous version used a fixed-height box (h-72/h-96) with an
+         absolutely-positioned overlay on top; on narrow phones the long
+         heading overflowed that fixed box and collided with the next
+         section. Letting the content set the height makes overflow (and
+         the overlap) impossible at any viewport width. -->
+    <img src="img/hero-bg.jpg" alt="" class="absolute inset-0 w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
+    <div class="hidden absolute inset-0 w-full h-full bg-gradient-to-b from-brand-surface to-brand-bg"></div>
+    <div class="absolute inset-0 bg-black/65"></div>
+
+    <div class="relative flex flex-col items-center justify-center text-center px-4 py-12 md:py-16 min-h-[18rem] md:min-h-[24rem]">
+      <!-- Single centered venue logo (neon wordmark), clickable to the main site. -->
+      <a href="https://lostfoundcz.com/" target="_blank" rel="noopener" aria-label="Lost & Found — lostfoundcz.com" class="block mb-5">
+        <img src="img/logo.png" alt="Lost & Found Bar Prague" class="hero-logo mx-auto" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
+        <span class="hidden text-brand-cyan font-heading text-3xl font-bold">Lost &amp; Found</span>
+      </a>
+      <h1 class="hero-text-shadow font-heading text-white text-3xl md:text-5xl font-bold mb-3 leading-tight">
+        Lost & Found — <span class="text-brand-cyan" data-i18n="hero.subtitle">Venue For Your Perfect Event</span>
+        <span class="block text-brand-cyan text-lg md:text-2xl font-semibold mt-1" data-i18n="hero.period">(November, December)</span>
+      </h1>
+      <p class="hero-text-shadow text-white/85 max-w-xl text-sm md:text-base" data-i18n="hero.tagline">
+        Placeholder marketing copy: 2–3 lines introducing the venue and the catering offer for the partner/client.
+      </p>
     </div>
   </header>
 
@@ -394,6 +393,10 @@
           <p id="error-contact" class="hidden mt-1 text-xs text-red-400" data-i18n="contact.errorContact">Please provide a phone number or an email address.</p>
         </div>
         <div>
+          <label for="contact-date" class="block text-sm font-medium text-brand-muted mb-1" data-i18n="contact.date">Preferred event date</label>
+          <input type="date" id="contact-date" name="date" class="w-full bg-brand-bg border border-brand-border rounded-lg px-3 py-2 text-sm text-white placeholder:text-brand-muted focus:border-brand-pink focus:ring-1 focus:ring-brand-pink outline-none transition" />
+        </div>
+        <div>
           <label for="contact-wishes" class="block text-sm font-medium text-brand-muted mb-1" data-i18n="contact.wishes">Additional wishes</label>
           <textarea id="contact-wishes" name="wishes" rows="3" class="w-full bg-brand-bg border border-brand-border rounded-lg px-3 py-2 text-sm text-white placeholder:text-brand-muted focus:border-brand-pink focus:ring-1 focus:ring-brand-pink outline-none transition"></textarea>
         </div>
@@ -540,7 +543,7 @@
         { id: 'security', name: { en: 'Security and admission control', cz: 'Ostraha a kontrola vstupu' }, price: 6500, priceLabel: { en: '6,500–9,700', cz: '6 500–9 700' }, note: { en: 'Price range depends on the day and time of the event. The minimal price is applied in the calculation.', cz: 'Cenové rozpětí závisí na dni a čase akce. Ve výpočtu je použita minimální cena.' } },
         { id: 'punch-bowl', name: { en: 'Punch bowl (20L)', cz: 'Punčová mísa (20L)' }, price: 14500, note: { en: 'Details to be provided.', cz: 'Podrobnosti budou doplněny.' } },
         { id: 'taxi', name: { en: 'Taxi within Prague', cz: 'Taxi v rámci Prahy' }, price: 750, note: { en: 'One taxi ride within Prague city limits. Additional rides on demand.', cz: 'Jedna jízda taxi v rámci Prahy. Další jízdy na vyžádání.' } },
-        { id: 'photo-zone', name: { en: 'Photo zone', cz: 'Fotozóna' }, price: 0, priceLabel: { en: 'by demand', cz: 'na vyžádání' }, note: { en: 'Priced on demand — tell us what you need and we will quote it.', cz: 'Cena na vyžádání — dejte nám vědět, co potřebujete, a připravíme nabídku.' } },
+        { id: 'photo-zone', name: { en: 'Photo zone', cz: 'Fotozóna' }, price: 0, priceLabel: { en: 'on demand', cz: 'na vyžádání' }, note: { en: 'Priced on demand — tell us what you need and we will quote it.', cz: 'Cena na vyžádání — dejte nám vědět, co potřebujete, a připravíme nabídku.' } },
       ],
       // Real 5★ Google Maps reviews (shortened where needed), sourced
       // directly from the venue's listing — EN originals + CZ translation.
@@ -624,7 +627,8 @@
     // ============================================================
     const LF_I18N = {
       en: {
-        'hero.subtitle': 'Venue For Your Perfect Event (November, December)',
+        'hero.subtitle': 'Venue For Your Perfect Event',
+        'hero.period': '(November, December)',
         'hero.tagline': "A neon‑lit craft‑cocktail bar just off Karlovo Náměstí (4.9★, 1,090+ reviews) — signature drinks, warm energy, and a relaxed, easy‑going atmosphere. Lost & Found is where nights feel natural and unpretentious.",
         'eventDetails.heading': 'Event Details',
         'eventDetails.date': 'Date',
@@ -706,6 +710,7 @@
         'contact.phone': 'Phone',
         'contact.email': 'Email',
         'contact.wishes': 'Additional wishes',
+        'contact.date': 'Preferred event date',
         'contact.submit': "Let's Go Party!",
         'contact.submitNote': "Sends your request straight to our team — we'll get back to you shortly.",
         'contact.errorName': 'Please enter your name.',
@@ -719,7 +724,8 @@
         'footer.text': 'Lost & Found Bar Prague — Event Catering Calculator',
       },
       cz: {
-        'hero.subtitle': 'Prostor pro vaši dokonalou akci (listopad, prosinec)',
+        'hero.subtitle': 'Prostor pro vaši dokonalou akci',
+        'hero.period': '(listopad, prosinec)',
         'hero.tagline': 'Neonový craft cocktail bar kousek od Karlova náměstí (4,9★, 1 090+ recenzí) — signature drinky, vřelá energie a uvolněná, nenucená atmosféra. Lost & Found je místo, kde se noci prožívají přirozeně a bez přetvářky.',
         'eventDetails.heading': 'Informace o akci',
         'eventDetails.date': 'Datum',
@@ -801,6 +807,7 @@
         'contact.phone': 'Telefon',
         'contact.email': 'E-mail',
         'contact.wishes': 'Další přání',
+        'contact.date': 'Předpokládané datum akce',
         'contact.submit': "Let's Go Party!",
         'contact.submitNote': 'Poptávku odešleme přímo našemu týmu — brzy se vám ozveme.',
         'contact.errorName': 'Vyplňte prosím své jméno.',
@@ -1193,7 +1200,7 @@
       setText('[data-field="summary-grand"]', fmtPrice(grandTotal));
       setText('[data-field="summary-vat"]', fmtPrice(vat));
       setText('[data-field="summary-total-vat"]', fmtPrice(totalWithVat));
-      setText('[data-field="sticky-total"]', fmtPrice(totalWithVat));
+      setText('[data-field="sticky-total"]', fmtPrice(totalWithVat) + ' CZK');
 
       return { guests: guests, cateringTotal: cateringTotal, foodTotal: foodTotal, addonsTotal: addonsTotal, grandTotal: grandTotal, vat: vat, totalWithVat: totalWithVat };
     }
@@ -1319,6 +1326,7 @@
         name: document.getElementById('contact-name').value.trim(),
         phone: document.getElementById('contact-phone').value.trim(),
         email: document.getElementById('contact-email').value.trim(),
+        eventDate: document.getElementById('contact-date').value,
         wishes: document.getElementById('contact-wishes').value.trim(),
         language: currentLang,
         submittedAt: new Date().toISOString(),
