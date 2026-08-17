@@ -1,0 +1,48 @@
+﻿Section,ID,Field,English,Czech,Price per person (CZK)
+Package,economy,name,Basic,Basic,
+Package,economy,description,"A relaxed, budget-friendly setup — house cocktails, beer, wine and simple snacks. Great for casual get-togethers and smaller corporate mixers.","Uvolněná a cenově dostupná varianta — domácí koktejly, pivo, víno a jednoduché občerstvení. Skvělá volba pro neformální sešlosti a menší firemní akce.",
+Package,economy,pricePerPerson,590,590,590
+Package,economy,details.drinks,"House cocktail selection (6 recipes), craft beer on tap, house wine, soft drinks.","Výběr domácích koktejlů (6 receptur), craft pivo, domácí víno, nealkoholické nápoje.",
+Package,economy,details.starters,"Nachos, chips & dips, mixed snack bowls.","Nachos, chipsy s dipy, mix slaného pečiva.",
+Package,economy,details.mains,"Choice of 2 pizzas per event, served family-style.","Výběr ze 2 druhů pizzy na akci, servírováno k volnému nabírání.",
+Package,economy,details.desserts,Not included — can be added as an add-on.,Není součástí — lze doobjednat jako doplněk.,
+Package,economy,details.alcohol,Approx. 70% alcoholic / 30% non-alcoholic drinks.,Přibližně 70 % alkoholických / 30 % nealkoholických nápojů.,
+Package,economy,details.portions,2 drinks + 1 snack portion per guest.,2 nápoje + 1 porce občerstvení na hosta.,
+Package,standard,name,Casual,Casual,
+Package,standard,description,"Our most popular package — a wider cocktail menu and variety of snacks. Fits birthdays, presentations and receptions.","Náš nejoblíbenější balíček — širší nabídka koktejlů a pestrá nabídka občerstvení. Vhodné pro oslavy, prezentace a recepce.",
+Package,standard,pricePerPerson,790,790,790
+Package,standard,details.drinks,"Full classic cocktail menu, wine & spritz, craft beer, spirits, non-alcoholic cocktails.","Kompletní nabídka klasických koktejlů, víno a spritz, craft pivo, lihoviny, nealkoholické koktejly.",
+Package,standard,details.starters,"Nachos, quesadillas, mixed hot & cold snack platters.","Nachos, quesadillas, mix studených a teplých předkrmů.",
+Package,standard,details.mains,"Choice of 3 pizzas + quesadilla station, served throughout the event.","Výběr ze 3 druhů pizzy + quesadilla stanice, servírováno po celou dobu akce.",
+Package,standard,details.desserts,"Mini dessert platter, chef's selection.","Mini dezertní mísa, výběr šéfkuchaře.",
+Package,standard,details.alcohol,Approx. 80% alcoholic / 20% non-alcoholic drinks.,Přibližně 80 % alkoholických / 20 % nealkoholických nápojů.,
+Package,standard,details.portions,3 drinks + 2 food portions per guest.,3 nápoje + 2 porce jídla na hosta.,
+Package,premium,name,Premium,Premium,
+Package,premium,description,"The full Lost & Found experience — signature cocktails, personalized drinks, a gourmet food menu and dedicated service for your guests.","Kompletní zážitek Lost & Found — signature koktejly, koktejly na míru se jménem hosta, gurmánské menu a vyhrazená obsluha pro vaše hosty.",
+Package,premium,pricePerPerson,1090,1090,1090
+Package,premium,details.drinks,"Full signature menu (Ferrari, Lamborghini, Long Island, Skittles & more), classics, wine & spritz, premium spirits, personalized named cocktails.","Kompletní signature menu (Ferrari, Lamborghini, Long Island, Skittles a další), klasické koktejly, víno a spritz, prémiové lihoviny, koktejly na míru se jménem hosta.",
+Package,premium,details.starters,"Full starter selection — nachos, quesadillas, chef's snack board.","Plná nabídka předkrmů — nachos, quesadillas, mísa specialit šéfkuchaře.",
+Package,premium,details.mains,"Full pizza menu + quesadilla station + hot mains, continuously served.","Plné menu pizz + quesadilla stanice + teplá hlavní jídla, servírováno po celou dobu akce.",
+Package,premium,details.desserts,"Full dessert selection, plated per guest.","Plná nabídka dezertů, servírováno každému hostu zvlášť.",
+Package,premium,details.alcohol,Approx. 85% alcoholic / 15% non-alcoholic drinks — adjustable on request.,Přibližně 85 % alkoholických / 15 % nealkoholických nápojů — lze upravit na přání.,
+Package,premium,details.portions,"4+ drinks + full food service per guest, dedicated bartender included.","4+ nápoje + plný servis jídla na hosta, vyhrazený barman v ceně.",
+Add-on,dj,name,DJ / live music,DJ / živá hudba,4500
+Add-on,dj,note,Details to be provided.,Podrobnosti budou doplněny.,
+Add-on,photo-video,name,Photo / video,Foto / video,6000
+Add-on,photo-video,note,Details to be provided.,Podrobnosti budou doplněny.,
+Add-on,venue-branding,name,Venue branding,Brandování prostoru,3500
+Add-on,venue-branding,note,Details to be provided.,Podrobnosti budou doplněny.,
+Add-on,entertainers,name,Entertainers / host,Animátoři / moderátor,5000
+Add-on,entertainers,note,Details to be provided.,Podrobnosti budou doplněny.,
+Add-on,menu-printing,name,Branded menu printing,Tisk menu s logem,800
+Add-on,menu-printing,note,Details to be provided.,Podrobnosti budou doplněny.,
+Add-on,gift-sets,name,Gift sets,Dárkové sety,3000
+Add-on,gift-sets,note,Details to be provided.,Podrobnosti budou doplněny.,
+Add-on,waiter-service,name,Premium waiter service,Prémiový servis číšníků,3500
+Add-on,waiter-service,note,Details to be provided.,Podrobnosti budou doplněny.,
+Add-on,security,name,Security and admission control,Ostraha a kontrola vstupu,3000
+Add-on,security,note,Details to be provided.,Podrobnosti budou doplněny.,
+Add-on,ny-accessories,name,NY accessories (100 pcs),Silvestrovské doplňky (100 ks),10000
+Add-on,ny-accessories,note,Details to be provided.,Podrobnosti budou doplněny.,
+Add-on,punch-bowl,name,Punch bowl (20L),Punčová mísa (20L),15000
+Add-on,punch-bowl,note,Details to be provided.,Podrobnosti budou doplněny.,

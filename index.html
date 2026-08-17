@@ -626,6 +626,21 @@ a[href*="firmy.cz"]::before{background-image:url('data:image/svg+xml;utf8,<svg x
 .vt-line.a{background:#43a047}
 .vt-station{color:var(--ink);font-weight:600}
 .vt-time{color:var(--muted);margin-left:auto;font-size:12.5px}
+
+/* --- Кнопка калькулятора ивентов (v1.24) --- */
+.events-calc{text-align:center;margin-top:36px}
+.events-calc-btn{
+  display:inline-flex;align-items:center;gap:12px;
+  padding:18px 34px;border-radius:14px;text-decoration:none;
+  background:linear-gradient(90deg,var(--violet),var(--magenta));color:#fff;
+  font-weight:700;font-size:17px;letter-spacing:.02em;
+  box-shadow:0 0 30px rgba(200,85,181,.4);
+  transition:transform .18s,box-shadow .25s;
+}
+.events-calc-btn:hover{transform:translateY(-3px);box-shadow:0 8px 40px rgba(224,48,192,.55)}
+.events-calc-btn svg{width:24px;height:24px;flex-shrink:0}
+.events-calc-sub{margin-top:12px;color:var(--muted);font-size:14px}
+@media(max-width:600px){.events-calc-btn{width:100%;justify-content:center;font-size:16px;padding:16px 24px}}
 </style>
 
 <!-- Google Analytics -->
@@ -1307,6 +1322,14 @@ a[href*="firmy.cz"]::before{background-image:url('data:image/svg+xml;utf8,<svg x
       <h3>💬 Pricing built around your night</h3>
       <p>There is no fixed package, because no two events are the same. Cost depends on the day, group size, which spaces you need and whether you want food. <a href="#visit">Send us the details</a> and we will come back with a clear quote — no obligation.</p>
     </div>
+  </div>
+
+  <div class="events-calc">
+    <a class="events-calc-btn" href="https://lostfoundcz.com/catering-calculator/" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="8" y1="6" x2="16" y2="6"/><line x1="8" y1="10" x2="8" y2="10"/><line x1="12" y1="10" x2="12" y2="10"/><line x1="16" y1="10" x2="16" y2="10"/><line x1="8" y1="14" x2="8" y2="14"/><line x1="12" y1="14" x2="12" y2="14"/><line x1="16" y1="14" x2="16" y2="18"/><line x1="8" y1="18" x2="12" y2="18"/></svg>
+      Calculate your event
+    </a>
+    <div class="events-calc-sub">Corporate parties, birthdays, buyouts — get an instant estimate</div>
   </div>
 </section>
 

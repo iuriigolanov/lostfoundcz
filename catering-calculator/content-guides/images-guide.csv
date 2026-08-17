@@ -1,0 +1,23 @@
+﻿Filename,Used for,Status,Required size (W x H),Aspect ratio,Format,Notes
+logo-partner.png,"Header, left logo badge (client/partner booking the event)",Placeholder - needs a logo,up to 400x200 (min 200x100),"flexible, fits inside a 128x64 box","PNG, transparent background",object-contain (never cropped). Left empty by design until a specific corporate client is confirmed.
+logo-venue.png,"Header, right logo badge (Lost & Found's own logo)",Placeholder - needs a logo,up to 400x200 (min 200x100),"flexible, fits inside a 128x64 box","PNG, transparent background",Same object-contain behavior as logo-partner. A transparent-background export of the neon wordmark logo works best here.
+hero-bg.jpg,Header background (top banner),Live,1600x727 (min 1200x545),~2.2:1 (wide banner),JPG,"Displayed behind a 65% black overlay + text. object-cover, so extra height/width is safely cropped."
+gallery-1.jpg,"""Feel the Room"" gallery, tile 1 (bar / neon interior)",Live,900x600 (min 400x267),3:2,JPG,"Grid tile, object-cover. Keep the main subject centered."
+gallery-2.jpg,"""Feel the Room"" gallery, tile 2 (lounge seating)",Live,900x600 (min 400x267),3:2,JPG,Same crop rules as gallery-1.
+gallery-3.jpg,"""Feel the Room"" gallery, tile 3 (crowd / party)",Live,900x600 (min 400x267),3:2,JPG,Same crop rules as gallery-1.
+gallery-4.jpg,"""Feel the Room"" gallery, tile 4 (signature cocktails)",Live,900x600 (min 400x267),3:2,JPG,Same crop rules as gallery-1.
+pkg-economy.jpg,Package accordion - Economy tier dish photo,"Live (3-photo collage: nachos, cherry beer, shot flight)",1600x300 (min 900x170),~5.3:1 (very wide strip),JPG,Fixed-height (96px) strip that stretches full-width.
+pkg-standard.jpg,Package accordion - Standard tier dish photo,Placeholder - needs a photo,1600x300 (min 900x170),~5.3:1 (very wide strip),JPG,Same spec and cropping caveat as pkg-economy.
+pkg-premium.jpg,Package accordion - Premium tier dish photo,Placeholder - needs a photo,1600x300 (min 900x170),~5.3:1 (very wide strip),JPG,Same spec and cropping caveat as pkg-economy.
+
+Type,Note
+General rule,Filenames are case-sensitive and must match exactly.
+General rule,"Photos are JPG, logos are PNG - logo-partner.png and logo-venue.png are the only PNGs."
+General rule,Keep files under ~300 KB each where possible.
+General rule,Photo slots use object-fit: cover (crops to fill). Logo slots use object-fit: contain (never cropped).
+General rule,"Adding a NEW image slot requires a code change in index.html, not just a file swap."
+Removed,proof.jpg is no longer referenced - the social-proof block was replaced by the Google Maps reviews carousel (text-only).
+Source & rights,hero-bg.jpg is the venue's own official photo (from lostfoundcz.com).
+Source & rights,"gallery-1.jpg, gallery-2.jpg, and gallery-4.jpg appear to be the venue's own Instagram photos (supplied directly)."
+Source & rights,gallery-3.jpg is a guest-submitted photo pulled from the venue's Google Maps listing (public reviews) - confirm there's no objection to using it commercially.
+Source & rights,pkg-economy.jpg is a collage built from venue-supplied photos.
