@@ -662,6 +662,39 @@ a[href*="firmy.cz"]::before{background-image:url('data:image/svg+xml;utf8,<svg x
 .ep-date-num{font-family:'Bebas Neue';font-size:clamp(46px,9vw,72px);line-height:.9;color:var(--ink);text-shadow:0 0 24px rgba(200,85,181,.5)}
 .ep-date-time{font-size:14px;color:var(--cyan);font-weight:700;letter-spacing:.06em;margin-top:4px}
 @media(max-width:560px){.event-poster-inner{flex-direction:column;text-align:center;gap:18px;padding:28px 22px}.ep-right{order:-1}}
+
+/* --- Event баннер (переиспользуемый, v1.27) --- */
+.event-banner{
+  display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;
+  text-align:center;text-decoration:none;
+  padding:9px 18px;font-size:13.5px;font-weight:600;line-height:1.4;color:#fff;
+  background:linear-gradient(90deg,var(--violet),var(--magenta));
+  position:relative;z-index:70;
+}
+.event-banner-text{text-shadow:0 1px 3px rgba(0,0,0,.4)}
+.event-banner-cta{
+  display:inline-flex;align-items:center;gap:5px;
+  font-weight:700;padding:3px 12px;border-radius:999px;
+  background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.3);
+  white-space:nowrap;transition:background .2s;
+}
+.event-banner:hover .event-banner-cta{background:rgba(255,255,255,.3)}
+@media(max-width:600px){.event-banner{font-size:12px;padding:8px 12px;gap:8px}}
+/* Малый блок события под рейтингом */
+.event-chip{
+  display:flex;align-items:center;gap:14px;width:min(440px,90vw);margin:0 auto 26px;
+  padding:12px 18px;border-radius:14px;text-decoration:none;
+  background:linear-gradient(135deg,rgba(224,48,192,.14),rgba(200,85,181,.08));
+  border:1px solid rgba(224,48,192,.4);
+  box-shadow:0 4px 20px rgba(224,48,192,.16);
+  transition:transform .18s,box-shadow .25s,border-color .25s;
+}
+.event-chip:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(224,48,192,.3);border-color:rgba(224,48,192,.6)}
+.event-chip-icon{font-size:22px;flex-shrink:0}
+.event-chip-body{flex:1;text-align:left}
+.event-chip-title{font-weight:700;font-size:14px;color:var(--ink);letter-spacing:.02em}
+.event-chip-sub{font-size:12px;color:var(--muted);margin-top:2px}
+.event-chip-arrow{color:var(--magenta);font-size:18px;flex-shrink:0}
 </style>
 
 <!-- Google Analytics -->
@@ -694,6 +727,10 @@ a[href*="firmy.cz"]::before{background-image:url('data:image/svg+xml;utf8,<svg x
   <img class="lightbox-img" id="lightbox-img" alt="">
 </div>
 
+<a class="event-banner" href="#events">
+  <span class="event-banner-text">🎧 LOST PARTY — our neon DJ nights are back soon · open-format sets, free entry</span>
+  <span class="event-banner-cta">See events →</span>
+</a>
 <header>
   <nav class="wrap nav">
     <img loading="eager" decoding="async" src="img/logo.png" alt="Lost and Found Bar Prague logo">
@@ -729,6 +766,14 @@ a[href*="firmy.cz"]::before{background-image:url('data:image/svg+xml;utf8,<svg x
     </a>
     <a class="grp-cta" href="https://g.page/r/CRuq5bPC7DCyEBM/review" target="_blank" rel="noopener" aria-label="Leave a Google review">Rate Us</a>
   </div>
+    <a class="event-chip" href="#events">
+    <span class="event-chip-icon">🎧</span>
+    <span class="event-chip-body">
+      <span class="event-chip-title">🎧 LOST PARTY · DJ Nights</span>
+      <span class="event-chip-sub">Neon signature nights — next date coming soon</span>
+    </span>
+    <span class="event-chip-arrow">→</span>
+  </a>
   <p class="lede">A hidden neon corner in the heart of Nové Město. Signature craft cocktails, premium hookah, craft beer and late-night vibes on Žitná.</p>
   <div class="hero-actions">
     <a class="btn btn-primary hero-reserve" href="https://app.resmio.com/lost-and-found-bar-prague/widget?source=GoogleCTA" target="_blank" rel="noopener">Reserve a table</a>
