@@ -750,6 +750,23 @@ a[href*="firmy.cz"]::before{background-image:url('data:image/svg+xml;utf8,<svg x
 .map-embed{min-height:auto}
 .map-embed iframe{height:280px!important}
 .pay-row{gap:8px}
+
+/* --- Google плашка увеличенная + свечение (v1.32) --- */
+.google-review-plaque{
+  width:min(500px,92vw)!important;
+  padding:16px 22px!important;
+  border:1px solid rgba(0,200,224,.35)!important;
+  box-shadow:0 0 34px rgba(0,200,224,.22)!important;
+  animation:grpGlow 3s ease-in-out infinite;
+}
+@keyframes grpGlow{0%,100%{box-shadow:0 0 24px rgba(0,200,224,.18)}50%{box-shadow:0 0 40px rgba(0,200,224,.4)}}
+.grp-num{font-size:30px!important}
+.grp-star-icons{font-size:19px!important}
+.grp-count{font-size:13px!important}
+.grp-cta{padding:12px 22px!important;font-size:15px!important;box-shadow:0 0 20px rgba(200,85,181,.45)}
+.grp-cta:hover{box-shadow:0 4px 26px rgba(224,48,192,.6)}
+/* События сразу под hero */
+.upcoming-standalone{padding:20px 20px 0}
 </style>
 
 <!-- Google Analytics -->
@@ -838,6 +855,52 @@ a[href*="firmy.cz"]::before{background-image:url('data:image/svg+xml;utf8,<svg x
     <div class="hero-late-val">till 3 a.m. or later on request</div>
     <div class="hero-late-lbl">Late Weekends</div>
   </div>
+</section>
+
+<section class="wrap upcoming-standalone">
+  <div class="upcoming">
+    <div class="upcoming-head">
+      <span class="upcoming-kicker">Upcoming · DJ Nights 🎧</span>
+      <div class="upcoming-title">LOST PARTY</div>
+      <div class="upcoming-djs">DJ Sets: <span>LEX MIRA · SHØGUN</span></div>
+      <div class="upcoming-desc">Our neon signature nights. Open-format sets, craft cocktails and premium hookah till late.</div>
+    </div>
+    <div class="upcoming-cards">
+      <div class="uc">
+        <div class="uc-day">FRI</div>
+        <div class="uc-date">18.09</div>
+        <div class="uc-time">START 20:00</div>
+        <div class="uc-badge">This week</div>
+      </div>
+      <div class="uc">
+        <div class="uc-day">SAT</div>
+        <div class="uc-date">19.09</div>
+        <div class="uc-time">START 20:00</div>
+        <div class="uc-badge">This week</div>
+      </div>
+    </div>
+    <div class="upcoming-free">Free entry — no guestlist, just pull up</div>
+    <div class="upcoming-meta">Starts 20:00 · Žitná 1764/11, Praha 1</div>
+  </div>
+  </div>
+
+  
+  <details class="past-events">
+    <summary>Past events</summary>
+    <div class="past-list">
+      <div class="past-item">
+        <div class="past-date">11.09</div>
+        <div class="past-info"><div class="past-name">LOST PARTY</div><div class="past-desc">DJ Night with LEX MIRA · SHØGUN — open-format sets, free entry</div></div>
+      </div>
+      <div class="past-item">
+        <div class="past-date">04.09</div>
+        <div class="past-info"><div class="past-name">LOST PARTY</div><div class="past-desc">DJ Night with LEX MIRA · SHØGUN — open-format sets, free entry</div></div>
+      </div>
+      <div class="past-item">
+        <div class="past-date">28.08</div>
+        <div class="past-info"><div class="past-name">LOST PARTY</div><div class="past-desc">DJ Night with LEX MIRA · SHØGUN — open-format sets, free entry</div></div>
+      </div>
+    </div>
 </section>
 
 <!-- ABOUT -->
@@ -1411,51 +1474,6 @@ a[href*="firmy.cz"]::before{background-image:url('data:image/svg+xml;utf8,<svg x
     <h2>Your event, our neon</h2>
     <p>Birthdays, corporate nights, team socials or a full bar buyout — three distinct spaces, an on-site kitchen, and up to 80 guests in the heart of Prague.</p>
   </div>
-
-  
-  <div class="upcoming">
-    <div class="upcoming-head">
-      <span class="upcoming-kicker">Upcoming · DJ Nights 🎧</span>
-      <div class="upcoming-title">LOST PARTY</div>
-      <div class="upcoming-djs">DJ Sets: <span>LEX MIRA · SHØGUN</span></div>
-      <div class="upcoming-desc">Our neon signature nights. Open-format sets, craft cocktails and premium hookah till late.</div>
-    </div>
-    <div class="upcoming-cards">
-      <div class="uc">
-        <div class="uc-day">FRI</div>
-        <div class="uc-date">18.09</div>
-        <div class="uc-time">START 20:00</div>
-        <div class="uc-badge">This week</div>
-      </div>
-      <div class="uc">
-        <div class="uc-day">SAT</div>
-        <div class="uc-date">19.09</div>
-        <div class="uc-time">START 20:00</div>
-        <div class="uc-badge">This week</div>
-      </div>
-    </div>
-    <div class="upcoming-free">Free entry — no guestlist, just pull up</div>
-    <div class="upcoming-meta">Starts 20:00 · Žitná 1764/11, Praha 1</div>
-  </div>
-  </div>
-
-  
-  <details class="past-events">
-    <summary>Past events</summary>
-    <div class="past-list">
-      <div class="past-item">
-        <div class="past-date">11.09</div>
-        <div class="past-info"><div class="past-name">LOST PARTY</div><div class="past-desc">DJ Night with LEX MIRA · SHØGUN — open-format sets, free entry</div></div>
-      </div>
-      <div class="past-item">
-        <div class="past-date">04.09</div>
-        <div class="past-info"><div class="past-name">LOST PARTY</div><div class="past-desc">DJ Night with LEX MIRA · SHØGUN — open-format sets, free entry</div></div>
-      </div>
-      <div class="past-item">
-        <div class="past-date">28.08</div>
-        <div class="past-info"><div class="past-name">LOST PARTY</div><div class="past-desc">DJ Night with LEX MIRA · SHØGUN — open-format sets, free entry</div></div>
-      </div>
-    </div>
   </details>
 
   <div class="zones">
