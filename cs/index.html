@@ -670,22 +670,6 @@ a[href*="firmy.cz"]::before{background-image:url('data:image/svg+xml;utf8,<svg x
 }
 .event-banner:hover .event-banner-cta{background:rgba(255,255,255,.3)}
 @media(max-width:600px){.event-banner{font-size:12px;padding:8px 12px;gap:8px}}
-/* Малый блок события под рейтингом */
-.event-chip{
-  display:flex;align-items:center;gap:14px;width:min(440px,90vw);margin:0 auto 26px;
-  padding:12px 18px;border-radius:14px;text-decoration:none;
-  background:linear-gradient(135deg,rgba(224,48,192,.14),rgba(200,85,181,.08));
-  border:1px solid rgba(224,48,192,.4);
-  box-shadow:0 4px 20px rgba(224,48,192,.16);
-  transition:transform .18s,box-shadow .25s,border-color .25s;
-}
-.event-chip:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(224,48,192,.3);border-color:rgba(224,48,192,.6)}
-.event-chip-icon{font-size:22px;flex-shrink:0}
-.event-chip-body{flex:1;text-align:left}
-.event-chip-title{font-weight:700;font-size:14px;color:var(--ink);letter-spacing:.02em}
-.event-chip-sub{font-size:12px;color:var(--muted);margin-top:2px}
-.event-chip-arrow{color:var(--magenta);font-size:18px;flex-shrink:0}
-
 /* --- Прошедшие события (архив, v1.28) --- */
 .past-events{max-width:760px;margin:0 auto 40px}
 .past-events summary{cursor:pointer;list-style:none;color:var(--muted);font-size:13px;letter-spacing:.06em;text-transform:uppercase;padding:10px 0;border-top:1px solid rgba(255,255,255,.08);transition:color .2s}
@@ -828,26 +812,6 @@ a[href*="firmy.cz"]::before{background-image:url('data:image/svg+xml;utf8,<svg x
     </a>
     <a class="grp-cta" href="https://g.page/r/CRuq5bPC7DCyEBM/review" target="_blank" rel="noopener" aria-label="Napsat recenzi na Googlu">Ohodnotit nás</a>
   </div>
-    <a class="event-chip" href="#events">
-    <span class="event-chip-icon">🎧</span>
-    <span class="event-chip-body">
-      <span class="event-chip-title">🎧 LOST PARTY · DJ noci</span>
-      <span class="event-chip-sub">18.09 & 19.09 · 20:00 · Vstup zdarma</span>
-    </span>
-    <span class="event-chip-arrow">→</span>
-  </a>
-  <p class="lede">Skrytý neonový kout v srdci Nového Města. Autorské koktejly, prémiová vodní dýmka, craft pivo a noční atmosféra na Žitné.</p>
-  <div class="hero-actions">
-    <a class="btn btn-primary hero-reserve" href="https://app.resmio.com/lost-and-found-bar-prague/widget?source=GoogleCTA" target="_blank" rel="noopener">Rezervovat stůl</a>
-    <a class="btn btn-ghost" href="#menu">Zobrazit menu</a>
-  </div>
-  <div class="hero-late">
-    <div class="hero-late-val">do 3:00 nebo déle — na vyžádání</div>
-    <div class="hero-late-lbl">O víkendech dlouho do rána</div>
-  </div>
-</section>
-
-<section class="wrap upcoming-standalone">
   <div class="upcoming">
     <div class="upcoming-head">
       <span class="upcoming-kicker">Nadcházející · DJ noci 🎧</span>
@@ -872,26 +836,18 @@ a[href*="firmy.cz"]::before{background-image:url('data:image/svg+xml;utf8,<svg x
     <div class="upcoming-free">Vstup zdarma — bez guestlistu, prostě doraz</div>
     <div class="upcoming-meta">Start 20:00 · Žitná 1764/11, Praha 1</div>
   </div>
+  <p class="lede">Skrytý neonový kout v srdci Nového Města. Autorské koktejly, prémiová vodní dýmka, craft pivo a noční atmosféra na Žitné.</p>
+  <div class="hero-actions">
+    <a class="btn btn-primary hero-reserve" href="https://app.resmio.com/lost-and-found-bar-prague/widget?source=GoogleCTA" target="_blank" rel="noopener">Rezervovat stůl</a>
+    <a class="btn btn-ghost" href="#menu">Zobrazit menu</a>
   </div>
-
-  
-  <details class="past-events">
-    <summary>Uplynulé akce</summary>
-    <div class="past-list">
-      <div class="past-item">
-        <div class="past-date">11.09</div>
-        <div class="past-info"><div class="past-name">LOST PARTY</div><div class="past-desc">DJ noc s LEX MIRA · SHØGUN — open-format sety, vstup zdarma</div></div>
-      </div>
-      <div class="past-item">
-        <div class="past-date">04.09</div>
-        <div class="past-info"><div class="past-name">LOST PARTY</div><div class="past-desc">DJ noc s LEX MIRA · SHØGUN — open-format sety, vstup zdarma</div></div>
-      </div>
-      <div class="past-item">
-        <div class="past-date">28.08</div>
-        <div class="past-info"><div class="past-name">LOST PARTY</div><div class="past-desc">DJ noc s LEX MIRA · SHØGUN — open-format sety, vstup zdarma</div></div>
-      </div>
-    </div>
+  <div class="hero-late">
+    <div class="hero-late-val">do 3:00 nebo déle — na vyžádání</div>
+    <div class="hero-late-lbl">O víkendech dlouho do rána</div>
+  </div>
 </section>
+
+
 
 <!-- ABOUT -->
 
@@ -945,7 +901,6 @@ a[href*="firmy.cz"]::before{background-image:url('data:image/svg+xml;utf8,<svg x
         <span class="tag" style="--tc:111,136,200">Šipky a stolní fotbal</span>
         <span class="tag" style="--tc:89,149,205">Prostory pro akce</span>
         <span class="tag" style="--tc:67,162,210">Noční život</span>
-        <span class="tag" style="--tc:44,174,214">Arkády a box</span>
         <span class="tag" style="--tc:22,187,219">Bez rezervace vítáni</span>
         <span class="tag" style="--tc:0,200,224">Centrum Prahy</span>
       </div>
@@ -1685,7 +1640,6 @@ a[href*="firmy.cz"]::before{background-image:url('data:image/svg+xml;utf8,<svg x
 
 <footer>
   <div class="wrap">
-    <img loading="lazy" decoding="async" src="../img/logo.png" alt="Lost and Found Bar Prague">
     <div class="socials">
       <a href="https://www.instagram.com/lostfoundcz/" target="_blank" rel="noopener">Instagram</a>
       <a href="https://www.facebook.com/lostandfoundcz/" target="_blank" rel="noopener">Facebook</a>
@@ -1699,7 +1653,6 @@ a[href*="firmy.cz"]::before{background-image:url('data:image/svg+xml;utf8,<svg x
       Lost &amp; Found Bar Praha — Koktejlový bar a vodní dýmka<br>
       Žitná 1764/11, Nové Město, 110 00 Praha 1 · +420 724 188 537<br>
       Open: Sun–Tue 18–00 | Wed–Thu 17–01 | Fri–Sat 17–03<br>
-      Hodnocení 4,9★ z 1 140+ recenzí na Googlu<br>
       Legal info: IČO 19209002, IURII GOLANOV
     <br><a href="/cs/privacy.html" style="color:var(--muted);text-decoration:underline">Zásady ochrany soukromí</a></div>
   </div>
