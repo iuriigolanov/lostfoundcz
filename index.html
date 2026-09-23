@@ -710,7 +710,10 @@ a[href*="firmy.cz"]::before{background-image:url('data:image/svg+xml;utf8,<svg x
 .upcoming-title{font-family:'Bebas Neue';font-size:clamp(46px,8vw,74px);line-height:.95;letter-spacing:.02em;margin-top:12px;background:linear-gradient(90deg,var(--magenta),var(--violet),var(--cyan));background-size:200% auto;-webkit-background-clip:text;background-clip:text;color:transparent;animation:shine 5s linear infinite;text-shadow:0 0 40px rgba(224,48,192,.3)}
 @keyframes shine{to{background-position:200% center}}
 .upcoming-djs{font-size:16px;color:var(--ink);font-weight:700;letter-spacing:.08em;margin-top:6px}
-.upcoming-djs span{color:var(--cyan)}
+.upcoming-djs span{color:var(--cyan);font-weight:800;font-size:2em}
+.evt-djs{text-align:center;margin-top:30px}
+.past-link{color:var(--cyan);cursor:pointer;transition:text-shadow .2s}
+.past-link:hover{text-decoration:underline;text-shadow:0 0 12px rgba(0,200,224,.5)}
 
 .upcoming-cards{display:flex;gap:18px;justify-content:center;flex-wrap:wrap;margin-top:26px}
 .uc{
@@ -798,6 +801,19 @@ a[href*="firmy.cz"]::before{background-image:url('data:image/svg+xml;utf8,<svg x
 .poster-lb-img{max-width:min(92vw,520px);max-height:90vh;width:auto;height:auto;border-radius:14px;box-shadow:0 20px 80px rgba(0,0,0,.7),0 0 44px rgba(200,85,181,.28)}
 .poster-lb-close{position:absolute;top:18px;right:22px;width:44px;height:44px;border:0;border-radius:50%;background:rgba(255,255,255,.12);color:#fff;font-size:26px;line-height:1;cursor:pointer;transition:background .2s}
 .poster-lb-close:hover{background:rgba(255,255,255,.25)}
+.evt-banner{position:relative;display:block;width:100%;height:400px;margin-top:18px;border:1.5px solid rgba(224,48,192,.5);border-radius:20px;overflow:hidden;cursor:pointer;background-size:cover;background-position:center 26%;box-shadow:0 0 40px rgba(224,48,192,.28);transition:transform .2s,box-shadow .3s}
+.evt-banner:hover{transform:translateY(-4px);box-shadow:0 10px 50px rgba(224,48,192,.45)}
+.evt-banner::before{content:"";position:absolute;inset:0;background:linear-gradient(105deg,rgba(0,0,0,.72) 0%,rgba(0,0,0,.15) 42%,rgba(0,0,0,0) 62%),linear-gradient(0deg,rgba(0,0,0,.82) 0%,rgba(0,0,0,0) 34%);z-index:1}
+.evt-banner-hint{position:absolute;right:10px;bottom:6px;z-index:2;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--cyan);background:rgba(0,0,0,.5);padding:5px 10px;border-radius:999px}
+.evt-banner-info{position:absolute;left:0;bottom:0;z-index:2;max-width:82%;padding:16px 14px 0;text-align:left}
+.evt-banner-when{font-family:'Bebas Neue';font-size:30px;letter-spacing:.05em;color:#fff;line-height:1;text-shadow:0 2px 14px rgba(0,0,0,.6)}
+.evt-when-row{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
+.evt-when-row .uc-date{line-height:.8}
+.evt-when-row .uc-time{margin-top:0}
+.evt-banner-info .uc-day{margin-bottom:0}
+.evt-banner-dj{font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:#fff}
+.evt-banner-dj em{font-style:normal;color:var(--cyan);letter-spacing:.05em}
+@media(max-width:560px){.evt-banner{height:360px;background-position:center 24%}.evt-banner-info{max-width:92%}}
 </style>
 
 <!-- Google Analytics -->
@@ -877,18 +893,29 @@ a[href*="firmy.cz"]::before{background-image:url('data:image/svg+xml;utf8,<svg x
       <div class="upcoming-djs">DJ Sets: <span>LEX MIRA · SHØGUN</span></div>
     </div>
     <div class="upcoming-cards">
-      <div class="uc uc-clickable" role="button" tabindex="0" aria-label="View event poster">
+      <div class="uc uc-clickable" role="button" tabindex="0" aria-label="View event poster" data-poster="img/events/20260925_20260926.jpg">
         <div class="uc-day">FRI</div>
         <div class="uc-date">25.09</div>
         <div class="uc-time">START 20:00</div>
         <div class="uc-badge">This week</div>
       </div>
-      <div class="uc uc-clickable" role="button" tabindex="0" aria-label="View event poster">
+      <div class="uc uc-clickable" role="button" tabindex="0" aria-label="View event poster" data-poster="img/events/20260925_20260926.jpg">
         <div class="uc-day">SAT</div>
         <div class="uc-date">26.09</div>
         <div class="uc-time">START 20:00</div>
         <div class="uc-badge">This week</div>
       </div>
+    </div>
+    <div class="upcoming-djs evt-djs"><span>DJ TOBIAS MANN</span> (from Germany, Leipzig)</div>
+    <div class="evt-banner" data-poster="img/events/tobias-mann-1710.jpg" role="button" tabindex="0" aria-label="View Tobias Mann poster" style="background-image:url('img/events/tobias-mann-banner.jpg')">
+      <div class="evt-banner-info">
+        <div class="uc-day">SAT</div>
+        <div class="evt-when-row">
+          <div class="uc-date">17.10</div>
+          <div class="uc-time">START 21:00</div>
+        </div>
+      </div>
+      <span class="evt-banner-hint">View poster ↗</span>
     </div>
     <div class="upcoming-free">Free entry — no guestlist, just pull up</div>
   </div>
@@ -898,11 +925,11 @@ a[href*="firmy.cz"]::before{background-image:url('data:image/svg+xml;utf8,<svg x
     <div class="past-list">
       <div class="past-item">
         <div class="past-date">19.09</div>
-        <div class="past-info"><div class="past-name">LOST PARTY</div><div class="past-desc">DJ Night with LEX MIRA · SHØGUN — open-format sets, free entry</div></div>
+        <div class="past-info"><div class="past-name past-link" data-poster="img/events/lost-party-1909.jpg" role="button" tabindex="0">LOST PARTY</div><div class="past-desc">DJ Night with LEX MIRA · SHØGUN — open-format sets, free entry</div></div>
       </div>
       <div class="past-item">
         <div class="past-date">18.09</div>
-        <div class="past-info"><div class="past-name">LOST PARTY</div><div class="past-desc">DJ Night with LEX MIRA · SHØGUN — open-format sets, free entry</div></div>
+        <div class="past-info"><div class="past-name past-link" data-poster="img/events/lost-party-1809.jpg" role="button" tabindex="0">LOST PARTY</div><div class="past-desc">DJ Night with LEX MIRA · SHØGUN — open-format sets, free entry</div></div>
       </div>
       <div class="past-item">
         <div class="past-date">11.09</div>
@@ -1718,7 +1745,7 @@ a[href*="firmy.cz"]::before{background-image:url('data:image/svg+xml;utf8,<svg x
 
 <div class="poster-lb" id="posterLB" aria-hidden="true">
   <button class="poster-lb-close" type="button" aria-label="Close">&times;</button>
-  <img class="poster-lb-img" src="img/events/20260925_20260926.jpg" alt="LOST PARTY — Friday 25 &amp; Saturday 26 September, DJ sets LEX MIRA and SHØGUN, free entry, Lost &amp; Found Bar Prague">
+  <img class="poster-lb-img" src="" alt="LOST PARTY — Friday 25 &amp; Saturday 26 September, DJ sets LEX MIRA and SHØGUN, free entry, Lost &amp; Found Bar Prague">
 </div>
 
 <footer>
@@ -1815,7 +1842,7 @@ function ageDeny(){
 }
 </script>
 <script>
-(function(){var lb=document.getElementById("posterLB");if(!lb)return;var c=lb.querySelector(".poster-lb-close");function o(){lb.classList.add("open");lb.setAttribute("aria-hidden","false");document.body.style.overflow="hidden";}function x(){lb.classList.remove("open");lb.setAttribute("aria-hidden","true");document.body.style.overflow="";}document.querySelectorAll(".uc-clickable").forEach(function(el){el.addEventListener("click",o);el.addEventListener("keydown",function(e){if(e.key==="Enter"||e.key===" "){e.preventDefault();o();}});});c.addEventListener("click",x);lb.addEventListener("click",function(e){if(e.target===lb)x();});document.addEventListener("keydown",function(e){if(e.key==="Escape")x();});})();
+(function(){var lb=document.getElementById("posterLB");if(!lb)return;var c=lb.querySelector(".poster-lb-close");var im=lb.querySelector(".poster-lb-img");function o(el){var p=el.getAttribute("data-poster");if(p)im.src=p;lb.classList.add("open");lb.setAttribute("aria-hidden","false");document.body.style.overflow="hidden";}function x(){lb.classList.remove("open");lb.setAttribute("aria-hidden","true");document.body.style.overflow="";}document.querySelectorAll("[data-poster]").forEach(function(el){el.addEventListener("click",function(){o(el);});el.addEventListener("keydown",function(e){if(e.key==="Enter"||e.key===" "){e.preventDefault();o(el);}});});c.addEventListener("click",x);lb.addEventListener("click",function(e){if(e.target===lb)x();});document.addEventListener("keydown",function(e){if(e.key==="Escape")x();});})();
 </script>
 </body>
 </html>
