@@ -9,7 +9,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Lost &amp; Found Bar Praha | Koktejlový bar a vodní dýmka, Nové Město</title>
-<meta name="description" content="Lost &amp; Found je koktejlový bar a hookah lounge v srdci Prahy, Nové Město. 1 160+ recenzí na Googlu, hodnocení 4,9★. Autorské koktejly, prémiová vodní dýmka, craft pivo a noční atmosféra na Žitné. Rezervuj si stůl online.">
+<meta name="description" content="Lost &amp; Found je koktejlový bar a hookah lounge v srdci Prahy, Nové Město. 1 185+ recenzí na Googlu, hodnocení 4,9★. Autorské koktejly, prémiová vodní dýmka, craft pivo a noční atmosféra na Žitné. Rezervuj si stůl online.">
 <meta name="keywords" content="cocktail bar Prague, Lost and Found Bar Prague, craft cocktails Prague, hookah lounge Prague, bar Žitná, nightlife Prague, shisha Prague, cocktails Nové Město, private events Prague, party venue Prague, bar buyout Prague, corporate events Prague, birthday venue Prague, catering Prague">
 <link rel="preload" as="image" href="../img/hero-bg.jpg" fetchpriority="high">
 <link rel="preload" as="image" href="../img/logo.png" fetchpriority="high">
@@ -23,7 +23,7 @@
 <link rel="canonical" href="https://lostfoundcz.com/cs/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Lost &amp; Found Bar Praha — Koktejlový bar a vodní dýmka">
-<meta property="og:description" content="Autorské koktejly, prémiová vodní dýmka a noční atmosféra v srdci Prahy. Hodnocení 4,9★ z 1 160+ recenzí na Googlu.">
+<meta property="og:description" content="Autorské koktejly, prémiová vodní dýmka a noční atmosféra v srdci Prahy. Hodnocení 4,9★ z 1 185+ recenzí na Googlu.">
 <meta property="og:image" content="https://lostfoundcz.com/og-image.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -700,7 +700,7 @@ a[href*="firmy.cz"]::before{background-image:url('data:image/svg+xml;utf8,<svg x
 .upcoming-title{font-family:'Bebas Neue';font-size:clamp(46px,8vw,74px);line-height:.95;letter-spacing:.02em;margin-top:12px;background:linear-gradient(90deg,var(--magenta),var(--violet),var(--cyan));background-size:200% auto;-webkit-background-clip:text;background-clip:text;color:transparent;animation:shine 5s linear infinite;text-shadow:0 0 40px rgba(224,48,192,.3)}
 @keyframes shine{to{background-position:200% center}}
 .upcoming-djs{font-size:16px;color:var(--ink);font-weight:700;letter-spacing:.08em;margin-top:6px}
-.upcoming-djs span{color:var(--cyan);font-weight:800;font-size:2em}
+.upcoming-djs span{color:var(--cyan);font-weight:800;font-size:clamp(18px,5vw,30px)}
 .evt-djs{text-align:center;margin-top:30px}
 .past-link{color:var(--cyan);cursor:pointer;transition:text-shadow .2s}
 .past-link:hover{text-decoration:underline;text-shadow:0 0 12px rgba(0,200,224,.5)}
@@ -791,6 +791,17 @@ a[href*="firmy.cz"]::before{background-image:url('data:image/svg+xml;utf8,<svg x
 .poster-lb-img{max-width:min(92vw,520px);max-height:90vh;width:auto;height:auto;border-radius:14px;box-shadow:0 20px 80px rgba(0,0,0,.7),0 0 44px rgba(200,85,181,.28)}
 .poster-lb-close{position:absolute;top:18px;right:22px;width:44px;height:44px;border:0;border-radius:50%;background:rgba(255,255,255,.12);color:#fff;font-size:26px;line-height:1;cursor:pointer;transition:background .2s}
 .poster-lb-close:hover{background:rgba(255,255,255,.25)}
+.menu-nav{position:sticky;top:54px;z-index:40;display:flex;gap:8px;overflow-x:auto;padding:11px 0;margin:4px 0 10px;background:rgba(0,0,0,.85);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);scrollbar-width:none}
+.menu-nav::-webkit-scrollbar{display:none}
+.menu-nav a{flex:0 0 auto;font-size:12px;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);text-decoration:none;padding:8px 14px;border:1px solid var(--line);border-radius:999px;white-space:nowrap;transition:background .2s,color .2s,border-color .2s}
+.menu-nav a:hover,.menu-nav a.active{color:#000;background:var(--cyan);border-color:var(--cyan)}
+.menu-cat{scroll-margin-top:108px}
+
+.h2-why{font-size:clamp(30px,4.6vw,44px)!important}
+.vt-line.walk{background:none;color:var(--cyan);min-width:22px}
+.vt-line.walk svg{width:19px;height:19px}
+.brand-home{display:inline-flex;line-height:0}
+
 .evt-banner{position:relative;display:block;width:100%;height:400px;margin-top:18px;border:1.5px solid rgba(224,48,192,.5);border-radius:20px;overflow:hidden;cursor:pointer;background-size:cover;background-position:center 22%;box-shadow:0 0 40px rgba(224,48,192,.28);transition:transform .2s,box-shadow .3s}
 .hero-menu-mobile{display:none}
 .evt-banner:hover{transform:translateY(-4px);box-shadow:0 10px 50px rgba(224,48,192,.45)}
@@ -804,7 +815,7 @@ a[href*="firmy.cz"]::before{background-image:url('data:image/svg+xml;utf8,<svg x
 .evt-banner-info .uc-day{margin-bottom:0}
 .evt-banner-dj{font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:#fff}
 .evt-banner-dj em{font-style:normal;color:var(--cyan);letter-spacing:.05em}
-@media(max-width:560px){.evt-banner{height:360px;background-position:center 18%}.evt-banner-info{max-width:92%}.hero{min-height:auto;padding-top:22px}.hero-menu-mobile{display:flex;width:100%;justify-content:center;margin:2px 0 18px}.eb-prague{display:none}.fine-sep{display:none}.fine-phone{display:block}.footer-block .featured-in-list{gap:6px}.footer-block .fi-item{font-size:11px;padding:6px 10px;gap:5px}}
+@media(max-width:560px){.evt-banner{height:360px;background-position:center 18%}.evt-banner-info{max-width:92%}.hero{min-height:auto;padding-top:22px}.hero-menu-mobile{display:flex;width:100%;justify-content:center;margin:2px 0 18px}.eb-prague{display:none}.dj-origin{display:block;margin-top:2px}.fine-sep{display:none}.fine-phone{display:block}.footer-block .featured-in-list{gap:6px}.footer-block .fi-item{font-size:11px;padding:6px 10px;gap:5px}}
 </style>
 
 <!-- Google Analytics -->
@@ -838,13 +849,13 @@ a[href*="firmy.cz"]::before{background-image:url('data:image/svg+xml;utf8,<svg x
 </div>
 
 <a class="event-banner" href="#upcoming">
-  <span class="event-banner-text event-banner-l1">🎧 LOST PARTY · 25.09 & 26.09 · 20:00</span>
+  <span class="event-banner-text event-banner-l1">🎧 LOST PARTY · 02.10 & 03.10 · 20:00</span>
   <span class="event-banner-text event-banner-l2">DJ Sety: LEX MIRA & SHØGUN · Vstup zdarma</span>
   <span class="event-banner-cta">Zobrazit akce →</span>
 </a>
-<header>
+<header id="top">
   <nav class="wrap nav">
-    <img loading="eager" decoding="async" src="../img/logo.png" alt="Lost and Found Bar Prague logo">
+    <a href="#top" class="brand-home" aria-label="Back to top"><img loading="eager" decoding="async" src="../img/logo.png" alt="Lost and Found Bar Prague logo"></a>
     <div class="nav-links" id="navlinks">
       <a href="#about">O nás</a>
       <a href="#menu">Menu</a>
@@ -873,7 +884,7 @@ a[href*="firmy.cz"]::before{background-image:url('data:image/svg+xml;utf8,<svg x
       <svg class="grp-g" viewBox="0 0 24 24" width="26" height="26"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84A11 11 0 0 0 12 23z"/><path fill="#FBBC05" d="M5.84 14.1a6.6 6.6 0 0 1 0-4.2V7.06H2.18a11 11 0 0 0 0 9.88l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84C6.71 7.3 9.14 5.38 12 5.38z"/></svg>
       <div class="grp-stars">
         <div class="grp-rating-row"><span class="grp-num">4.9</span><span class="grp-star-icons">★★★★★</span></div>
-        <div class="grp-count">1 160+ recenzí na Googlu</div>
+        <div class="grp-count">1 185+ recenzí na Googlu</div>
       </div>
     </a>
     <a class="grp-cta" href="https://g.page/r/CRuq5bPC7DCyEBM/review" target="_blank" rel="noopener" aria-label="Napsat recenzi na Googlu">Ohodnotit nás</a>
@@ -887,18 +898,18 @@ a[href*="firmy.cz"]::before{background-image:url('data:image/svg+xml;utf8,<svg x
     <div class="upcoming-cards">
       <div class="uc uc-clickable" role="button" tabindex="0" aria-label="Zobrazit plakát akce" data-poster="../img/events/20260925_20260926.jpg">
         <div class="uc-day">PÁ</div>
-        <div class="uc-date">25.09</div>
+        <div class="uc-date">02.10</div>
         <div class="uc-time">20:00</div>
         <div class="uc-badge">Tento týden</div>
       </div>
       <div class="uc uc-clickable" role="button" tabindex="0" aria-label="Zobrazit plakát akce" data-poster="../img/events/20260925_20260926.jpg">
         <div class="uc-day">SO</div>
-        <div class="uc-date">26.09</div>
+        <div class="uc-date">03.10</div>
         <div class="uc-time">20:00</div>
         <div class="uc-badge">Tento týden</div>
       </div>
     </div>
-    <div class="upcoming-djs evt-djs"><span>DJ TOBIAS MANN</span> (z Německa, Lipsko)</div>
+    <div class="upcoming-djs evt-djs"><span>DJ TOBIAS MANN</span> <span class="dj-origin">(z Německa, Lipsko)</span></div>
     <div class="evt-banner" data-poster="../img/events/tobias-mann-1710.jpg" role="button" tabindex="0" aria-label="Zobrazit plakát Tobias Mann" style="background-image:url('../img/events/tobias-mann-banner.jpg')">
       <div class="evt-banner-info">
         <div class="uc-day">SO</div>
@@ -915,6 +926,14 @@ a[href*="firmy.cz"]::before{background-image:url('data:image/svg+xml;utf8,<svg x
   <details class="past-events" id="past-events">
     <summary>Uplynulé akce</summary>
     <div class="past-list">
+      <div class="past-item">
+        <div class="past-date">26.09</div>
+        <div class="past-info"><div class="past-name">LOST PARTY</div><div class="past-desc">LEX MIRA · SHØGUN</div></div>
+      </div>
+      <div class="past-item">
+        <div class="past-date">25.09</div>
+        <div class="past-info"><div class="past-name">LOST PARTY</div><div class="past-desc">LEX MIRA · SHØGUN</div></div>
+      </div>
       <div class="past-item">
         <div class="past-date">19.09</div>
         <div class="past-info"><div class="past-name past-link" data-poster="../img/events/lost-party-1909.jpg" role="button" tabindex="0">LOST PARTY</div><div class="past-desc">DJ noc s LEX MIRA · SHØGUN — open-format sety, vstup zdarma</div></div>
@@ -992,7 +1011,7 @@ a[href*="firmy.cz"]::before{background-image:url('data:image/svg+xml;utf8,<svg x
   <div class="about-grid">
     <div>
       <p>Lost &amp; Found je koktejlový bar a hookah lounge pár minut od Václavského náměstí v pražském Novém Městě. Autorské koktejly, prémiová vodní dýmka, deskové hry, šipky a náš boxovací automat — místo, kam jednou zabloudíš a pak se vracíš.</p>
-      <p>Pořádáme také <strong>soukromé akce v Praze</strong>: narozeniny, firemní večírky a hudební večery, s cateringem a koktejlovým menu na míru. Hodnocení <strong>4,9★ z 1 160+ recenzí na Googlu</strong> — jeden z nejlépe hodnocených koktejlových barů v Praze a špičkové místo pro noční život v Novém Městě.</p>
+      <p>Pořádáme také <strong>soukromé akce v Praze</strong>: narozeniny, firemní večírky a hudební večery, s cateringem a koktejlovým menu na míru. Hodnocení <strong>4,9★ z 1 185+ recenzí na Googlu</strong> — jeden z nejlépe hodnocených koktejlových barů v Praze a špičkové místo pro noční život v Novém Městě.</p>
       <p class="award-about">Jeden z <strong>23 nejlepších barů v Česku podle <a href="https://barmagazine.com/bars/country/czech-republic" target="_blank" rel="nofollow noopener">BarMagazine</a></strong> (Guide 2026). 🏆</p>
       <p class="pride-about">Lost &amp; Found je hrdě <strong>LGBT-friendly bar</strong> a <a href="https://www.qalendar.cz/doporucene-podniky/" target="_blank" rel="noopener">oficiální partner Prague Pride</a>. Všichni jsou u nás vítáni, po celý rok. 💜</p>
       <div class="about-tags">
@@ -1005,6 +1024,7 @@ a[href*="firmy.cz"]::before{background-image:url('data:image/svg+xml;utf8,<svg x
         <span class="tag" style="--tc:67,162,210">Noční život</span>
         <span class="tag" style="--tc:22,187,219">Bez rezervace vítáni</span>
         <span class="tag" style="--tc:0,200,224">Centrum Prahy</span>
+        <span class="tag" style="--tc:224,48,192">Pronájem akcí</span>
       </div>
     </div>
     
@@ -1021,7 +1041,8 @@ a[href*="firmy.cz"]::before{background-image:url('data:image/svg+xml;utf8,<svg x
   <p class="menu-intro">Naše autorské koktejly jsou exkluzivní výtvory našich barmanů. Kompletní nabídku klasik, vinných koktejlů, panáků, prémiových směsí do vodní dýmky a nealko variant najdeš na detailních fotkách menu níže.</p>
 
   <div class="menu-accordion">
-  <details class="menu-cat" open>
+  <div class="menu-nav" id="menuNav"><a href="#cat-signature" data-cat="cat-signature">Autorské</a><a href="#cat-classic" data-cat="cat-classic">Klasické</a><a href="#cat-wine" data-cat="cat-wine">Víno & Spritz</a><a href="#cat-shots" data-cat="cat-shots">Panáky</a><a href="#cat-hookah" data-cat="cat-hookah">Dýmka</a><a href="#cat-food" data-cat="cat-food">Jídlo</a></div>
+  <details class="menu-cat" open id="cat-signature">
     <summary class="cat-summary"><span class="cat-title">🍸 Autorské koktejly</span><span class="cat-arrow">⌄</span></summary>
     <div class="cat-items">
       <div class="mi">
@@ -1098,7 +1119,7 @@ a[href*="firmy.cz"]::before{background-image:url('data:image/svg+xml;utf8,<svg x
       </div>
     </div>
   </details>
-  <details class="menu-cat">
+  <details class="menu-cat" id="cat-classic">
     <summary class="cat-summary"><span class="cat-title">🍹 Klasické koktejly</span><span class="cat-arrow">⌄</span></summary>
     <div class="cat-items">
       <div class="mi">
@@ -1219,7 +1240,7 @@ a[href*="firmy.cz"]::before{background-image:url('data:image/svg+xml;utf8,<svg x
       </div>
     </div>
   </details>
-  <details class="menu-cat">
+  <details class="menu-cat" id="cat-wine">
     <summary class="cat-summary"><span class="cat-title">🍷 Vinné koktejly &amp; Spritz</span><span class="cat-arrow">⌄</span></summary>
     <div class="cat-items">
       <div class="mi">
@@ -1272,7 +1293,7 @@ a[href*="firmy.cz"]::before{background-image:url('data:image/svg+xml;utf8,<svg x
       </div>
     </div>
   </details>
-  <details class="menu-cat">
+  <details class="menu-cat" id="cat-shots">
     <summary class="cat-summary"><span class="cat-title">🥃 Speciální panáky</span><span class="cat-arrow">⌄</span></summary>
     <div class="cat-items">
       <div class="mi">
@@ -1317,7 +1338,7 @@ a[href*="firmy.cz"]::before{background-image:url('data:image/svg+xml;utf8,<svg x
       </div>
     </div>
   </details>
-  <details class="menu-cat">
+  <details class="menu-cat" id="cat-hookah">
     <summary class="cat-summary"><span class="cat-title">🌿 Vodní dýmka</span> <span class="cat-flat">495 CZK</span><span class="cat-arrow">⌄</span></summary>
     <div class="cat-items">
       <div class="mi">
@@ -1346,7 +1367,7 @@ a[href*="firmy.cz"]::before{background-image:url('data:image/svg+xml;utf8,<svg x
       </div>
     </div>
   </details>
-  <details class="menu-cat">
+  <details class="menu-cat" id="cat-food">
     <summary class="cat-summary"><span class="cat-title">🥤 Nealko &amp; Jídlo</span><span class="cat-arrow">⌄</span></summary>
     <div class="cat-items">
       <div class="mi">
@@ -1486,7 +1507,7 @@ a[href*="firmy.cz"]::before{background-image:url('data:image/svg+xml;utf8,<svg x
 <section id="why" class="wrap">
   <div class="sec-head">
     <span class="kicker">Čím se lišíme</span>
-    <h2>Proč si Praha vybírá Lost &amp; Found</h2>
+    <h2 class="h2-why">Proč si Praha vybírá Lost &amp; Found</h2>
   </div>
 
   <div class="content-block">
@@ -1559,7 +1580,7 @@ a[href*="firmy.cz"]::before{background-image:url('data:image/svg+xml;utf8,<svg x
 <!-- REVIEWS -->
 <section id="reviews" class="wrap">
   <div class="sec-head">
-    <span class="kicker">4,9★ · 1 160+ recenzí na Googlu</span>
+    <span class="kicker">4,9★ · 1 185+ recenzí na Googlu</span>
     <h2>Co říkají hosté</h2>
     <p>Skutečné recenze od skutečných hostů — podívej se, proč je Lost &amp; Found nejlépe hodnocený koktejlový bar v Praze</p>
   </div>
@@ -1723,7 +1744,7 @@ a[href*="firmy.cz"]::before{background-image:url('data:image/svg+xml;utf8,<svg x
       <iframe src="https://www.google.com/maps?q=Lost+and+Found+Bar+Prague&output=embed" loading="lazy" title="Lost and Found Bar Prague location on Žitná in Nové Město, Prague"></iframe>
       <div class="visit-transport">
         <div class="k">Jak se k nám dostat</div>
-        <div class="vt-walk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="13" cy="4" r="2"/><path d="M15 7l-3 2-2 4-3 5M12 13l2 3 1 5M9 9l-3 1"/></svg>5 minut pěšky od Václavského náměstí</div>
+        <div class="vt-metro-item vt-walk-item"><span class="vt-time">5 min</span><span class="vt-line walk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="13" cy="4" r="2"/><path d="M15 7l-3 2-2 4-3 5M12 13l2 3 1 5M9 9l-3 1"/></svg></span><span class="vt-station">Václavské náměstí</span></div>
         <div class="vt-metro">
         <div class="vt-metro-item"><span class="vt-time">3 min</span><span class="vt-line b">B</span><span class="vt-station">Karlovo náměstí</span></div>
         <div class="vt-metro-item"><span class="vt-time">7 min</span><span class="vt-line c">C</span><span class="vt-station">I. P. Pavlova</span></div>
@@ -1829,6 +1850,9 @@ function ageDeny(){
 </script>
 <script>
 (function(){var lb=document.getElementById("posterLB");if(!lb)return;var c=lb.querySelector(".poster-lb-close");var im=lb.querySelector(".poster-lb-img");function o(el){var p=el.getAttribute("data-poster");if(p)im.src=p;lb.classList.add("open");lb.setAttribute("aria-hidden","false");document.body.style.overflow="hidden";}function x(){lb.classList.remove("open");lb.setAttribute("aria-hidden","true");document.body.style.overflow="";}document.querySelectorAll("[data-poster]").forEach(function(el){el.addEventListener("click",function(){o(el);});el.addEventListener("keydown",function(e){if(e.key==="Enter"||e.key===" "){e.preventDefault();o(el);}});});c.addEventListener("click",x);lb.addEventListener("click",function(e){if(e.target===lb)x();});document.addEventListener("keydown",function(e){if(e.key==="Escape")x();});})();
+</script>
+<script>
+(function(){var nav=document.getElementById("menuNav");if(nav){nav.querySelectorAll("a").forEach(function(a){a.addEventListener("click",function(){var d=document.getElementById(a.getAttribute("data-cat"));if(d)d.open=true;});});if("IntersectionObserver" in window){var ob=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){nav.querySelectorAll("a").forEach(function(x){x.classList.toggle("active",x.getAttribute("data-cat")===e.target.id);});}});},{rootMargin:"-110px 0px -72% 0px"});document.querySelectorAll(".menu-cat").forEach(function(d){ob.observe(d);});}}var now=new Date();now.setHours(0,0,0,0);var pl=document.querySelector(".past-list");document.querySelectorAll(".upcoming .uc, .upcoming .evt-banner").forEach(function(el){var dn=el.querySelector(".uc-date");if(!dn||!pl)return;var mm=dn.textContent.trim().match(/(\d{2})\.(\d{2})/);if(!mm)return;var d=new Date(now.getFullYear(),+mm[2]-1,+mm[1]);d.setHours(0,0,0,0);if(d<now){el.style.display="none";var it=document.createElement("div");it.className="past-item";it.innerHTML="<div class=\"past-date\">"+mm[1]+"."+mm[2]+"</div><div class=\"past-info\"><div class=\"past-name\">LOST PARTY</div><div class=\"past-desc\">LEX MIRA \u00b7 SH\u00d8GUN</div></div>";pl.insertBefore(it,pl.firstChild);}});})();
 </script>
 </body>
 </html>
