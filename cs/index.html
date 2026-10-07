@@ -815,6 +815,13 @@ a[href*="firmy.cz"]::before{background-image:url('data:image/svg+xml;utf8,<svg x
 
 
 .evt-banner{position:relative;display:block;width:100%;height:400px;margin-top:18px;border:1.5px solid rgba(224,48,192,.5);border-radius:20px;overflow:hidden;cursor:pointer;background-size:cover;background-position:center 22%;box-shadow:0 0 40px rgba(224,48,192,.28);transition:transform .2s,box-shadow .3s}
+.evt-techno{background-position:center top!important}
+@media(max-width:560px){.evt-techno{height:auto!important;aspect-ratio:405/361;background-position:top!important;background-size:cover!important}}
+.pe-older{display:flex;flex-direction:column;gap:10px;filter:blur(4px);opacity:.5;pointer-events:none;max-height:120px;overflow:hidden;transition:filter .3s,opacity .3s,max-height .4s}
+.pe-older.pe-open{filter:none;opacity:1;pointer-events:auto;max-height:1000px}
+.pe-more{display:block;margin:12px auto;background:none;border:1px solid rgba(255,255,255,.12);color:var(--cyan);font-size:12px;letter-spacing:.08em;text-transform:uppercase;padding:9px 18px;border-radius:999px;cursor:pointer;transition:border-color .2s,color .2s}
+.pe-more:hover{border-color:var(--cyan)}
+
 .hero-menu-mobile{display:none}
 .evt-banner:hover{transform:translateY(-4px);box-shadow:0 10px 50px rgba(224,48,192,.45)}
 .evt-banner::before{content:"";position:absolute;inset:0;background:linear-gradient(105deg,rgba(0,0,0,.72) 0%,rgba(0,0,0,.15) 42%,rgba(0,0,0,0) 62%),linear-gradient(0deg,rgba(0,0,0,.82) 0%,rgba(0,0,0,0) 34%);z-index:1}
@@ -861,7 +868,7 @@ a[href*="firmy.cz"]::before{background-image:url('data:image/svg+xml;utf8,<svg x
 </div>
 
 <a class="event-banner" href="#upcoming">
-  <span class="event-banner-text event-banner-l1">🎧 LOST PARTY · 09.10 · 20:00</span>
+  <span class="event-banner-text event-banner-l1">🎧 LOST PARTY · 09.10 · 21:00</span>
   <span class="event-banner-text event-banner-l2">DJ Sety: LEX MIRA & SHØGUN · Vstup zdarma</span>
   <span class="event-banner-cta">Zobrazit akce →</span>
 </a>
@@ -896,7 +903,7 @@ a[href*="firmy.cz"]::before{background-image:url('data:image/svg+xml;utf8,<svg x
       <svg class="grp-g" viewBox="0 0 24 24" width="26" height="26"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84A11 11 0 0 0 12 23z"/><path fill="#FBBC05" d="M5.84 14.1a6.6 6.6 0 0 1 0-4.2V7.06H2.18a11 11 0 0 0 0 9.88l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84C6.71 7.3 9.14 5.38 12 5.38z"/></svg>
       <div class="grp-stars">
         <div class="grp-rating-row"><span class="grp-num">4.9</span><span class="grp-star-icons">★★★★★</span></div>
-        <div class="grp-count">1 210+ recenzí na Googlu</div>
+        <div class="grp-count">1 210+ pozitivních recenzí na Googlu</div>
       </div>
     </a>
     <a class="grp-cta" href="https://g.page/r/CRuq5bPC7DCyEBM/review" target="_blank" rel="noopener" aria-label="Napsat recenzi na Googlu">Ohodnotit nás</a>
@@ -905,20 +912,17 @@ a[href*="firmy.cz"]::before{background-image:url('data:image/svg+xml;utf8,<svg x
     <div class="upcoming-head">
       <span class="upcoming-kicker">Upcoming Nights 🎧</span>
       <div class="upcoming-title">LOST PARTIES</div>
-      <div class="upcoming-djs">DJ Sets: <span>90s Night · DJ SHØGUN & LEX MIRA</span></div>
+      <div class="upcoming-djs">DJ Sets: <span>TECHNO Night · DJ SHØGUN & LEX MIRA</span></div>
     </div>
-    <div class="upcoming-cards">
-      <div class="uc">
-        <div class="uc-day">PÁ</div>
-        <div class="uc-date">09.10</div>
-        <div class="uc-time">20:00</div>
-        <div class="uc-badge">Vstup zdarma</div>
-      </div>
-    </div>
-    <div class="evt-banner" aria-label="Zobrazit plakát 90s LOST PARTY" style="background-image:url('../img/events/lost-party-90s-banner.jpg');background-position:center 30%;cursor:default">
+    <div class="evt-banner evt-techno" data-poster="../img/events/techno-0910.jpg" role="button" tabindex="0" aria-label="Zobrazit plakát Techno Night" style="background-image:url('../img/events/techno-0910-bg.jpg');background-position:center top">
       <div class="evt-banner-info">
-        <div class="uc-day" style="font-size:15px">PÁ · 09.10 · 20:00</div>
-        <div class="evt-free">Vstup zdarma</div>
+        <div class="uc-day">PÁ</div>
+        <div class="evt-when-row">
+          <div class="uc-date">09.10</div>
+          <div class="uc-time">21:00</div>
+          <div class="evt-free">Vstup zdarma</div>
+        </div>
+        <span class="evt-banner-hint">Zobrazit plakát ↗</span>
       </div>
     </div>
     <div class="upcoming-djs evt-djs"><span><a class="dj-ig" href="https://www.instagram.com/tobias_mann_official/" target="_blank" rel="noopener">DJ TOBIAS MANN</a></span> <span class="dj-origin">(z Německa, Lipsko)</span></div>
@@ -933,7 +937,7 @@ a[href*="firmy.cz"]::before{background-image:url('data:image/svg+xml;utf8,<svg x
         <span class="evt-banner-hint">Zobrazit plakát ↗</span>
       </div>
     </div>
-    <div class="upcoming-djs evt-djs"><span><a class="dj-ig" href="https://www.eventbrite.ca/e/the-fright-crawl-prague-halloween-bar-crawl-2026-thursday-october-29-tickets-1998621073432?aff=ebdssbdestsearch" target="_blank" rel="nofollow noopener">The Fright Crawl</a></span> <span class="dj-origin">Prague Halloween Bar Crawl · 29–31.10</span></div>
+    <div class="upcoming-djs evt-djs"><span><a class="dj-ig" href="https://www.eventbrite.ca/e/the-fright-crawl-prague-halloween-bar-crawl-2026-thursday-october-29-tickets-1998621073432?aff=ebdssbdestsearch" target="_blank" rel="nofollow noopener">The Fright Crawl</a></span> <span class="dj-origin">Prague Halloween · 29–31.10</span></div>
     <div class="hw-posters">
       <a class="hw-poster" data-poster="../img/events/crawl-2910.jpg" role="button" tabindex="0" aria-label="Plakát čtvrtek 29.10" style="background-image:url('../img/events/crawl-2910.jpg')"></a>
       <a class="hw-poster" data-poster="../img/events/crawl-3010.jpg" role="button" tabindex="0" aria-label="Plakát pátek 30.10" style="background-image:url('../img/events/crawl-3010.jpg')"></a>
@@ -943,7 +947,7 @@ a[href*="firmy.cz"]::before{background-image:url('data:image/svg+xml;utf8,<svg x
   
   <details class="past-events" id="past-events">
     <summary>Uplynulé akce</summary>
-    <div class="past-list">
+    <div class="past-list" id="pastList">
       <div class="past-item">
         <div class="past-date">26.09</div>
         <div class="past-info"><div class="past-name past-link" data-poster="../img/events/20260925_20260926.jpg" role="button" tabindex="0">LOST PARTY</div><div class="past-desc">LEX MIRA · SHØGUN</div></div>
@@ -964,6 +968,8 @@ a[href*="firmy.cz"]::before{background-image:url('data:image/svg+xml;utf8,<svg x
         <div class="past-date">11.09</div>
         <div class="past-info"><div class="past-name">LOST PARTY</div><div class="past-desc">DJ noc s LEX MIRA · SHØGUN — open-format sety, vstup zdarma</div></div>
       </div>
+      <button class="pe-more" id="peMore" type="button">Zobrazit všechny akce</button>
+      <div class="pe-older" id="peOlder">
       <div class="past-item">
         <div class="past-date">04.09</div>
         <div class="past-info"><div class="past-name past-link" data-poster="../img/event-lostparty-0409.png" role="button" tabindex="0">LOST PARTY</div><div class="past-desc">DJ noc s LEX MIRA · SHØGUN — open-format sety, vstup zdarma</div></div>
@@ -971,6 +977,7 @@ a[href*="firmy.cz"]::before{background-image:url('data:image/svg+xml;utf8,<svg x
       <div class="past-item">
         <div class="past-date">28.08</div>
         <div class="past-info"><div class="past-name">LOST PARTY</div><div class="past-desc">DJ noc s LEX MIRA · SHØGUN — open-format sety, vstup zdarma</div></div>
+      </div>
       </div>
     </div>
   </details>
@@ -1616,8 +1623,8 @@ a[href*="firmy.cz"]::before{background-image:url('data:image/svg+xml;utf8,<svg x
     </div>
     <div class="review">
       <div class="stars">★★★★★</div>
-      <p>"Skvělý bar s lahodnými, kreativními koktejly s geekovskou tématikou! Atmosféra je super přátelská a je to ideální místo pro zábavný večer s přáteli. Rozhodně stojí za návštěvu!"</p>
-      <div class="who">— L N, Místní průvodce · Google</div>
+      <p>"Jen zřídka se stane, že se všechny nezbytnosti pro skvělý večer sejdou na jednom místě! Lahodné koktejly, alkoholické i nealkoholické. Skvělá atmosféra a hudba! Personál je špičkový. Určitě se vrátíme a všem doporučujeme!"</p>
+      <div class="who">— Tatiana S (Tanya), Google</div>
     </div>
   </div>
 </section>
@@ -1874,5 +1881,6 @@ function ageDeny(){
 <script>
 (function(){var nav=document.getElementById("menuNav");if(nav){nav.querySelectorAll("a").forEach(function(a){a.addEventListener("click",function(){var d=document.getElementById(a.getAttribute("data-cat"));if(d)d.open=true;});});if("IntersectionObserver" in window){var ob=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){nav.querySelectorAll("a").forEach(function(x){x.classList.toggle("active",x.getAttribute("data-cat")===e.target.id);});}});},{rootMargin:"-110px 0px -72% 0px"});document.querySelectorAll(".menu-cat").forEach(function(d){ob.observe(d);});}}var now=new Date();now.setHours(0,0,0,0);var pl=document.querySelector(".past-list");document.querySelectorAll(".upcoming .uc, .upcoming .evt-banner").forEach(function(el){var dn=el.querySelector(".uc-date");if(!dn||!pl)return;var mm=dn.textContent.trim().match(/(\d{2})\.(\d{2})/);if(!mm)return;var d=new Date(now.getFullYear(),+mm[2]-1,+mm[1]);d.setHours(0,0,0,0);if(d<now){el.style.display="none";var pp=el.getAttribute("data-poster")||"";var nm=pp?"<div class=\"past-name past-link\" data-poster=\""+pp+"\" role=\"button\" tabindex=\"0\">LOST PARTY</div>":"<div class=\"past-name\">LOST PARTY</div>";var it=document.createElement("div");it.className="past-item";it.innerHTML="<div class=\"past-date\">"+mm[1]+"."+mm[2]+"</div><div class=\"past-info\">"+nm+"<div class=\"past-desc\">LEX MIRA \u00b7 SH\u00d8GUN</div></div>";var ln=it.querySelector(".past-link");if(ln&&window.__lfOpen)ln.addEventListener("click",function(){window.__lfOpen(pp);});pl.insertBefore(it,pl.firstChild);}});})();
 </script>
+<script>(function(){var b=document.getElementById("peMore"),o=document.getElementById("peOlder");if(!b||!o)return;b.addEventListener("click",function(){o.classList.add("pe-open");b.style.display="none";});})();</script>
 </body>
 </html>
