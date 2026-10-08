@@ -96,7 +96,8 @@
     "https://barmagazine.com/bars/lost-and-found-bar-prague",
     "https://prague.gaycities.com/bars/312948-lost-and-found-bar-prague",
     "https://www.wikidata.org/wiki/Q141651391",
-    "https://lyvit.app/venue/1da7f8d8-bcac-41d1-8996-471e75242518"
+    "https://lyvit.app/venue/1da7f8d8-bcac-41d1-8996-471e75242518",
+    "https://www.herni-pruvodce.cz/herni-misto/misto/lost-and-found-bar-prague/"
   ]
 }
 </script>
@@ -790,7 +791,8 @@ a[href*="firmy.cz"]::before{background-image:url('data:image/svg+xml;utf8,<svg x
 .featured-in-label{display:block;font-size:15px;letter-spacing:.28em;text-transform:uppercase;color:var(--cyan);text-shadow:0 0 12px rgba(0,200,224,.5);margin-bottom:16px}
 .featured-in-list{display:flex;flex-wrap:wrap;gap:12px}
 .fi-item{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:600;letter-spacing:.03em;color:var(--ink);text-decoration:none;padding:9px 16px;border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,.02);transition:border-color .2s,box-shadow .2s,transform .15s}
-.fi-item::before{content:"↗";color:var(--cyan);font-size:12px}
+.fi-item::before{display:none}
+.fi-ico{width:18px;height:18px;border-radius:3px;flex-shrink:0;background:rgba(255,255,255,.08);object-fit:cover}
 .fi-item:hover{border-color:rgba(0,200,224,.5);box-shadow:0 0 14px rgba(0,200,224,.25);transform:translateY(-2px)}
 .footer-block{text-align:center;margin:26px 0}
 .footer-block .featured-in-list{justify-content:center}
@@ -1804,16 +1806,13 @@ a[href*="firmy.cz"]::before{background-image:url('data:image/svg+xml;utf8,<svg x
 <footer>
   <div class="wrap">
     <div class="footer-block">
-      <span class="featured-in-label">As Featured In</span>
-      <div class="featured-in-list">
-        <a class="fi-item" href="https://barmagazine.com/bars/lost-and-found-bar-prague" target="_blank" rel="nofollow noopener">BarMagazine</a>
-        <a class="fi-item" href="https://www.qalendar.cz/recommended-businesses/?lang=en" target="_blank" rel="nofollow noopener">Prague Pride · Qalendar</a>
-        <a class="fi-item" href="https://prague.gaycities.com/bars/312948-lost-and-found-bar-prague" target="_blank" rel="nofollow noopener">GayCities Prague</a>
-          <a class="fi-item" href="https://www.eventbrite.ca/e/the-fright-crawl-prague-halloween-bar-crawl-2026-thursday-october-29-tickets-1998621073432?aff=ebdssbdestsearch" target="_blank" rel="nofollow noopener">Eventbrite</a>
-          <a class="fi-item" href="https://lyvit.app/venue/1da7f8d8-bcac-41d1-8996-471e75242518" target="_blank" rel="nofollow noopener">Lyvit</a>
+      <span class="featured-in-label">Find &amp; Review Us</span>
+      <div class="socials">
+        <a href="https://www.google.com/maps/place/Lost+and+Found+Bar+Prague/@50.0776314,14.4230964,17z/data=!4m8!3m7!1s0x470b94f3191a10d7:0xb230ecc2b3e5aa1b!8m2!3d50.0776314!4d14.4230964!9m1!1b1!16s%2Fg%2F11xn3v02qd!18m1!1e1?hl=en" target="_blank" rel="noopener">Google</a>
+        <a href="https://www.tripadvisor.com/Attraction_Review-g274707-d33996115-Reviews-Lost_and_Found_Bar_Prague-Prague_Bohemia.html" target="_blank" rel="noopener">TripAdvisor</a>
+        <a href="https://www.firmy.cz/detail/13535209-lost-and-found-bar-praha-nove-mesto.html" target="_blank" rel="noopener">Seznam</a>
       </div>
-    </div>
-    <div class="footer-block">
+    </div><div class="footer-block">
       <span class="featured-in-label">Socials</span>
       <div class="socials">
         <a href="https://www.instagram.com/lostfoundcz/" target="_blank" rel="noopener">Instagram</a>
@@ -1824,13 +1823,17 @@ a[href*="firmy.cz"]::before{background-image:url('data:image/svg+xml;utf8,<svg x
       </div>
     </div>
     <div class="footer-block">
-      <span class="featured-in-label">Find &amp; Review Us</span>
-      <div class="socials">
-        <a href="https://www.google.com/maps/place/Lost+and+Found+Bar+Prague/@50.0776314,14.4230964,17z/data=!4m8!3m7!1s0x470b94f3191a10d7:0xb230ecc2b3e5aa1b!8m2!3d50.0776314!4d14.4230964!9m1!1b1!16s%2Fg%2F11xn3v02qd!18m1!1e1?hl=en" target="_blank" rel="noopener">Google</a>
-        <a href="https://www.tripadvisor.com/Attraction_Review-g274707-d33996115-Reviews-Lost_and_Found_Bar_Prague-Prague_Bohemia.html" target="_blank" rel="noopener">TripAdvisor</a>
-        <a href="https://www.firmy.cz/detail/13535209-lost-and-found-bar-praha-nove-mesto.html" target="_blank" rel="noopener">Seznam</a>
+      <span class="featured-in-label">As Featured In</span>
+      <div class="featured-in-list">
+        <a class="fi-item" href="https://barmagazine.com/bars/lost-and-found-bar-prague" target="_blank" rel="nofollow noopener"><img class="fi-ico" src="https://www.google.com/s2/favicons?sz=64&domain=barmagazine.com" alt="" width="18" height="18" loading="lazy">BarMagazine</a>
+        <a class="fi-item" href="https://www.qalendar.cz/recommended-businesses/?lang=en" target="_blank" rel="nofollow noopener"><img class="fi-ico" src="https://www.google.com/s2/favicons?sz=64&domain=qalendar.cz" alt="" width="18" height="18" loading="lazy">Prague Pride · Qalendar</a>
+        <a class="fi-item" href="https://prague.gaycities.com/bars/312948-lost-and-found-bar-prague" target="_blank" rel="nofollow noopener"><img class="fi-ico" src="https://www.google.com/s2/favicons?sz=64&domain=gaycities.com" alt="" width="18" height="18" loading="lazy">GayCities Prague</a>
+        <a class="fi-item" href="https://www.eventbrite.ca/e/the-fright-crawl-prague-halloween-bar-crawl-2026-thursday-october-29-tickets-1998621073432?aff=ebdssbdestsearch" target="_blank" rel="nofollow noopener"><img class="fi-ico" src="https://www.google.com/s2/favicons?sz=64&domain=eventbrite.com" alt="" width="18" height="18" loading="lazy">Eventbrite</a>
+        <a class="fi-item" href="https://lyvit.app/venue/1da7f8d8-bcac-41d1-8996-471e75242518" target="_blank" rel="nofollow noopener"><img class="fi-ico" src="https://www.google.com/s2/favicons?sz=64&domain=lyvit.app" alt="" width="18" height="18" loading="lazy">Lyvit</a>
+        <a class="fi-item" href="https://www.herni-pruvodce.cz/herni-misto/misto/lost-and-found-bar-prague/" target="_blank" rel="nofollow noopener"><img class="fi-ico" src="https://www.google.com/s2/favicons?sz=64&domain=herni-pruvodce.cz" alt="" width="18" height="18" loading="lazy">Herní Průvodce</a>
       </div>
     </div>
+    
     <div class="fine">
       Lost &amp; Found Bar Prague — Cocktail Bar &amp; Hookah Lounge<br>
       Žitná 1764/11, Nové Město, 110 00 Praha 1<span class="fine-sep"> · </span><span class="fine-phone">+420 724 188 537</span><br>
