@@ -39,7 +39,8 @@
 <meta name="theme-color" content="#000000">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap"></noscript>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -128,22 +129,6 @@
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Ano. Lost &amp; Found je plnohodnotný hookah lounge i koktejlový bar. Podáváme prémiovou shishu spolu s autorskými koktejly a užiješ si obojí u jednoho stolu."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Kde Lost &amp; Found Bar Praha najdu?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Jsme na Žitné 1764/11, Nové Město, Praha 1, v srdci Prahy — pár minut pěšky od Václavského náměstí, s metrem I. P. Pavlova a Karlovo náměstí kousek odsud."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Je u vás kromě pití i něco na zábavu?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Spousta. Máme arkádové a barové hry, stolní fotbal a šipky, plus poličku deskovek. Bar, kde se dá zůstat dlouho, ne jen na jedno. Pořádáme také soukromé akce, oslavy a speciální příležitosti a umíme připravit catering na míru — napiš nám, co máš na mysli."
       }
     },
     {
@@ -930,8 +915,8 @@ a[href*="firmy.cz"]::before{background-image:url('data:image/svg+xml;utf8,<svg x
 </div>
 
 <a class="event-banner" href="#upcoming">
-  <span class="event-banner-text event-banner-l1">🎧 LOST PARTY · 09.10 · 21:00</span>
-  <span class="event-banner-text event-banner-l2">DJ Sety: LEX MIRA & SHØGUN · Vstup zdarma</span>
+  <span class="event-banner-text event-banner-l1">🎧 TOBIAS MANN · 17.10 · 21:00</span>
+  <span class="event-banner-text event-banner-l2">+ Techno Night 16.10 · SHØGUN · Vstup zdarma</span>
   <span class="event-banner-cta">Zobrazit akce →</span>
 </a>
 <header id="top">
@@ -974,17 +959,6 @@ a[href*="firmy.cz"]::before{background-image:url('data:image/svg+xml;utf8,<svg x
     <div class="upcoming-head">
       <span class="upcoming-kicker">Upcoming Nights 🎧</span>
       <div class="upcoming-title">LOST PARTIES</div>
-      <div class="upcoming-djs">DJ Sets: <span>DJ SHØGUN & LEX MIRA</span></div>
-    </div>
-    <div class="evt-banner" style="background-image:url('../img/events/techno-0910-bg.jpg');background-position:center top;cursor:default">
-      <div class="evt-banner-info">
-        <div class="uc-day">PÁ</div>
-        <div class="evt-when-row">
-          <div class="uc-date">16.10</div>
-          <div class="uc-time">21:00</div>
-          <div class="evt-free">Vstup zdarma</div>
-        </div>
-      </div>
     </div>
     <div class="upcoming-djs evt-djs"><span><a class="dj-ig" href="https://www.instagram.com/tobias_mann_official/" target="_blank" rel="noopener">DJ TOBIAS MANN</a></span> <span class="dj-origin">(z Německa, Lipsko)</span></div>
     <div class="evt-banner" data-poster="../img/events/tobias-mann-1710.jpg" role="button" tabindex="0" aria-label="Zobrazit plakát Tobias Mann" style="background-image:url('../img/events/tobias-mann-banner.jpg')">
@@ -992,6 +966,18 @@ a[href*="firmy.cz"]::before{background-image:url('data:image/svg+xml;utf8,<svg x
         <div class="uc-day">SO</div>
         <div class="evt-when-row">
           <div class="uc-date">17.10</div>
+          <div class="uc-time">21:00</div>
+          <div class="evt-free">Vstup zdarma</div>
+        </div>
+        <span class="evt-banner-hint">Zobrazit plakát ↗</span>
+      </div>
+    </div>
+    <div class="upcoming-djs evt-djs"><span>TECHNO Night · DJ SHØGUN</span></div>
+    <div class="evt-banner evt-techno" data-poster="../img/events/techno-1610.jpg" role="button" tabindex="0" aria-label="Zobrazit plakát Techno Night" style="background-image:url('../img/events/techno-0910-bg.jpg');background-position:center top">
+      <div class="evt-banner-info">
+        <div class="uc-day">PÁ</div>
+        <div class="evt-when-row">
+          <div class="uc-date">16.10</div>
           <div class="uc-time">21:00</div>
           <div class="evt-free">Vstup zdarma</div>
         </div>
@@ -1009,6 +995,14 @@ a[href*="firmy.cz"]::before{background-image:url('data:image/svg+xml;utf8,<svg x
   <details class="past-events" id="past-events">
     <summary>Uplynulé akce</summary>
     <div class="past-list" id="pastList">
+      <div class="past-item">
+        <div class="past-date">10.10</div>
+        <div class="past-info"><div class="past-name past-link" data-poster="../img/events/techno-0910.jpg" role="button" tabindex="0">TECHNO NIGHT</div><div class="past-desc">SHØGUN · LEX MIRA</div></div>
+      </div>
+      <div class="past-item">
+        <div class="past-date">09.10</div>
+        <div class="past-info"><div class="past-name past-link" data-poster="../img/events/techno-0910.jpg" role="button" tabindex="0">TECHNO NIGHT</div><div class="past-desc">SHØGUN · LEX MIRA</div></div>
+      </div>
       <div class="past-item">
         <div class="past-date">26.09</div>
         <div class="past-info"><div class="past-name past-link" data-poster="../img/events/20260925_20260926.jpg" role="button" tabindex="0">LOST PARTY</div><div class="past-desc">LEX MIRA · SHØGUN</div></div>
@@ -1945,19 +1939,7 @@ a[href*="firmy.cz"]::before{background-image:url('data:image/svg+xml;utf8,<svg x
       </div>
     </details>
 
-    <details class="faq-item">
-      <summary>Kde Lost &amp; Found Bar Praha najdu?</summary>
-      <div class="faq-a">
-        <p>Jsme na Žitné 1764/11, Nové Město, Praha 1, v srdci Prahy — pár minut pěšky od Václavského náměstí, s metrem I. P. Pavlova a Karlovo náměstí kousek odsud.</p>
-      </div>
-    </details>
 
-    <details class="faq-item">
-      <summary>Je u vás kromě pití i něco na zábavu?</summary>
-      <div class="faq-a">
-        <p>Spousta. Máme arkádové a barové hry, stolní fotbal a šipky, plus poličku deskovek. Bar, kde se dá zůstat dlouho, ne jen na jedno. Pořádáme také soukromé akce, oslavy a speciální příležitosti a umíme připravit catering na míru — <a href="#visit">napiš nám, co máš na mysli</a>.</p>
-      </div>
-    </details>
 
     <details class="faq-item">
       <summary>Můžu si Lost &amp; Found pronajmout na soukromou akci nebo párty?</summary>
