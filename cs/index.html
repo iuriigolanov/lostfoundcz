@@ -9,7 +9,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Lost &amp; Found Bar Praha | Koktejlový bar a vodní dýmka, Nové Město</title>
-<meta name="description" content="Lost &amp; Found je koktejlový bar a hookah lounge v srdci Prahy, Nové Město. 1 210+ recenzí na Googlu, hodnocení 4,9★. Autorské koktejly, prémiová vodní dýmka, craft pivo a noční atmosféra na Žitné. Rezervuj si stůl online.">
+<meta name="description" content="Lost &amp; Found je koktejlový bar a hookah lounge v srdci Prahy, Nové Město. 1 230+ recenzí na Googlu, hodnocení 4,9★. Autorské koktejly, prémiová vodní dýmka, craft pivo a noční atmosféra na Žitné. Rezervuj si stůl online.">
 <meta name="keywords" content="cocktail bar Prague, Lost and Found Bar Prague, craft cocktails Prague, hookah lounge Prague, bar Žitná, nightlife Prague, shisha Prague, cocktails Nové Město, private events Prague, party venue Prague, bar buyout Prague, corporate events Prague, birthday venue Prague, catering Prague">
 <link rel="preload" as="image" href="../img/hero-bg.jpg" fetchpriority="high">
 <link rel="preload" as="image" href="../img/logo.webp" type="image/webp" fetchpriority="high">
@@ -24,7 +24,7 @@
 <link rel="canonical" href="https://lostfoundcz.com/cs/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Lost &amp; Found Bar Praha — Koktejlový bar a vodní dýmka">
-<meta property="og:description" content="Autorské koktejly, prémiová vodní dýmka a noční atmosféra v srdci Prahy. Hodnocení 4,9★ z 1 210+ recenzí na Googlu.">
+<meta property="og:description" content="Autorské koktejly, prémiová vodní dýmka a noční atmosféra v srdci Prahy. Hodnocení 4,9★ z 1 230+ recenzí na Googlu.">
 <meta property="og:image" content="https://lostfoundcz.com/og-image.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -841,6 +841,62 @@ a[href*="firmy.cz"]::before{background-image:url('data:image/svg+xml;utf8,<svg x
 @media(max-width:560px){.evt-banner{height:360px;background-position:center 18%}.evt-banner-info{max-width:92%}.hero{min-height:auto;padding-top:22px}.hero-menu-mobile{display:flex;width:100%;justify-content:center;margin:2px 0 18px}.eb-prague{display:none}.dj-origin{display:block;margin-top:2px}.fine-sep{display:none}.fine-phone{display:block}.footer-block .featured-in-list{gap:6px}.footer-block .fi-item{font-size:11px;padding:6px 10px;gap:5px}}
 .lang-select{display:none;background:rgba(0,0,0,.5);color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:5px 26px 5px 9px;font-size:12px;font-weight:700;letter-spacing:.04em;cursor:pointer;-webkit-appearance:none;appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 6' fill='none' stroke='%239aa0b5' stroke-width='1.5'%3E%3Cpath d='M1 1l4 4 4-4'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 9px center;background-size:10px}
 @media(max-width:860px){.lang-switch{display:none!important}.lang-select{display:inline-block}}
+
+/* ===== Cocktail Finder ===== */
+#finder{margin:46px 0 10px;scroll-margin-top:110px}
+#finder .cf-card{background:rgba(255,255,255,.03);border:1px solid var(--line);border-radius:20px;padding:28px 22px}
+#finder .cf-head{text-align:center;margin-bottom:22px}
+#finder .cf-eyebrow{font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--cyan);text-shadow:0 0 10px rgba(0,200,224,.35);margin:0 0 8px}
+#finder .cf-h{font-family:"Bebas Neue",Impact,sans-serif;font-weight:400;letter-spacing:.02em;line-height:.95;font-size:clamp(34px,7vw,56px);margin:0 0 6px;background:linear-gradient(90deg,var(--violet),var(--cyan));-webkit-background-clip:text;background-clip:text;color:transparent}
+#finder .cf-sub{color:var(--muted);margin:0 auto;max-width:440px;font-size:14px}
+#finder .cf-progress{display:flex;gap:6px;justify-content:center;margin:0 0 22px}
+#finder .cf-dot{width:32px;height:4px;border-radius:999px;background:rgba(255,255,255,.12);transition:.3s}
+#finder .cf-dot.done{background:var(--cyan);box-shadow:0 0 8px rgba(0,200,224,.5)}
+#finder .cf-dot.active{background:var(--violet);box-shadow:0 0 10px rgba(200,85,181,.6)}
+#finder .cf-step{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--violet);margin:0 0 6px}
+#finder .cf-q{font-family:"Bebas Neue",Impact,sans-serif;font-size:clamp(24px,5.5vw,34px);letter-spacing:.02em;line-height:1;margin:0 0 20px}
+#finder .cf-opts{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:520px){#finder .cf-opts{grid-template-columns:1fr}}
+#finder .cf-opt{appearance:none;border:1px solid var(--line);background:rgba(255,255,255,.02);color:var(--ink,#f4f4f7);text-align:left;padding:15px;border-radius:14px;cursor:pointer;font-size:15px;font-weight:600;display:flex;align-items:center;gap:12px;transition:transform .12s,border-color .2s,background .2s,box-shadow .2s;font-family:inherit}
+#finder .cf-opt:hover{border-color:var(--cyan);background:rgba(0,200,224,.07);transform:translateY(-2px);box-shadow:0 6px 18px rgba(0,0,0,.3)}
+#finder .cf-opt .cf-emo{font-size:21px;line-height:1}
+#finder .cf-opt small{display:block;font-weight:400;color:var(--muted);font-size:12px;margin-top:2px}
+#finder .cf-nav{display:flex;justify-content:flex-start;margin-top:18px}
+#finder .cf-back{background:none;border:none;color:var(--muted);cursor:pointer;font-size:14px;padding:8px 4px;font-family:inherit}
+#finder .cf-back:hover{color:var(--ink,#f4f4f7)}
+#finder .cf-back[hidden]{display:none}
+#finder .cf-rhead{text-align:center;margin-bottom:22px}
+#finder .cf-rhead h3{font-family:"Bebas Neue",Impact,sans-serif;font-size:clamp(30px,7vw,48px);margin:0;letter-spacing:.02em;background:linear-gradient(90deg,var(--cyan),var(--magenta));-webkit-background-clip:text;background-clip:text;color:transparent}
+#finder .cf-rhead p{color:var(--muted);margin:6px 0 0;font-size:13px}
+#finder .cf-drink{display:flex;gap:14px;align-items:flex-start;border:1px solid var(--line);border-radius:16px;padding:16px;margin-bottom:12px;background:rgba(255,255,255,.02)}
+#finder .cf-drink.top{border-color:rgba(200,85,181,.5);background:linear-gradient(120deg,rgba(200,85,181,.1),rgba(0,200,224,.06))}
+#finder .cf-rank{font-family:"Bebas Neue",Impact,sans-serif;font-size:32px;line-height:1;color:var(--violet);min-width:30px;text-align:center}
+#finder .cf-drink.top .cf-rank{color:var(--cyan)}
+#finder .cf-dbody{flex:1;min-width:0}
+#finder .cf-dtop{display:flex;justify-content:space-between;align-items:baseline;gap:10px;flex-wrap:wrap}
+#finder .cf-dname{font-weight:800;font-size:17px;margin:0}
+#finder .cf-dprice{color:var(--cyan);font-weight:700;white-space:nowrap}
+#finder .cf-ddesc{color:var(--muted);font-size:13px;margin:4px 0 10px}
+#finder .cf-match{display:flex;align-items:center;gap:8px;margin-bottom:8px}
+#finder .cf-bar{flex:1;height:6px;border-radius:999px;background:rgba(255,255,255,.1);overflow:hidden}
+#finder .cf-bar i{display:block;height:100%;border-radius:999px;background:linear-gradient(90deg,var(--violet),var(--cyan))}
+#finder .cf-mlabel{font-size:12px;font-weight:700;white-space:nowrap}
+#finder .cf-pct{font-size:11px;color:var(--muted);min-width:34px;text-align:right}
+#finder .cf-tags{display:flex;flex-wrap:wrap;gap:6px}
+#finder .cf-tag{font-size:11px;letter-spacing:.04em;text-transform:uppercase;color:var(--cyan);border:1px solid rgba(0,200,224,.3);border-radius:999px;padding:3px 9px}
+#finder .cf-actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:22px}
+#finder .cf-again,#finder .cf-cta{display:inline-block;border-radius:999px;padding:13px 24px;font-weight:700;font-size:15px;text-decoration:none;cursor:pointer;border:1px solid var(--line);font-family:inherit}
+#finder .cf-again{background:none;color:var(--ink,#f4f4f7)}
+#finder .cf-again:hover{border-color:var(--violet);background:rgba(200,85,181,.08)}
+#finder .cf-cta{background:linear-gradient(90deg,var(--violet),var(--cyan));color:#06060a;border:none}
+#finder .cf-cta:hover{box-shadow:0 0 24px rgba(0,200,224,.4)}
+.cf-lure{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;margin:0 0 30px;padding:18px 22px;border:1px solid rgba(200,85,181,.3);border-radius:16px;background:linear-gradient(120deg,rgba(200,85,181,.1),rgba(0,200,224,.06));text-decoration:none}
+.cf-lure:hover{border-color:var(--cyan);box-shadow:0 0 20px rgba(0,200,224,.25)}
+.cf-lure .cf-lt{min-width:0}
+.cf-lure .cf-lt b{display:block;font-size:17px;color:var(--ink,#f4f4f7)}
+.cf-lure .cf-lt span{font-size:13px;color:var(--muted)}
+.cf-lure .cf-lgo{flex:0 0 auto;font-weight:700;color:#06060a;background:linear-gradient(90deg,var(--violet),var(--cyan));padding:11px 18px;border-radius:999px;white-space:nowrap;font-size:14px}
+#menuNav a.cf-chip{background:linear-gradient(90deg,rgba(200,85,181,.25),rgba(0,200,224,.18));border-color:rgba(0,200,224,.4);color:var(--ink,#f4f4f7)}
 </style>
 
 <!-- Google Analytics -->
@@ -909,7 +965,7 @@ a[href*="firmy.cz"]::before{background-image:url('data:image/svg+xml;utf8,<svg x
       <svg class="grp-g" viewBox="0 0 24 24" width="26" height="26"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84A11 11 0 0 0 12 23z"/><path fill="#FBBC05" d="M5.84 14.1a6.6 6.6 0 0 1 0-4.2V7.06H2.18a11 11 0 0 0 0 9.88l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84C6.71 7.3 9.14 5.38 12 5.38z"/></svg>
       <div class="grp-stars">
         <div class="grp-rating-row"><span class="grp-num">4.9</span><span class="grp-star-icons">★★★★★</span></div>
-        <div class="grp-count">1 210+ pozitivních recenzí na Googlu</div>
+        <div class="grp-count">1 230+ pozitivních recenzí na Googlu</div>
       </div>
     </a>
     <a class="grp-cta" href="https://g.page/r/CRuq5bPC7DCyEBM/review" target="_blank" rel="noopener" aria-label="Napsat recenzi na Googlu">Ohodnotit nás</a>
@@ -918,17 +974,16 @@ a[href*="firmy.cz"]::before{background-image:url('data:image/svg+xml;utf8,<svg x
     <div class="upcoming-head">
       <span class="upcoming-kicker">Upcoming Nights 🎧</span>
       <div class="upcoming-title">LOST PARTIES</div>
-      <div class="upcoming-djs">DJ Sets: <span>TECHNO Night · DJ SHØGUN & LEX MIRA</span></div>
+      <div class="upcoming-djs">DJ Sets: <span>DJ SHØGUN & LEX MIRA</span></div>
     </div>
-    <div class="evt-banner evt-techno" data-poster="../img/events/techno-0910.jpg" role="button" tabindex="0" aria-label="Zobrazit plakát Techno Night" style="background-image:url('../img/events/techno-0910-bg.jpg');background-position:center top">
+    <div class="evt-banner" style="background-image:url('../img/events/techno-0910-bg.jpg');background-position:center top;cursor:default">
       <div class="evt-banner-info">
         <div class="uc-day">PÁ</div>
         <div class="evt-when-row">
-          <div class="uc-date">09.10</div>
+          <div class="uc-date">16.10</div>
           <div class="uc-time">21:00</div>
           <div class="evt-free">Vstup zdarma</div>
         </div>
-        <span class="evt-banner-hint">Zobrazit plakát ↗</span>
       </div>
     </div>
     <div class="upcoming-djs evt-djs"><span><a class="dj-ig" href="https://www.instagram.com/tobias_mann_official/" target="_blank" rel="noopener">DJ TOBIAS MANN</a></span> <span class="dj-origin">(z Německa, Lipsko)</span></div>
@@ -1042,7 +1097,7 @@ a[href*="firmy.cz"]::before{background-image:url('data:image/svg+xml;utf8,<svg x
   <div class="about-grid">
     <div>
       <p>Lost &amp; Found je koktejlový bar a hookah lounge pár minut od Václavského náměstí v pražském Novém Městě. Autorské koktejly, prémiová vodní dýmka, deskové hry a šipky — místo, kam jednou zabloudíš a pak se vracíš.</p>
-      <p>Pořádáme také <strong>soukromé akce v Praze</strong>: narozeniny, firemní večírky a hudební večery, s cateringem a koktejlovým menu na míru. Hodnocení <strong>4,9★ z 1 210+ recenzí na Googlu</strong> — jeden z nejlépe hodnocených koktejlových barů v Praze a špičkové místo pro noční život v Novém Městě.</p>
+      <p>Pořádáme také <strong>soukromé akce v Praze</strong>: narozeniny, firemní večírky a hudební večery, s cateringem a koktejlovým menu na míru. Hodnocení <strong>4,9★ z 1 230+ recenzí na Googlu</strong> — jeden z nejlépe hodnocených koktejlových barů v Praze a špičkové místo pro noční život v Novém Městě.</p>
       <p class="award-about">Jeden z <strong>23 nejlepších barů v Česku podle <a href="https://barmagazine.com/bars/country/czech-republic" target="_blank" rel="nofollow noopener">BarMagazine</a></strong> (Guide 2026). 🏆</p>
       <p class="pride-about">Lost &amp; Found je hrdě <strong>LGBT-friendly bar</strong> a <a href="https://www.qalendar.cz/doporucene-podniky/" target="_blank" rel="noopener">oficiální partner Prague Pride</a>. Všichni jsou u nás vítáni, po celý rok. 💜</p>
       <div class="about-tags">
@@ -1072,8 +1127,13 @@ a[href*="firmy.cz"]::before{background-image:url('data:image/svg+xml;utf8,<svg x
 
   <p class="menu-intro">Naše autorské koktejly jsou exkluzivní výtvory našich barmanů. Kompletní nabídku klasik, vinných koktejlů, panáků, prémiových směsí do vodní dýmky a nealko variant najdeš na detailních fotkách menu níže.</p>
 
+  <a class="cf-lure" href="#finder">
+    <span class="cf-lt"><b>🍹 Nevíte, co si dát?</b><span>Odpovězte na 4 rychlé otázky a najdeme vám 5 drinků.</span></span>
+    <span class="cf-lgo">Najít svůj drink →</span>
+  </a>
+
   <div class="menu-accordion">
-  <div class="menu-nav" id="menuNav"><a href="#cat-signature" data-cat="cat-signature">Autorské</a><a href="#cat-classic" data-cat="cat-classic">Klasické</a><a href="#cat-wine" data-cat="cat-wine">Víno & Spritz</a><a href="#cat-shots" data-cat="cat-shots">Panáky</a><a href="#cat-hookah" data-cat="cat-hookah">Dýmka</a><a href="#cat-food" data-cat="cat-food">Jídlo</a></div>
+  <div class="menu-nav" id="menuNav"><a href="#cat-signature" data-cat="cat-signature">Autorské</a><a href="#cat-classic" data-cat="cat-classic">Klasické</a><a href="#cat-wine" data-cat="cat-wine">Víno & Spritz</a><a href="#cat-shots" data-cat="cat-shots">Panáky</a><a href="#cat-hookah" data-cat="cat-hookah">Dýmka</a><a href="#cat-food" data-cat="cat-food">Jídlo</a><a class="cf-chip" href="#finder">🍹 Najít drink</a></div>
   <details class="menu-cat" open id="cat-signature">
     <summary class="cat-summary"><span class="cat-title">🍸 Autorské koktejly</span><span class="cat-arrow">⌄</span></summary>
     <div class="cat-items">
@@ -1530,6 +1590,226 @@ a[href*="firmy.cz"]::before{background-image:url('data:image/svg+xml;utf8,<svg x
   </div>
   </details>
 
+
+  <!-- COCKTAIL FINDER -->
+  <div id="finder">
+    <div class="cf-head">
+      <p class="cf-eyebrow">Lost &amp; Found · Praha</p>
+      <h3 class="cf-h">Hledač koktejlů</h3>
+      <p class="cf-sub">Odpovězte na 4 rychlé otázky a napárujeme vás s 5 drinky z našeho menu.</p>
+    </div>
+    <div class="cf-progress" id="cf-progress"></div>
+    <div id="cf-app"></div>
+  </div>
+  <script>
+(function(){
+  var L={"chip": "🍹 Najít drink", "lure_t": "Nevíte, co si dát?", "lure_s": "Odpovězte na 4 rychlé otázky a najdeme vám 5 drinků.", "lure_go": "Najít svůj drink →", "eyebrow": "Lost &amp; Found · Praha", "h": "Hledač koktejlů", "sub": "Odpovězte na 4 rychlé otázky a napárujeme vás s 5 drinky z našeho menu.", "qof": "Otázka {n} z {t}", "back": "← Zpět", "top": "Vaše TOP 5", "again": "↻ Začít znovu", "reserve": "Rezervovat stůl", "q": {"spirit": "Vyberte si základ", "flavor": "Na co máte chuť?", "sweetness": "Jak sladké?", "strength": "Jak silné?"}, "sp": {"vodka": "Vodka", "rum": "Rum", "gin": "Gin", "tequila": "Tequila", "whiskey": "Whisky", "bubbles": "Bublinky / Prosecco", "none": "Bez alkoholu (0,0%)", "any": "Překvapte mě"}, "fl": {"fruity": "Ovocné &amp; tropické", "citrus": "Citrusové &amp; kyselé", "sweet": "Sladké &amp; krémové", "bitter": "Hořké &amp; silné", "fresh": "Svěží &amp; lehké"}, "sw": {"sweet": "Sladké", "balanced": "Vyvážené", "dry": "Suché"}, "st": {"easy": "V pohodě", "easyS": "pomalu usrkávat", "bal": "Vyvážené", "balS": "tak akorát", "hard": "Pořádně", "hardS": "bez slitování"}, "spL": {"vodka": "Vodka", "rum": "Rum", "gin": "Gin", "tequila": "Tequila", "whiskey": "Whisky", "bubbles": "Bublinky", "none": "0,0%", "any": "Namíchá bar"}, "flL": {"fruity": "Ovocné", "citrus": "Citrusové", "sweet": "Sladké", "bitter": "Hořké", "fresh": "Svěží"}, "stw": {"strong": "Silné", "easy": "Lehké", "bal": "Vyvážené"}, "tier": {"perfect": "Perfektní shoda", "great": "Skvělá volba", "tryit": "Stojí za zkoušku", "wild": "Divoká karta"}};
+  const DRINKS = [
+  // Signature
+  {n:"Ferrari",p:"290",d:"Stroh, Bacardi Spiced, Triple sec, Grenadine, Blue Curaçao",sp:"rum",fl:["fruity","sweet"],sw:3,st:3,vb:["party","photo"]},
+  {n:"Lamborghini",p:"250",d:"Baileys, Kahlua, Sambuca, Blue Curaçao",sp:"any",fl:["sweet"],sw:3,st:3,vb:["party","photo"]},
+  {n:"Long Island",p:"245",d:"Vodka, gin, tequila, rum, Triple sec, lemon, Pepsi",sp:"any",fl:["citrus"],sw:2,st:3,vb:["party","classic"]},
+  {n:"Skittles",p:"200",d:"Limoncello, Koskenkorva, honey, lemon, strawberry, Skittles",sp:"vodka",fl:["fruity","sweet"],sw:3,st:2,vb:["photo","party"]},
+  {n:"Apple Whiskey Sour",p:"200",d:"Jack Daniel's Apple, lemon & apple juice, sugar",sp:"whiskey",fl:["citrus","fruity"],sw:2,st:2,vb:["chill","classic"]},
+  {n:"Cherry Aperol",p:"205",d:"Aperol, vodka, cherry puree, lemon, cream",sp:"vodka",fl:["fruity","bitter"],sw:2,st:2,vb:["photo","chill"]},
+  {n:"Killer",p:"230",d:"Vodka, Koskenkorva peach, lemon & apple juice",sp:"vodka",fl:["fruity"],sw:2,st:2,vb:["party"]},
+  {n:"Tropical Paradise",p:"200",d:"Bacardi Bianco, Malibu, lime & pineapple, mango",sp:"rum",fl:["fruity","fresh"],sw:3,st:2,vb:["photo","chill"]},
+  {n:"Shrek",p:"255",d:"Vodka, Melon liqueur, Malibu, Blue Curaçao, pineapple",sp:"vodka",fl:["fruity","sweet"],sw:3,st:2,vb:["photo","party"]},
+  {n:"Jager Bomb",p:"200",d:"Jägermeister, Red Bull",sp:"any",fl:["sweet","bitter"],sw:2,st:3,vb:["party"]},
+  {n:"Crimson Kiss",p:"270",d:"Bacardi Bianco, Amaretto, Grenadine, lime/orange/cranberry",sp:"rum",fl:["fruity","citrus"],sw:2,st:2,vb:["photo"]},
+  {n:"Cold Night",p:"220",d:"Bacardi Spiced, Triple sec, apple juice, orange",sp:"rum",fl:["fruity"],sw:2,st:2,vb:["chill"]},
+  {n:"Panagel Tonic",p:"200",d:"Bombay Sapphire, Blue Curaçao, coconut, tonic, lime",sp:"gin",fl:["fresh","fruity"],sw:2,st:2,vb:["chill","photo"]},
+  {n:"Wolf Blood",p:"195",d:"Spice rum, cranberry & lime, cherry syrup",sp:"rum",fl:["fruity","citrus"],sw:2,st:2,vb:["chill"]},
+  {n:"Pirate Dream",p:"215",d:"Bacardi Bianco, Malibu, passion fruit, cranberry & lime",sp:"rum",fl:["fruity"],sw:3,st:2,vb:["photo"]},
+  {n:"Fitness",p:"190",d:"Vodka, gin, rum, pineapple & lemon",sp:"any",fl:["citrus","fresh"],sw:1,st:3,vb:["party"]},
+  {n:"Strawberry Boom",p:"195",d:"Gin, strawberry puree, lemon & cranberry",sp:"gin",fl:["fruity","citrus"],sw:2,st:2,vb:["photo","chill"]},
+  {n:"Sponge Bob",p:"185",d:"Limoncello, Prosecco, pineapple juice",sp:"bubbles",fl:["fruity","fresh"],sw:2,st:1,vb:["party","photo"]},
+  // Classic
+  {n:"Skinny Bitch",p:"175",d:"Vodka, lime juice, soda",sp:"vodka",fl:["fresh","citrus"],sw:1,st:2,vb:["chill"]},
+  {n:"Espresso Martini",p:"220",d:"Vodka, Baileys, Kahlua, espresso",sp:"vodka",fl:["sweet"],sw:2,st:2,vb:["chill","classic","photo"]},
+  {n:"Moscow Mule",p:"195",d:"Vodka, lime juice, ginger beer",sp:"vodka",fl:["fresh","citrus"],sw:2,st:2,vb:["chill","classic"]},
+  {n:"Sex on the Bitch",p:"195",d:"Vodka, peach liqueur, orange & cranberry, almond",sp:"vodka",fl:["fruity"],sw:3,st:2,vb:["party"]},
+  {n:"Cosmopolitan",p:"195",d:"Vodka, Triple sec, lime & cranberry",sp:"vodka",fl:["citrus","fruity"],sw:2,st:2,vb:["classic","photo"]},
+  {n:"Porn Star Martini",p:"195",d:"Vodka, lemon, passion fruit, vanilla, prosecco",sp:"vodka",fl:["fruity","sweet"],sw:3,st:2,vb:["photo","party","classic"]},
+  {n:"Bloody Mary",p:"185",d:"Vodka, tomato juice, pepper, tabasco, celery",sp:"vodka",fl:["bitter"],sw:1,st:2,vb:["classic","chill"]},
+  {n:"White Russian",p:"210",d:"Vodka, Kahlua, Baileys, cream",sp:"vodka",fl:["sweet"],sw:3,st:2,vb:["chill","classic"]},
+  {n:"Blue Lagoon",p:"215",d:"Vodka, Triple sec, Blue Curaçao, Sprite",sp:"vodka",fl:["fresh","citrus"],sw:2,st:2,vb:["photo","party"]},
+  {n:"Gin Tonic",p:"190",d:"Gin, tonic",sp:"gin",fl:["fresh","bitter"],sw:1,st:2,vb:["chill","classic"]},
+  {n:"Hendricks GT Premium",p:"235",d:"Gin Hendricks, botanical tonic",sp:"gin",fl:["fresh"],sw:1,st:2,vb:["chill","classic"]},
+  {n:"Gin Mare GT Premium",p:"255",d:"Gin Mare, Thomas Henry tonic",sp:"gin",fl:["fresh"],sw:1,st:2,vb:["chill","classic"]},
+  {n:"Negroni",p:"195",d:"Bombay Sapphire, Martini Rosso, Campari",sp:"gin",fl:["bitter"],sw:1,st:3,vb:["classic","chill"]},
+  {n:"Gin Garden",p:"210",d:"Bombay Sapphire, lemon juice, ginger beer",sp:"gin",fl:["fresh","citrus"],sw:2,st:2,vb:["chill"]},
+  {n:"Caipirinha",p:"195",d:"Cachaça, brown sugar, lime",sp:"rum",fl:["citrus","fresh"],sw:2,st:2,vb:["classic","chill"]},
+  {n:"Mai Tai",p:"220",d:"Bacardi Spiced, apricot brandy, almond, lime & pineapple",sp:"rum",fl:["fruity"],sw:2,st:3,vb:["party","classic"]},
+  {n:"Pina Colada",p:"195",d:"Bacardi Bianco, coconut, pineapple, cream",sp:"rum",fl:["sweet","fruity"],sw:3,st:2,vb:["photo","chill","classic"]},
+  {n:"Cuba Libre",p:"185",d:"Bacardi Bianco, lime juice, Pepsi",sp:"rum",fl:["sweet"],sw:2,st:2,vb:["classic","chill"]},
+  {n:"Daiquiri",p:"175",d:"Bacardi Bianco, lime juice, sugar",sp:"rum",fl:["citrus","fresh"],sw:2,st:2,vb:["classic"]},
+  {n:"Bengal",p:"195",d:"Bacardi Spice, Triple sec, pineapple, lime, Angostura",sp:"rum",fl:["fruity","citrus"],sw:2,st:2,vb:["chill"]},
+  {n:"Mojito",p:"195",d:"Bacardi Bianco, lime, brown sugar, tonic, cordial",sp:"rum",fl:["fresh","citrus"],sw:2,st:2,vb:["classic","chill","photo"]},
+  {n:"Tequila Sunrise",p:"195",d:"Tequila, grenadine, orange juice",sp:"tequila",fl:["fruity","sweet"],sw:3,st:2,vb:["photo","classic"]},
+  {n:"Margarita",p:"185",d:"Tequila, lime juice, sugar",sp:"tequila",fl:["citrus"],sw:2,st:2,vb:["classic","party"]},
+  {n:"Paloma",p:"215",d:"Tequila, lime & grapefruit juice, soda",sp:"tequila",fl:["citrus","fresh"],sw:1,st:2,vb:["chill","classic"]},
+  {n:"Envy",p:"205",d:"Tequila, Blue Curaçao, pineapple & lime",sp:"tequila",fl:["fresh","fruity"],sw:2,st:2,vb:["photo"]},
+  {n:"Manhattan",p:"190",d:"Jameson, Martini Rosso, Angostura",sp:"whiskey",fl:["bitter"],sw:1,st:3,vb:["classic","chill"]},
+  {n:"Old Fashioned",p:"200",d:"Jack Daniel's, sugar, Angostura",sp:"whiskey",fl:["bitter"],sw:1,st:3,vb:["classic","chill"]},
+  {n:"Whiskey Sour Español",p:"200",d:"Jameson, sugar, lemon juice",sp:"whiskey",fl:["citrus"],sw:2,st:2,vb:["classic","chill"]},
+  // Wine & Spritz
+  {n:"Mimosa",p:"165",d:"Prosecco, orange juice",sp:"bubbles",fl:["citrus","fresh"],sw:2,st:1,vb:["chill","classic"]},
+  {n:"Aperol Spritz",p:"195",d:"Aperol, prosecco, soda",sp:"bubbles",fl:["bitter","citrus","fresh"],sw:2,st:1,vb:["classic","photo","chill"]},
+  {n:"Hugo Spritz",p:"195",d:"Prosecco, elderflower syrup, soda",sp:"bubbles",fl:["fresh"],sw:2,st:1,vb:["chill","photo"]},
+  {n:"Limoncello Spritz",p:"195",d:"Limoncello, Prosecco, soda",sp:"bubbles",fl:["citrus","fresh"],sw:2,st:1,vb:["chill","photo"]},
+  {n:"Campari Spritz",p:"195",d:"Campari, Prosecco, soda",sp:"bubbles",fl:["bitter"],sw:1,st:1,vb:["chill","classic"]},
+  {n:"Kalimotxo",p:"165",d:"Red wine, Pepsi, lemon",sp:"bubbles",fl:["sweet"],sw:2,st:2,vb:["party"]},
+  {n:"Calypso",p:"165",d:"White wine, pineapple juice, coconut syrup",sp:"bubbles",fl:["fruity","sweet"],sw:2,st:1,vb:["chill"]},
+  {n:"Berry Muscade",p:"195",d:"Prosecco, vodka, strawberry, cranberry & lime",sp:"bubbles",fl:["fruity"],sw:2,st:2,vb:["photo","party"]},
+  {n:"Tinto Verano",p:"190",d:"Red wine, tonic, strawberry, cranberry & lime",sp:"bubbles",fl:["fruity","fresh"],sw:2,st:1,vb:["chill"]},
+  {n:"Duoma",p:"185",d:"Kahlua, red wine, espresso",sp:"bubbles",fl:["sweet"],sw:2,st:2,vb:["chill"]},
+  {n:"Luna Sanguinia",p:"185",d:"Red wine, orange rum, passion fruit, orange",sp:"bubbles",fl:["fruity"],sw:2,st:2,vb:["chill"]},
+  {n:"Sarti Spritz",p:"205",d:"Sarti, prosecco, soda",sp:"bubbles",fl:["fruity","bitter"],sw:2,st:1,vb:["photo","chill"]},
+  // Non-alcoholic 0.0%
+  {n:"Virgin Colada 0.0%",p:"155",d:"Coconut syrup, pineapple juice, cream",sp:"none",fl:["sweet","fruity"],sw:3,st:0,vb:["chill","photo"]},
+  {n:"Miami 0.0%",p:"145",d:"Pineapple, orange & lime juice, grenadine",sp:"none",fl:["fruity","citrus"],sw:2,st:0,vb:["photo"]},
+  {n:"Flamingo 0.0%",p:"145",d:"Grapefruit, orange & lime juice, grenadine",sp:"none",fl:["citrus","fruity"],sw:2,st:0,vb:["photo"]},
+  {n:"Gin Tonic 0.0%",p:"165",d:"Non-alco gin, tonic, cucumber syrup",sp:"none",fl:["fresh"],sw:1,st:0,vb:["chill"]},
+  {n:"Cuba Libre 0.0%",p:"160",d:"Non-alco rum, lime juice, Pepsi",sp:"none",fl:["sweet"],sw:2,st:0,vb:["chill"]},
+  {n:"Mojito Fruity 0.0%",p:"180",d:"Non-alco rum, lime, brown sugar, tonic, fruity syrup",sp:"none",fl:["fresh","fruity"],sw:2,st:0,vb:["chill","photo"]},
+  {n:"Strawberry Boom 0.0%",p:"180",d:"Non-alco gin, strawberry, lemon & cranberry",sp:"none",fl:["fruity","citrus"],sw:2,st:0,vb:["photo"]},
+];
+  var SPIRIT_LABEL=L.spL, FLAVOR_LABEL=L.flL;
+  var QUESTIONS=[
+    {key:"spirit",q:L.q.spirit,opts:[
+      {v:"vodka",l:L.sp.vodka,emo:"🍸"},{v:"rum",l:L.sp.rum,emo:"🏴‍☠️"},
+      {v:"gin",l:L.sp.gin,emo:"🌿"},{v:"tequila",l:L.sp.tequila,emo:"🌵"},
+      {v:"whiskey",l:L.sp.whiskey,emo:"🥃"},{v:"bubbles",l:L.sp.bubbles,emo:"🥂"},
+      {v:"none",l:L.sp.none,emo:"🚫"},{v:"any",l:L.sp.any,emo:"🎲"}]},
+    {key:"flavor",q:L.q.flavor,opts:[
+      {v:"fruity",l:L.fl.fruity,emo:"🥭"},{v:"citrus",l:L.fl.citrus,emo:"🍋"},
+      {v:"sweet",l:L.fl.sweet,emo:"🍫"},{v:"bitter",l:L.fl.bitter,emo:"🍊"},
+      {v:"fresh",l:L.fl.fresh,emo:"🌱"}]},
+    {key:"sweetness",q:L.q.sweetness,opts:[
+      {v:3,l:L.sw.sweet,emo:"🍬"},{v:2,l:L.sw.balanced,emo:"⚖️"},{v:1,l:L.sw.dry,emo:"🍃"}]},
+    {key:"strength",q:L.q.strength,opts:[
+      {v:1,l:L.st.easy,emo:"😌",s:L.st.easyS},{v:2,l:L.st.bal,emo:"🙂",s:L.st.balS},
+      {v:3,l:L.st.hard,emo:"🔥",s:L.st.hardS}]}
+  ];
+  function matchTier(pct){
+    if(pct>=90) return {t:L.tier.perfect,c:"var(--cyan)"};
+    if(pct>=70) return {t:L.tier.great,c:"var(--violet)"};
+    if(pct>=50) return {t:L.tier.tryit,c:"var(--magenta)"};
+    return {t:L.tier.wild,c:"var(--muted)"};
+  }
+  var step=0; var answers={};
+  var app=document.getElementById('cf-app'); var prog=document.getElementById('cf-progress');
+  if(!app) return;
+  function renderProgress(){
+    prog.innerHTML='';
+    for(var i=0;i<QUESTIONS.length;i++){
+      var d=document.createElement('span');
+      d.className='cf-dot'+(i<step?' done':'')+(i===step?' active':'');
+      prog.appendChild(d);
+    }
+  }
+  function renderQuestion(){
+    renderProgress();
+    var Q=QUESTIONS[step];
+    var card=document.createElement('div'); card.className='cf-card';
+    card.innerHTML=
+      '<p class="cf-step">'+L.qof.replace('{n}',step+1).replace('{t}',QUESTIONS.length)+'</p>'+
+      '<h3 class="cf-q">'+Q.q+'</h3>'+
+      '<div class="cf-opts" id="cf-opts"></div>'+
+      '<div class="cf-nav"><button class="cf-back" id="cf-back"'+(step===0?' hidden':'')+'>'+L.back+'</button></div>';
+    app.innerHTML=''; app.appendChild(card);
+    var wrap=card.querySelector('#cf-opts');
+    Q.opts.forEach(function(o){
+      var b=document.createElement('button'); b.className='cf-opt';
+      b.innerHTML='<span class="cf-emo">'+o.emo+'</span><span>'+o.l+(o.s?'<small>'+o.s+'</small>':'')+'</span>';
+      b.onclick=function(){
+        answers[Q.key]=o.v;
+        if(Q.key==="spirit" && o.v==="none"){ answers.strength="skip"; }
+        advance();
+      };
+      wrap.appendChild(b);
+    });
+    var bk=card.querySelector('#cf-back');
+    bk.onclick=function(){ step=Math.max(0,step-1); route(); };
+  }
+  function advance(){
+    step++;
+    if(QUESTIONS[step] && QUESTIONS[step].key==="strength" && answers.spirit==="none"){ step++; }
+    route();
+  }
+  function route(){ if(step>=QUESTIONS.length){ renderResults(); } else renderQuestion(); }
+  function scoreDrink(dk){
+  let s=0,max=0;
+  const why=[];
+  // spirit
+  max+=40;
+  if(answers.spirit==="any"){ s+=20; }
+  else if(answers.spirit==="none"){ if(dk.sp==="none"){ s+=40; why.push("0.0%"); } }
+  else {
+    if(dk.sp===answers.spirit){ s+=40; why.push(SPIRIT_LABEL[answers.spirit]); }
+    else if(dk.sp==="any"){ s+=22; } // house multi-spirit blends fit most picks
+  }
+  // flavor
+  max+=25;
+  if(dk.fl.includes(answers.flavor)){ s+=25; why.push(FLAVOR_LABEL[answers.flavor]); }
+  // sweetness
+  max+=20;
+  const dsw=Math.abs(dk.sw-answers.sweetness);
+  if(dsw===0){ s+=20; } else if(dsw===1){ s+=10; }
+  // strength (skipped for non-alc)
+  if(answers.strength!=="skip"){
+    max+=10;
+    const dst=Math.abs(dk.st-answers.strength);
+    if(dst===0){ s+=10; } else if(dst===1){ s+=5; }
+  }
+
+  return {pct:Math.round(100*s/max), why};
+}
+  function renderResults(){
+    renderProgress();
+    prog.querySelectorAll('.cf-dot').forEach(function(d){d.classList.add('done');});
+    var pool=DRINKS.slice();
+    if(answers.spirit==="none"){ pool=pool.filter(function(d){return d.sp==="none";}); }
+    else { pool=pool.filter(function(d){return d.sp!=="none";}); }
+    var scored=pool.map(function(d){ var r=scoreDrink(d); return Object.assign({},d,r); })
+                   .sort(function(a,b){ return b.pct-a.pct || Math.random()-0.5; });
+    var top=scored.slice(0,5);
+    var chosen=[
+      SPIRIT_LABEL[answers.spirit],
+      FLAVOR_LABEL[answers.flavor],
+      answers.sweetness===3?L.sw.sweet:answers.sweetness===1?L.sw.dry:L.sw.balanced,
+      answers.strength==="skip"?null:(answers.strength===3?L.stw.strong:answers.strength===1?L.stw.easy:L.stw.bal)
+    ].filter(Boolean).join(" · ");
+    var html='<div class="cf-rhead"><h3>'+L.top+'</h3><p>'+chosen+'</p></div>';
+    top.forEach(function(d,i){
+      var seen={},uniq=[]; d.why.forEach(function(w){ if(!seen[w]){seen[w]=1;uniq.push(w);} });
+      var tags=uniq.slice(0,4).map(function(t){return '<span class="cf-tag">'+t+'</span>';}).join('');
+      var tier=matchTier(d.pct);
+      html+=
+        '<div class="cf-drink'+(i===0?' top':'')+'">'+
+          '<div class="cf-rank">'+(i+1)+'</div>'+
+          '<div class="cf-dbody">'+
+            '<div class="cf-dtop"><p class="cf-dname">'+d.n+'</p><span class="cf-dprice">'+d.p+' Kč</span></div>'+
+            '<p class="cf-ddesc">'+d.d+'</p>'+
+            '<div class="cf-match"><span class="cf-bar"><i style="width:'+d.pct+'%"></i></span>'+
+              '<b class="cf-mlabel" style="color:'+tier.c+'">'+tier.t+'</b><span class="cf-pct">'+d.pct+'%</span></div>'+
+            '<div class="cf-tags">'+tags+'</div>'+
+          '</div>'+
+        '</div>';
+    });
+    html+='<div class="cf-actions">'+
+      '<button class="cf-again" id="cf-again">'+L.again+'</button>'+
+      '<a class="cf-cta" href=\"https://app.resmio.com/lost-and-found-bar-prague/widget?source=GoogleCTA\" target="_blank" rel="noopener">'+L.reserve+'</a>'+
+    '</div>';
+    var card=document.createElement('div'); card.innerHTML=html;
+    app.innerHTML=''; app.appendChild(card);
+    card.querySelector('#cf-again').onclick=function(){ step=0; for(var k in answers) delete answers[k]; route(); };
+  }
+  route();
+})();
+</script>
+
   <div class="menu-cta-wrap">
     <a class="menu-cta" href="#menu">→ Kompletní menu</a>
   </div>
@@ -1612,7 +1892,7 @@ a[href*="firmy.cz"]::before{background-image:url('data:image/svg+xml;utf8,<svg x
 <!-- REVIEWS -->
 <section id="reviews" class="wrap">
   <div class="sec-head">
-    <span class="kicker">4,9★ · 1 210+ recenzí na Googlu</span>
+    <span class="kicker">4,9★ · 1 230+ recenzí na Googlu</span>
     <h2>Co říkají hosté</h2>
     <p>Skutečné recenze od skutečných hostů — podívej se, proč je Lost &amp; Found nejlépe hodnocený koktejlový bar v Praze</p>
   </div>
