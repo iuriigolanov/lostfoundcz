@@ -39,7 +39,8 @@
 <meta name="theme-color" content="#000000">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap"></noscript>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -128,22 +129,6 @@
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Yes. Lost &amp; Found is a full hookah lounge as well as a cocktail bar. We serve premium shisha alongside our signature craft cocktails, and you can enjoy both in the same seating."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Wo liegt das Lost &amp; Found Bar Prag?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Wir sind in der Žitná 1764/11, Nové Město, Praha 1, im Herzen von Prag — nur wenige Gehminuten vom Wenzelsplatz, die Metro-Stationen I. P. Pavlova und Karlovo náměstí sind beide schnell zu Fuß erreichbar."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Gibt es außer Trinken noch etwas zu tun?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Plenty. We have arcade and bar games including foosball and darts, plus a shelf of board games. It is a bar built for staying a while, not just one round. We also host private events, parties and special occasions, and can put together custom catering on request — tell us what you have in mind."
       }
     },
     {
@@ -940,8 +925,8 @@ a[href*="firmy.cz"]::before{background-image:url('data:image/svg+xml;utf8,<svg x
 </div>
 
 <a class="event-banner" href="#upcoming">
-  <span class="event-banner-text event-banner-l1">🎧 LOST PARTY · 09.10 · 21:00</span>
-  <span class="event-banner-text event-banner-l2">DJ Sets: LEX MIRA & SHØGUN · Eintritt frei</span>
+  <span class="event-banner-text event-banner-l1">🎧 TOBIAS MANN · 17.10 · 21:00</span>
+  <span class="event-banner-text event-banner-l2">+ Techno Night 16.10 · SHØGUN · Eintritt frei</span>
   <span class="event-banner-cta">Events ansehen →</span>
 </a>
 <header id="top">
@@ -984,17 +969,6 @@ a[href*="firmy.cz"]::before{background-image:url('data:image/svg+xml;utf8,<svg x
     <div class="upcoming-head">
       <span class="upcoming-kicker">Kommende Nächte 🎧</span>
       <div class="upcoming-title">LOST PARTIES</div>
-      <div class="upcoming-djs">DJ Sets: <span>DJ SHØGUN & LEX MIRA</span></div>
-    </div>
-    <div class="evt-banner" style="background-image:url('../img/events/techno-0910-bg.jpg');background-position:center top;cursor:default">
-      <div class="evt-banner-info">
-        <div class="uc-day">FR</div>
-        <div class="evt-when-row">
-          <div class="uc-date">16.10</div>
-          <div class="uc-time">21:00</div>
-          <div class="evt-free">Eintritt frei</div>
-        </div>
-      </div>
     </div>
     <div class="upcoming-djs evt-djs"><span><a class="dj-ig" href="https://www.instagram.com/tobias_mann_official/" target="_blank" rel="noopener">DJ TOBIAS MANN</a></span> <span class="dj-origin">(aus Deutschland, Leipzig)</span></div>
     <div class="evt-banner" data-poster="../img/events/tobias-mann-1710.jpg" role="button" tabindex="0" aria-label="Tobias-Mann-Poster ansehen" style="background-image:url('../img/events/tobias-mann-banner.jpg')">
@@ -1002,6 +976,18 @@ a[href*="firmy.cz"]::before{background-image:url('data:image/svg+xml;utf8,<svg x
         <div class="uc-day">SA</div>
         <div class="evt-when-row">
           <div class="uc-date">17.10</div>
+          <div class="uc-time">21:00</div>
+          <div class="evt-free">Eintritt frei</div>
+        </div>
+        <span class="evt-banner-hint">Poster ansehen ↗</span>
+      </div>
+    </div>
+    <div class="upcoming-djs evt-djs"><span>TECHNO Night · DJ SHØGUN</span></div>
+    <div class="evt-banner evt-techno" data-poster="../img/events/techno-1610.jpg" role="button" tabindex="0" aria-label="Techno-Night-Poster ansehen" style="background-image:url('../img/events/techno-0910-bg.jpg');background-position:center top">
+      <div class="evt-banner-info">
+        <div class="uc-day">FR</div>
+        <div class="evt-when-row">
+          <div class="uc-date">16.10</div>
           <div class="uc-time">21:00</div>
           <div class="evt-free">Eintritt frei</div>
         </div>
@@ -1019,6 +1005,14 @@ a[href*="firmy.cz"]::before{background-image:url('data:image/svg+xml;utf8,<svg x
   <details class="past-events" id="past-events">
     <summary>Vergangene Events</summary>
     <div class="past-list" id="pastList">
+      <div class="past-item">
+        <div class="past-date">10.10</div>
+        <div class="past-info"><div class="past-name past-link" data-poster="../img/events/techno-0910.jpg" role="button" tabindex="0">TECHNO NIGHT</div><div class="past-desc">SHØGUN · LEX MIRA</div></div>
+      </div>
+      <div class="past-item">
+        <div class="past-date">09.10</div>
+        <div class="past-info"><div class="past-name past-link" data-poster="../img/events/techno-0910.jpg" role="button" tabindex="0">TECHNO NIGHT</div><div class="past-desc">SHØGUN · LEX MIRA</div></div>
+      </div>
       <div class="past-item">
         <div class="past-date">26.09</div>
         <div class="past-info"><div class="past-name past-link" data-poster="../img/events/20260925_20260926.jpg" role="button" tabindex="0">LOST PARTY</div><div class="past-desc">LEX MIRA · SHØGUN</div></div>
@@ -1955,19 +1949,7 @@ a[href*="firmy.cz"]::before{background-image:url('data:image/svg+xml;utf8,<svg x
       </div>
     </details>
 
-    <details class="faq-item">
-      <summary>Wo liegt das Lost &amp; Found Bar Prag?</summary>
-      <div class="faq-a">
-        <p>Wir sind in der Žitná 1764/11, Nové Město, Praha 1, im Herzen von Prag — nur wenige Gehminuten vom Wenzelsplatz, die Metro-Stationen I. P. Pavlova und Karlovo náměstí sind beide schnell zu Fuß erreichbar.</p>
-      </div>
-    </details>
 
-    <details class="faq-item">
-      <summary>Gibt es außer Trinken noch etwas zu tun?</summary>
-      <div class="faq-a">
-        <p>Jede Menge. Wir haben Arcade- und Barspiele, darunter Kicker und Darts, plus ein Regal voller Brettspiele. Eine Bar zum Verweilen, nicht nur für eine Runde. Wir richten außerdem private Events, Partys und besondere Anlässe aus und stellen auf Wunsch individuelles Catering zusammen — <a href="#visit">sag uns, was du vorhast</a>.</p>
-      </div>
-    </details>
 
     <details class="faq-item">
       <summary>Kann ich Lost &amp; Found für ein privates Event oder eine Party buchen?</summary>
