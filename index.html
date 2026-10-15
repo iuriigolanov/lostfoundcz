@@ -763,7 +763,8 @@ a[href*="firmy.cz"]::before{background-image:url('data:image/svg+xml;utf8,<svg x
 .featured-in-label{display:block;font-size:15px;letter-spacing:.28em;text-transform:uppercase;color:var(--cyan);text-shadow:0 0 12px rgba(0,200,224,.5);margin-bottom:16px}
 .featured-in-list{display:flex;flex-wrap:wrap;gap:12px}
 .fi-item{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:600;letter-spacing:.03em;color:var(--ink);text-decoration:none;padding:9px 16px;border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,.02);transition:border-color .2s,box-shadow .2s,transform .15s}
-.fi-item::before{content:"↗";color:var(--cyan);font-size:12px}
+.fi-item::before{display:none}
+.fi-ico{width:18px;height:18px;border-radius:3px;flex-shrink:0;background:rgba(255,255,255,.08);object-fit:cover}
 .fi-item:hover{border-color:rgba(0,200,224,.5);box-shadow:0 0 14px rgba(0,200,224,.25);transform:translateY(-2px)}
 .footer-block{text-align:center;margin:26px 0}
 .footer-block .featured-in-list{justify-content:center}
