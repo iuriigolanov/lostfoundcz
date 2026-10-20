@@ -4,7 +4,7 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://lostfoundcz.com/</loc>
-    <lastmod>2026-10-16</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://lostfoundcz.com/"/>
@@ -30,7 +30,7 @@
   </url>
   <url>
     <loc>https://lostfoundcz.com/cs/</loc>
-    <lastmod>2026-10-16</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://lostfoundcz.com/"/>
@@ -56,7 +56,7 @@
   </url>
   <url>
     <loc>https://lostfoundcz.com/de/</loc>
-    <lastmod>2026-10-16</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://lostfoundcz.com/"/>
@@ -100,7 +100,7 @@
   </url>
   <url>
     <loc>https://lostfoundcz.com/catering-calculator/</loc>
-    <lastmod>2026-08-30</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
