@@ -137,6 +137,7 @@
   <div class="flex justify-end gap-2 px-4 py-2 text-sm bg-brand-surface/60 border-b border-brand-border" role="group" aria-label="Language switcher">
     <button type="button" id="lang-en" class="px-3 py-1 rounded-full text-xs font-medium transition" aria-pressed="true" onclick="setLanguage('en')">EN</button>
     <button type="button" id="lang-cz" class="px-3 py-1 rounded-full text-xs font-medium transition" aria-pressed="false" onclick="setLanguage('cz')">CZ</button>
+    <button type="button" id="lang-de" class="px-3 py-1 rounded-full text-xs font-medium transition" aria-pressed="false" onclick="setLanguage('de')">DE</button>
   </div>
 
   <!-- ============================================================ -->
@@ -812,7 +813,136 @@
         'sticky.getQuote': 'Nezávazná poptávka',
         'footer.text': 'Lost & Found Bar Praha — Kalkulátor cateringu na akce',
       },
+      de: {
+        'hero.subtitle': 'Location für dein perfektes Event',
+        'hero.period': '(November, Dezember)',
+        'hero.tagline': 'Eine neonbeleuchtete Craft-Cocktail-Bar direkt am Karlovo náměstí (4,9★, 1.255+ Bewertungen) — Signature-Drinks, warme Energie und eine entspannte, unkomplizierte Atmosphäre. Lost & Found ist der Ort, an dem Nächte natürlich und ungezwungen sind.',
+        'eventDetails.heading': 'Event-Details',
+        'eventDetails.date': 'Datum',
+        'eventDetails.guests': 'Gäste',
+        'eventDetails.format': 'Format',
+        'eventDetails.formatValue': 'Firmen-Neujahrsparty',
+        'eventDetails.details': 'Weitere Details',
+        'eventDetails.detailsValue': 'Komplette Anmietung,',
+        'eventDetails.note': 'Diese Angaben basieren auf deiner ersten Anfrage — sag uns Bescheid, falls sich etwas geändert hat.',
+        'atmosphere.eyebrow': 'Die Atmosphäre',
+        'atmosphere.heading': 'Spüre den Raum',
+        'atmosphere.copy': 'Neonbeleuchtet, ohne Attitüde und mit 4,9★ von über 1.255 Gästen bewertet — das ist der Raum, in dem dein Event stattfindet.',
+        'atmosphere.space1.name': 'Eingang & Bartheke',
+        'atmosphere.space1.desc': '7 dynamische Plätze mit Blick auf die Bar in der ersten Reihe, ideal für einzelne Gäste.',
+        'atmosphere.space2.name': 'Hauptraum',
+        'atmosphere.space2.desc': 'Flexibler Raum für bis zu 25 Gäste mit mobilen Tischen für jedes Layout.',
+        'atmosphere.space3.name': 'Kellerlounge',
+        'atmosphere.space3.desc': 'Großzügige Fläche für bis zu 50 Gäste, mit Vorhängen leicht für private Gruppen abtrennbar.',
+        'atmosphere.photo1': '[ Foto: Bar / Neon-Interieur ]',
+        'atmosphere.photo2': '[ Foto: Lounge-Sitzbereich ]',
+        'atmosphere.photo3': '[ Foto: Menge / Late-Night-Party ]',
+        'atmosphere.photo4': '[ Foto: Signature-Cocktails ]',
+        'packages.heading': 'Bar-Pakete',
+        'packages.guestsLabel': 'Anzahl der Gäste',
+        'packages.guestsWord': 'Gäste',
+        'packages.sliderNote': 'Gästezahl und Preise aktualisieren sich live, während du den Regler bewegst.',
+        'packages.legend': 'Wähle ein Catering-Paket',
+        'packages.perPerson': '/ Person',
+        'food.heading': 'Speisen-Pakete',
+        'food.subtitle': 'Optional — füge pro Gast ein Speisen-Paket hinzu oder bleib bei Getränken.',
+        'food.legend': 'Wähle ein Speisen-Paket',
+        'food.none': 'Kein Speisen-Paket — nur Getränke',
+        'food.includes': 'Enthält',
+        'food.selectedCostLabel': 'Kosten gewähltes Speisen-Paket:',
+        'food.selectedCostNote': '(Gäste × Preis pro Person)',
+        'packages.detailsLink': 'Details',
+        'packages.selectedCostLabel': 'Kosten gewähltes Paket:',
+        'packages.selectedCostNote': '(Gäste × Preis pro Person)',
+        'packages.portionsNote': 'Portionen sind ein Durchschnitt pro Gast. Event-Dauer: bis zu 5 Stunden.',
+        'compare.heading': 'Pakete vergleichen',
+        'compare.category': 'Kategorie',
+        'compare.dishCategories': 'Gericht-Kategorien',
+        'compare.itemCount': 'Anzahl Positionen',
+        'compare.alcoholBrands': 'Alkohol-Marken',
+        'compare.portions': 'Portionen',
+        'compare.pricePerPerson': 'Preis / Person',
+        'compare.totalCost': 'Gesamtkosten',
+        'details.heading': 'Paket-Details',
+        'details.fullBreakdown': 'vollständige Aufschlüsselung',
+        'details.drinks': 'Getränke',
+        'details.starters': 'Vorspeisen',
+        'details.mains': 'Hauptgerichte',
+        'details.desserts': 'Desserts',
+        'details.alcoholSplit': 'Alkohol / alkoholfrei',
+        'details.portionsPerGuest': 'Portionen pro Gast',
+        'details.photoPlaceholder': '[ Platzhalter für Gericht-Fotos ]',
+        'addons.heading': 'Zusatzleistungen',
+        'addons.subtitle': 'Das Angebot hängt von Tag/Uhrzeit ab.',
+        'addons.legend': 'Wähle Zusatzleistungen',
+        'addons.moreInfo': 'Mehr Infos',
+        'addons.totalLabel': 'Summe Zusatzleistungen:',
+        'addons.totalNote': '(Festpreis pro Event — nicht mit der Gästezahl multipliziert)',
+        'reviews.eyebrow': 'Auf Google Maps',
+        'reviews.heading': 'Google-Maps-Bewertungen',
+        'reviews.rating': '4,9★ · 1.255+ Google-Bewertungen',
+        'reviews.seeAllLink': 'Alle Bewertungen auf Google Maps ansehen →',
+        'grandTotal.heading': 'Gesamtsumme',
+        'grandTotal.catering': 'Bar-Paket',
+        'grandTotal.food': 'Speisen-Paket',
+        'grandTotal.addons': 'Zusatzleistungen',
+        'grandTotal.grand': 'Gesamtsumme (exkl. MwSt.)',
+        'grandTotal.vat': 'MwSt. (21%)',
+        'grandTotal.totalVat': 'Gesamt inkl. MwSt.',
+        'grandTotal.discount': 'Dein persönlicher Rabatt',
+        'grandTotal.discountValue': 'wird persönlich besprochen',
+        'grandTotal.note': 'Die Preise werden live berechnet. Zusatzleistungen mit Preisspanne oder „auf Anfrage“ werden hier mit dem Minimum (oder als 0) gezählt — die endgültige Summe wird mit deinem Angebot bestätigt.',
+        'contact.heading': 'Deine Angaben',
+        'contact.name': 'Name',
+        'contact.phone': 'Telefon',
+        'contact.email': 'E-Mail',
+        'contact.wishes': 'Weitere Wünsche',
+        'contact.date': 'Wunschtermin',
+        'contact.submit': 'Auf geht\'s zur Party!',
+        'contact.submitNote': 'Sendet deine Anfrage direkt an unser Team — wir melden uns in Kürze.',
+        'contact.errorName': 'Bitte gib deinen Namen ein.',
+        'contact.errorContact': 'Bitte gib eine Telefonnummer oder E-Mail-Adresse an.',
+        'contact.errorSubmit': 'Beim Senden deiner Anfrage ist etwas schiefgelaufen. Bitte versuche es erneut oder kontaktiere uns direkt.',
+        'contact.submitting': 'Wird gesendet…',
+        'contact.directContact': 'Du erreichst uns auch direkt:',
+        'contact.successMsg': 'Danke — deine Anfrage ist eingegangen.',
+        'sticky.estimatedTotal': 'Geschätzte Summe',
+        'sticky.getQuote': 'Angebot anfordern',
+        'footer.text': 'Lost & Found Bar Prag — Event-Catering-Rechner',
+      },
     };
+
+
+    // --- German (de) data: fallback de=en for all bilingual leaves, then overrides ---
+    (function () {
+      (function walk(o) {
+        if (o && typeof o === 'object') {
+          if (Object.prototype.hasOwnProperty.call(o, 'en') && Object.prototype.hasOwnProperty.call(o, 'cz') && !Object.prototype.hasOwnProperty.call(o, 'de')) o.de = o.en;
+          for (var k in o) { if (o[k] && typeof o[k] === 'object') walk(o[k]); }
+        }
+      })(LF_DATA);
+      function byId(arr, id) { for (var i = 0; i < arr.length; i++) if (arr[i].id === id) return arr[i]; return null; }
+      var C = LF_DATA.catering, Fo = LF_DATA.food, A = LF_DATA.addons;
+      function cat(id, n, d, dr, al, po) { var o = byId(C, id); if (!o) return; o.name.de = n; o.description.de = d; o.details.drinks.de = dr; o.details.alcohol.de = al; o.details.portions.de = po; }
+      function food(id, n, d, it, po) { var o = byId(Fo, id); if (!o) return; o.name.de = n; o.description.de = d; o.items.de = it; o.portions.de = po; }
+      function ad(id, n, note, pl) { var o = byId(A, id); if (!o) return; o.name.de = n; o.note.de = note; if (pl && o.priceLabel) o.priceLabel.de = pl; }
+      cat('economy', 'Basic', 'Eine entspannte, budgetfreundliche Bar-Variante — Hauscocktails, Bier, Wein und alkoholfreie Getränke. Ideal für ungezwungene Firmenfeiern und kleinere Events.', 'Auswahl an Hauscocktails (15 Rezepte, Auswahl aus der Karte), Craft-Bier vom Fass, Hauswein, alkoholfreie Getränke.', 'Ca. 70% alkoholische / 30% alkoholfreie Getränke.', '3 Getränke pro Gast.');
+      cat('standard', 'Casual', 'Unser beliebtestes Bar-Paket — größere Cocktailauswahl, Wein, Spritz und Spirituosen. Passt zu Geburtstagen, Präsentationen und Empfängen.', 'Komplette klassische Cocktailkarte, Wein & Spritz, Craft-Bier, Spirituosen, alkoholfreie Cocktails.', 'Ca. 80% alkoholische / 20% alkoholfreie Getränke.', '5 Getränke pro Gast.');
+      cat('premium', 'Premium', 'Das komplette Lost & Found Bar-Erlebnis — Signature-Cocktails, personalisierte Drinks mit Namen, Premium-Spirituosen und eigener Barkeeper-Service.', 'Komplette Signature-Karte (Ferrari, Lamborghini, Long Island, Skittles u. v. m.), Klassiker, Wein & Spritz, Premium-Spirituosen, personalisierte Cocktails mit Namen.', 'Ca. 85% alkoholische / 15% alkoholfreie Getränke — auf Wunsch anpassbar.', '7 Getränke pro Gast, eigener Barkeeper inklusive.');
+      food('food-lite', 'Lite — Fingerfood', 'Leichte Snacks zum Knabbern — Nachos, Chips & Dips, gemischte herzhafte Häppchen. Perfekt zu Drinks ohne volle Mahlzeit.', 'Nachos, Chips & Dips, gemischte herzhafte Snack-Schalen, Fingerfood.', '1 Speisen-Portion pro Gast.');
+      food('food-middle', 'Middle — Kanapees & Pizza', 'Ein reichhaltigeres Angebot — verschiedene Kanapees, Pizza und Quesadillas, warme und kalte Häppchen über das ganze Event.', 'Verschiedene Kanapees, Pizza nach Wahl (ca. 0,5–1 pro Gast), Quesadillas, warme & kalte Platten.', '2 Speisen-Portionen pro Gast.');
+      ad('dj', 'DJ / Live-Musik', 'Die Preisspanne hängt von Tag und Uhrzeit des Events ab. In der Berechnung wird der Mindestpreis verwendet.', '14.900–25.900');
+      ad('photo-video', 'Foto / Video (PartyFun.cz)', 'Foto-/Video-Service von unserem Partner PartyFun.cz. Ab 6.999 für 3 Stunden; endgültiger Umfang wird mit deinem Angebot bestätigt.', 'ab 6.999 / 3 Std.');
+      var pv = byId(A, 'photo-video'); if (pv && pv.nameHtml) pv.nameHtml.de = 'Foto / Video (<a href="https://www.partyfun.cz/" target="_blank" rel="noopener" onclick="event.stopPropagation()" class="text-brand-cyan underline">PartyFun.cz</a>)';
+      ad('entertainers', 'Animateure / Moderator', 'Preis auf Anfrage — sag uns, was du brauchst, und wir erstellen ein Angebot.', 'auf Anfrage');
+      ad('menu-printing', 'Menükarten-Druck mit Logo (40 Stk.)', 'Menükarten mit deinem Branding, 40 Stück.', null);
+      ad('gift-sets', 'Geschenksets', 'Preis pro Event nach Absprache — Menge hängt von der Gästezahl ab. Wird individuell besprochen.', 'auf Anfrage');
+      ad('waiter-service', 'Premium-Kellnerservice', 'Details folgen.', null);
+      ad('security', 'Sicherheit und Einlasskontrolle', 'Die Preisspanne hängt von Tag und Uhrzeit des Events ab. In der Berechnung wird der Mindestpreis verwendet.', '6.500–9.700');
+      ad('punch-bowl', 'Bowle (20 L)', 'Details folgen.', null);
+      ad('taxi', 'Taxi innerhalb Prags', 'Taxi innerhalb des Prager Stadtgebiets, 750 pro Gast. Endgültige Anzahl wird mit deinem Angebot bestätigt.', '750 / Person (wird berechnet)');
+      ad('photo-zone', 'Fotozone', 'Preis auf Anfrage — sag uns, was du brauchst, und wir erstellen ein Angebot.', 'auf Anfrage');
+    })();
 
     let currentLang = 'en';
 
@@ -821,7 +951,7 @@
     }
 
     function fmtPrice(n) {
-      const locale = currentLang === 'cz' ? 'cs-CZ' : 'en-US';
+      const locale = currentLang === 'cz' ? 'cs-CZ' : currentLang === 'de' ? 'de-DE' : 'en-US';
       return n.toLocaleString(locale);
     }
 
@@ -1154,16 +1284,16 @@
     }
 
     function updateLangButtons() {
-      const en = document.getElementById('lang-en');
-      const cz = document.getElementById('lang-cz');
-      [en, cz].forEach(function (btn) { btn.classList.remove('bg-brand-pink', 'text-black', 'border', 'border-brand-border', 'text-brand-muted'); });
-      const active = currentLang === 'en' ? en : cz;
-      const inactive = currentLang === 'en' ? cz : en;
-      active.classList.add('bg-brand-pink', 'text-black');
-      inactive.classList.add('border', 'border-brand-border', 'text-brand-muted');
-      en.setAttribute('aria-pressed', String(currentLang === 'en'));
-      cz.setAttribute('aria-pressed', String(currentLang === 'cz'));
-      document.documentElement.lang = currentLang === 'cz' ? 'cs' : 'en';
+      var ids = { en: 'lang-en', cz: 'lang-cz', de: 'lang-de' };
+      Object.keys(ids).forEach(function (code) {
+        var btn = document.getElementById(ids[code]);
+        if (!btn) return;
+        btn.classList.remove('bg-brand-pink', 'text-black', 'border', 'border-brand-border', 'text-brand-muted');
+        if (code === currentLang) { btn.classList.add('bg-brand-pink', 'text-black'); }
+        else { btn.classList.add('border', 'border-brand-border', 'text-brand-muted'); }
+        btn.setAttribute('aria-pressed', String(code === currentLang));
+      });
+      document.documentElement.lang = currentLang === 'cz' ? 'cs' : currentLang === 'de' ? 'de' : 'en';
     }
 
     // ---- state capture / restore around a language switch -----------------
