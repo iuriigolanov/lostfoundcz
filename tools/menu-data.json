@@ -1,0 +1,1823 @@
+{
+  "categories": [
+    {
+      "id": "cat-signature",
+      "emoji": "🍸",
+      "name": {
+        "en": "Signature Cocktails",
+        "cz": "Autorské koktejly",
+        "de": "Signature-Cocktails"
+      },
+      "flat": null,
+      "items": [
+        {
+          "name": "Ferrari",
+          "price": "295",
+          "desc": {
+            "en": "Stroh, Bacardi Spiced, Triple sec liqueur, Grenadine, Blue Curaçao",
+            "cz": "Stroh, Bacardi Spiced, Triple sec likér, Grenadina, Blue Curaçao",
+            "de": "Stroh, Bacardi Spiced, Triple-Sec-Likör, Grenadine, Blue Curaçao"
+          },
+          "finder": {
+            "name": "Ferrari",
+            "d": "Stroh, Bacardi Spiced, Triple sec, Grenadine, Blue Curaçao",
+            "sp": "rum",
+            "fl": [
+              "fruity",
+              "sweet"
+            ],
+            "sw": 3,
+            "st": 3,
+            "vb": [
+              "party",
+              "photo"
+            ]
+          }
+        },
+        {
+          "name": "Lamborghini",
+          "price": "250",
+          "desc": {
+            "en": "Baileys, Kahlua, Sambuca, Blue Curaçao",
+            "cz": "Baileys, Kahlua, Sambuca, Blue Curaçao",
+            "de": "Baileys, Kahlua, Sambuca, Blue Curaçao"
+          },
+          "finder": {
+            "name": "Lamborghini",
+            "d": "Baileys, Kahlua, Sambuca, Blue Curaçao",
+            "sp": "any",
+            "fl": [
+              "sweet"
+            ],
+            "sw": 3,
+            "st": 3,
+            "vb": [
+              "party",
+              "photo"
+            ]
+          }
+        },
+        {
+          "name": "Caramel Flame",
+          "price": "235",
+          "desc": {
+            "en": "Amaretto, Triple sec liqueur, Bacardi Spiced, cream, caramelized sugar",
+            "cz": "Amaretto, Triple sec likér, Bacardi Spiced, smetana, karamelizovaný cukr",
+            "de": "Amaretto, Triple-Sec-Likör, Bacardi Spiced, Sahne, karamellisierter Zucker"
+          }
+        },
+        {
+          "name": "Skittles",
+          "price": "220",
+          "desc": {
+            "en": "2x Limoncello, 2x Koskenkorva peach liqueur, honey syrup, lemon juice, strawberry puree, Skittles",
+            "cz": "2x Limoncello, 2x likér Koskenkorva, medový sirup, citronová šťáva, jahodové pyré, Skittles",
+            "de": "2x Limoncello, 2x Koskenkorva-Likör, Honigsirup, Zitronensaft, Erdbeerpüree, Skittles"
+          },
+          "finder": {
+            "name": "Skittles",
+            "d": "Limoncello, Koskenkorva, honey, lemon, strawberry, Skittles",
+            "sp": "vodka",
+            "fl": [
+              "fruity",
+              "sweet"
+            ],
+            "sw": 3,
+            "st": 2,
+            "vb": [
+              "photo",
+              "party"
+            ]
+          }
+        },
+        {
+          "name": "Pirate Dream",
+          "price": "230",
+          "desc": {
+            "en": "2x Malibu, Rum Bacardi Bianco, passion fruit syrup, cranberry &amp; lime juice",
+            "cz": "Bacardi Bianco, 2x Malibu, sirup z marakuji, brusinková &amp; limetková šťáva",
+            "de": "Bacardi Bianco, 2x Malibu, Passionsfruchtsirup, Cranberry- &amp; Limettensaft"
+          },
+          "finder": {
+            "name": "Pirate Dream",
+            "d": "Bacardi Bianco, Malibu, passion fruit, cranberry & lime",
+            "sp": "rum",
+            "fl": [
+              "fruity"
+            ],
+            "sw": 3,
+            "st": 2,
+            "vb": [
+              "photo"
+            ]
+          }
+        },
+        {
+          "name": "Killer",
+          "price": "230",
+          "desc": {
+            "en": "Vodka, Koskenkorva peach liqueur, lemon &amp; apple juice",
+            "cz": "Vodka, broskvový likér Koskenkorva, citronová &amp; jablečná šťáva",
+            "de": "Wodka, Koskenkorva-Pfirsichlikör, Zitronen- &amp; Apfelsaft"
+          },
+          "finder": {
+            "name": "Killer",
+            "d": "Vodka, Koskenkorva peach, lemon & apple juice",
+            "sp": "vodka",
+            "fl": [
+              "fruity"
+            ],
+            "sw": 2,
+            "st": 2,
+            "vb": [
+              "party"
+            ]
+          }
+        },
+        {
+          "name": "Long Island",
+          "price": "250",
+          "desc": {
+            "en": "Vodka, gin, tequila, rum, Triple sec liqueur, lemon juice, Pepsi",
+            "cz": "Vodka, gin, tequila, rum, Triple sec likér, citronová šťáva, Pepsi",
+            "de": "Wodka, Gin, Tequila, Rum, Triple-Sec-Likör, Zitronensaft, Pepsi"
+          },
+          "finder": {
+            "name": "Long Island",
+            "d": "Vodka, gin, tequila, rum, Triple sec, lemon, Pepsi",
+            "sp": "any",
+            "fl": [
+              "citrus"
+            ],
+            "sw": 2,
+            "st": 3,
+            "vb": [
+              "party",
+              "classic"
+            ]
+          }
+        },
+        {
+          "name": "Apple Whiskey Sour",
+          "price": "205",
+          "desc": {
+            "en": "Jack Daniel&#x27;s Apple, lemon &amp; apple juice, sugar syrup",
+            "cz": "Jack Daniel&#x27;s Apple, citronová &amp; jablečná šťáva, cukrový sirup",
+            "de": "Jack Daniel&#x27;s Apple, Zitronen- &amp; Apfelsaft, Zuckersirup"
+          },
+          "finder": {
+            "name": "Apple Whiskey Sour",
+            "d": "Jack Daniel's Apple, lemon & apple juice, sugar",
+            "sp": "whiskey",
+            "fl": [
+              "citrus",
+              "fruity"
+            ],
+            "sw": 2,
+            "st": 2,
+            "vb": [
+              "chill",
+              "classic"
+            ]
+          }
+        },
+        {
+          "name": "Tropical Paradise",
+          "price": "215",
+          "desc": {
+            "en": "Bacardi Bianco, Malibu, lime &amp; pineapple juice, mango puree",
+            "cz": "Bacardi Bianco, Malibu, limetková &amp; ananasová šťáva, mangové pyré",
+            "de": "Bacardi Bianco, Malibu, Limetten- &amp; Ananassaft, Mangopüree"
+          },
+          "finder": {
+            "name": "Tropical Paradise",
+            "d": "Bacardi Bianco, Malibu, lime & pineapple, mango",
+            "sp": "rum",
+            "fl": [
+              "fruity",
+              "fresh"
+            ],
+            "sw": 3,
+            "st": 2,
+            "vb": [
+              "photo",
+              "chill"
+            ]
+          }
+        },
+        {
+          "name": "Shrek",
+          "price": "260",
+          "desc": {
+            "en": "Vodka, Melon liqueur, Malibu, Blue Curaçao, pineapple juice",
+            "cz": "Vodka, melounový likér, Malibu, Blue Curaçao, ananasová šťáva",
+            "de": "Wodka, Melonenlikör, Malibu, Blue Curaçao, Ananassaft"
+          },
+          "finder": {
+            "name": "Shrek",
+            "d": "Vodka, Melon liqueur, Malibu, Blue Curaçao, pineapple",
+            "sp": "vodka",
+            "fl": [
+              "fruity",
+              "sweet"
+            ],
+            "sw": 3,
+            "st": 2,
+            "vb": [
+              "photo",
+              "party"
+            ]
+          }
+        },
+        {
+          "name": "Don&#x27;t Be Pussy",
+          "price": "395",
+          "desc": {
+            "en": "Stroh, Absinth, Red chilli Absinth, Grenadine, Blue Curaçao",
+            "cz": "Stroh, Absinth, Red chilli Absinth, Grenadina, Blue Curaçao",
+            "de": "Stroh, Absinth, Red Chilli Absinth, Grenadine, Blue Curaçao"
+          }
+        },
+        {
+          "name": "Fitness",
+          "price": "220",
+          "desc": {
+            "en": "Vodka, gin, rum, pineapple &amp; lemon juice",
+            "cz": "Vodka, gin, rum, ananasová &amp; citronová šťáva",
+            "de": "Wodka, Gin, Rum, Ananas- &amp; Zitronensaft"
+          },
+          "finder": {
+            "name": "Fitness",
+            "d": "Vodka, gin, rum, pineapple & lemon",
+            "sp": "any",
+            "fl": [
+              "citrus",
+              "fresh"
+            ],
+            "sw": 1,
+            "st": 3,
+            "vb": [
+              "party"
+            ]
+          }
+        },
+        {
+          "name": "Wolf Blood",
+          "price": "215",
+          "desc": {
+            "en": "2x Bacardi Spiced, cranberry &amp; lime juice, lime, cherry syrup",
+            "cz": "2x Kořeněný rum, brusinková &amp; limetková šťáva, limetka, třešňový sirup",
+            "de": "2x Spiced Rum, Cranberry- &amp; Limettensaft, Limette, Kirschsirup"
+          },
+          "finder": {
+            "name": "Wolf Blood",
+            "d": "Spice rum, cranberry & lime, cherry syrup",
+            "sp": "rum",
+            "fl": [
+              "fruity",
+              "citrus"
+            ],
+            "sw": 2,
+            "st": 2,
+            "vb": [
+              "chill"
+            ]
+          }
+        },
+        {
+          "name": "Strawberry Boom",
+          "price": "205",
+          "desc": {
+            "en": "Pink Gin, strawberry puree, lemon &amp; cranberry juice",
+            "cz": "Pink Gin, jahodové pyré, citronová & brusinková šťáva",
+            "de": "Pink Gin, Erdbeerpüree, Zitronen- & Cranberrysaft"
+          },
+          "finder": {
+            "name": "Strawberry Boom",
+            "d": "Gin, strawberry puree, lemon & cranberry",
+            "sp": "gin",
+            "fl": [
+              "fruity",
+              "citrus"
+            ],
+            "sw": 2,
+            "st": 2,
+            "vb": [
+              "photo",
+              "chill"
+            ]
+          }
+        },
+        {
+          "name": "Cherry Aperol",
+          "price": "215",
+          "desc": {
+            "en": "Aperol, vodka, cherry puree, lemon juice, cream",
+            "cz": "Aperol, vodka, třešňové pyré, citronová šťáva, smetana",
+            "de": "Aperol, Wodka, Kirschpüree, Zitronensaft, Sahne"
+          },
+          "finder": {
+            "name": "Cherry Aperol",
+            "d": "Aperol, vodka, cherry puree, lemon, cream",
+            "sp": "vodka",
+            "fl": [
+              "fruity",
+              "bitter"
+            ],
+            "sw": 2,
+            "st": 2,
+            "vb": [
+              "photo",
+              "chill"
+            ]
+          }
+        },
+        {
+          "name": "Crimson Kiss",
+          "price": "260",
+          "desc": {
+            "en": "Rum Bacardi Bianco, Amaretto, lime, orange &amp; cranberry juice, Grenadine",
+            "cz": "Bacardi Bianco, Amaretto, Grenadina, limetková &amp; pomerančová &amp; brusinková šťáva",
+            "de": "Bacardi Bianco, Amaretto, Grenadine, Limetten-, Orangen- &amp; Cranberrysaft"
+          },
+          "finder": {
+            "name": "Crimson Kiss",
+            "d": "Bacardi Bianco, Amaretto, Grenadine, lime/orange/cranberry",
+            "sp": "rum",
+            "fl": [
+              "fruity",
+              "citrus"
+            ],
+            "sw": 2,
+            "st": 2,
+            "vb": [
+              "photo"
+            ]
+          }
+        },
+        {
+          "name": "Cold Night",
+          "price": "220",
+          "desc": {
+            "en": "2x Bacardi Spiced, Triple sec liqueur, apple juice",
+            "cz": "2x Bacardi Spiced, Triple sec likér, jablečná šťáva, pomeranč",
+            "de": "2x Bacardi Spiced, Triple-Sec-Likör, Apfelsaft, Orange"
+          },
+          "finder": {
+            "name": "Cold Night",
+            "d": "Bacardi Spiced, Triple sec, apple juice, orange",
+            "sp": "rum",
+            "fl": [
+              "fruity"
+            ],
+            "sw": 2,
+            "st": 2,
+            "vb": [
+              "chill"
+            ]
+          }
+        },
+        {
+          "name": "Panagel Tonic",
+          "price": "205",
+          "desc": {
+            "en": "2x Gin, Blue Curaçao, Coconut syrup, tonic, lime juice",
+            "cz": "2x Gin Bombay Sapphire, Blue Curaçao, kokosový sirup, tonic, limetková šťáva",
+            "de": "2x Gin Bombay Sapphire, Blue Curaçao, Kokossirup, Tonic, Limettensaft"
+          },
+          "finder": {
+            "name": "Panagel Tonic",
+            "d": "Bombay Sapphire, Blue Curaçao, coconut, tonic, lime",
+            "sp": "gin",
+            "fl": [
+              "fresh",
+              "fruity"
+            ],
+            "sw": 2,
+            "st": 2,
+            "vb": [
+              "chill",
+              "photo"
+            ]
+          }
+        },
+        {
+          "name": "Jager Bomb",
+          "price": "210",
+          "desc": {
+            "en": "Jägermeister, Red Bull",
+            "cz": "Jägermeister, Red Bull",
+            "de": "Jägermeister, Red Bull"
+          },
+          "finder": {
+            "name": "Jager Bomb",
+            "d": "Jägermeister, Red Bull",
+            "sp": "any",
+            "fl": [
+              "sweet",
+              "bitter"
+            ],
+            "sw": 2,
+            "st": 3,
+            "vb": [
+              "party"
+            ]
+          }
+        },
+        {
+          "name": "Sponge Bob",
+          "price": "200",
+          "desc": {
+            "en": "2x Limoncello, Prosecco, pineapple juice",
+            "cz": "2x Limoncello, Prosecco, ananasová šťáva",
+            "de": "2x Limoncello, Prosecco, Ananassaft"
+          },
+          "finder": {
+            "name": "Sponge Bob",
+            "d": "Limoncello, Prosecco, pineapple juice",
+            "sp": "bubbles",
+            "fl": [
+              "fruity",
+              "fresh"
+            ],
+            "sw": 2,
+            "st": 1,
+            "vb": [
+              "party",
+              "photo"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "cat-classic",
+      "emoji": "🍹",
+      "name": {
+        "en": "Classic Cocktails",
+        "cz": "Klasické koktejly",
+        "de": "Klassische Cocktails"
+      },
+      "flat": null,
+      "items": [
+        {
+          "name": "White Russian",
+          "price": "215",
+          "desc": {
+            "en": "Vodka, Kahlua, cream",
+            "cz": "Vodka, Kahlua, Baileys, smetana",
+            "de": "Wodka, Kahlua, Baileys, Sahne"
+          },
+          "finder": {
+            "name": "White Russian",
+            "d": "Vodka, Kahlua, Baileys, cream",
+            "sp": "vodka",
+            "fl": [
+              "sweet"
+            ],
+            "sw": 3,
+            "st": 2,
+            "vb": [
+              "chill",
+              "classic"
+            ]
+          }
+        },
+        {
+          "name": "Espresso Martini",
+          "price": "230",
+          "desc": {
+            "en": "Kahlua, Vodka, espresso, vanilla syrup",
+            "cz": "Vodka, Baileys, Kahlua, espresso",
+            "de": "Wodka, Baileys, Kahlua, Espresso"
+          },
+          "finder": {
+            "name": "Espresso Martini",
+            "d": "Vodka, Baileys, Kahlua, espresso",
+            "sp": "vodka",
+            "fl": [
+              "sweet"
+            ],
+            "sw": 2,
+            "st": 2,
+            "vb": [
+              "chill",
+              "classic",
+              "photo"
+            ]
+          }
+        },
+        {
+          "name": "Porn Star Martini",
+          "price": "235",
+          "desc": {
+            "en": "Vodka, lemon juice, passion fruit puree, vanilla syrup, Prosecco",
+            "cz": "Vodka, citronová šťáva, pyré z marakuji, vanilkový sirup, prosecco",
+            "de": "Wodka, Zitronensaft, Passionsfruchtpüree, Vanillesirup, Prosecco"
+          },
+          "finder": {
+            "name": "Porn Star Martini",
+            "d": "Vodka, lemon, passion fruit, vanilla, prosecco",
+            "sp": "vodka",
+            "fl": [
+              "fruity",
+              "sweet"
+            ],
+            "sw": 3,
+            "st": 2,
+            "vb": [
+              "photo",
+              "party",
+              "classic"
+            ]
+          }
+        },
+        {
+          "name": "Cosmopolitan",
+          "price": "195",
+          "desc": {
+            "en": "Vodka, Triple sec liqueur, lime &amp; cranberry juice",
+            "cz": "Vodka, Triple sec likér, limetková &amp; brusinková šťáva",
+            "de": "Wodka, Triple-Sec-Likör, Limetten- &amp; Cranberrysaft"
+          },
+          "finder": {
+            "name": "Cosmopolitan",
+            "d": "Vodka, Triple sec, lime & cranberry",
+            "sp": "vodka",
+            "fl": [
+              "citrus",
+              "fruity"
+            ],
+            "sw": 2,
+            "st": 2,
+            "vb": [
+              "classic",
+              "photo"
+            ]
+          }
+        },
+        {
+          "name": "Sex on the Bitch",
+          "price": "210",
+          "desc": {
+            "en": "Vodka, peach liqueur, orange &amp; cranberry juice, almond syrup",
+            "cz": "Vodka, broskvový likér, pomerančová &amp; brusinková šťáva, mandlový sirup",
+            "de": "Wodka, Pfirsichlikör, Orangen- &amp; Cranberrysaft, Mandelsirup"
+          },
+          "finder": {
+            "name": "Sex on the Bitch",
+            "d": "Vodka, peach liqueur, orange & cranberry, almond",
+            "sp": "vodka",
+            "fl": [
+              "fruity"
+            ],
+            "sw": 3,
+            "st": 2,
+            "vb": [
+              "party"
+            ]
+          }
+        },
+        {
+          "name": "Skinny Bitch / Fruity",
+          "price": "175 / 195",
+          "desc": {
+            "en": "Vodka, lime juice, soda / +fruit puree",
+            "cz": "Vodka, limetková šťáva, soda / +ovocné pyré",
+            "de": "Wodka, Limettensaft, Soda / + Fruchtpüree"
+          },
+          "finder": {
+            "name": "Skinny Bitch",
+            "d": "Vodka, lime juice, soda",
+            "sp": "vodka",
+            "fl": [
+              "fresh",
+              "citrus"
+            ],
+            "sw": 1,
+            "st": 2,
+            "vb": [
+              "chill"
+            ]
+          }
+        },
+        {
+          "name": "Blue Lagoon",
+          "price": "215",
+          "desc": {
+            "en": "Vodka, Triple sec liqueur, blue Curaçao, Sprite",
+            "cz": "Vodka, Triple sec likér, blue Curaçao, Sprite",
+            "de": "Wodka, Triple-Sec-Likör, Blue Curaçao, Sprite"
+          },
+          "finder": {
+            "name": "Blue Lagoon",
+            "d": "Vodka, Triple sec, Blue Curaçao, Sprite",
+            "sp": "vodka",
+            "fl": [
+              "fresh",
+              "citrus"
+            ],
+            "sw": 2,
+            "st": 2,
+            "vb": [
+              "photo",
+              "party"
+            ]
+          }
+        },
+        {
+          "name": "Moscow Mule",
+          "price": "210",
+          "desc": {
+            "en": "Vodka, lime juice, ginger beer",
+            "cz": "Vodka, limetková šťáva, zázvorové pivo",
+            "de": "Wodka, Limettensaft, Ginger Beer"
+          },
+          "finder": {
+            "name": "Moscow Mule",
+            "d": "Vodka, lime juice, ginger beer",
+            "sp": "vodka",
+            "fl": [
+              "fresh",
+              "citrus"
+            ],
+            "sw": 2,
+            "st": 2,
+            "vb": [
+              "chill",
+              "classic"
+            ]
+          }
+        },
+        {
+          "name": "Bloody Mary",
+          "price": "205",
+          "desc": {
+            "en": "Vodka, tomato juice, pepper, tabasco, Worcestershire, celery",
+            "cz": "Vodka, rajčatová šťáva, pepř, tabasco, celer",
+            "de": "Wodka, Tomatensaft, Pfeffer, Tabasco, Sellerie"
+          },
+          "finder": {
+            "name": "Bloody Mary",
+            "d": "Vodka, tomato juice, pepper, tabasco, celery",
+            "sp": "vodka",
+            "fl": [
+              "bitter"
+            ],
+            "sw": 1,
+            "st": 2,
+            "vb": [
+              "classic",
+              "chill"
+            ]
+          }
+        },
+        {
+          "name": "Vodka Red Bull",
+          "price": "195",
+          "desc": {
+            "en": "Vodka, Red Bull",
+            "cz": "Vodka, Red Bull",
+            "de": "Wodka, Red Bull"
+          }
+        },
+        {
+          "name": "Negroni",
+          "price": "220",
+          "desc": {
+            "en": "Bombay Sapphire, Martini Rosso, Campari",
+            "cz": "Gin Bombay Sapphire, Martini Rosso, Campari",
+            "de": "Gin Bombay Sapphire, Martini Rosso, Campari"
+          },
+          "finder": {
+            "name": "Negroni",
+            "d": "Bombay Sapphire, Martini Rosso, Campari",
+            "sp": "gin",
+            "fl": [
+              "bitter"
+            ],
+            "sw": 1,
+            "st": 3,
+            "vb": [
+              "classic",
+              "chill"
+            ]
+          }
+        },
+        {
+          "name": "Gin Tonic",
+          "price": "190",
+          "desc": {
+            "en": "Gin, tonic, cucumber syrup (opt)",
+            "cz": "Gin, tonic",
+            "de": "Gin, Tonic"
+          },
+          "finder": {
+            "name": "Gin Tonic",
+            "d": "Gin, tonic",
+            "sp": "gin",
+            "fl": [
+              "fresh",
+              "bitter"
+            ],
+            "sw": 1,
+            "st": 2,
+            "vb": [
+              "chill",
+              "classic"
+            ]
+          }
+        },
+        {
+          "name": "Hendrick&#x27;s GT Premium",
+          "price": "240",
+          "desc": {
+            "en": "Gin Hendrick&#x27;s, tonic Thomas Henry",
+            "cz": "Gin Hendricks, tonic botanical",
+            "de": "Gin Hendricks, Tonic Botanical"
+          },
+          "finder": {
+            "name": "Hendricks GT Premium",
+            "d": "Gin Hendricks, botanical tonic",
+            "sp": "gin",
+            "fl": [
+              "fresh"
+            ],
+            "sw": 1,
+            "st": 2,
+            "vb": [
+              "chill",
+              "classic"
+            ]
+          }
+        },
+        {
+          "name": "Gin Mare GT Premium",
+          "price": "265",
+          "desc": {
+            "en": "Gin Mare, tonic Thomas Henry",
+            "cz": "Gin Mare, tonic Thomas Henry",
+            "de": "Gin Mare, Tonic Thomas Henry"
+          },
+          "finder": {
+            "name": "Gin Mare GT Premium",
+            "d": "Gin Mare, Thomas Henry tonic",
+            "sp": "gin",
+            "fl": [
+              "fresh"
+            ],
+            "sw": 1,
+            "st": 2,
+            "vb": [
+              "chill",
+              "classic"
+            ]
+          }
+        },
+        {
+          "name": "Gin Garden",
+          "price": "225",
+          "desc": {
+            "en": "Bombay Sapphire, lemon &amp; apple juice, ginger beer",
+            "cz": "Gin Bombay Sapphire, citronová šťáva, zázvorové pivo",
+            "de": "Gin Bombay Sapphire, Zitronensaft, Ginger Beer"
+          },
+          "finder": {
+            "name": "Gin Garden",
+            "d": "Bombay Sapphire, lemon juice, ginger beer",
+            "sp": "gin",
+            "fl": [
+              "fresh",
+              "citrus"
+            ],
+            "sw": 2,
+            "st": 2,
+            "vb": [
+              "chill"
+            ]
+          }
+        },
+        {
+          "name": "Daiquiri",
+          "price": "200",
+          "desc": {
+            "en": "2x Bacardi Bianco rum, lime juice, sugar syrup",
+            "cz": "2x Bacardi Bianco rum, limetková šťáva, cukrový sirup",
+            "de": "2x Bacardi Bianco Rum, Limettensaft, Zuckersirup"
+          },
+          "finder": {
+            "name": "Daiquiri",
+            "d": "Bacardi Bianco, lime juice, sugar",
+            "sp": "rum",
+            "fl": [
+              "citrus",
+              "fresh"
+            ],
+            "sw": 2,
+            "st": 2,
+            "vb": [
+              "classic"
+            ]
+          }
+        },
+        {
+          "name": "Bengal",
+          "price": "200",
+          "desc": {
+            "en": "Bacardi Spiced rum, Triple sec liqueur, pineapple juice, lime",
+            "cz": "Bacardi Spice rum, Triple sec likér, ananasová šťáva, limetka, Angostura",
+            "de": "Bacardi Spiced Rum, Triple-Sec-Likör, Ananassaft, Limette, Angostura"
+          },
+          "finder": {
+            "name": "Bengal",
+            "d": "Bacardi Spice, Triple sec, pineapple, lime, Angostura",
+            "sp": "rum",
+            "fl": [
+              "fruity",
+              "citrus"
+            ],
+            "sw": 2,
+            "st": 2,
+            "vb": [
+              "chill"
+            ]
+          }
+        },
+        {
+          "name": "Caipirinha",
+          "price": "195",
+          "desc": {
+            "en": "Cachaça, Brown sugar, Lime",
+            "cz": "Cachaça, třtinový cukr, limetka",
+            "de": "Cachaça, brauner Zucker, Limette"
+          },
+          "finder": {
+            "name": "Caipirinha",
+            "d": "Cachaça, brown sugar, lime",
+            "sp": "rum",
+            "fl": [
+              "citrus",
+              "fresh"
+            ],
+            "sw": 2,
+            "st": 2,
+            "vb": [
+              "classic",
+              "chill"
+            ]
+          }
+        },
+        {
+          "name": "Mai Tai",
+          "price": "235",
+          "desc": {
+            "en": "2x Bacardi Spiced, apricot brandy, almond syrup, lime &amp; pineapple juice",
+            "cz": "2x Bacardi Spiced, meruňková brandy, mandlový sirup, limetková &amp; ananasová šťáva",
+            "de": "2x Bacardi Spiced, Aprikosenbrand, Mandelsirup, Limetten- &amp; Ananassaft"
+          },
+          "finder": {
+            "name": "Mai Tai",
+            "d": "Bacardi Spiced, apricot brandy, almond, lime & pineapple",
+            "sp": "rum",
+            "fl": [
+              "fruity"
+            ],
+            "sw": 2,
+            "st": 3,
+            "vb": [
+              "party",
+              "classic"
+            ]
+          }
+        },
+        {
+          "name": "Cuba Libre",
+          "price": "195",
+          "desc": {
+            "en": "2x Bacardi Bianco rum, lime juice, Pepsi",
+            "cz": "2x Bacardi Bianco rum, limetková šťáva, Pepsi",
+            "de": "2x Bacardi Bianco Rum, Limettensaft, Pepsi"
+          },
+          "finder": {
+            "name": "Cuba Libre",
+            "d": "Bacardi Bianco, lime juice, Pepsi",
+            "sp": "rum",
+            "fl": [
+              "sweet"
+            ],
+            "sw": 2,
+            "st": 2,
+            "vb": [
+              "classic",
+              "chill"
+            ]
+          }
+        },
+        {
+          "name": "Pina Colada",
+          "price": "205",
+          "desc": {
+            "en": "Bacardi Bianco rum, coconut syrup, pineapple juice, cream",
+            "cz": "Bacardi Bianco rum, kokosový sirup, ananasová šťáva, smetana",
+            "de": "Bacardi Bianco Rum, Kokossirup, Ananassaft, Sahne"
+          },
+          "finder": {
+            "name": "Pina Colada",
+            "d": "Bacardi Bianco, coconut, pineapple, cream",
+            "sp": "rum",
+            "fl": [
+              "sweet",
+              "fruity"
+            ],
+            "sw": 3,
+            "st": 2,
+            "vb": [
+              "photo",
+              "chill",
+              "classic"
+            ]
+          }
+        },
+        {
+          "name": "Mojito / Fruity",
+          "price": "210 / 230",
+          "desc": {
+            "en": "Bacardi Bianco rum, Lime, Brown sugar, soda, Cordial syrup / +fruit puree",
+            "cz": "Rum Bacardi Bianco, Limetka, hnědý cukr, soda, Cordial sirup / +ovocné pyré",
+            "de": "Bacardi Bianco Rum, Limette, brauner Zucker, Soda, Cordial-Sirup / +Fruchtpüree"
+          },
+          "finder": {
+            "name": "Mojito",
+            "d": "Bacardi Bianco, lime, brown sugar, tonic, cordial",
+            "sp": "rum",
+            "fl": [
+              "fresh",
+              "citrus"
+            ],
+            "sw": 2,
+            "st": 2,
+            "vb": [
+              "classic",
+              "chill",
+              "photo"
+            ]
+          }
+        },
+        {
+          "name": "Margarita / Fruity",
+          "price": "195 / 215",
+          "desc": {
+            "en": "Tequila, Triple sec liqueur, lime juice, sugar",
+            "cz": "Tequila, limetková šťáva, cukr / ovocné pyré",
+            "de": "Tequila, Limettensaft, Zucker / Fruchtpüree"
+          },
+          "finder": {
+            "name": "Margarita",
+            "d": "Tequila, lime juice, sugar",
+            "sp": "tequila",
+            "fl": [
+              "citrus"
+            ],
+            "sw": 2,
+            "st": 2,
+            "vb": [
+              "classic",
+              "party"
+            ]
+          }
+        },
+        {
+          "name": "Tequila Sunrise",
+          "price": "205",
+          "desc": {
+            "en": "2x Tequila, grenadine syrup, orange juice",
+            "cz": "2x Tequila, grenadinový sirup, pomerančová šťáva",
+            "de": "2x Tequila, Grenadinesirup, Orangensaft"
+          },
+          "finder": {
+            "name": "Tequila Sunrise",
+            "d": "Tequila, grenadine, orange juice",
+            "sp": "tequila",
+            "fl": [
+              "fruity",
+              "sweet"
+            ],
+            "sw": 3,
+            "st": 2,
+            "vb": [
+              "photo",
+              "classic"
+            ]
+          }
+        },
+        {
+          "name": "Envy",
+          "price": "215",
+          "desc": {
+            "en": "2x Tequila, Blue Curaçao, pineapple &amp; lime juice",
+            "cz": "2x Tequila, Blue Curaçao, ananasová &amp; limetková šťáva",
+            "de": "2x Tequila, Blue Curaçao, Ananas- &amp; Limettensaft"
+          },
+          "finder": {
+            "name": "Envy",
+            "d": "Tequila, Blue Curaçao, pineapple & lime",
+            "sp": "tequila",
+            "fl": [
+              "fresh",
+              "fruity"
+            ],
+            "sw": 2,
+            "st": 2,
+            "vb": [
+              "photo"
+            ]
+          }
+        },
+        {
+          "name": "Paloma",
+          "price": "215",
+          "desc": {
+            "en": "2x Tequila, lime &amp; grapefruit juice, soda",
+            "cz": "2x Tequila, limetková &amp; grapefruitová šťáva, soda",
+            "de": "2x Tequila, Limetten- &amp; Grapefruitsaft, Soda"
+          },
+          "finder": {
+            "name": "Paloma",
+            "d": "Tequila, lime & grapefruit juice, soda",
+            "sp": "tequila",
+            "fl": [
+              "citrus",
+              "fresh"
+            ],
+            "sw": 1,
+            "st": 2,
+            "vb": [
+              "chill",
+              "classic"
+            ]
+          }
+        },
+        {
+          "name": "Manhattan",
+          "price": "210",
+          "desc": {
+            "en": "Jameson, Martini Rosso",
+            "cz": "Jameson, Martini Rosso, Angostura",
+            "de": "Jameson, Martini Rosso, Angostura"
+          },
+          "finder": {
+            "name": "Manhattan",
+            "d": "Jameson, Martini Rosso, Angostura",
+            "sp": "whiskey",
+            "fl": [
+              "bitter"
+            ],
+            "sw": 1,
+            "st": 3,
+            "vb": [
+              "classic",
+              "chill"
+            ]
+          }
+        },
+        {
+          "name": "Old Fashioned",
+          "price": "210",
+          "desc": {
+            "en": "Jack Daniel&#x27;s, sugar syrup, Angostura",
+            "cz": "Jack Daniel&#x27;s, cukrový sirup, Angostura",
+            "de": "Jack Daniel&#x27;s, Zuckersirup, Angostura"
+          },
+          "finder": {
+            "name": "Old Fashioned",
+            "d": "Jack Daniel's, sugar, Angostura",
+            "sp": "whiskey",
+            "fl": [
+              "bitter"
+            ],
+            "sw": 1,
+            "st": 3,
+            "vb": [
+              "classic",
+              "chill"
+            ]
+          }
+        },
+        {
+          "name": "Whiskey Sour Español",
+          "price": "210",
+          "desc": {
+            "en": "Jameson, sugar syrup, lemon juice",
+            "cz": "Whiskey Jameson, cukrový sirup, citronová šťáva",
+            "de": "Whiskey Jameson, Zuckersirup, Zitronensaft"
+          },
+          "finder": {
+            "name": "Whiskey Sour Español",
+            "d": "Jameson, sugar, lemon juice",
+            "sp": "whiskey",
+            "fl": [
+              "citrus"
+            ],
+            "sw": 2,
+            "st": 2,
+            "vb": [
+              "classic",
+              "chill"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "cat-wine",
+      "emoji": "🍷",
+      "name": {
+        "en": "Wine Cocktails &amp; Spritz",
+        "cz": "Vinné koktejly &amp; Spritz",
+        "de": "Wein-Cocktails &amp; Spritz"
+      },
+      "flat": null,
+      "items": [
+        {
+          "name": "Limoncello Spritz",
+          "price": "200",
+          "desc": {
+            "en": "2x Limoncello, Prosecco, soda",
+            "cz": "2x Limoncello, Prosecco, soda",
+            "de": "2x Limoncello, Prosecco, Soda"
+          },
+          "finder": {
+            "name": "Limoncello Spritz",
+            "d": "Limoncello, Prosecco, soda",
+            "sp": "bubbles",
+            "fl": [
+              "citrus",
+              "fresh"
+            ],
+            "sw": 2,
+            "st": 1,
+            "vb": [
+              "chill",
+              "photo"
+            ]
+          }
+        },
+        {
+          "name": "Campari Spritz",
+          "price": "195",
+          "desc": {
+            "en": "Campari, Prosecco, soda",
+            "cz": "Campari, Prosecco, soda",
+            "de": "Campari, Prosecco, Soda"
+          },
+          "finder": {
+            "name": "Campari Spritz",
+            "d": "Campari, Prosecco, soda",
+            "sp": "bubbles",
+            "fl": [
+              "bitter"
+            ],
+            "sw": 1,
+            "st": 1,
+            "vb": [
+              "chill",
+              "classic"
+            ]
+          }
+        },
+        {
+          "name": "Sarti Spritz",
+          "price": "215",
+          "desc": {
+            "en": "Sarti, Prosecco, soda",
+            "cz": "Sarti, prosecco, soda",
+            "de": "Sarti, Prosecco, Soda"
+          },
+          "finder": {
+            "name": "Sarti Spritz",
+            "d": "Sarti, prosecco, soda",
+            "sp": "bubbles",
+            "fl": [
+              "fruity",
+              "bitter"
+            ],
+            "sw": 2,
+            "st": 1,
+            "vb": [
+              "photo",
+              "chill"
+            ]
+          }
+        },
+        {
+          "name": "Aperol Spritz",
+          "price": "200",
+          "desc": {
+            "en": "Aperol, Prosecco, soda",
+            "cz": "Aperol, prosecco, soda",
+            "de": "Aperol, Prosecco, Soda"
+          },
+          "finder": {
+            "name": "Aperol Spritz",
+            "d": "Aperol, prosecco, soda",
+            "sp": "bubbles",
+            "fl": [
+              "bitter",
+              "citrus",
+              "fresh"
+            ],
+            "sw": 2,
+            "st": 1,
+            "vb": [
+              "classic",
+              "photo",
+              "chill"
+            ]
+          }
+        },
+        {
+          "name": "Mimosa",
+          "price": "160",
+          "desc": {
+            "en": "Prosecco, orange juice",
+            "cz": "Prosecco, pomerančová šťáva",
+            "de": "Prosecco, Orangensaft"
+          },
+          "finder": {
+            "name": "Mimosa",
+            "d": "Prosecco, orange juice",
+            "sp": "bubbles",
+            "fl": [
+              "citrus",
+              "fresh"
+            ],
+            "sw": 2,
+            "st": 1,
+            "vb": [
+              "chill",
+              "classic"
+            ]
+          }
+        },
+        {
+          "name": "Hugo Spritz",
+          "price": "195",
+          "desc": {
+            "en": "Elderflower syrup, Prosecco, soda",
+            "cz": "Prosecco, bezinkový sirup, soda",
+            "de": "Prosecco, Holundersirup, Soda"
+          },
+          "finder": {
+            "name": "Hugo Spritz",
+            "d": "Prosecco, elderflower syrup, soda",
+            "sp": "bubbles",
+            "fl": [
+              "fresh"
+            ],
+            "sw": 2,
+            "st": 1,
+            "vb": [
+              "chill",
+              "photo"
+            ]
+          }
+        },
+        {
+          "name": "Berry Muscade",
+          "price": "205",
+          "desc": {
+            "en": "Prosecco, Vodka, Strawberry puree, Cranberry &amp; lime juice",
+            "cz": "Prosecco, vodka, jahodové pyré, brusinková &amp; limetková šťáva",
+            "de": "Prosecco, Wodka, Erdbeerpüree, Cranberry- &amp; Limettensaft"
+          },
+          "finder": {
+            "name": "Berry Muscade",
+            "d": "Prosecco, vodka, strawberry, cranberry & lime",
+            "sp": "bubbles",
+            "fl": [
+              "fruity"
+            ],
+            "sw": 2,
+            "st": 2,
+            "vb": [
+              "photo",
+              "party"
+            ]
+          }
+        },
+        {
+          "name": "Calypso",
+          "price": "170",
+          "desc": {
+            "en": "White wine, Pineapple &amp; Lime juice, Coconut syrup",
+            "cz": "Bílé víno, ananasová šťáva, kokosový sirup",
+            "de": "Weißwein, Ananassaft, Kokossirup"
+          },
+          "finder": {
+            "name": "Calypso",
+            "d": "White wine, pineapple juice, coconut syrup",
+            "sp": "bubbles",
+            "fl": [
+              "fruity",
+              "sweet"
+            ],
+            "sw": 2,
+            "st": 1,
+            "vb": [
+              "chill"
+            ]
+          }
+        },
+        {
+          "name": "Luna Sanguinia",
+          "price": "190",
+          "desc": {
+            "en": "Red wine, Rum Bacardi Bianco, Passion fruit syrup, Orange juice",
+            "cz": "Červené víno, pomerančový rum, sirup z marakuji, pomerančová šťáva",
+            "de": "Rotwein, Orangen-Rum, Passionsfruchtsirup, Orangensaft"
+          },
+          "finder": {
+            "name": "Luna Sanguinia",
+            "d": "Red wine, orange rum, passion fruit, orange",
+            "sp": "bubbles",
+            "fl": [
+              "fruity"
+            ],
+            "sw": 2,
+            "st": 2,
+            "vb": [
+              "chill"
+            ]
+          }
+        },
+        {
+          "name": "Kalimotxo",
+          "price": "175",
+          "desc": {
+            "en": "Red wine, Pepsi, Lemon",
+            "cz": "Červené víno, Pepsi, citron",
+            "de": "Rotwein, Pepsi, Zitrone"
+          },
+          "finder": {
+            "name": "Kalimotxo",
+            "d": "Red wine, Pepsi, lemon",
+            "sp": "bubbles",
+            "fl": [
+              "sweet"
+            ],
+            "sw": 2,
+            "st": 2,
+            "vb": [
+              "party"
+            ]
+          }
+        },
+        {
+          "name": "Tinto Verano",
+          "price": "195",
+          "desc": {
+            "en": "Red wine, Tonic, Strawberry puree, Cranberry &amp; lime juice",
+            "cz": "Červené víno, tonic, jahodové pyré, brusinková &amp; limetková šťáva",
+            "de": "Rotwein, Tonic, Erdbeerpüree, Cranberry- &amp; Limettensaft"
+          },
+          "finder": {
+            "name": "Tinto Verano",
+            "d": "Red wine, tonic, strawberry, cranberry & lime",
+            "sp": "bubbles",
+            "fl": [
+              "fruity",
+              "fresh"
+            ],
+            "sw": 2,
+            "st": 1,
+            "vb": [
+              "chill"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "cat-shots",
+      "emoji": "🥃",
+      "name": {
+        "en": "Special Shots",
+        "cz": "Speciální panáky",
+        "de": "Besondere Shots"
+      },
+      "flat": null,
+      "items": [
+        {
+          "name": "L-O-S-T",
+          "price": "395",
+          "desc": {
+            "en": "4 shots: L-Limoncello, O-Orange Jägermeister, S-Slivovice, T-Tequila",
+            "cz": "4 panáky: L-Limoncello, O-Orange Jägermeister, S-Slivovice, T-Tequila",
+            "de": "4 Shots: L-Limoncello, O-Orange Jägermeister, S-Slivovice, T-Tequila"
+          }
+        },
+        {
+          "name": "Rainbow",
+          "price": "495",
+          "desc": {
+            "en": "6 shots: Vodka, Becherovka, Limoncello, Mint Liqueur, Božkov Liqueur, Tequila",
+            "cz": "6 panáků: Vodka, Becherovka, Limoncello, Mátový likér, Božkov likér, Tequila",
+            "de": "6 Shots: Wodka, Becherovka, Limoncello, Minzlikör, Božkov-Likör, Tequila"
+          }
+        },
+        {
+          "name": "Czech Set",
+          "price": "525",
+          "desc": {
+            "en": "6 shots: Božkov green, Božkov blue, Slivovice, Hruškovice, Becherovka, Fernet",
+            "cz": "6 panáků: Božkov green, Božkov blue, Slivovice, Hruškovice, Becherovka, Fernet",
+            "de": "6 Shots: Božkov green, Božkov blue, Slivovice, Hruškovice, Becherovka, Fernet"
+          }
+        },
+        {
+          "name": "Suicide Set",
+          "price": "666",
+          "desc": {
+            "en": "6 shots: Stroh, Green Absinth, Red chilli Absinth, Cachaça, Metaxa, Sambuca",
+            "cz": "6 panáků: Stroh, Zelený absint, Red chilli absint, Cachaça, Metaxa, Sambuca",
+            "de": "6 Shots: Stroh, Grüner Absinth, Red Chilli Absinth, Cachaça, Metaxa, Sambuca"
+          }
+        },
+        {
+          "name": "Stoplights (3 shots)",
+          "price": "230",
+          "desc": {
+            "en": "Vodka + cranberry juice; Limoncello; lemon juice + mint liqueur",
+            "cz": "Limetková &amp; brusinková šťáva + vodka; pyré z marakuji + Bacardi Bianco; citronová šťáva + mátový likér + tequila",
+            "de": "Cranberry- &amp; Limettensaft + Wodka; Passionsfruchtpüree + Bacardi Bianco; Zitronensaft + Minzlikör + Tequila"
+          }
+        },
+        {
+          "name": "Mozart Balls",
+          "price": "155",
+          "desc": {
+            "en": "Stroh, Chocolates",
+            "cz": "Stroh, čokoláda",
+            "de": "Stroh, Pralinen"
+          }
+        },
+        {
+          "name": "Chupito 1+1",
+          "price": "190",
+          "desc": {
+            "en": "Vodka, lime cordial syrup",
+            "cz": "Vodka, limetková šťáva, cordial sirup",
+            "de": "Wodka, Limettensaft, Cordial-Sirup"
+          }
+        },
+        {
+          "name": "Blow Job",
+          "price": "115",
+          "desc": {
+            "en": "Amaretto, Baileys, cream",
+            "cz": "Amaretto, Baileys, smetana navrchu",
+            "de": "Amaretto, Baileys, Sahne obenauf"
+          }
+        },
+        {
+          "name": "B-52",
+          "price": "125",
+          "desc": {
+            "en": "Kahlua, Baileys, triple sec",
+            "cz": "Kahlua, Baileys, triple sec",
+            "de": "Kahlua, Baileys, Triple Sec"
+          }
+        },
+        {
+          "name": "B-53",
+          "price": "135",
+          "desc": {
+            "en": "Kahlua, Baileys, Absinthe",
+            "cz": "Kahlua, Baileys, absinth",
+            "de": "Kahlua, Baileys, Absinth"
+          }
+        },
+        {
+          "name": "Sparta",
+          "price": "185",
+          "desc": {
+            "en": "Stroh, Absinthe, Tequila Silver",
+            "cz": "Stroh, absinth, Tequila Silver",
+            "de": "Stroh, Absinth, Tequila Silver"
+          }
+        },
+        {
+          "name": "Boyarskiy",
+          "price": "105",
+          "desc": {
+            "en": "Vodka, grenadine, tabasco",
+            "cz": "Vodka, grenadina, tabasco",
+            "de": "Wodka, Grenadine, Tabasco"
+          }
+        }
+      ]
+    },
+    {
+      "id": "cat-hookah",
+      "emoji": "🌿",
+      "name": {
+        "en": "Hookah",
+        "cz": "Vodní dýmka",
+        "de": "Shisha"
+      },
+      "flat": "535 CZK",
+      "items": [
+        {
+          "name": "Tropical Mix",
+          "price": null,
+          "desc": {
+            "en": "Mango, peach, melon, and refreshing tropical notes — sweet &amp; fruity",
+            "cz": "Mango, broskev, meloun a osvěžující tropické tóny — sladké &amp; ovocné",
+            "de": "Mango, Pfirsich, Melone und erfrischende tropische Noten — süß &amp; fruchtig"
+          }
+        },
+        {
+          "name": "Berry Madness",
+          "price": null,
+          "desc": {
+            "en": "Raspberry, blueberry, and forest fruits — sweet &amp; juicy",
+            "cz": "Malina, borůvka a lesní ovoce — sladké &amp; šťavnaté",
+            "de": "Himbeere, Blaubeere und Waldfrüchte — süß &amp; saftig"
+          }
+        },
+        {
+          "name": "Citrus Fresh",
+          "price": null,
+          "desc": {
+            "en": "Sweet and sour grapefruit with a touch of refreshing mint — citrusy &amp; fresh",
+            "cz": "Sladkokyselý grapefruit s nádechem osvěžující máty — citrusové &amp; svěží",
+            "de": "Süß-saure Grapefruit mit einem Hauch erfrischender Minze — zitrisch &amp; frisch"
+          }
+        },
+        {
+          "name": "Sweet Dream",
+          "price": null,
+          "desc": {
+            "en": "A creamy dessert with strawberry hints and Belgian waffles — smooth &amp; sweet",
+            "cz": "Krémový dezert s náznakem jahod a belgických vaflí — jemné &amp; sladké",
+            "de": "Ein cremiges Dessert mit Erdbeernote und belgischen Waffeln — sanft &amp; süß"
+          }
+        },
+        {
+          "name": "Exotic Ice",
+          "price": null,
+          "desc": {
+            "en": "A refreshing duo of sweet peach and banana — sweet &amp; fresh",
+            "cz": "Osvěžující duo sladké broskve a banánu — sladké &amp; svěží",
+            "de": "Ein erfrischendes Duo aus süßem Pfirsich und Banane — süß &amp; frisch"
+          }
+        },
+        {
+          "name": "Nicotine-free",
+          "price": null,
+          "desc": {
+            "en": "Nicotine-free tobacco — ask our Hookah Master",
+            "cz": "Beznikotinový tabák — zeptejte se našeho hookah mistra",
+            "de": "Nikotinfreier Tabak — frag unseren Shisha-Meister"
+          }
+        },
+        {
+          "name": "Hookah of the Day",
+          "price": null,
+          "desc": {
+            "en": "Our Hookah Master can craft a unique mix just for you, with love )))",
+            "cz": "Náš Hookah Master ti namíchá jedinečnou směs na míru, s láskou )))",
+            "de": "Unser Shisha-Meister mixt mit Liebe eine einzigartige Mischung nur für dich )))"
+          }
+        }
+      ]
+    },
+    {
+      "id": "cat-food",
+      "emoji": "🥤",
+      "name": {
+        "en": "Non-Alcoholic &amp; Food",
+        "cz": "Nealko &amp; Jídlo",
+        "de": "Alkoholfrei &amp; Essen"
+      },
+      "flat": null,
+      "items": [
+        {
+          "name": "Virgin Colada 0.0%",
+          "price": "165",
+          "desc": {
+            "en": "Coconut syrup, pineapple juice, cream",
+            "cz": "Kokosový sirup, ananasová šťáva, smetana",
+            "de": "Kokossirup, Ananassaft, Sahne"
+          },
+          "finder": {
+            "name": "Virgin Colada 0.0%",
+            "d": "Coconut syrup, pineapple juice, cream",
+            "sp": "none",
+            "fl": [
+              "sweet",
+              "fruity"
+            ],
+            "sw": 3,
+            "st": 0,
+            "vb": [
+              "chill",
+              "photo"
+            ]
+          }
+        },
+        {
+          "name": "Miami 0.0%",
+          "price": "145",
+          "desc": {
+            "en": "Pineapple &amp; orange &amp; lime juice, grenadine",
+            "cz": "Ananasová &amp; pomerančová &amp; limetková šťáva, grenadina",
+            "de": "Ananas-, Orangen- &amp; Limettensaft, Grenadine"
+          },
+          "finder": {
+            "name": "Miami 0.0%",
+            "d": "Pineapple, orange & lime juice, grenadine",
+            "sp": "none",
+            "fl": [
+              "fruity",
+              "citrus"
+            ],
+            "sw": 2,
+            "st": 0,
+            "vb": [
+              "photo"
+            ]
+          }
+        },
+        {
+          "name": "Flamingo 0.0%",
+          "price": "155",
+          "desc": {
+            "en": "Grapefruit, orange, pineapple &amp; lime juice, grenadine",
+            "cz": "Grapefruit, pomerančová &amp; limetková šťáva, grenadina",
+            "de": "Grapefruit-, Orangen- &amp; Limettensaft, Grenadine"
+          },
+          "finder": {
+            "name": "Flamingo 0.0%",
+            "d": "Grapefruit, orange & lime juice, grenadine",
+            "sp": "none",
+            "fl": [
+              "citrus",
+              "fruity"
+            ],
+            "sw": 2,
+            "st": 0,
+            "vb": [
+              "photo"
+            ]
+          }
+        },
+        {
+          "name": "Gin Tonic 0.0%",
+          "price": "180",
+          "desc": {
+            "en": "Gin (Non-alco), tonic, cucumber syrup",
+            "cz": "Gin (nealko), tonic, okurkový sirup",
+            "de": "Gin (alkoholfrei), Tonic, Gurkensirup"
+          },
+          "finder": {
+            "name": "Gin Tonic 0.0%",
+            "d": "Non-alco gin, tonic, cucumber syrup",
+            "sp": "none",
+            "fl": [
+              "fresh"
+            ],
+            "sw": 1,
+            "st": 0,
+            "vb": [
+              "chill"
+            ]
+          }
+        },
+        {
+          "name": "Cuba Libre 0.0%",
+          "price": "165",
+          "desc": {
+            "en": "Rum (Non-alco), lime juice, Pepsi",
+            "cz": "Rum (nealko), limetková šťáva, Pepsi",
+            "de": "Rum (alkoholfrei), Limettensaft, Pepsi"
+          },
+          "finder": {
+            "name": "Cuba Libre 0.0%",
+            "d": "Non-alco rum, lime juice, Pepsi",
+            "sp": "none",
+            "fl": [
+              "sweet"
+            ],
+            "sw": 2,
+            "st": 0,
+            "vb": [
+              "chill"
+            ]
+          }
+        },
+        {
+          "name": "Mojito Fruity 0.0%",
+          "price": "190",
+          "desc": {
+            "en": "Rum (Non-alco), Lime, Brown sugar, Soda, Cordial &amp; fruity syrup",
+            "cz": "Rum (nealko), limetka, třtinový cukr, tonic, cordial &amp; ovocný sirup",
+            "de": "Rum (alkoholfrei), Limette, brauner Zucker, Tonic, Cordial- &amp; Fruchtsirup"
+          },
+          "finder": {
+            "name": "Mojito Fruity 0.0%",
+            "d": "Non-alco rum, lime, brown sugar, tonic, fruity syrup",
+            "sp": "none",
+            "fl": [
+              "fresh",
+              "fruity"
+            ],
+            "sw": 2,
+            "st": 0,
+            "vb": [
+              "chill",
+              "photo"
+            ]
+          }
+        },
+        {
+          "name": "Strawberry Boom 0.0%",
+          "price": "190",
+          "desc": {
+            "en": "Gin (Non-alco), strawberry puree, lemon &amp; cranberry juice",
+            "cz": "Gin (nealko), jahodové pyré, citronová &amp; brusinková šťáva",
+            "de": "Gin (alkoholfrei), Erdbeerpüree, Zitronen- &amp; Cranberrysaft"
+          },
+          "finder": {
+            "name": "Strawberry Boom 0.0%",
+            "d": "Non-alco gin, strawberry, lemon & cranberry",
+            "sp": "none",
+            "fl": [
+              "fruity",
+              "citrus"
+            ],
+            "sw": 2,
+            "st": 0,
+            "vb": [
+              "photo"
+            ]
+          }
+        },
+        {
+          "name": "Lemonade",
+          "price": "85",
+          "desc": {
+            "en": "Mango, Cherry, Cucumber, Strawberry, others",
+            "cz": "Mango, třešeň, okurka, jahoda, další",
+            "de": "Mango, Kirsche, Gurke, Erdbeere, u. a."
+          }
+        },
+        {
+          "name": "Almonds / Cashew / Peanuts",
+          "price": "90",
+          "desc": {
+            "en": "Mixed nuts",
+            "cz": "Směs oříšků",
+            "de": "Gemischte Nüsse"
+          }
+        },
+        {
+          "name": "Chips 60g",
+          "price": "85",
+          "desc": {
+            "en": "Cheese, Onion, Salted",
+            "cz": "Sýr, cibule, solené",
+            "de": "Käse, Zwiebel, Gesalzen"
+          }
+        },
+        {
+          "name": "Nachos",
+          "price": "145",
+          "desc": {
+            "en": "Cheese, Salsa, Guacamole (100g + 100g sauce)",
+            "cz": "Sýr, salsa, guacamole (100g + 100g omáčka)",
+            "de": "Käse, Salsa, Guacamole (100 g + 100 g Soße)"
+          }
+        },
+        {
+          "name": "Hot Salted Popcorn 100g",
+          "price": "95",
+          "desc": {
+            "en": "Freshly popped, salted",
+            "cz": "Čerstvě vypražený, solený",
+            "de": "Frisch gepoppt, gesalzen"
+          }
+        },
+        {
+          "name": "Additional Sauce",
+          "price": "45",
+          "desc": {
+            "en": "Salsa, Cheese, Guacamole, Cream",
+            "cz": "Salsa, sýr, guacamole, smetana",
+            "de": "Salsa, Käse, Guacamole, Sahne"
+          }
+        }
+      ]
+    }
+  ]
+}
