@@ -181,7 +181,7 @@
               "citrus"
             ],
             "sw": 2,
-            "st": 3,
+            "st": 2,
             "vb": [
               "party",
               "classic"
@@ -269,7 +269,7 @@
               "sweet"
             ],
             "sw": 3,
-            "st": 2,
+            "st": 3,
             "vb": [
               "photo",
               "party"
@@ -482,7 +482,7 @@
               "fruity"
             ],
             "sw": 2,
-            "st": 2,
+            "st": 1,
             "vb": [
               "chill",
               "photo"
@@ -511,7 +511,7 @@
               "bitter"
             ],
             "sw": 2,
-            "st": 3,
+            "st": 1,
             "vb": [
               "party"
             ]
@@ -539,7 +539,7 @@
               "fresh"
             ],
             "sw": 2,
-            "st": 1,
+            "st": 2,
             "vb": [
               "party",
               "photo"
@@ -580,7 +580,7 @@
               "sweet"
             ],
             "sw": 3,
-            "st": 2,
+            "st": 3,
             "vb": [
               "chill",
               "classic"
@@ -725,7 +725,7 @@
               "citrus"
             ],
             "sw": 2,
-            "st": 2,
+            "st": 1,
             "vb": [
               "photo",
               "party"
@@ -749,7 +749,7 @@
               "citrus"
             ],
             "sw": 2,
-            "st": 2,
+            "st": 1,
             "vb": [
               "chill",
               "classic"
@@ -772,7 +772,7 @@
               "bitter"
             ],
             "sw": 1,
-            "st": 2,
+            "st": 1,
             "vb": [
               "classic",
               "chill"
@@ -830,7 +830,7 @@
               "bitter"
             ],
             "sw": 1,
-            "st": 2,
+            "st": 1,
             "vb": [
               "chill",
               "classic"
@@ -853,7 +853,7 @@
               "fresh"
             ],
             "sw": 1,
-            "st": 2,
+            "st": 1,
             "vb": [
               "chill",
               "classic"
@@ -876,7 +876,7 @@
               "fresh"
             ],
             "sw": 1,
-            "st": 2,
+            "st": 1,
             "vb": [
               "chill",
               "classic"
@@ -900,7 +900,7 @@
               "citrus"
             ],
             "sw": 2,
-            "st": 2,
+            "st": 1,
             "vb": [
               "chill"
             ]
@@ -923,7 +923,7 @@
               "fresh"
             ],
             "sw": 2,
-            "st": 2,
+            "st": 3,
             "vb": [
               "classic"
             ]
@@ -993,7 +993,7 @@
               "fruity"
             ],
             "sw": 2,
-            "st": 3,
+            "st": 2,
             "vb": [
               "party",
               "classic"
@@ -1041,7 +1041,7 @@
               "fruity"
             ],
             "sw": 3,
-            "st": 2,
+            "st": 1,
             "vb": [
               "photo",
               "chill",
@@ -1067,7 +1067,7 @@
               "citrus"
             ],
             "sw": 2,
-            "st": 2,
+            "st": 1,
             "vb": [
               "classic",
               "chill",
@@ -1091,7 +1091,7 @@
               "citrus"
             ],
             "sw": 2,
-            "st": 2,
+            "st": 3,
             "vb": [
               "classic",
               "party"
@@ -1162,7 +1162,7 @@
               "fresh"
             ],
             "sw": 1,
-            "st": 2,
+            "st": 1,
             "vb": [
               "chill",
               "classic"
@@ -1233,7 +1233,7 @@
               "citrus"
             ],
             "sw": 2,
-            "st": 2,
+            "st": 3,
             "vb": [
               "classic",
               "chill"
@@ -1269,7 +1269,7 @@
               "fresh"
             ],
             "sw": 2,
-            "st": 1,
+            "st": 2,
             "vb": [
               "chill",
               "photo"
@@ -1293,7 +1293,7 @@
               "bitter"
             ],
             "sw": 1,
-            "st": 1,
+            "st": 2,
             "vb": [
               "chill",
               "classic"
@@ -1318,7 +1318,7 @@
               "bitter"
             ],
             "sw": 2,
-            "st": 1,
+            "st": 2,
             "vb": [
               "photo",
               "chill"
@@ -1489,7 +1489,7 @@
               "sweet"
             ],
             "sw": 2,
-            "st": 2,
+            "st": 1,
             "vb": [
               "party"
             ]
