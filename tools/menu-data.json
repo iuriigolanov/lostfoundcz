@@ -32,6 +32,11 @@
               "party",
               "photo"
             ]
+          },
+          "note": {
+            "en": "Our flaming showstopper 🔥",
+            "cz": "Naše hořící show 🔥",
+            "de": "Unsere flammende Show 🔥"
           }
         },
         {
@@ -55,6 +60,11 @@
               "party",
               "photo"
             ]
+          },
+          "note": {
+            "en": "Layered &amp; set alight 🔥",
+            "cz": "Vrstvený a zapálený 🔥",
+            "de": "Geschichtet &amp; flambiert 🔥"
           }
         },
         {
@@ -64,6 +74,11 @@
             "en": "Amaretto, Triple sec liqueur, Bacardi Spiced, cream, caramelized sugar",
             "cz": "Amaretto, Triple sec likér, Bacardi Spiced, smetana, karamelizovaný cukr",
             "de": "Amaretto, Triple-Sec-Likör, Bacardi Spiced, Sahne, karamellisierter Zucker"
+          },
+          "note": {
+            "en": "Toasted caramel, up in flames 🔥",
+            "cz": "Karamel v plamenech 🔥",
+            "de": "Karamell in Flammen 🔥"
           }
         },
         {
@@ -88,6 +103,11 @@
               "photo",
               "party"
             ]
+          },
+          "note": {
+            "en": "Tastes just like the candy 🌈",
+            "cz": "Chutná jako ty bonbony 🌈",
+            "de": "Schmeckt wie die Bonbons 🌈"
           }
         },
         {
@@ -110,6 +130,11 @@
             "vb": [
               "photo"
             ]
+          },
+          "note": {
+            "en": "Tropical treasure 🏴‍☠️",
+            "cz": "Tropický poklad 🏴‍☠️",
+            "de": "Tropischer Schatz 🏴‍☠️"
           }
         },
         {
@@ -132,6 +157,11 @@
             "vb": [
               "party"
             ]
+          },
+          "note": {
+            "en": "Deceptively smooth 😈",
+            "cz": "Zákeřně jemný 😈",
+            "de": "Hinterhältig weich 😈"
           }
         },
         {
@@ -155,6 +185,11 @@
               "party",
               "classic"
             ]
+          },
+          "note": {
+            "en": "Five spirits, one legend 🥃",
+            "cz": "Pět lihovin, jedna legenda 🥃",
+            "de": "Fünf Spirituosen, eine Legende 🥃"
           }
         },
         {
@@ -179,6 +214,11 @@
               "chill",
               "classic"
             ]
+          },
+          "note": {
+            "en": "Crisp apple, Jack's kick 🍏",
+            "cz": "Svěží jablko s whiskey 🍏",
+            "de": "Frischer Apfel mit Whiskey 🍏"
           }
         },
         {
@@ -203,6 +243,11 @@
               "photo",
               "chill"
             ]
+          },
+          "note": {
+            "en": "A holiday in a glass 🏝️",
+            "cz": "Dovolená ve sklenici 🏝️",
+            "de": "Urlaub im Glas 🏝️"
           }
         },
         {
@@ -227,6 +272,11 @@
               "photo",
               "party"
             ]
+          },
+          "note": {
+            "en": "Big, green &amp; boozy 💚",
+            "cz": "Velký, zelený a pořádný 💚",
+            "de": "Groß, grün &amp; kräftig 💚"
           }
         },
         {
@@ -236,6 +286,11 @@
             "en": "Stroh, Absinth, Red chilli Absinth, Grenadine, Blue Curaçao",
             "cz": "Stroh, Absinth, Red chilli Absinth, Grenadina, Blue Curaçao",
             "de": "Stroh, Absinth, Red Chilli Absinth, Grenadine, Blue Curaçao"
+          },
+          "note": {
+            "en": "Only for the brave 🌶️",
+            "cz": "Jen pro odvážné 🌶️",
+            "de": "Nur für Mutige 🌶️"
           }
         },
         {
@@ -259,6 +314,11 @@
             "vb": [
               "party"
             ]
+          },
+          "note": {
+            "en": "Guilt-free (not really) 💪",
+            "cz": "Bez výčitek (skoro) 💪",
+            "de": "Ohne Reue (fast) 💪"
           }
         },
         {
@@ -282,6 +342,11 @@
             "vb": [
               "chill"
             ]
+          },
+          "note": {
+            "en": "Blood-red &amp; wild 🐺",
+            "cz": "Krvavě rudý a divoký 🐺",
+            "de": "Blutrot &amp; wild 🐺"
           }
         },
         {
@@ -306,6 +371,11 @@
               "photo",
               "chill"
             ]
+          },
+          "note": {
+            "en": "Berry explosion 🍓",
+            "cz": "Jahodová exploze 🍓",
+            "de": "Erdbeer-Explosion 🍓"
           }
         },
         {
@@ -330,6 +400,11 @@
               "photo",
               "chill"
             ]
+          },
+          "note": {
+            "en": "A cherry twist on Aperol 🍒",
+            "cz": "Třešňový Aperol 🍒",
+            "de": "Aperol mit Kirsche 🍒"
           }
         },
         {
@@ -353,6 +428,11 @@
             "vb": [
               "photo"
             ]
+          },
+          "note": {
+            "en": "Smooth, sweet &amp; scarlet 💋",
+            "cz": "Jemný, sladký, šarlatový 💋",
+            "de": "Weich, süß &amp; scharlachrot 💋"
           }
         },
         {
@@ -375,6 +455,11 @@
             "vb": [
               "chill"
             ]
+          },
+          "note": {
+            "en": "Spiced &amp; cozy 🍎",
+            "cz": "Kořeněný a hřejivý 🍎",
+            "de": "Würzig &amp; wärmend 🍎"
           }
         },
         {
@@ -399,6 +484,11 @@
               "chill",
               "photo"
             ]
+          },
+          "note": {
+            "en": "Blue coconut cooler 🥥",
+            "cz": "Modrý kokosový chladič 🥥",
+            "de": "Blauer Kokos-Cooler 🥥"
           }
         },
         {
@@ -422,6 +512,11 @@
             "vb": [
               "party"
             ]
+          },
+          "note": {
+            "en": "The classic bomb 💥",
+            "cz": "Klasická bomba 💥",
+            "de": "Die klassische Bombe 💥"
           }
         },
         {
@@ -446,6 +541,11 @@
               "party",
               "photo"
             ]
+          },
+          "note": {
+            "en": "Fizzy &amp; fun 🧽",
+            "cz": "Bublinkový a zábavný 🧽",
+            "de": "Prickelnd &amp; lustig 🧽"
           }
         }
       ]
