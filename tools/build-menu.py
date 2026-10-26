@@ -86,9 +86,9 @@ ALLERG_14={
  'de':['Glutenhaltiges Getreide','Krebstiere','Eier','Fisch','Erdnüsse','Soja','Milch (Laktose)','Schalenfrüchte (Nüsse)','Sellerie','Senf','Sesam','Schwefeldioxid und Sulfite','Lupinen','Weichtiere'],
 }
 ALLERG_L={
- 'en':('Allergens — what the numbers mean','The number(s) after an item show its declarable allergens. Drinks may contain traces of others; full allergen sheet available on request.'),
- 'cz':('Alergeny — co znamenají čísla','Čísla u položky označují obsažené alergeny. Nápoje mohou obsahovat stopy dalších; úplný seznam alergenů na vyžádání.'),
- 'de':('Allergene — was die Nummern bedeuten','Die Nummer(n) bei einem Artikel zeigen die kennzeichnungspflichtigen Allergene. Getränke können Spuren weiterer enthalten; vollständige Allergenliste auf Anfrage.'),
+ 'en':('Allergens — what the numbers mean','The number(s) after an item show its declarable allergens. Drinks may contain traces of others. <a href="/seznam-alergenu-a4.pdf" target="_blank" rel="noopener" style="color:var(--cyan,#3fc5f0);text-decoration:underline">Full allergen list (PDF)</a>'),
+ 'cz':('Alergeny — co znamenají čísla','Čísla u položky označují obsažené alergeny. Nápoje mohou obsahovat stopy dalších. <a href="/seznam-alergenu-a4.pdf" target="_blank" rel="noopener" style="color:var(--cyan,#3fc5f0);text-decoration:underline">Úplný seznam alergenů (PDF)</a>'),
+ 'de':('Allergene — was die Nummern bedeuten','Die Nummer(n) bei einem Artikel zeigen die kennzeichnungspflichtigen Allergene. Getränke können Spuren weiterer enthalten. <a href="/seznam-alergenu-a4.pdf" target="_blank" rel="noopener" style="color:var(--cyan,#3fc5f0);text-decoration:underline">Vollständige Allergenliste (PDF)</a>'),
 }
 
 def build_legend(lang):
