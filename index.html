@@ -350,7 +350,7 @@ section{padding:84px 0;position:relative}
   margin-bottom:12px;color:var(--ink);text-shadow:0 0 12px rgba(200,85,181,.25);
 }
 .menu-section .sub{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--cyan);text-shadow:0 0 8px rgba(0,200,224,.3);margin-bottom:18px}
-.menu-image{width:100%;border-radius:12px;border:1px solid var(--line);overflow:hidden;display:block;transition:transform .3s,box-shadow .3s;cursor:pointer}
+.menu-image{width:100%;height:auto;border-radius:12px;border:1px solid var(--line);overflow:hidden;display:block;transition:transform .3s,box-shadow .3s;cursor:pointer}
 .menu-image:hover{transform:scale(1.02);box-shadow:0 0 20px rgba(200,85,181,.4)}
 
 /* Lightbox styles */
@@ -566,8 +566,8 @@ footer .fine{color:var(--muted);font-size:12px;margin-top:16px;line-height:1.8}
 .menu-photos-toggle summary{cursor:pointer;list-style:none;text-align:center;padding:14px;border:1px dashed rgba(0,200,224,.4);border-radius:12px;color:var(--cyan);font-weight:700;font-size:14px;letter-spacing:.03em;transition:background .2s}
 .menu-photos-toggle summary::-webkit-details-marker{display:none}
 .menu-photos-toggle summary:hover{background:rgba(0,200,224,.06)}
-.menu-photos-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin-top:18px}
-.menu-photos-grid .menu-section{text-align:center}
+.menu-photos-grid{display:flex;flex-direction:column;align-items:center;gap:26px;max-width:900px;margin:18px auto 0}
+.menu-photos-grid .menu-section{text-align:center;width:100%;max-width:480px}.menu-section.sec-wide{max-width:900px}
 .menu-photos-grid h3{font-size:15px;margin-bottom:6px}
 .menu-photos-grid .sub{display:none}
 @media(max-width:640px){
@@ -1614,29 +1614,29 @@ a[href*="firmy.cz"]::before{background-image:url('data:image/svg+xml;utf8,<svg x
     <div class="menu-section">
       <h3>Signature Cocktails</h3>
       <p class="sub">Complete recipe guide</p>
-      <picture><source srcset="img/menu-1.webp" type="image/webp"><img class="menu-image" src="img/menu-1.webp" alt="Lost and Found Bar Prague - Signature Cocktails with Ferrari, Lamborghini, Long Island" onclick="openLightbox(this)" loading="lazy" decoding="async" width="800" height="1132"></picture>
+      <picture><source srcset="img/menu-1.webp" type="image/webp"><img class="menu-image" src="img/menu-1.webp" alt="Lost and Found Bar Prague - Signature Cocktails with Ferrari, Lamborghini, Long Island" onclick="openLightbox(this)" loading="lazy" decoding="async" width="1100" height="1556"></picture>
     </div>
     <div class="menu-section">
       <h3>Special Wine &amp; Shots</h3>
       <p class="sub">Wine cocktails, special shots</p>
-      <picture><source srcset="img/menu-2.webp" type="image/webp"><img class="menu-image" src="img/menu-2.webp" alt="Lost and Found Bar Prague - Special Wine Cocktails and Shots menu" onclick="openLightbox(this)" loading="lazy" decoding="async" width="800" height="1132"></picture>
+      <picture><source srcset="img/menu-2.webp" type="image/webp"><img class="menu-image" src="img/menu-2.webp" alt="Lost and Found Bar Prague - Special Wine Cocktails and Shots menu" onclick="openLightbox(this)" loading="lazy" decoding="async" width="1100" height="1556"></picture>
     </div>
-    <div class="menu-section">
+    <div class="menu-section sec-wide">
       <h3>Soft Drinks &amp; Specials</h3>
       <p class="sub">Cocktails, soft drinks, hot beverages</p>
       <picture><source srcset="img/menu-3.webp" type="image/webp"><img class="menu-image" src="img/menu-3.webp" alt="Lost and Found Bar Prague - Soft Drinks, Cocktails, Hot Beverages menu" onclick="openLightbox(this)" loading="lazy" decoding="async" width="800" height="566"></picture>
     </div>
-    <div class="menu-section">
+    <div class="menu-section sec-wide">
       <h3>Our Cocktails</h3>
       <p class="sub">Classic &amp; signature mixes</p>
       <picture><source srcset="img/menu-4.webp" type="image/webp"><img class="menu-image" src="img/menu-4.webp" alt="Lost and Found Bar Prague - Cocktails menu" onclick="openLightbox(this)" loading="lazy" decoding="async" width="800" height="566"></picture>
     </div>
-    <div class="menu-section">
+    <div class="menu-section sec-wide">
       <h3>Hookah Menu</h3>
       <p class="sub">Premium blends · 495 Kč</p>
       <picture><source srcset="img/menu-5.webp" type="image/webp"><img class="menu-image" src="img/menu-5.webp" alt="Lost and Found Bar Prague - Hookah menu" onclick="openLightbox(this)" loading="lazy" decoding="async" width="800" height="566"></picture>
     </div>
-    <div class="menu-section">
+    <div class="menu-section sec-wide">
       <h3>Shots, Wine &amp; Beer</h3>
       <p class="sub">Special shots, spirits, craft beer</p>
       <picture><source srcset="img/menu-6.webp" type="image/webp"><img class="menu-image" src="img/menu-6.webp" alt="Lost and Found Bar Prague - Shots, Wine and Beer menu" onclick="openLightbox(this)" loading="lazy" decoding="async" width="800" height="566"></picture>
