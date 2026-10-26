@@ -1536,72 +1536,72 @@
           "name": "L-O-S-T",
           "price": "395",
           "desc": {
-            "en": "4 shots: L-Limoncello, O-Orange Jägermeister, S-Slivovice, T-Tequila",
-            "cz": "4 panáky: L-Limoncello, O-Orange Jägermeister, S-Slivovice, T-Tequila",
-            "de": "4 Shots: L-Limoncello, O-Orange Jägermeister, S-Slivovice, T-Tequila"
+            "en": "🧭 4 shots: L-Limoncello, O-Orange Jägermeister, S-Slivovice, T-Tequila",
+            "cz": "🧭 4 panáky: L-Limoncello, O-Orange Jägermeister, S-Slivovice, T-Tequila",
+            "de": "🧭 4 Shots: L-Limoncello, O-Orange Jägermeister, S-Slivovice, T-Tequila"
           }
         },
         {
           "name": "Rainbow",
           "price": "495",
           "desc": {
-            "en": "6 shots: Vodka, Becherovka, Limoncello, Mint Liqueur, Božkov Liqueur, Tequila",
-            "cz": "6 panáků: Vodka, Becherovka, Limoncello, Mátový likér, Božkov likér, Tequila",
-            "de": "6 Shots: Wodka, Becherovka, Limoncello, Minzlikör, Božkov-Likör, Tequila"
+            "en": "🌈 6 shots: Vodka, Becherovka, Limoncello, Mint Liqueur, Božkov Liqueur, Tequila",
+            "cz": "🌈 6 panáků: Vodka, Becherovka, Limoncello, Mátový likér, Božkov likér, Tequila",
+            "de": "🌈 6 Shots: Wodka, Becherovka, Limoncello, Minzlikör, Božkov-Likör, Tequila"
           }
         },
         {
           "name": "Czech Set",
           "price": "525",
           "desc": {
-            "en": "6 shots: Božkov green, Božkov blue, Slivovice, Hruškovice, Becherovka, Fernet",
-            "cz": "6 panáků: Božkov green, Božkov blue, Slivovice, Hruškovice, Becherovka, Fernet",
-            "de": "6 Shots: Božkov green, Božkov blue, Slivovice, Hruškovice, Becherovka, Fernet"
+            "en": "🇨🇿 6 shots: Božkov green, Božkov blue, Slivovice, Hruškovice, Becherovka, Fernet",
+            "cz": "🇨🇿 6 panáků: Božkov green, Božkov blue, Slivovice, Hruškovice, Becherovka, Fernet",
+            "de": "🇨🇿 6 Shots: Božkov green, Božkov blue, Slivovice, Hruškovice, Becherovka, Fernet"
           }
         },
         {
           "name": "Suicide Set",
           "price": "666",
           "desc": {
-            "en": "6 shots: Stroh, Green Absinth, Red chilli Absinth, Cachaça, Metaxa, Sambuca",
-            "cz": "6 panáků: Stroh, Zelený absint, Red chilli absint, Cachaça, Metaxa, Sambuca",
-            "de": "6 Shots: Stroh, Grüner Absinth, Red Chilli Absinth, Cachaça, Metaxa, Sambuca"
+            "en": "☠️ 6 shots: Stroh, Green Absinth, Red chilli Absinth, Cachaça, Metaxa, Sambuca",
+            "cz": "☠️ 6 panáků: Stroh, Zelený absint, Red chilli absint, Cachaça, Metaxa, Sambuca",
+            "de": "☠️ 6 Shots: Stroh, Grüner Absinth, Red Chilli Absinth, Cachaça, Metaxa, Sambuca"
           }
         },
         {
           "name": "Stoplights (3 shots)",
           "price": "230",
           "desc": {
-            "en": "Vodka + cranberry juice; Limoncello; lemon juice + mint liqueur",
-            "cz": "Limetková &amp; brusinková šťáva + vodka; pyré z marakuji + Bacardi Bianco; citronová šťáva + mátový likér + tequila",
-            "de": "Cranberry- &amp; Limettensaft + Wodka; Passionsfruchtpüree + Bacardi Bianco; Zitronensaft + Minzlikör + Tequila"
+            "en": "🚦 Vodka + cranberry juice; Limoncello; lemon juice + mint liqueur",
+            "cz": "🚦 Limetková &amp; brusinková šťáva + vodka; pyré z marakuji + Bacardi Bianco; citronová šťáva + mátový likér + tequila",
+            "de": "🚦 Cranberry- &amp; Limettensaft + Wodka; Passionsfruchtpüree + Bacardi Bianco; Zitronensaft + Minzlikör + Tequila"
           }
         },
         {
           "name": "Mozart Balls",
           "price": "155",
           "desc": {
-            "en": "Stroh, Chocolates",
-            "cz": "Stroh, čokoláda",
-            "de": "Stroh, Pralinen"
+            "en": "🍫 Stroh, Chocolates",
+            "cz": "🍫 Stroh, čokoláda",
+            "de": "🍫 Stroh, Pralinen"
           }
         },
         {
           "name": "Chupito 1+1",
           "price": "190",
           "desc": {
-            "en": "Vodka, lime cordial syrup",
-            "cz": "Vodka, limetková šťáva, cordial sirup",
-            "de": "Wodka, Limettensaft, Cordial-Sirup"
+            "en": "🥃 Vodka, lime cordial syrup",
+            "cz": "🥃 Vodka, limetková šťáva, cordial sirup",
+            "de": "🥃 Wodka, Limettensaft, Cordial-Sirup"
           }
         },
         {
           "name": "Blow Job",
           "price": "115",
           "desc": {
-            "en": "Amaretto, Baileys, cream",
-            "cz": "Amaretto, Baileys, smetana navrchu",
-            "de": "Amaretto, Baileys, Sahne obenauf"
+            "en": "😏 Amaretto, Baileys, cream",
+            "cz": "😏 Amaretto, Baileys, smetana navrchu",
+            "de": "😏 Amaretto, Baileys, Sahne obenauf"
           },
           "allergens": "7"
         },
@@ -1609,9 +1609,9 @@
           "name": "B-52",
           "price": "125",
           "desc": {
-            "en": "Kahlua, Baileys, triple sec",
-            "cz": "Kahlua, Baileys, triple sec",
-            "de": "Kahlua, Baileys, Triple Sec"
+            "en": "✈️ Kahlua, Baileys, triple sec",
+            "cz": "✈️ Kahlua, Baileys, triple sec",
+            "de": "✈️ Kahlua, Baileys, Triple Sec"
           },
           "allergens": "7"
         },
@@ -1619,9 +1619,9 @@
           "name": "B-53",
           "price": "135",
           "desc": {
-            "en": "Kahlua, Baileys, Absinthe",
-            "cz": "Kahlua, Baileys, absinth",
-            "de": "Kahlua, Baileys, Absinth"
+            "en": "🔥 Kahlua, Baileys, Absinthe",
+            "cz": "🔥 Kahlua, Baileys, absinth",
+            "de": "🔥 Kahlua, Baileys, Absinth"
           },
           "allergens": "7"
         },
@@ -1629,18 +1629,18 @@
           "name": "Sparta",
           "price": "185",
           "desc": {
-            "en": "Stroh, Absinthe, Tequila Silver",
-            "cz": "Stroh, absinth, Tequila Silver",
-            "de": "Stroh, Absinth, Tequila Silver"
+            "en": "⚔️ Stroh, Absinthe, Tequila Silver",
+            "cz": "⚔️ Stroh, absinth, Tequila Silver",
+            "de": "⚔️ Stroh, Absinth, Tequila Silver"
           }
         },
         {
           "name": "Boyarskiy",
           "price": "105",
           "desc": {
-            "en": "Vodka, grenadine, tabasco",
-            "cz": "Vodka, grenadina, tabasco",
-            "de": "Wodka, Grenadine, Tabasco"
+            "en": "🌶️ Vodka, grenadine, tabasco",
+            "cz": "🌶️ Vodka, grenadina, tabasco",
+            "de": "🌶️ Wodka, Grenadine, Tabasco"
           }
         }
       ]
@@ -1659,63 +1659,63 @@
           "name": "Tropical Mix",
           "price": null,
           "desc": {
-            "en": "Mango, peach, melon, and refreshing tropical notes — sweet &amp; fruity",
-            "cz": "Mango, broskev, meloun a osvěžující tropické tóny — sladké &amp; ovocné",
-            "de": "Mango, Pfirsich, Melone und erfrischende tropische Noten — süß &amp; fruchtig"
+            "en": "🌴 Mango, peach, melon, and refreshing tropical notes — sweet &amp; fruity",
+            "cz": "🌴 Mango, broskev, meloun a osvěžující tropické tóny — sladké &amp; ovocné",
+            "de": "🌴 Mango, Pfirsich, Melone und erfrischende tropische Noten — süß &amp; fruchtig"
           }
         },
         {
           "name": "Berry Madness",
           "price": null,
           "desc": {
-            "en": "Raspberry, blueberry, and forest fruits — sweet &amp; juicy",
-            "cz": "Malina, borůvka a lesní ovoce — sladké &amp; šťavnaté",
-            "de": "Himbeere, Blaubeere und Waldfrüchte — süß &amp; saftig"
+            "en": "🫐 Raspberry, blueberry, and forest fruits — sweet &amp; juicy",
+            "cz": "🫐 Malina, borůvka a lesní ovoce — sladké &amp; šťavnaté",
+            "de": "🫐 Himbeere, Blaubeere und Waldfrüchte — süß &amp; saftig"
           }
         },
         {
           "name": "Citrus Fresh",
           "price": null,
           "desc": {
-            "en": "Sweet and sour grapefruit with a touch of refreshing mint — citrusy &amp; fresh",
-            "cz": "Sladkokyselý grapefruit s nádechem osvěžující máty — citrusové &amp; svěží",
-            "de": "Süß-saure Grapefruit mit einem Hauch erfrischender Minze — zitrisch &amp; frisch"
+            "en": "🍋 Sweet and sour grapefruit with a touch of refreshing mint — citrusy &amp; fresh",
+            "cz": "🍋 Sladkokyselý grapefruit s nádechem osvěžující máty — citrusové &amp; svěží",
+            "de": "🍋 Süß-saure Grapefruit mit einem Hauch erfrischender Minze — zitrisch &amp; frisch"
           }
         },
         {
           "name": "Sweet Dream",
           "price": null,
           "desc": {
-            "en": "A creamy dessert with strawberry hints and Belgian waffles — smooth &amp; sweet",
-            "cz": "Krémový dezert s náznakem jahod a belgických vaflí — jemné &amp; sladké",
-            "de": "Ein cremiges Dessert mit Erdbeernote und belgischen Waffeln — sanft &amp; süß"
+            "en": "🧇 A creamy dessert with strawberry hints and Belgian waffles — smooth &amp; sweet",
+            "cz": "🧇 Krémový dezert s náznakem jahod a belgických vaflí — jemné &amp; sladké",
+            "de": "🧇 Ein cremiges Dessert mit Erdbeernote und belgischen Waffeln — sanft &amp; süß"
           }
         },
         {
           "name": "Exotic Ice",
           "price": null,
           "desc": {
-            "en": "A refreshing duo of sweet peach and banana — sweet &amp; fresh",
-            "cz": "Osvěžující duo sladké broskve a banánu — sladké &amp; svěží",
-            "de": "Ein erfrischendes Duo aus süßem Pfirsich und Banane — süß &amp; frisch"
+            "en": "🍑 A refreshing duo of sweet peach and banana — sweet &amp; fresh",
+            "cz": "🍑 Osvěžující duo sladké broskve a banánu — sladké &amp; svěží",
+            "de": "🍑 Ein erfrischendes Duo aus süßem Pfirsich und Banane — süß &amp; frisch"
           }
         },
         {
           "name": "Nicotine-free",
           "price": null,
           "desc": {
-            "en": "Nicotine-free tobacco — ask our Hookah Master",
-            "cz": "Beznikotinový tabák — zeptejte se našeho hookah mistra",
-            "de": "Nikotinfreier Tabak — frag unseren Shisha-Meister"
+            "en": "🌿 Nicotine-free tobacco — ask our Hookah Master",
+            "cz": "🌿 Beznikotinový tabák — zeptejte se našeho hookah mistra",
+            "de": "🌿 Nikotinfreier Tabak — frag unseren Shisha-Meister"
           }
         },
         {
           "name": "Hookah of the Day",
           "price": null,
           "desc": {
-            "en": "Our Hookah Master can craft a unique mix just for you, with love )))",
-            "cz": "Náš Hookah Master ti namíchá jedinečnou směs na míru, s láskou )))",
-            "de": "Unser Shisha-Meister mixt mit Liebe eine einzigartige Mischung nur für dich )))"
+            "en": "💨 Our Hookah Master can craft a unique mix just for you, with love ))) 💜",
+            "cz": "💨 Náš Hookah Master ti namíchá jedinečnou směs na míru, s láskou ))) 💜",
+            "de": "💨 Unser Shisha-Meister mixt mit Liebe eine einzigartige Mischung nur für dich ))) 💜"
           }
         }
       ]
@@ -1734,9 +1734,9 @@
           "name": "Virgin Colada 0.0%",
           "price": "165",
           "desc": {
-            "en": "Coconut syrup, pineapple juice, cream",
-            "cz": "Kokosový sirup, ananasová šťáva, smetana",
-            "de": "Kokossirup, Ananassaft, Sahne"
+            "en": "🥥 Coconut syrup, pineapple juice, cream",
+            "cz": "🥥 Kokosový sirup, ananasová šťáva, smetana",
+            "de": "🥥 Kokossirup, Ananassaft, Sahne"
           },
           "finder": {
             "name": "Virgin Colada 0.0%",
@@ -1759,9 +1759,9 @@
           "name": "Miami 0.0%",
           "price": "145",
           "desc": {
-            "en": "Pineapple &amp; orange &amp; lime juice, grenadine",
-            "cz": "Ananasová &amp; pomerančová &amp; limetková šťáva, grenadina",
-            "de": "Ananas-, Orangen- &amp; Limettensaft, Grenadine"
+            "en": "🌅 Pineapple &amp; orange &amp; lime juice, grenadine",
+            "cz": "🌅 Ananasová &amp; pomerančová &amp; limetková šťáva, grenadina",
+            "de": "🌅 Ananas-, Orangen- &amp; Limettensaft, Grenadine"
           },
           "finder": {
             "name": "Miami 0.0%",
@@ -1782,9 +1782,9 @@
           "name": "Flamingo 0.0%",
           "price": "155",
           "desc": {
-            "en": "Grapefruit, orange, pineapple &amp; lime juice, grenadine",
-            "cz": "Grapefruit, pomerančová &amp; limetková šťáva, grenadina",
-            "de": "Grapefruit-, Orangen- &amp; Limettensaft, Grenadine"
+            "en": "🦩 Grapefruit, orange, pineapple &amp; lime juice, grenadine",
+            "cz": "🦩 Grapefruit, pomerančová &amp; limetková šťáva, grenadina",
+            "de": "🦩 Grapefruit-, Orangen- &amp; Limettensaft, Grenadine"
           },
           "finder": {
             "name": "Flamingo 0.0%",
@@ -1805,9 +1805,9 @@
           "name": "Gin Tonic 0.0%",
           "price": "180",
           "desc": {
-            "en": "Gin (Non-alco), tonic, cucumber syrup",
-            "cz": "Gin (nealko), tonic, okurkový sirup",
-            "de": "Gin (alkoholfrei), Tonic, Gurkensirup"
+            "en": "🥒 Gin (Non-alco), tonic, cucumber syrup",
+            "cz": "🥒 Gin (nealko), tonic, okurkový sirup",
+            "de": "🥒 Gin (alkoholfrei), Tonic, Gurkensirup"
           },
           "finder": {
             "name": "Gin Tonic 0.0%",
@@ -1827,9 +1827,9 @@
           "name": "Cuba Libre 0.0%",
           "price": "165",
           "desc": {
-            "en": "Rum (Non-alco), lime juice, Pepsi",
-            "cz": "Rum (nealko), limetková šťáva, Pepsi",
-            "de": "Rum (alkoholfrei), Limettensaft, Pepsi"
+            "en": "🥤 Rum (Non-alco), lime juice, Pepsi",
+            "cz": "🥤 Rum (nealko), limetková šťáva, Pepsi",
+            "de": "🥤 Rum (alkoholfrei), Limettensaft, Pepsi"
           },
           "finder": {
             "name": "Cuba Libre 0.0%",
@@ -1849,9 +1849,9 @@
           "name": "Mojito Fruity 0.0%",
           "price": "190",
           "desc": {
-            "en": "Rum (Non-alco), Lime, Brown sugar, Soda, Cordial &amp; fruity syrup",
-            "cz": "Rum (nealko), limetka, třtinový cukr, tonic, cordial &amp; ovocný sirup",
-            "de": "Rum (alkoholfrei), Limette, brauner Zucker, Tonic, Cordial- &amp; Fruchtsirup"
+            "en": "🌿 Rum (Non-alco), Lime, Brown sugar, Soda, Cordial &amp; fruity syrup",
+            "cz": "🌿 Rum (nealko), limetka, třtinový cukr, tonic, cordial &amp; ovocný sirup",
+            "de": "🌿 Rum (alkoholfrei), Limette, brauner Zucker, Tonic, Cordial- &amp; Fruchtsirup"
           },
           "finder": {
             "name": "Mojito Fruity 0.0%",
@@ -1873,9 +1873,9 @@
           "name": "Strawberry Boom 0.0%",
           "price": "190",
           "desc": {
-            "en": "Gin (Non-alco), strawberry puree, lemon &amp; cranberry juice",
-            "cz": "Gin (nealko), jahodové pyré, citronová &amp; brusinková šťáva",
-            "de": "Gin (alkoholfrei), Erdbeerpüree, Zitronen- &amp; Cranberrysaft"
+            "en": "🍓 Gin (Non-alco), strawberry puree, lemon &amp; cranberry juice",
+            "cz": "🍓 Gin (nealko), jahodové pyré, citronová &amp; brusinková šťáva",
+            "de": "🍓 Gin (alkoholfrei), Erdbeerpüree, Zitronen- &amp; Cranberrysaft"
           },
           "finder": {
             "name": "Strawberry Boom 0.0%",
@@ -1896,18 +1896,18 @@
           "name": "Lemonade",
           "price": "85",
           "desc": {
-            "en": "Mango, Cherry, Cucumber, Strawberry, others",
-            "cz": "Mango, třešeň, okurka, jahoda, další",
-            "de": "Mango, Kirsche, Gurke, Erdbeere, u. a."
+            "en": "🍋 Mango, Cherry, Cucumber, Strawberry, others",
+            "cz": "🍋 Mango, třešeň, okurka, jahoda, další",
+            "de": "🍋 Mango, Kirsche, Gurke, Erdbeere, u. a."
           }
         },
         {
           "name": "Almonds / Cashew / Peanuts",
           "price": "90",
           "desc": {
-            "en": "Mixed nuts",
-            "cz": "Směs oříšků",
-            "de": "Gemischte Nüsse"
+            "en": "🥜 Mixed nuts",
+            "cz": "🥜 Směs oříšků",
+            "de": "🥜 Gemischte Nüsse"
           },
           "allergens": "5,8"
         },
@@ -1915,9 +1915,9 @@
           "name": "Chips 60g",
           "price": "85",
           "desc": {
-            "en": "Cheese, Onion, Salted",
-            "cz": "Sýr, cibule, solené",
-            "de": "Käse, Zwiebel, Gesalzen"
+            "en": "🥔 Cheese, Onion, Salted",
+            "cz": "🥔 Sýr, cibule, solené",
+            "de": "🥔 Käse, Zwiebel, Gesalzen"
           },
           "allergens": "7"
         },
@@ -1925,9 +1925,9 @@
           "name": "Nachos",
           "price": "145",
           "desc": {
-            "en": "Cheese, Salsa, Guacamole (100g + 100g sauce)",
-            "cz": "Sýr, salsa, guacamole (100g + 100g omáčka)",
-            "de": "Käse, Salsa, Guacamole (100 g + 100 g Soße)"
+            "en": "🧀 Cheese, Salsa, Guacamole (100g + 100g sauce)",
+            "cz": "🧀 Sýr, salsa, guacamole (100g + 100g omáčka)",
+            "de": "🧀 Käse, Salsa, Guacamole (100 g + 100 g Soße)"
           },
           "allergens": "7"
         },
@@ -1935,18 +1935,18 @@
           "name": "Hot Salted Popcorn 100g",
           "price": "95",
           "desc": {
-            "en": "Freshly popped, salted",
-            "cz": "Čerstvě vypražený, solený",
-            "de": "Frisch gepoppt, gesalzen"
+            "en": "🍿 Freshly popped, salted",
+            "cz": "🍿 Čerstvě vypražený, solený",
+            "de": "🍿 Frisch gepoppt, gesalzen"
           }
         },
         {
           "name": "Additional Sauce",
           "price": "45",
           "desc": {
-            "en": "Salsa, Cheese, Guacamole, Cream",
-            "cz": "Salsa, sýr, guacamole, smetana",
-            "de": "Salsa, Käse, Guacamole, Sahne"
+            "en": "🫙 Salsa, Cheese, Guacamole, Cream",
+            "cz": "🫙 Salsa, sýr, guacamole, smetana",
+            "de": "🫙 Salsa, Käse, Guacamole, Sahne"
           }
         }
       ]
