@@ -559,7 +559,7 @@ footer .fine{color:var(--muted);font-size:12px;margin-top:16px;line-height:1.8}
 .menu-photos-grid{display:flex;flex-direction:column;align-items:center;gap:26px;max-width:900px;margin:18px auto 0}
 .menu-photos-grid .menu-section{text-align:center;width:100%;max-width:480px}.menu-section.sec-wide{max-width:900px}
 .menu-photos-grid h3{font-size:15px;margin-bottom:6px}
-.menu-photos-grid .sub{display:none}
+.menu-photos-grid .sub{display:none}@media(min-width:760px){.menu-photos-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px 24px;align-items:start}.menu-photos-grid .menu-section{max-width:none;width:auto}.menu-photos-grid .menu-section.sec-wide{grid-column:1 / -1;max-width:760px;margin-left:auto;margin-right:auto}}
 @media(max-width:640px){
   .cat-items{grid-template-columns:1fr;gap:0}
   .cat-summary{font-size:20px;padding:14px 16px}
