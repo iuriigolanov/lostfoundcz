@@ -31,7 +31,10 @@ def mi_html(item,lang):
     note=item.get('note',{}).get(lang) if isinstance(item.get('note'),dict) else None
     allerg=item.get('allergens')
     nm=f'<span class="mi-name">{name}</span>'
-    if allerg: nm+=f'<span class="mi-allerg" title="Allergens">({allerg})</span>'
+    if allerg:
+        _ns=[int(x) for x in allerg.replace(' ','').split(',') if x]
+        _tip='; '.join(ALLERG_14[lang][i-1] for i in _ns)
+        nm+=f'<span class="mi-allerg" tabindex="0" role="note" aria-label="Allergens: {_tip}" data-tip="{_tip}">({allerg})<i class="mi-i">i</i></span>'
     head=nm+'<span class="mi-dots"></span>'
     if price not in (None,''): head+=f'<span class="mi-price">{price}</span>'
     body=f'        <div class="mi-head">{head}</div>\n        <div class="mi-desc">{desc}</div>\n'

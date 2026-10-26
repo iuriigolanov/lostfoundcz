@@ -1,6 +1,214 @@
 {
   "categories": [
     {
+      "id": "cat-halloween",
+      "emoji": "🎃",
+      "name": {
+        "en": "Halloween Specials",
+        "cz": "Halloweenské speciály",
+        "de": "Halloween-Specials"
+      },
+      "flat": null,
+      "items": [
+        {
+          "name": "Zombie",
+          "price": "245",
+          "desc": {
+            "en": "Rum, cachaça, triple sec, passion fruit, orange &amp; lime, grenadine",
+            "cz": "Rum, cachaça, triple sec, marakuja, pomeranč &amp; limeta, grenadina",
+            "de": "Rum, Cachaça, Triple Sec, Maracuja, Orange &amp; Limette, Grenadine"
+          },
+          "note": {
+            "en": "Raise the dead 🧟",
+            "cz": "Raise the dead 🧟",
+            "de": "Raise the dead 🧟"
+          }
+        },
+        {
+          "name": "Blood Moon",
+          "price": "215",
+          "desc": {
+            "en": "Kraken rum, cherry purée, lime, ginger beer",
+            "cz": "Kraken rum, třešňové pyré, limeta, zázvorové pivo",
+            "de": "Kraken Rum, Kirschpüree, Limette, Ginger Beer"
+          },
+          "note": {
+            "en": "Under the full moon 🌕",
+            "cz": "Under the full moon 🌕",
+            "de": "Under the full moon 🌕"
+          }
+        },
+        {
+          "name": "Vampire Kiss",
+          "price": "210",
+          "desc": {
+            "en": "Tequila, triple sec, strawberry, cherry, lime",
+            "cz": "Tequila, triple sec, jahoda, třešeň, limeta",
+            "de": "Tequila, Triple Sec, Erdbeere, Kirsche, Limette"
+          },
+          "note": {
+            "en": "One bite &amp; you're hooked 🧛",
+            "cz": "One bite &amp; you're hooked 🧛",
+            "de": "One bite &amp; you're hooked 🧛"
+          }
+        },
+        {
+          "name": "Bloody Mary",
+          "price": "205",
+          "desc": {
+            "en": "Vodka, tomato juice, lime, salt, pepper, Tabasco",
+            "cz": "Vodka, rajčatová šťáva, limeta, sůl, pepř, Tabasco",
+            "de": "Wodka, Tomatensaft, Limette, Salz, Pfeffer, Tabasco"
+          },
+          "note": {
+            "en": "Spicy &amp; sinister 🩸",
+            "cz": "Spicy &amp; sinister 🩸",
+            "de": "Spicy &amp; sinister 🩸"
+          }
+        },
+        {
+          "name": "Wolf Blood",
+          "price": "215",
+          "desc": {
+            "en": "Bacardi Spiced, cherry, cranberry, honey, lime",
+            "cz": "Bacardi Spiced, třešeň, brusinka, med, limeta",
+            "de": "Bacardi Spiced, Kirsche, Cranberry, Honig, Limette"
+          },
+          "note": {
+            "en": "Howl at the moon 🐺",
+            "cz": "Howl at the moon 🐺",
+            "de": "Howl at the moon 🐺"
+          }
+        },
+        {
+          "name": "Dirty Shirley",
+          "price": "220",
+          "desc": {
+            "en": "Vodka, Prosecco, lemon, grenadine",
+            "cz": "Vodka, Prosecco, citron, grenadina",
+            "de": "Wodka, Prosecco, Zitrone, Grenadine"
+          },
+          "note": {
+            "en": "Wickedly sweet 🍒",
+            "cz": "Wickedly sweet 🍒",
+            "de": "Wickedly sweet 🍒"
+          }
+        },
+        {
+          "name": "Candy Killer",
+          "price": "230",
+          "desc": {
+            "en": "Bacardi, coconut, pineapple, grenadine",
+            "cz": "Bacardi, kokos, ananas, grenadina",
+            "de": "Bacardi, Kokos, Ananas, Grenadine"
+          },
+          "note": {
+            "en": "Trick or treat 🍬",
+            "cz": "Trick or treat 🍬",
+            "de": "Trick or treat 🍬"
+          }
+        },
+        {
+          "name": "Blue Lady",
+          "price": "220",
+          "desc": {
+            "en": "Gin, lemon, Blue Curaçao, cherry",
+            "cz": "Gin, citron, Blue Curaçao, třešeň",
+            "de": "Gin, Zitrone, Blue Curaçao, Kirsche"
+          },
+          "note": {
+            "en": "A ghostly glow 👻",
+            "cz": "A ghostly glow 👻",
+            "de": "A ghostly glow 👻"
+          }
+        },
+        {
+          "name": "Joker",
+          "price": "195",
+          "desc": {
+            "en": "Jim Beam, Disaronno, Blue Curaçao, cranberry",
+            "cz": "Jim Beam, Disaronno, Blue Curaçao, brusinka",
+            "de": "Jim Beam, Disaronno, Blue Curaçao, Cranberry"
+          },
+          "note": {
+            "en": "Why so serious? 🃏",
+            "cz": "Why so serious? 🃏",
+            "de": "Why so serious? 🃏"
+          }
+        },
+        {
+          "name": "Hot Wine",
+          "price": "175",
+          "desc": {
+            "en": "Hot spiced red wine",
+            "cz": "Horké kořeněné červené víno",
+            "de": "Heißer Glühwein"
+          },
+          "note": {
+            "en": "Warm your bones 🔥",
+            "cz": "Warm your bones 🔥",
+            "de": "Warm your bones 🔥"
+          }
+        },
+        {
+          "name": "Black Cat",
+          "price": "225",
+          "desc": {
+            "en": "Kahlúa, Jägermeister, Stroh — flamed",
+            "cz": "Kahlúa, Jägermeister, Stroh — flambované",
+            "de": "Kahlúa, Jägermeister, Stroh — flambiert"
+          },
+          "note": {
+            "en": "On fire 🐈‍⬛",
+            "cz": "On fire 🐈‍⬛",
+            "de": "On fire 🐈‍⬛"
+          }
+        },
+        {
+          "name": "Brain Hemorrhage",
+          "price": "185",
+          "desc": {
+            "en": "Peach liqueur, Baileys, grenadine",
+            "cz": "Broskvový likér, Baileys, grenadina",
+            "de": "Pfirsichlikör, Baileys, Grenadine"
+          },
+          "note": {
+            "en": "Not for the squeamish 🧠",
+            "cz": "Not for the squeamish 🧠",
+            "de": "Not for the squeamish 🧠"
+          }
+        },
+        {
+          "name": "Black Widow",
+          "price": "185",
+          "desc": {
+            "en": "Kahlúa, Kraken rum, a drop of &ldquo;blood&rdquo;",
+            "cz": "Kahlúa, Kraken rum, kapka &bdquo;krve&ldquo;",
+            "de": "Kahlúa, Kraken Rum, ein Tropfen &bdquo;Blut&ldquo;"
+          },
+          "note": {
+            "en": "Deadly &amp; dark 🕷️",
+            "cz": "Deadly &amp; dark 🕷️",
+            "de": "Deadly &amp; dark 🕷️"
+          }
+        },
+        {
+          "name": "Green Goblin",
+          "price": "155",
+          "desc": {
+            "en": "Absinthe, melon liqueur, lime",
+            "cz": "Absint, melounový likér, limeta",
+            "de": "Absinth, Melonenlikör, Limette"
+          },
+          "note": {
+            "en": "Mischief in a shot 👺",
+            "cz": "Mischief in a shot 👺",
+            "de": "Mischief in a shot 👺"
+          }
+        }
+      ]
+    },
+    {
       "id": "cat-signature",
       "emoji": "🍸",
       "name": {
@@ -586,7 +794,12 @@
               "classic"
             ]
           },
-          "allergens": "7"
+          "allergens": "7",
+          "note": {
+            "en": "Creamy &amp; dreamy 🥛",
+            "cz": "Krémový sen 🥛",
+            "de": "Cremig &amp; sanft 🥛"
+          }
         },
         {
           "name": "Espresso Martini",
@@ -610,6 +823,11 @@
               "classic",
               "photo"
             ]
+          },
+          "note": {
+            "en": "Your coffee buzz ☕",
+            "cz": "Kávový restart ☕",
+            "de": "Dein Koffein-Kick ☕"
           }
         },
         {
@@ -636,7 +854,12 @@
               "classic"
             ]
           },
-          "allergens": "12"
+          "allergens": "12",
+          "note": {
+            "en": "Passion in a glass 😏",
+            "cz": "Vášeň ve skle 😏",
+            "de": "Leidenschaft im Glas 😏"
+          }
         },
         {
           "name": "Cosmopolitan",
@@ -660,6 +883,11 @@
               "classic",
               "photo"
             ]
+          },
+          "note": {
+            "en": "The city classic 💅",
+            "cz": "Městská klasika 💅",
+            "de": "Der City-Klassiker 💅"
           }
         },
         {
@@ -683,7 +911,12 @@
               "party"
             ]
           },
-          "allergens": "8"
+          "allergens": "8",
+          "note": {
+            "en": "Fruity &amp; flirty 🍑",
+            "cz": "Ovocné svádění 🍑",
+            "de": "Fruchtig &amp; frech 🍑"
+          }
         },
         {
           "name": "Skinny Bitch / Fruity",
@@ -706,6 +939,11 @@
             "vb": [
               "chill"
             ]
+          },
+          "note": {
+            "en": "Light &amp; guilt-free 🤍",
+            "cz": "Lehké bez výčitek 🤍",
+            "de": "Leicht &amp; ohne Reue 🤍"
           }
         },
         {
@@ -730,6 +968,11 @@
               "photo",
               "party"
             ]
+          },
+          "note": {
+            "en": "Blue paradise 🏖️",
+            "cz": "Modrý ráj 🏖️",
+            "de": "Blaues Paradies 🏖️"
           }
         },
         {
@@ -754,6 +997,11 @@
               "chill",
               "classic"
             ]
+          },
+          "note": {
+            "en": "Ginger kick 🫚",
+            "cz": "Zázvorový kop 🫚",
+            "de": "Ingwer-Kick 🫚"
           }
         },
         {
@@ -778,7 +1026,12 @@
               "chill"
             ]
           },
-          "allergens": "4,9"
+          "allergens": "4,9",
+          "note": {
+            "en": "Spicy brunch icon 🍅",
+            "cz": "Pikantní ikona 🍅",
+            "de": "Pikante Ikone 🍅"
+          }
         },
         {
           "name": "Vodka Red Bull",
@@ -787,6 +1040,11 @@
             "en": "Vodka, Red Bull",
             "cz": "Vodka, Red Bull",
             "de": "Wodka, Red Bull"
+          },
+          "note": {
+            "en": "Wings for the night ⚡",
+            "cz": "Křídla na noc ⚡",
+            "de": "Flügel für die Nacht ⚡"
           }
         },
         {
@@ -811,7 +1069,12 @@
               "chill"
             ]
           },
-          "allergens": "12"
+          "allergens": "12",
+          "note": {
+            "en": "Bittersweet &amp; bold 🧡",
+            "cz": "Hořko-sladká klasika 🧡",
+            "de": "Bittersüß &amp; stark 🧡"
+          }
         },
         {
           "name": "Gin Tonic",
@@ -835,6 +1098,11 @@
               "chill",
               "classic"
             ]
+          },
+          "note": {
+            "en": "Crisp &amp; classic 🌿",
+            "cz": "Svěží klasika 🌿",
+            "de": "Frisch &amp; klassisch 🌿"
           }
         },
         {
@@ -858,6 +1126,11 @@
               "chill",
               "classic"
             ]
+          },
+          "note": {
+            "en": "Cucumber elegance 🥒",
+            "cz": "Okurková elegance 🥒",
+            "de": "Gurken-Eleganz 🥒"
           }
         },
         {
@@ -881,6 +1154,11 @@
               "chill",
               "classic"
             ]
+          },
+          "note": {
+            "en": "Mediterranean botanicals 🌊",
+            "cz": "Středomořské byliny 🌊",
+            "de": "Mediterrane Botanik 🌊"
           }
         },
         {
@@ -904,6 +1182,11 @@
             "vb": [
               "chill"
             ]
+          },
+          "note": {
+            "en": "Garden fresh 🌱",
+            "cz": "Zahradní svěžest 🌱",
+            "de": "Gartenfrisch 🌱"
           }
         },
         {
@@ -927,6 +1210,11 @@
             "vb": [
               "classic"
             ]
+          },
+          "note": {
+            "en": "Simply perfect 🍈",
+            "cz": "Prostě dokonalý 🍈",
+            "de": "Einfach perfekt 🍈"
           }
         },
         {
@@ -951,7 +1239,12 @@
               "chill"
             ]
           },
-          "allergens": "12"
+          "allergens": "12",
+          "note": {
+            "en": "Spiced &amp; tropical 🌶️",
+            "cz": "Kořeněné tropy 🌶️",
+            "de": "Würzig &amp; tropisch 🌶️"
+          }
         },
         {
           "name": "Caipirinha",
@@ -975,6 +1268,11 @@
               "classic",
               "chill"
             ]
+          },
+          "note": {
+            "en": "Brazil in a glass 🇧🇷",
+            "cz": "Brazílie ve skle 🇧🇷",
+            "de": "Brasilien im Glas 🇧🇷"
           }
         },
         {
@@ -999,7 +1297,12 @@
               "classic"
             ]
           },
-          "allergens": "8"
+          "allergens": "8",
+          "note": {
+            "en": "Tiki classic 🗿",
+            "cz": "Tiki klasika 🗿",
+            "de": "Tiki-Klassiker 🗿"
+          }
         },
         {
           "name": "Cuba Libre",
@@ -1022,6 +1325,11 @@
               "classic",
               "chill"
             ]
+          },
+          "note": {
+            "en": "Rum &amp; cola done right 🥤",
+            "cz": "Rum a cola 🥤",
+            "de": "Rum &amp; Cola, richtig 🥤"
           }
         },
         {
@@ -1048,7 +1356,12 @@
               "classic"
             ]
           },
-          "allergens": "7"
+          "allergens": "7",
+          "note": {
+            "en": "Holiday vibes 🥥",
+            "cz": "Dovolenková nálada 🥥",
+            "de": "Urlaubsgefühl 🥥"
+          }
         },
         {
           "name": "Mojito / Fruity",
@@ -1073,6 +1386,11 @@
               "chill",
               "photo"
             ]
+          },
+          "note": {
+            "en": "Minty &amp; fresh 🌿",
+            "cz": "Mátová svěžest 🌿",
+            "de": "Minzig &amp; frisch 🌿"
           }
         },
         {
@@ -1096,6 +1414,11 @@
               "classic",
               "party"
             ]
+          },
+          "note": {
+            "en": "Tequila classic 🧂",
+            "cz": "Tequilová klasika 🧂",
+            "de": "Tequila-Klassiker 🧂"
           }
         },
         {
@@ -1120,6 +1443,11 @@
               "photo",
               "classic"
             ]
+          },
+          "note": {
+            "en": "Sunset in a glass 🌅",
+            "cz": "Západ slunce ve skle 🌅",
+            "de": "Sonnenuntergang im Glas 🌅"
           }
         },
         {
@@ -1143,6 +1471,11 @@
             "vb": [
               "photo"
             ]
+          },
+          "note": {
+            "en": "Tropical blue 💙",
+            "cz": "Tropická modř 💙",
+            "de": "Tropisches Blau 💙"
           }
         },
         {
@@ -1167,6 +1500,11 @@
               "chill",
               "classic"
             ]
+          },
+          "note": {
+            "en": "Grapefruit cooler 🍊",
+            "cz": "Grapefruitový chladič 🍊",
+            "de": "Grapefruit-Cooler 🍊"
           }
         },
         {
@@ -1191,7 +1529,12 @@
               "chill"
             ]
           },
-          "allergens": "12"
+          "allergens": "12",
+          "note": {
+            "en": "Timeless &amp; strong 🎩",
+            "cz": "Nadčasová síla 🎩",
+            "de": "Zeitlos &amp; stark 🎩"
+          }
         },
         {
           "name": "Old Fashioned",
@@ -1215,7 +1558,12 @@
               "chill"
             ]
           },
-          "allergens": "12"
+          "allergens": "12",
+          "note": {
+            "en": "The original 🥃",
+            "cz": "Originál 🥃",
+            "de": "Das Original 🥃"
+          }
         },
         {
           "name": "Whiskey Sour Español",
@@ -1238,6 +1586,11 @@
               "classic",
               "chill"
             ]
+          },
+          "note": {
+            "en": "Smooth &amp; sour 🍋",
+            "cz": "Jemně kyselý 🍋",
+            "de": "Weich &amp; sauer 🍋"
           }
         }
       ]
@@ -1275,7 +1628,12 @@
               "photo"
             ]
           },
-          "allergens": "12"
+          "allergens": "12",
+          "note": {
+            "en": "Zesty &amp; bubbly 🍋",
+            "cz": "Svěží bublinky 🍋",
+            "de": "Spritzig &amp; frisch 🍋"
+          }
         },
         {
           "name": "Campari Spritz",
@@ -1299,7 +1657,12 @@
               "classic"
             ]
           },
-          "allergens": "12"
+          "allergens": "12",
+          "note": {
+            "en": "Bitter &amp; bright 🧡",
+            "cz": "Hořko-svěží 🧡",
+            "de": "Bitter &amp; spritzig 🧡"
+          }
         },
         {
           "name": "Sarti Spritz",
@@ -1324,7 +1687,12 @@
               "chill"
             ]
           },
-          "allergens": "12"
+          "allergens": "12",
+          "note": {
+            "en": "Berry bubbles 🍓",
+            "cz": "Bobulové bublinky 🍓",
+            "de": "Beerige Bläschen 🍓"
+          }
         },
         {
           "name": "Aperol Spritz",
@@ -1351,7 +1719,12 @@
               "chill"
             ]
           },
-          "allergens": "12"
+          "allergens": "12",
+          "note": {
+            "en": "The summer classic 🧡",
+            "cz": "Letní klasika 🧡",
+            "de": "Der Sommerklassiker 🧡"
+          }
         },
         {
           "name": "Mimosa",
@@ -1376,7 +1749,12 @@
               "classic"
             ]
           },
-          "allergens": "12"
+          "allergens": "12",
+          "note": {
+            "en": "Brunch favourite 🥂",
+            "cz": "Brunch favorit 🥂",
+            "de": "Brunch-Liebling 🥂"
+          }
         },
         {
           "name": "Hugo Spritz",
@@ -1400,7 +1778,12 @@
               "photo"
             ]
           },
-          "allergens": "12"
+          "allergens": "12",
+          "note": {
+            "en": "Elderflower fresh 🌸",
+            "cz": "Bezinková svěžest 🌸",
+            "de": "Holunder-frisch 🌸"
+          }
         },
         {
           "name": "Berry Muscade",
@@ -1424,7 +1807,12 @@
               "party"
             ]
           },
-          "allergens": "12"
+          "allergens": "12",
+          "note": {
+            "en": "Berry fizz 🍓",
+            "cz": "Bobulová šumivost 🍓",
+            "de": "Beeren-Prickeln 🍓"
+          }
         },
         {
           "name": "Calypso",
@@ -1448,7 +1836,12 @@
               "chill"
             ]
           },
-          "allergens": "12"
+          "allergens": "12",
+          "note": {
+            "en": "Tropical white 🏝️",
+            "cz": "Tropické víno 🏝️",
+            "de": "Tropischer Weißwein 🏝️"
+          }
         },
         {
           "name": "Luna Sanguinia",
@@ -1471,7 +1864,12 @@
               "chill"
             ]
           },
-          "allergens": "12"
+          "allergens": "12",
+          "note": {
+            "en": "Dark &amp; fruity 🌙",
+            "cz": "Temné ovoce 🌙",
+            "de": "Dunkel &amp; fruchtig 🌙"
+          }
         },
         {
           "name": "Kalimotxo",
@@ -1494,7 +1892,12 @@
               "party"
             ]
           },
-          "allergens": "12"
+          "allergens": "12",
+          "note": {
+            "en": "Spanish street classic 🍷",
+            "cz": "Španělská klasika 🍷",
+            "de": "Spanischer Klassiker 🍷"
+          }
         },
         {
           "name": "Tinto Verano",
@@ -1518,7 +1921,12 @@
               "chill"
             ]
           },
-          "allergens": "12"
+          "allergens": "12",
+          "note": {
+            "en": "Summer red 🍒",
+            "cz": "Letní červené 🍒",
+            "de": "Sommer-Rot 🍒"
+          }
         }
       ]
     },
