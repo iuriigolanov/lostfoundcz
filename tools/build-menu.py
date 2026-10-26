@@ -29,7 +29,10 @@ def mi_html(item,lang):
     name=item['name']; price=item.get('price')
     desc=hl(item['desc'][lang])
     note=item.get('note',{}).get(lang) if isinstance(item.get('note'),dict) else None
-    head=f'<span class="mi-name">{name}</span><span class="mi-dots"></span>'
+    allerg=item.get('allergens')
+    nm=f'<span class="mi-name">{name}</span>'
+    if allerg: nm+=f'<span class="mi-allerg" title="Allergens">({allerg})</span>'
+    head=nm+'<span class="mi-dots"></span>'
     if price not in (None,''): head+=f'<span class="mi-price">{price}</span>'
     body=f'        <div class="mi-head">{head}</div>\n        <div class="mi-desc">{desc}</div>\n'
     if note: body+=f'        <div class="mi-note">{note}</div>\n'
@@ -74,10 +77,41 @@ def build_finder(data):
 
 CSS_RULE='.mi-x2{display:inline-block;font-weight:800;color:#06060a;background:linear-gradient(90deg,var(--violet,#c855b5),var(--cyan,#3fc5f0));padding:0 5px;border-radius:5px;font-size:12px;line-height:1.5;vertical-align:1px}.mi-note{margin-top:4px;font-style:italic;font-size:12.5px;color:var(--cyan,#3fc5f0);opacity:.92}'
 
+ALLERG_CSS='.mi-allerg{color:var(--muted,#9aa);font-size:11px;font-weight:600;margin-left:5px;vertical-align:1px}.allergen-legend{max-width:820px;margin:14px auto 0;border:1px solid rgba(255,255,255,.08);border-radius:12px;background:rgba(255,255,255,.02)}.allergen-legend summary{cursor:pointer;list-style:none;padding:12px 16px;color:var(--muted,#9aa);font-size:12.5px;letter-spacing:.04em}.allergen-legend summary::-webkit-details-marker{display:none}.allergen-legend summary::before{content:"▸ ";color:var(--violet,#c855b5)}.allergen-legend[open] summary::before{content:"▾ "}.allergen-legend .al-body{padding:0 16px 14px}.allergen-legend ol{columns:2;column-gap:26px;margin:6px 0 0;padding-left:18px;font-size:12.5px;color:var(--ink,#e8e8ee)}.allergen-legend li{margin:3px 0;break-inside:avoid}.allergen-legend .al-foot{margin-top:10px;font-size:11.5px;color:var(--muted,#9aa)}@media(max-width:560px){.allergen-legend ol{columns:1}}'
+
+# EU 1169/2011 Annex II — the 14 declarable allergens
+ALLERG_14={
+ 'en':['Cereals containing gluten','Crustaceans','Eggs','Fish','Peanuts','Soybeans','Milk (lactose)','Tree nuts','Celery','Mustard','Sesame','Sulphur dioxide &amp; sulphites','Lupin','Molluscs'],
+ 'cz':['Obiloviny obsahující lepek','Korýši','Vejce','Ryby','Arašídy','Sója','Mléko (laktóza)','Skořápkové plody (ořechy)','Celer','Hořčice','Sezam','Oxid siřičitý a siřičitany','Vlčí bob (lupina)','Měkkýši'],
+ 'de':['Glutenhaltiges Getreide','Krebstiere','Eier','Fisch','Erdnüsse','Soja','Milch (Laktose)','Schalenfrüchte (Nüsse)','Sellerie','Senf','Sesam','Schwefeldioxid und Sulfite','Lupinen','Weichtiere'],
+}
+ALLERG_L={
+ 'en':('Allergens — what the numbers mean','The number(s) after an item show its declarable allergens. Drinks may contain traces of others; full allergen sheet available on request.'),
+ 'cz':('Alergeny — co znamenají čísla','Čísla u položky označují obsažené alergeny. Nápoje mohou obsahovat stopy dalších; úplný seznam alergenů na vyžádání.'),
+ 'de':('Allergene — was die Nummern bedeuten','Die Nummer(n) bei einem Artikel zeigen die kennzeichnungspflichtigen Allergene. Getränke können Spuren weiterer enthalten; vollständige Allergenliste auf Anfrage.'),
+}
+
+def build_legend(lang):
+    title,foot=ALLERG_L[lang]
+    items=''.join('<li>%d. %s</li>'%(i+1,a) for i,a in enumerate(ALLERG_14[lang]))
+    return ('<details class="allergen-legend"><summary>'+title+'</summary>'
+            '<div class="al-body"><ol>'+items+'</ol>'
+            '<div class="al-foot">'+foot+'</div></div></details>')
+
 def ensure_css(h):
+    if '.mi-allerg{' not in h:
+        h=h.replace('</style>', ALLERG_CSS+'</style>',1)
     if '.mi-x2{' in h: return h
-    # inject once before first </style>
     return h.replace('</style>', CSS_RULE+'</style>',1)
+
+def ensure_legend(h,lang):
+    leg=build_legend(lang)
+    # remove any existing legend, then insert before the menu-photos toggle
+    h=re.sub(r'\s*<details class="allergen-legend">.*?</details>','',h,flags=re.S)
+    anchor='\n  <details class="menu-photos-toggle">'
+    if anchor in h:
+        h=h.replace(anchor,'\n  '+leg+anchor,1)
+    return h
 
 def main():
     data=json.load(open(DATA,encoding='utf-8'))
@@ -99,6 +133,7 @@ def main():
         # finder DB (shared)
         h=re.sub(r'  const DRINKS = \[.*?\n  \];', build_finder(data).replace('\\','\\\\'), h, count=1, flags=re.S)
         h=ensure_css(h)
+        h=ensure_legend(h,lang)
         open(p,'w',encoding='utf-8').write(h)
         print('built',fname)
 

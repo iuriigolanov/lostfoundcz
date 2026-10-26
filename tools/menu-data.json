@@ -65,7 +65,8 @@
             "en": "Layered &amp; set alight 🔥",
             "cz": "Vrstvený a zapálený 🔥",
             "de": "Geschichtet &amp; flambiert 🔥"
-          }
+          },
+          "allergens": "7"
         },
         {
           "name": "Caramel Flame",
@@ -248,7 +249,8 @@
             "en": "A holiday in a glass 🏝️",
             "cz": "Dovolená ve sklenici 🏝️",
             "de": "Urlaub im Glas 🏝️"
-          }
+          },
+          "allergens": "7"
         },
         {
           "name": "Shrek",
@@ -405,7 +407,8 @@
             "en": "A cherry twist on Aperol 🍒",
             "cz": "Třešňový Aperol 🍒",
             "de": "Aperol mit Kirsche 🍒"
-          }
+          },
+          "allergens": "7"
         },
         {
           "name": "Crimson Kiss",
@@ -546,7 +549,8 @@
             "en": "Fizzy &amp; fun 🧽",
             "cz": "Bublinkový a zábavný 🧽",
             "de": "Prickelnd &amp; lustig 🧽"
-          }
+          },
+          "allergens": "12"
         }
       ]
     },
@@ -581,7 +585,8 @@
               "chill",
               "classic"
             ]
-          }
+          },
+          "allergens": "7"
         },
         {
           "name": "Espresso Martini",
@@ -630,7 +635,8 @@
               "party",
               "classic"
             ]
-          }
+          },
+          "allergens": "12"
         },
         {
           "name": "Cosmopolitan",
@@ -676,7 +682,8 @@
             "vb": [
               "party"
             ]
-          }
+          },
+          "allergens": "8"
         },
         {
           "name": "Skinny Bitch / Fruity",
@@ -770,7 +777,8 @@
               "classic",
               "chill"
             ]
-          }
+          },
+          "allergens": "4,9"
         },
         {
           "name": "Vodka Red Bull",
@@ -802,7 +810,8 @@
               "classic",
               "chill"
             ]
-          }
+          },
+          "allergens": "12"
         },
         {
           "name": "Gin Tonic",
@@ -941,7 +950,8 @@
             "vb": [
               "chill"
             ]
-          }
+          },
+          "allergens": "12"
         },
         {
           "name": "Caipirinha",
@@ -988,7 +998,8 @@
               "party",
               "classic"
             ]
-          }
+          },
+          "allergens": "8"
         },
         {
           "name": "Cuba Libre",
@@ -1036,7 +1047,8 @@
               "chill",
               "classic"
             ]
-          }
+          },
+          "allergens": "7"
         },
         {
           "name": "Mojito / Fruity",
@@ -1178,7 +1190,8 @@
               "classic",
               "chill"
             ]
-          }
+          },
+          "allergens": "12"
         },
         {
           "name": "Old Fashioned",
@@ -1201,7 +1214,8 @@
               "classic",
               "chill"
             ]
-          }
+          },
+          "allergens": "12"
         },
         {
           "name": "Whiskey Sour Español",
@@ -1260,7 +1274,8 @@
               "chill",
               "photo"
             ]
-          }
+          },
+          "allergens": "12"
         },
         {
           "name": "Campari Spritz",
@@ -1283,7 +1298,8 @@
               "chill",
               "classic"
             ]
-          }
+          },
+          "allergens": "12"
         },
         {
           "name": "Sarti Spritz",
@@ -1307,7 +1323,8 @@
               "photo",
               "chill"
             ]
-          }
+          },
+          "allergens": "12"
         },
         {
           "name": "Aperol Spritz",
@@ -1333,7 +1350,8 @@
               "photo",
               "chill"
             ]
-          }
+          },
+          "allergens": "12"
         },
         {
           "name": "Mimosa",
@@ -1357,7 +1375,8 @@
               "chill",
               "classic"
             ]
-          }
+          },
+          "allergens": "12"
         },
         {
           "name": "Hugo Spritz",
@@ -1380,7 +1399,8 @@
               "chill",
               "photo"
             ]
-          }
+          },
+          "allergens": "12"
         },
         {
           "name": "Berry Muscade",
@@ -1403,7 +1423,8 @@
               "photo",
               "party"
             ]
-          }
+          },
+          "allergens": "12"
         },
         {
           "name": "Calypso",
@@ -1426,7 +1447,8 @@
             "vb": [
               "chill"
             ]
-          }
+          },
+          "allergens": "12"
         },
         {
           "name": "Luna Sanguinia",
@@ -1448,7 +1470,8 @@
             "vb": [
               "chill"
             ]
-          }
+          },
+          "allergens": "12"
         },
         {
           "name": "Kalimotxo",
@@ -1470,7 +1493,8 @@
             "vb": [
               "party"
             ]
-          }
+          },
+          "allergens": "12"
         },
         {
           "name": "Tinto Verano",
@@ -1493,7 +1517,8 @@
             "vb": [
               "chill"
             ]
-          }
+          },
+          "allergens": "12"
         }
       ]
     },
@@ -1577,7 +1602,8 @@
             "en": "Amaretto, Baileys, cream",
             "cz": "Amaretto, Baileys, smetana navrchu",
             "de": "Amaretto, Baileys, Sahne obenauf"
-          }
+          },
+          "allergens": "7"
         },
         {
           "name": "B-52",
@@ -1586,7 +1612,8 @@
             "en": "Kahlua, Baileys, triple sec",
             "cz": "Kahlua, Baileys, triple sec",
             "de": "Kahlua, Baileys, Triple Sec"
-          }
+          },
+          "allergens": "7"
         },
         {
           "name": "B-53",
@@ -1595,7 +1622,8 @@
             "en": "Kahlua, Baileys, Absinthe",
             "cz": "Kahlua, Baileys, absinth",
             "de": "Kahlua, Baileys, Absinth"
-          }
+          },
+          "allergens": "7"
         },
         {
           "name": "Sparta",
@@ -1724,7 +1752,8 @@
               "chill",
               "photo"
             ]
-          }
+          },
+          "allergens": "7"
         },
         {
           "name": "Miami 0.0%",
@@ -1879,7 +1908,8 @@
             "en": "Mixed nuts",
             "cz": "Směs oříšků",
             "de": "Gemischte Nüsse"
-          }
+          },
+          "allergens": "5,8"
         },
         {
           "name": "Chips 60g",
@@ -1888,7 +1918,8 @@
             "en": "Cheese, Onion, Salted",
             "cz": "Sýr, cibule, solené",
             "de": "Käse, Zwiebel, Gesalzen"
-          }
+          },
+          "allergens": "7"
         },
         {
           "name": "Nachos",
@@ -1897,7 +1928,8 @@
             "en": "Cheese, Salsa, Guacamole (100g + 100g sauce)",
             "cz": "Sýr, salsa, guacamole (100g + 100g omáčka)",
             "de": "Käse, Salsa, Guacamole (100 g + 100 g Soße)"
-          }
+          },
+          "allergens": "7"
         },
         {
           "name": "Hot Salted Popcorn 100g",
