@@ -832,7 +832,7 @@
         },
         {
           "name": "Porn Star Martini",
-          "price": "235",
+          "price": "240",
           "desc": {
             "en": "Vodka, lemon juice, passion fruit puree, vanilla syrup, Prosecco",
             "cz": "Vodka, citronová šťáva, pyré z marakuji, vanilkový sirup, prosecco",
@@ -1509,7 +1509,7 @@
         },
         {
           "name": "Manhattan",
-          "price": "210",
+          "price": "205",
           "desc": {
             "en": "Jameson, Martini Rosso",
             "cz": "Jameson, Martini Rosso, Angostura",
@@ -1728,7 +1728,7 @@
         },
         {
           "name": "Mimosa",
-          "price": "160",
+          "price": "165",
           "desc": {
             "en": "Prosecco, orange juice",
             "cz": "Prosecco, pomerančová šťáva",
@@ -2211,7 +2211,7 @@
         },
         {
           "name": "Gin Tonic 0.0%",
-          "price": "180",
+          "price": "175",
           "desc": {
             "en": "🥒 Gin (Non-alco), tonic, cucumber syrup",
             "cz": "🥒 Gin (nealko), tonic, okurkový sirup",
