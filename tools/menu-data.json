@@ -65,7 +65,7 @@
             "cz": "Spicy &amp; sinister 🩸",
             "de": "Spicy &amp; sinister 🩸"
           },
-          "strength": 7
+          "strength": 10
         },
         {
           "name": "Wolf Blood",
@@ -469,7 +469,7 @@
             "de": "Urlaub im Glas 🏝️"
           },
           "allergens": "7",
-          "strength": 9
+          "strength": 10
         },
         {
           "name": "Shrek",
@@ -720,7 +720,7 @@
             "cz": "Modrý kokosový chladič 🥥",
             "de": "Blauer Kokos-Cooler 🥥"
           },
-          "strength": 8
+          "strength": 10
         },
         {
           "name": "Jager Bomb",
@@ -749,7 +749,7 @@
             "cz": "Klasická bomba 💥",
             "de": "Die klassische Bombe 💥"
           },
-          "strength": 5
+          "strength": 10
         },
         {
           "name": "Sponge Bob",
@@ -1002,7 +1002,7 @@
             "cz": "Modrý ráj 🏖️",
             "de": "Blaues Paradies 🏖️"
           },
-          "strength": 9
+          "strength": 10
         },
         {
           "name": "Moscow Mule",
@@ -1032,7 +1032,7 @@
             "cz": "Zázvorový kop 🫚",
             "de": "Ingwer-Kick 🫚"
           },
-          "strength": 8
+          "strength": 10
         },
         {
           "name": "Bloody Mary",
@@ -1062,7 +1062,7 @@
             "cz": "Pikantní ikona 🍅",
             "de": "Pikante Ikone 🍅"
           },
-          "strength": 7
+          "strength": 10
         },
         {
           "name": "Vodka Red Bull",
@@ -1077,7 +1077,7 @@
             "cz": "Křídla na noc ⚡",
             "de": "Flügel für die Nacht ⚡"
           },
-          "strength": 7
+          "strength": 10
         },
         {
           "name": "Negroni",
@@ -1137,7 +1137,7 @@
             "cz": "Svěží klasika 🌿",
             "de": "Frisch &amp; klassisch 🌿"
           },
-          "strength": 9
+          "strength": 10
         },
         {
           "name": "Hendrick&#x27;s GT Premium",
@@ -1166,7 +1166,7 @@
             "cz": "Okurková elegance 🥒",
             "de": "Gurken-Eleganz 🥒"
           },
-          "strength": 8
+          "strength": 10
         },
         {
           "name": "Gin Mare GT Premium",
@@ -1195,7 +1195,7 @@
             "cz": "Středomořské byliny 🌊",
             "de": "Mediterrane Botanik 🌊"
           },
-          "strength": 8
+          "strength": 10
         },
         {
           "name": "Gin Garden",
@@ -1224,7 +1224,7 @@
             "cz": "Zahradní svěžest 🌱",
             "de": "Gartenfrisch 🌱"
           },
-          "strength": 8
+          "strength": 10
         },
         {
           "name": "Daiquiri",
@@ -1371,7 +1371,7 @@
             "cz": "Rum a cola 🥤",
             "de": "Rum &amp; Cola, richtig 🥤"
           },
-          "strength": 9
+          "strength": 10
         },
         {
           "name": "Pina Colada",
@@ -1403,7 +1403,7 @@
             "cz": "Dovolenková nálada 🥥",
             "de": "Urlaubsgefühl 🥥"
           },
-          "strength": 8
+          "strength": 10
         },
         {
           "name": "Mojito / Fruity",
@@ -1434,7 +1434,7 @@
             "cz": "Mátová svěžest 🌿",
             "de": "Minzig &amp; frisch 🌿"
           },
-          "strength": 6
+          "strength": 10
         },
         {
           "name": "Margarita / Fruity",
@@ -1552,7 +1552,7 @@
             "cz": "Grapefruitový chladič 🍊",
             "de": "Grapefruit-Cooler 🍊"
           },
-          "strength": 9
+          "strength": 10
         },
         {
           "name": "Manhattan",
@@ -1778,7 +1778,7 @@
             "cz": "Letní klasika 🧡",
             "de": "Der Sommerklassiker 🧡"
           },
-          "strength": 8
+          "strength": 10
         },
         {
           "name": "Mimosa",
@@ -1809,7 +1809,7 @@
             "cz": "Brunch favorit 🥂",
             "de": "Brunch-Liebling 🥂"
           },
-          "strength": 8
+          "strength": 10
         },
         {
           "name": "Hugo Spritz",
@@ -1839,7 +1839,7 @@
             "cz": "Bezinková svěžest 🌸",
             "de": "Holunder-frisch 🌸"
           },
-          "strength": 6
+          "strength": 10
         },
         {
           "name": "Berry Muscade",
@@ -1899,7 +1899,7 @@
             "cz": "Tropické víno 🏝️",
             "de": "Tropischer Weißwein 🏝️"
           },
-          "strength": 8
+          "strength": 10
         },
         {
           "name": "Luna Sanguinia",
@@ -1957,7 +1957,7 @@
             "cz": "Španělská klasika 🍷",
             "de": "Spanischer Klassiker 🍷"
           },
-          "strength": 7
+          "strength": 10
         },
         {
           "name": "Tinto Verano",
@@ -1987,7 +1987,7 @@
             "cz": "Letní červené 🍒",
             "de": "Sommer-Rot 🍒"
           },
-          "strength": 4
+          "strength": 10
         }
       ]
     },
