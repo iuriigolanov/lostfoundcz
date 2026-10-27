@@ -64,7 +64,8 @@
             "en": "Spicy &amp; sinister 🩸",
             "cz": "Spicy &amp; sinister 🩸",
             "de": "Spicy &amp; sinister 🩸"
-          }
+          },
+          "strength": 7
         },
         {
           "name": "Wolf Blood",
@@ -78,7 +79,8 @@
             "en": "Howl at the moon 🐺",
             "cz": "Howl at the moon 🐺",
             "de": "Howl at the moon 🐺"
-          }
+          },
+          "strength": 15
         },
         {
           "name": "Dirty Shirley",
@@ -138,7 +140,7 @@
         },
         {
           "name": "Hot Wine",
-          "price": "175",
+          "price": "130",
           "desc": {
             "en": "Hot spiced red wine",
             "cz": "Horké kořeněné červené víno",
@@ -245,7 +247,8 @@
             "en": "Our flaming showstopper 🔥",
             "cz": "Naše hořící show 🔥",
             "de": "Unsere flammende Show 🔥"
-          }
+          },
+          "strength": 33
         },
         {
           "name": "Lamborghini",
@@ -274,7 +277,8 @@
             "cz": "Vrstvený a zapálený 🔥",
             "de": "Geschichtet &amp; flambiert 🔥"
           },
-          "allergens": "7"
+          "allergens": "7",
+          "strength": 19
         },
         {
           "name": "Caramel Flame",
@@ -288,7 +292,8 @@
             "en": "Toasted caramel, up in flames 🔥",
             "cz": "Karamel v plamenech 🔥",
             "de": "Karamell in Flammen 🔥"
-          }
+          },
+          "strength": 17
         },
         {
           "name": "Skittles",
@@ -317,7 +322,8 @@
             "en": "Tastes just like the candy 🌈",
             "cz": "Chutná jako ty bonbony 🌈",
             "de": "Schmeckt wie die Bonbons 🌈"
-          }
+          },
+          "strength": 14
         },
         {
           "name": "Pirate Dream",
@@ -344,7 +350,8 @@
             "en": "Tropical treasure 🏴‍☠️",
             "cz": "Tropický poklad 🏴‍☠️",
             "de": "Tropischer Schatz 🏴‍☠️"
-          }
+          },
+          "strength": 11
         },
         {
           "name": "Killer",
@@ -371,7 +378,8 @@
             "en": "Deceptively smooth 😈",
             "cz": "Zákeřně jemný 😈",
             "de": "Hinterhältig weich 😈"
-          }
+          },
+          "strength": 12
         },
         {
           "name": "Long Island",
@@ -399,7 +407,8 @@
             "en": "Five spirits, one legend 🥃",
             "cz": "Pět lihovin, jedna legenda 🥃",
             "de": "Fünf Spirituosen, eine Legende 🥃"
-          }
+          },
+          "strength": 13
         },
         {
           "name": "Apple Whiskey Sour",
@@ -428,7 +437,8 @@
             "en": "Crisp apple, Jack's kick 🍏",
             "cz": "Svěží jablko s whiskey 🍏",
             "de": "Frischer Apfel mit Whiskey 🍏"
-          }
+          },
+          "strength": 10
         },
         {
           "name": "Tropical Paradise",
@@ -458,7 +468,8 @@
             "cz": "Dovolená ve sklenici 🏝️",
             "de": "Urlaub im Glas 🏝️"
           },
-          "allergens": "7"
+          "allergens": "7",
+          "strength": 9
         },
         {
           "name": "Shrek",
@@ -487,7 +498,8 @@
             "en": "Big, green &amp; boozy 💚",
             "cz": "Velký, zelený a pořádný 💚",
             "de": "Groß, grün &amp; kräftig 💚"
-          }
+          },
+          "strength": 19
         },
         {
           "name": "Don&#x27;t Be Pussy",
@@ -501,7 +513,8 @@
             "en": "Only for the brave 🌶️",
             "cz": "Jen pro odvážné 🌶️",
             "de": "Nur für Mutige 🌶️"
-          }
+          },
+          "strength": 51
         },
         {
           "name": "Fitness",
@@ -529,7 +542,8 @@
             "en": "Guilt-free (not really) 💪",
             "cz": "Bez výčitek (skoro) 💪",
             "de": "Ohne Reue (fast) 💪"
-          }
+          },
+          "strength": 16
         },
         {
           "name": "Wolf Blood",
@@ -557,7 +571,8 @@
             "en": "Blood-red &amp; wild 🐺",
             "cz": "Krvavě rudý a divoký 🐺",
             "de": "Blutrot &amp; wild 🐺"
-          }
+          },
+          "strength": 15
         },
         {
           "name": "Strawberry Boom",
@@ -586,7 +601,8 @@
             "en": "Berry explosion 🍓",
             "cz": "Jahodová exploze 🍓",
             "de": "Erdbeer-Explosion 🍓"
-          }
+          },
+          "strength": 15
         },
         {
           "name": "Cherry Aperol",
@@ -616,7 +632,8 @@
             "cz": "Třešňový Aperol 🍒",
             "de": "Aperol mit Kirsche 🍒"
           },
-          "allergens": "7"
+          "allergens": "7",
+          "strength": 12
         },
         {
           "name": "Crimson Kiss",
@@ -644,7 +661,8 @@
             "en": "Smooth, sweet &amp; scarlet 💋",
             "cz": "Jemný, sladký, šarlatový 💋",
             "de": "Weich, süß &amp; scharlachrot 💋"
-          }
+          },
+          "strength": 12
         },
         {
           "name": "Cold Night",
@@ -671,7 +689,8 @@
             "en": "Spiced &amp; cozy 🍎",
             "cz": "Kořeněný a hřejivý 🍎",
             "de": "Würzig &amp; wärmend 🍎"
-          }
+          },
+          "strength": 10
         },
         {
           "name": "Panagel Tonic",
@@ -700,7 +719,8 @@
             "en": "Blue coconut cooler 🥥",
             "cz": "Modrý kokosový chladič 🥥",
             "de": "Blauer Kokos-Cooler 🥥"
-          }
+          },
+          "strength": 8
         },
         {
           "name": "Jager Bomb",
@@ -728,7 +748,8 @@
             "en": "The classic bomb 💥",
             "cz": "Klasická bomba 💥",
             "de": "Die klassische Bombe 💥"
-          }
+          },
+          "strength": 5
         },
         {
           "name": "Sponge Bob",
@@ -758,7 +779,8 @@
             "cz": "Bublinkový a zábavný 🧽",
             "de": "Prickelnd &amp; lustig 🧽"
           },
-          "allergens": "12"
+          "allergens": "12",
+          "strength": 13
         }
       ]
     },
@@ -799,7 +821,8 @@
             "en": "Creamy &amp; dreamy 🥛",
             "cz": "Krémový sen 🥛",
             "de": "Cremig &amp; sanft 🥛"
-          }
+          },
+          "strength": 22
         },
         {
           "name": "Espresso Martini",
@@ -828,7 +851,8 @@
             "en": "Your coffee buzz ☕",
             "cz": "Kávový restart ☕",
             "de": "Dein Koffein-Kick ☕"
-          }
+          },
+          "strength": 16
         },
         {
           "name": "Porn Star Martini",
@@ -859,7 +883,8 @@
             "en": "Passion in a glass 😏",
             "cz": "Vášeň ve skle 😏",
             "de": "Leidenschaft im Glas 😏"
-          }
+          },
+          "strength": 15
         },
         {
           "name": "Cosmopolitan",
@@ -888,7 +913,8 @@
             "en": "The city classic 💅",
             "cz": "Městská klasika 💅",
             "de": "Der City-Klassiker 💅"
-          }
+          },
+          "strength": 13
         },
         {
           "name": "Sex on the Bitch",
@@ -916,7 +942,8 @@
             "en": "Fruity &amp; flirty 🍑",
             "cz": "Ovocné svádění 🍑",
             "de": "Fruchtig &amp; frech 🍑"
-          }
+          },
+          "strength": 13
         },
         {
           "name": "Skinny Bitch / Fruity",
@@ -944,7 +971,8 @@
             "en": "Light &amp; guilt-free 🤍",
             "cz": "Lehké bez výčitek 🤍",
             "de": "Leicht &amp; ohne Reue 🤍"
-          }
+          },
+          "strength": 10
         },
         {
           "name": "Blue Lagoon",
@@ -973,7 +1001,8 @@
             "en": "Blue paradise 🏖️",
             "cz": "Modrý ráj 🏖️",
             "de": "Blaues Paradies 🏖️"
-          }
+          },
+          "strength": 9
         },
         {
           "name": "Moscow Mule",
@@ -1002,7 +1031,8 @@
             "en": "Ginger kick 🫚",
             "cz": "Zázvorový kop 🫚",
             "de": "Ingwer-Kick 🫚"
-          }
+          },
+          "strength": 8
         },
         {
           "name": "Bloody Mary",
@@ -1031,7 +1061,8 @@
             "en": "Spicy brunch icon 🍅",
             "cz": "Pikantní ikona 🍅",
             "de": "Pikante Ikone 🍅"
-          }
+          },
+          "strength": 7
         },
         {
           "name": "Vodka Red Bull",
@@ -1045,7 +1076,8 @@
             "en": "Wings for the night ⚡",
             "cz": "Křídla na noc ⚡",
             "de": "Flügel für die Nacht ⚡"
-          }
+          },
+          "strength": 7
         },
         {
           "name": "Negroni",
@@ -1074,7 +1106,8 @@
             "en": "Bittersweet &amp; bold 🧡",
             "cz": "Hořko-sladká klasika 🧡",
             "de": "Bittersüß &amp; stark 🧡"
-          }
+          },
+          "strength": 27
         },
         {
           "name": "Gin Tonic",
@@ -1103,7 +1136,8 @@
             "en": "Crisp &amp; classic 🌿",
             "cz": "Svěží klasika 🌿",
             "de": "Frisch &amp; klassisch 🌿"
-          }
+          },
+          "strength": 9
         },
         {
           "name": "Hendrick&#x27;s GT Premium",
@@ -1131,7 +1165,8 @@
             "en": "Cucumber elegance 🥒",
             "cz": "Okurková elegance 🥒",
             "de": "Gurken-Eleganz 🥒"
-          }
+          },
+          "strength": 8
         },
         {
           "name": "Gin Mare GT Premium",
@@ -1159,7 +1194,8 @@
             "en": "Mediterranean botanicals 🌊",
             "cz": "Středomořské byliny 🌊",
             "de": "Mediterrane Botanik 🌊"
-          }
+          },
+          "strength": 8
         },
         {
           "name": "Gin Garden",
@@ -1187,7 +1223,8 @@
             "en": "Garden fresh 🌱",
             "cz": "Zahradní svěžest 🌱",
             "de": "Gartenfrisch 🌱"
-          }
+          },
+          "strength": 8
         },
         {
           "name": "Daiquiri",
@@ -1215,7 +1252,8 @@
             "en": "Simply perfect 🍈",
             "cz": "Prostě dokonalý 🍈",
             "de": "Einfach perfekt 🍈"
-          }
+          },
+          "strength": 19
         },
         {
           "name": "Bengal",
@@ -1273,7 +1311,8 @@
             "en": "Brazil in a glass 🇧🇷",
             "cz": "Brazílie ve skle 🇧🇷",
             "de": "Brasilien im Glas 🇧🇷"
-          }
+          },
+          "strength": 13
         },
         {
           "name": "Mai Tai",
@@ -1302,7 +1341,8 @@
             "en": "Tiki classic 🗿",
             "cz": "Tiki klasika 🗿",
             "de": "Tiki-Klassiker 🗿"
-          }
+          },
+          "strength": 11
         },
         {
           "name": "Cuba Libre",
@@ -1330,7 +1370,8 @@
             "en": "Rum &amp; cola done right 🥤",
             "cz": "Rum a cola 🥤",
             "de": "Rum &amp; Cola, richtig 🥤"
-          }
+          },
+          "strength": 9
         },
         {
           "name": "Pina Colada",
@@ -1361,7 +1402,8 @@
             "en": "Holiday vibes 🥥",
             "cz": "Dovolenková nálada 🥥",
             "de": "Urlaubsgefühl 🥥"
-          }
+          },
+          "strength": 8
         },
         {
           "name": "Mojito / Fruity",
@@ -1391,7 +1433,8 @@
             "en": "Minty &amp; fresh 🌿",
             "cz": "Mátová svěžest 🌿",
             "de": "Minzig &amp; frisch 🌿"
-          }
+          },
+          "strength": 6
         },
         {
           "name": "Margarita / Fruity",
@@ -1419,7 +1462,8 @@
             "en": "Tequila classic 🧂",
             "cz": "Tequilová klasika 🧂",
             "de": "Tequila-Klassiker 🧂"
-          }
+          },
+          "strength": 16
         },
         {
           "name": "Tequila Sunrise",
@@ -1448,7 +1492,8 @@
             "en": "Sunset in a glass 🌅",
             "cz": "Západ slunce ve skle 🌅",
             "de": "Sonnenuntergang im Glas 🌅"
-          }
+          },
+          "strength": 15
         },
         {
           "name": "Envy",
@@ -1476,7 +1521,8 @@
             "en": "Tropical blue 💙",
             "cz": "Tropická modř 💙",
             "de": "Tropisches Blau 💙"
-          }
+          },
+          "strength": 10
         },
         {
           "name": "Paloma",
@@ -1505,7 +1551,8 @@
             "en": "Grapefruit cooler 🍊",
             "cz": "Grapefruitový chladič 🍊",
             "de": "Grapefruit-Cooler 🍊"
-          }
+          },
+          "strength": 9
         },
         {
           "name": "Manhattan",
@@ -1534,7 +1581,8 @@
             "en": "Timeless &amp; strong 🎩",
             "cz": "Nadčasová síla 🎩",
             "de": "Zeitlos &amp; stark 🎩"
-          }
+          },
+          "strength": 29
         },
         {
           "name": "Old Fashioned",
@@ -1563,7 +1611,8 @@
             "en": "The original 🥃",
             "cz": "Originál 🥃",
             "de": "Das Original 🥃"
-          }
+          },
+          "strength": 19
         },
         {
           "name": "Whiskey Sour Español",
@@ -1591,7 +1640,8 @@
             "en": "Smooth &amp; sour 🍋",
             "cz": "Jemně kyselý 🍋",
             "de": "Weich &amp; sauer 🍋"
-          }
+          },
+          "strength": 17
         }
       ]
     },
@@ -1633,7 +1683,8 @@
             "en": "Zesty &amp; bubbly 🍋",
             "cz": "Svěží bublinky 🍋",
             "de": "Spritzig &amp; frisch 🍋"
-          }
+          },
+          "strength": 14
         },
         {
           "name": "Campari Spritz",
@@ -1662,7 +1713,8 @@
             "en": "Bitter &amp; bright 🧡",
             "cz": "Hořko-svěží 🧡",
             "de": "Bitter &amp; spritzig 🧡"
-          }
+          },
+          "strength": 12
         },
         {
           "name": "Sarti Spritz",
@@ -1692,7 +1744,8 @@
             "en": "Berry bubbles 🍓",
             "cz": "Bobulové bublinky 🍓",
             "de": "Beerige Bläschen 🍓"
-          }
+          },
+          "strength": 10
         },
         {
           "name": "Aperol Spritz",
@@ -1724,7 +1777,8 @@
             "en": "The summer classic 🧡",
             "cz": "Letní klasika 🧡",
             "de": "Der Sommerklassiker 🧡"
-          }
+          },
+          "strength": 8
         },
         {
           "name": "Mimosa",
@@ -1754,7 +1808,8 @@
             "en": "Brunch favourite 🥂",
             "cz": "Brunch favorit 🥂",
             "de": "Brunch-Liebling 🥂"
-          }
+          },
+          "strength": 8
         },
         {
           "name": "Hugo Spritz",
@@ -1783,7 +1838,8 @@
             "en": "Elderflower fresh 🌸",
             "cz": "Bezinková svěžest 🌸",
             "de": "Holunder-frisch 🌸"
-          }
+          },
+          "strength": 6
         },
         {
           "name": "Berry Muscade",
@@ -1812,7 +1868,8 @@
             "en": "Berry fizz 🍓",
             "cz": "Bobulová šumivost 🍓",
             "de": "Beeren-Prickeln 🍓"
-          }
+          },
+          "strength": 10
         },
         {
           "name": "Calypso",
@@ -1841,7 +1898,8 @@
             "en": "Tropical white 🏝️",
             "cz": "Tropické víno 🏝️",
             "de": "Tropischer Weißwein 🏝️"
-          }
+          },
+          "strength": 8
         },
         {
           "name": "Luna Sanguinia",
@@ -1869,7 +1927,8 @@
             "en": "Dark &amp; fruity 🌙",
             "cz": "Temné ovoce 🌙",
             "de": "Dunkel &amp; fruchtig 🌙"
-          }
+          },
+          "strength": 11
         },
         {
           "name": "Kalimotxo",
@@ -1897,7 +1956,8 @@
             "en": "Spanish street classic 🍷",
             "cz": "Španělská klasika 🍷",
             "de": "Spanischer Klassiker 🍷"
-          }
+          },
+          "strength": 7
         },
         {
           "name": "Tinto Verano",
@@ -1926,7 +1986,8 @@
             "en": "Summer red 🍒",
             "cz": "Letní červené 🍒",
             "de": "Sommer-Rot 🍒"
-          }
+          },
+          "strength": 4
         }
       ]
     },
@@ -1947,7 +2008,8 @@
             "en": "🧭 4 shots: L-Limoncello, O-Orange Jägermeister, S-Slivovice, T-Tequila",
             "cz": "🧭 4 panáky: L-Limoncello, O-Orange Jägermeister, S-Slivovice, T-Tequila",
             "de": "🧭 4 Shots: L-Limoncello, O-Orange Jägermeister, S-Slivovice, T-Tequila"
-          }
+          },
+          "strength": 37
         },
         {
           "name": "Rainbow",
@@ -1956,7 +2018,8 @@
             "en": "🌈 6 shots: Vodka, Becherovka, Limoncello, Mint Liqueur, Božkov Liqueur, Tequila",
             "cz": "🌈 6 panáků: Vodka, Becherovka, Limoncello, Mátový likér, Božkov likér, Tequila",
             "de": "🌈 6 Shots: Wodka, Becherovka, Limoncello, Minzlikör, Božkov-Likör, Tequila"
-          }
+          },
+          "strength": 27
         },
         {
           "name": "Czech Set",
@@ -1965,7 +2028,8 @@
             "en": "🇨🇿 6 shots: Božkov green, Božkov blue, Slivovice, Hruškovice, Becherovka, Fernet",
             "cz": "🇨🇿 6 panáků: Božkov green, Božkov blue, Slivovice, Hruškovice, Becherovka, Fernet",
             "de": "🇨🇿 6 Shots: Božkov green, Božkov blue, Slivovice, Hruškovice, Becherovka, Fernet"
-          }
+          },
+          "strength": 34
         },
         {
           "name": "Suicide Set",
@@ -1974,7 +2038,8 @@
             "en": "☠️ 6 shots: Stroh, Green Absinth, Red chilli Absinth, Cachaça, Metaxa, Sambuca",
             "cz": "☠️ 6 panáků: Stroh, Zelený absint, Red chilli absint, Cachaça, Metaxa, Sambuca",
             "de": "☠️ 6 Shots: Stroh, Grüner Absinth, Red Chilli Absinth, Cachaça, Metaxa, Sambuca"
-          }
+          },
+          "strength": 56
         },
         {
           "name": "Stoplights (3 shots)",
@@ -1983,7 +2048,8 @@
             "en": "🚦 Vodka + cranberry juice; Limoncello; lemon juice + mint liqueur",
             "cz": "🚦 Limetková &amp; brusinková šťáva + vodka; pyré z marakuji + Bacardi Bianco; citronová šťáva + mátový likér + tequila",
             "de": "🚦 Cranberry- &amp; Limettensaft + Wodka; Passionsfruchtpüree + Bacardi Bianco; Zitronensaft + Minzlikör + Tequila"
-          }
+          },
+          "strength": 24
         },
         {
           "name": "Mozart Balls",
@@ -1992,7 +2058,8 @@
             "en": "🍫 Stroh, Chocolates",
             "cz": "🍫 Stroh, čokoláda",
             "de": "🍫 Stroh, Pralinen"
-          }
+          },
+          "strength": 80
         },
         {
           "name": "Chupito 1+1",
@@ -2001,7 +2068,8 @@
             "en": "🥃 Vodka, lime cordial syrup",
             "cz": "🥃 Vodka, limetková šťáva, cordial sirup",
             "de": "🥃 Wodka, Limettensaft, Cordial-Sirup"
-          }
+          },
+          "strength": 19
         },
         {
           "name": "Blow Job",
@@ -2011,7 +2079,8 @@
             "cz": "😏 Amaretto, Baileys, smetana navrchu",
             "de": "😏 Amaretto, Baileys, Sahne obenauf"
           },
-          "allergens": "7"
+          "allergens": "7",
+          "strength": 11
         },
         {
           "name": "B-52",
@@ -2021,7 +2090,8 @@
             "cz": "✈️ Kahlua, Baileys, triple sec",
             "de": "✈️ Kahlua, Baileys, Triple Sec"
           },
-          "allergens": "7"
+          "allergens": "7",
+          "strength": 22
         },
         {
           "name": "B-53",
@@ -2031,7 +2101,8 @@
             "cz": "🔥 Kahlua, Baileys, absinth",
             "de": "🔥 Kahlua, Baileys, Absinth"
           },
-          "allergens": "7"
+          "allergens": "7",
+          "strength": 36
         },
         {
           "name": "Sparta",
@@ -2040,7 +2111,8 @@
             "en": "⚔️ Stroh, Absinthe, Tequila Silver",
             "cz": "⚔️ Stroh, absinth, Tequila Silver",
             "de": "⚔️ Stroh, Absinth, Tequila Silver"
-          }
+          },
+          "strength": 59
         },
         {
           "name": "Boyarskiy",
@@ -2049,7 +2121,8 @@
             "en": "🌶️ Vodka, grenadine, tabasco",
             "cz": "🌶️ Vodka, grenadina, tabasco",
             "de": "🌶️ Wodka, Grenadine, Tabasco"
-          }
+          },
+          "strength": 18
         }
       ]
     },
