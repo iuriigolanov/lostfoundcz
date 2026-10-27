@@ -22,7 +22,8 @@
             "en": "Raise the dead 🧟",
             "cz": "Raise the dead 🧟",
             "de": "Raise the dead 🧟"
-          }
+          },
+          "strength": 20
         },
         {
           "name": "Blood Moon",
@@ -36,7 +37,8 @@
             "en": "Under the full moon 🌕",
             "cz": "Under the full moon 🌕",
             "de": "Under the full moon 🌕"
-          }
+          },
+          "strength": 12
         },
         {
           "name": "Vampire Kiss",
@@ -50,7 +52,8 @@
             "en": "One bite &amp; you're hooked 🧛",
             "cz": "One bite &amp; you're hooked 🧛",
             "de": "One bite &amp; you're hooked 🧛"
-          }
+          },
+          "strength": 14
         },
         {
           "name": "Bloody Mary",
@@ -94,7 +97,8 @@
             "en": "Wickedly sweet 🍒",
             "cz": "Wickedly sweet 🍒",
             "de": "Wickedly sweet 🍒"
-          }
+          },
+          "strength": 11
         },
         {
           "name": "Candy Killer",
@@ -108,7 +112,8 @@
             "en": "Trick or treat 🍬",
             "cz": "Trick or treat 🍬",
             "de": "Trick or treat 🍬"
-          }
+          },
+          "strength": 12
         },
         {
           "name": "Blue Lady",
@@ -122,7 +127,8 @@
             "en": "A ghostly glow 👻",
             "cz": "A ghostly glow 👻",
             "de": "A ghostly glow 👻"
-          }
+          },
+          "strength": 14
         },
         {
           "name": "Joker",
@@ -136,7 +142,8 @@
             "en": "Why so serious? 🃏",
             "cz": "Why so serious? 🃏",
             "de": "Why so serious? 🃏"
-          }
+          },
+          "strength": 16
         },
         {
           "name": "Hot Wine",
@@ -150,7 +157,8 @@
             "en": "Warm your bones 🔥",
             "cz": "Warm your bones 🔥",
             "de": "Warm your bones 🔥"
-          }
+          },
+          "strength": 12
         },
         {
           "name": "Black Cat",
@@ -164,7 +172,8 @@
             "en": "On fire 🐈‍⬛",
             "cz": "On fire 🐈‍⬛",
             "de": "On fire 🐈‍⬛"
-          }
+          },
+          "strength": 30
         },
         {
           "name": "Brain Hemorrhage",
@@ -178,7 +187,8 @@
             "en": "Not for the squeamish 🧠",
             "cz": "Not for the squeamish 🧠",
             "de": "Not for the squeamish 🧠"
-          }
+          },
+          "strength": 15
         },
         {
           "name": "Black Widow",
@@ -192,7 +202,8 @@
             "en": "Deadly &amp; dark 🕷️",
             "cz": "Deadly &amp; dark 🕷️",
             "de": "Deadly &amp; dark 🕷️"
-          }
+          },
+          "strength": 25
         },
         {
           "name": "Green Goblin",
@@ -206,7 +217,8 @@
             "en": "Mischief in a shot 👺",
             "cz": "Mischief in a shot 👺",
             "de": "Mischief in a shot 👺"
-          }
+          },
+          "strength": 25
         }
       ]
     },
@@ -1282,7 +1294,8 @@
             "en": "Spiced &amp; tropical 🌶️",
             "cz": "Kořeněné tropy 🌶️",
             "de": "Würzig &amp; tropisch 🌶️"
-          }
+          },
+          "strength": 12
         },
         {
           "name": "Caipirinha",
