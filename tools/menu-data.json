@@ -487,13 +487,13 @@
           "name": "Shrek",
           "price": "260",
           "desc": {
-            "en": "Vodka, Melon liqueur, Malibu, Blue Curaçao, pineapple juice",
-            "cz": "Vodka, melounový likér, Malibu, Blue Curaçao, ananasová šťáva",
-            "de": "Wodka, Melonenlikör, Malibu, Blue Curaçao, Ananassaft"
+            "en": "Vodka, Absinth, Malibu, Blue Curaçao, pineapple juice",
+            "cz": "Vodka, Absint, Malibu, Blue Curaçao, ananasová šťáva",
+            "de": "Wodka, Absinth, Malibu, Blue Curaçao, Ananassaft"
           },
           "finder": {
             "name": "Shrek",
-            "d": "Vodka, Melon liqueur, Malibu, Blue Curaçao, pineapple",
+            "d": "Vodka, Absinth, Malibu, Blue Curaçao, pineapple",
             "sp": "vodka",
             "fl": [
               "fruity",
