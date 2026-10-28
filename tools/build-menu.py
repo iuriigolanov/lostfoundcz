@@ -25,6 +25,17 @@ def hl(desc):
     # highlight 2x as a perk badge (accordion only)
     return re.sub(r'(?<![\w])2x(?=[ \b])', '<span class="mi-x2">2×</span>', desc)
 
+LF_SCALE={
+ 'S':'<span class="lf-str" title="Strong"><b>💪</b><b>💪</b><b>💪</b></span>',
+ 'M':'<span class="lf-str" title="Medium"><b>💪</b><b>💪</b><i>💪</i></span>',
+ 'L':'<span class="lf-str" title="Light"><b>💪</b><i>💪</i><i>💪</i></span>',
+ '0':'<span class="lf-str lf-zero" title="Non-alcoholic">0.0%</span>',
+}
+STR_LEGEND_WORDS={'en':('Strength','light','medium','strong'),'cz':('Síla','lehký','střední','silný'),'de':('Stärke','leicht','mittel','stark')}
+def build_str_legend(lang):
+    lab,lt,md,st=STR_LEGEND_WORDS[lang]
+    return ('<div class="lf-legend"><b>'+lab+':</b> '+LF_SCALE['L']+' '+lt+' &nbsp; '+LF_SCALE['M']+' '+md+' &nbsp; '+LF_SCALE['S']+' '+st+'</div>')
+
 def mi_html(item,lang):
     name=item['name']; price=item.get('price')
     desc=hl(item['desc'][lang])
@@ -35,8 +46,8 @@ def mi_html(item,lang):
         _ns=[int(x) for x in allerg.replace(' ','').split(',') if x]
         _tip='; '.join(ALLERG_14[lang][i-1] for i in _ns)
         nm+=f'<span class="mi-allerg" tabindex="0" role="note" aria-label="Allergens: {_tip}" data-tip="{_tip}">({allerg})<i class="mi-i">i</i></span>'
-    abv=item.get('strength')
-    if abv: nm+=f'<span class="mi-abv" title="Approx. ABV">~{abv}%</span>'
+    sc=item.get('scale')
+    if sc: nm+=LF_SCALE.get(sc,'')
     head=nm+'<span class="mi-dots"></span>'
     if price not in (None,''): head+=f'<span class="mi-price">{price}</span>'
     body=f'        <div class="mi-head">{head}</div>\n        <div class="mi-desc">{desc}</div>\n'
@@ -110,8 +121,9 @@ def ensure_css(h):
     return h.replace('</style>', CSS_RULE+'</style>',1)
 
 def ensure_legend(h,lang):
-    leg=build_legend(lang)
+    leg=build_str_legend(lang)+build_legend(lang)
     # remove any existing legend, then insert before the menu-photos toggle
+    h=re.sub(r'\s*<div class="lf-legend">.*?</div>','',h,flags=re.S)
     h=re.sub(r'\s*<details class="allergen-legend">.*?</details>','',h,flags=re.S)
     anchor='\n  <details class="menu-photos-toggle">'
     if anchor in h:
