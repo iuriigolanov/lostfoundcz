@@ -71,7 +71,7 @@ footer a{color:var(--muted)}
   <div class="crumbs"><a href="/">Lost &amp; Found</a> › Hookah lounge</div>
   <h1>Hookah &amp; shisha lounge in Prague</h1>
   <p class="lead">Lost &amp; Found is a cocktail bar and shisha lounge in the centre of Prague — premium hookah, 60 cocktails and late-night neon vibes on Žitná street, minutes from Wenceslas Square.</p>
-  <ul class="facts"><li>🌿 Every hookah 535 Kč</li><li>🕒 Open till 3 AM Fri–Sat</li><li>🎲 Free board games, darts &amp; table football</li><li>🏳️‍🌈 LGBT-friendly</li><li>⭐ 4.9 on Google, 1,300+ reviews</li></ul>
+  <ul class="facts"><li>🌿 Every hookah 535 Kč</li><li>🕒 Open till 3 AM Fri–Sat</li><li>🎲 Free board games, darts &amp; table football</li><li>🏳️‍🌈 LGBT-friendly</li><li>⭐ 4.9 on Google, 1,330+ reviews</li></ul>
   <h2>Hookah menu</h2>
   <p>All blends are prepared by our hookah master. One price for every flavour.</p>
   <ul class="items">
@@ -105,5 +105,8 @@ footer a{color:var(--muted)}
   Open: Sun–Tue 18–00 | Wed–Thu 17–01 | Fri–Sat 17–03<br>
   <a href="/">Home</a> · <a href="/menu/">Menu</a> · <a href="/hookah/">Hookah</a> · <a href="/halloween/">Halloween</a> · <a href="/cs/">Česky</a> · <a href="/de/">Deutsch</a> · <a href="/privacy.html">Privacy</a>
 </div></footer>
+<!-- lf-lang-banner -->
+<style>#lf-lang-bar{display:flex;align-items:center;justify-content:center;gap:14px;padding:10px 16px;background:linear-gradient(90deg,rgba(200,85,181,.18),rgba(0,200,224,.12));border-bottom:1px solid rgba(200,85,181,.4);font-size:14px;text-align:center;font-family:'Inter',system-ui,sans-serif}#lf-lang-bar a{color:#fff;text-decoration:none;font-weight:700;letter-spacing:.01em}#lf-lang-bar a:hover{text-decoration:underline}#lf-lang-bar .lf-x{cursor:pointer;color:#9aa;font-size:19px;line-height:1;padding:0 4px;background:none;border:none}@media(max-width:560px){#lf-lang-bar{font-size:13px;gap:10px;padding:9px 12px}}</style>
+<script>(function(){try{var p=location.pathname;var onCS=/^\/cs(\/|$)/.test(p),onDE=/^\/de(\/|$)/.test(p);var L=(navigator.languages&&navigator.languages.length?navigator.languages:[navigator.language||'']).map(function(s){return(s||'').toLowerCase();});var wDE=L.some(function(l){return l.indexOf('de')===0;}),wCS=L.some(function(l){return l.indexOf('cs')===0||l.indexOf('cz')===0;});var t=null;if(wDE&&!onDE)t={h:'/de/',x:'🇩🇪 Diese Seite auf Deutsch anzeigen →',k:'de'};else if(wCS&&!onCS)t={h:'/cs/',x:'🇨🇿 Zobrazit tuto stránku česky →',k:'cs'};if(!t)return;try{if(localStorage.getItem('lf-lh-'+t.k)==='1')return;}catch(e){}var b=document.createElement('div');b.id='lf-lang-bar';var a=document.createElement('a');a.href=t.h;a.textContent=t.x;var c=document.createElement('button');c.className='lf-x';c.setAttribute('aria-label','Close');c.textContent='×';c.onclick=function(){b.parentNode&&b.parentNode.removeChild(b);try{localStorage.setItem('lf-lh-'+t.k,'1');}catch(e){}};b.appendChild(a);b.appendChild(c);document.body.insertBefore(b,document.body.firstChild);}catch(e){}})();</script>
 </body>
 </html>
