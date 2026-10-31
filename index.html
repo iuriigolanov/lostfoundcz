@@ -443,8 +443,8 @@ footer .fine{color:var(--muted);font-size:12px;margin-top:16px;line-height:1.8}
 
 @media(max-width:860px){
   .nav-links{position:fixed;inset:64px 0 auto 0;flex-direction:column;background:rgba(0,0,0,.96);
-    padding:24px;gap:20px;border-bottom:1px solid var(--line);transform:translateY(-120%);transition:transform .3s}
-  .nav-links.open{transform:translateY(0)}
+    padding:24px;gap:20px;border-bottom:1px solid var(--line);transform:translateY(-120%);visibility:hidden;transition:transform .3s,visibility 0s linear .3s}
+  .nav-links.open{transform:translateY(0);visibility:visible;transition:transform .3s}
   .burger{display:block;background:none;border:none;color:var(--ink);font-size:26px;cursor:pointer}
   .about-grid,.visit-grid{grid-template-columns:1fr}
   section{padding:60px 0}
