@@ -4,12 +4,13 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://lostfoundcz.com/</loc>
-    <lastmod>2026-10-27</lastmod>
+    <lastmod>2026-11-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://lostfoundcz.com/"/>
     <xhtml:link rel="alternate" hreflang="cs" href="https://lostfoundcz.com/cs/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://lostfoundcz.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://lostfoundcz.com/ua/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://lostfoundcz.com/"/>
     <image:image><image:loc>https://lostfoundcz.com/img/hero-bg.jpg</image:loc></image:image>
     <image:image><image:loc>https://lostfoundcz.com/img/logo.png</image:loc></image:image>
@@ -32,12 +33,13 @@
   </url>
   <url>
     <loc>https://lostfoundcz.com/cs/</loc>
-    <lastmod>2026-10-27</lastmod>
+    <lastmod>2026-11-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://lostfoundcz.com/"/>
     <xhtml:link rel="alternate" hreflang="cs" href="https://lostfoundcz.com/cs/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://lostfoundcz.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://lostfoundcz.com/ua/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://lostfoundcz.com/"/>
     <image:image><image:loc>https://lostfoundcz.com/img/hero-bg.jpg</image:loc></image:image>
     <image:image><image:loc>https://lostfoundcz.com/img/logo.png</image:loc></image:image>
@@ -60,12 +62,42 @@
   </url>
   <url>
     <loc>https://lostfoundcz.com/de/</loc>
-    <lastmod>2026-10-27</lastmod>
+    <lastmod>2026-11-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://lostfoundcz.com/"/>
     <xhtml:link rel="alternate" hreflang="cs" href="https://lostfoundcz.com/cs/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://lostfoundcz.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://lostfoundcz.com/ua/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lostfoundcz.com/"/>
+    <image:image><image:loc>https://lostfoundcz.com/img/hero-bg.jpg</image:loc></image:image>
+    <image:image><image:loc>https://lostfoundcz.com/img/logo.png</image:loc></image:image>
+    <image:image><image:loc>https://lostfoundcz.com/og-image.jpg</image:loc></image:image>
+    <image:image><image:loc>https://lostfoundcz.com/img/events/20260925_20260926.jpg</image:loc></image:image>
+    <image:image><image:loc>https://lostfoundcz.com/img/events/tobias-mann-1710.jpg</image:loc></image:image>
+    <image:image><image:loc>https://lostfoundcz.com/img/events/lost-party-2310.jpg</image:loc></image:image>
+    <image:image><image:loc>https://lostfoundcz.com/img/events/lost-halloween-3110.jpg</image:loc></image:image>
+    <image:image><image:loc>https://lostfoundcz.com/img/events/techno-0910.jpg</image:loc></image:image>
+    <image:image><image:loc>https://lostfoundcz.com/img/events/techno-1610.jpg</image:loc></image:image>
+    <image:image><image:loc>https://lostfoundcz.com/img/events/crawl-2910.jpg</image:loc></image:image>
+    <image:image><image:loc>https://lostfoundcz.com/img/events/crawl-3010.jpg</image:loc></image:image>
+    <image:image><image:loc>https://lostfoundcz.com/img/events/crawl-3110.jpg</image:loc></image:image>
+    <image:image><image:loc>https://lostfoundcz.com/img/menu-1.jpg</image:loc></image:image>
+    <image:image><image:loc>https://lostfoundcz.com/img/menu-2.jpg</image:loc></image:image>
+    <image:image><image:loc>https://lostfoundcz.com/img/menu-3.jpg</image:loc></image:image>
+    <image:image><image:loc>https://lostfoundcz.com/img/menu-4.jpg</image:loc></image:image>
+    <image:image><image:loc>https://lostfoundcz.com/img/menu-5.jpg</image:loc></image:image>
+    <image:image><image:loc>https://lostfoundcz.com/img/menu-6.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://lostfoundcz.com/ua/</loc>
+    <lastmod>2026-11-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lostfoundcz.com/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://lostfoundcz.com/cs/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lostfoundcz.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://lostfoundcz.com/ua/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://lostfoundcz.com/"/>
     <image:image><image:loc>https://lostfoundcz.com/img/hero-bg.jpg</image:loc></image:image>
     <image:image><image:loc>https://lostfoundcz.com/img/logo.png</image:loc></image:image>
