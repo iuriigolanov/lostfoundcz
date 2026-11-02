@@ -15,7 +15,7 @@ import re,json,os,sys
 
 ROOT=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA=os.path.join(ROOT,'tools','menu-data.json')
-FILES={'en':'index.html','cz':'cs/index.html','de':'de/index.html'}
+FILES={'en':'index.html','cz':'cs/index.html','de':'de/index.html','uk':'ua/index.html'}
 
 def esc_plain(s):
     # for JSON-LD / finder: strip html entities back to plain text
@@ -31,7 +31,7 @@ LF_SCALE={
  'L':'<span class="lf-str" title="Light"><b>💪</b><i>💪</i><i>💪</i></span>',
  '0':'<span class="lf-str lf-zero" title="Non-alcoholic">0.0%</span>',
 }
-STR_LEGEND_WORDS={'en':('Strength','light','medium','strong'),'cz':('Síla','lehký','střední','silný'),'de':('Stärke','leicht','mittel','stark')}
+STR_LEGEND_WORDS={'en':('Strength','light','medium','strong'),'cz':('Síla','lehký','střední','silný'),'de':('Stärke','leicht','mittel','stark'),'uk':('Міцність','легкий','середній','міцний')}
 def build_str_legend(lang):
     lab,lt,md,st=STR_LEGEND_WORDS[lang]
     return ('<div class="lf-legend"><b>'+lab+':</b> '+LF_SCALE['L']+' '+lt+' &nbsp; '+LF_SCALE['M']+' '+md+' &nbsp; '+LF_SCALE['S']+' '+st+'</div>')
@@ -100,11 +100,13 @@ ALLERG_14={
  'en':['Cereals containing gluten','Crustaceans','Eggs','Fish','Peanuts','Soybeans','Milk (lactose)','Tree nuts','Celery','Mustard','Sesame','Sulphur dioxide &amp; sulphites','Lupin','Molluscs'],
  'cz':['Obiloviny obsahující lepek','Korýši','Vejce','Ryby','Arašídy','Sója','Mléko (laktóza)','Skořápkové plody (ořechy)','Celer','Hořčice','Sezam','Oxid siřičitý a siřičitany','Vlčí bob (lupina)','Měkkýši'],
  'de':['Glutenhaltiges Getreide','Krebstiere','Eier','Fisch','Erdnüsse','Soja','Milch (Laktose)','Schalenfrüchte (Nüsse)','Sellerie','Senf','Sesam','Schwefeldioxid und Sulfite','Lupinen','Weichtiere'],
+ 'uk':['Злаки, що містять глютен','Ракоподібні','Яйця','Риба','Арахіс','Соя','Молоко (лактоза)','Горіхи','Селера','Гірчиця','Кунжут','Діоксид сірки та сульфіти','Люпин','Молюски'],
 }
 ALLERG_L={
  'en':('Allergens — what the numbers mean','The number(s) after an item show its declarable allergens. Drinks may contain traces of others. <a href="/seznam-alergenu-a4.pdf" target="_blank" rel="noopener" style="color:var(--cyan,#3fc5f0);text-decoration:underline">Full allergen list (PDF)</a>'),
  'cz':('Alergeny — co znamenají čísla','Čísla u položky označují obsažené alergeny. Nápoje mohou obsahovat stopy dalších. <a href="/seznam-alergenu-a4.pdf" target="_blank" rel="noopener" style="color:var(--cyan,#3fc5f0);text-decoration:underline">Úplný seznam alergenů (PDF)</a>'),
  'de':('Allergene — was die Nummern bedeuten','Die Nummer(n) bei einem Artikel zeigen die kennzeichnungspflichtigen Allergene. Getränke können Spuren weiterer enthalten. <a href="/seznam-alergenu-a4.pdf" target="_blank" rel="noopener" style="color:var(--cyan,#3fc5f0);text-decoration:underline">Vollständige Allergenliste (PDF)</a>'),
+ 'uk':('Алергени — що означають цифри','Цифри біля позиції позначають наявні алергени. Напої можуть містити сліди інших. <a href="/seznam-alergenu-a4.pdf" target="_blank" rel="noopener" style="color:var(--cyan,#3fc5f0);text-decoration:underline">Повний список алергенів (PDF)</a>'),
 }
 
 def build_legend(lang):

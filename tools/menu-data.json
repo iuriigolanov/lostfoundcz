@@ -6,7 +6,8 @@
       "name": {
         "en": "Halloween Specials",
         "cz": "Halloweenské speciály",
-        "de": "Halloween-Specials"
+        "de": "Halloween-Specials",
+        "uk": "Хелловінські коктейлі"
       },
       "flat": null,
       "items": [
@@ -16,12 +17,14 @@
           "desc": {
             "en": "Rum, cachaça, triple sec, passion fruit, orange &amp; lime, grenadine",
             "cz": "Rum, cachaça, triple sec, marakuja, pomeranč &amp; limeta, grenadina",
-            "de": "Rum, Cachaça, Triple Sec, Maracuja, Orange &amp; Limette, Grenadine"
+            "de": "Rum, Cachaça, Triple Sec, Maracuja, Orange &amp; Limette, Grenadine",
+            "uk": "Ром, кашаса, трипл сек, маракуйя, апельсин &amp; лайм, гренадин"
           },
           "note": {
             "en": "Raise the dead 🧟",
             "cz": "Raise the dead 🧟",
-            "de": "Raise the dead 🧟"
+            "de": "Raise the dead 🧟",
+            "uk": "Підніми мертвих 🧟"
           },
           "scale": "S"
         },
@@ -31,12 +34,14 @@
           "desc": {
             "en": "Kraken rum, cherry purée, lime, ginger beer",
             "cz": "Kraken rum, třešňové pyré, limeta, zázvorové pivo",
-            "de": "Kraken Rum, Kirschpüree, Limette, Ginger Beer"
+            "de": "Kraken Rum, Kirschpüree, Limette, Ginger Beer",
+            "uk": "Kraken rum, вишневе пюре, лайм, імбирне пиво"
           },
           "note": {
             "en": "Under the full moon 🌕",
             "cz": "Under the full moon 🌕",
-            "de": "Under the full moon 🌕"
+            "de": "Under the full moon 🌕",
+            "uk": "Під повним місяцем 🌕"
           },
           "scale": "M"
         },
@@ -46,12 +51,14 @@
           "desc": {
             "en": "Tequila, triple sec, strawberry, cherry, lime",
             "cz": "Tequila, triple sec, jahoda, třešeň, limeta",
-            "de": "Tequila, Triple Sec, Erdbeere, Kirsche, Limette"
+            "de": "Tequila, Triple Sec, Erdbeere, Kirsche, Limette",
+            "uk": "Текіла, трипл сек, полуниця, вишня, лайм"
           },
           "note": {
             "en": "One bite &amp; you're hooked 🧛",
             "cz": "One bite &amp; you're hooked 🧛",
-            "de": "One bite &amp; you're hooked 🧛"
+            "de": "One bite &amp; you're hooked 🧛",
+            "uk": "Один укус — і ти попався 🧛"
           },
           "scale": "M"
         },
@@ -61,12 +68,14 @@
           "desc": {
             "en": "Vodka, tomato juice, lime, salt, pepper, Tabasco",
             "cz": "Vodka, rajčatová šťáva, limeta, sůl, pepř, Tabasco",
-            "de": "Wodka, Tomatensaft, Limette, Salz, Pfeffer, Tabasco"
+            "de": "Wodka, Tomatensaft, Limette, Salz, Pfeffer, Tabasco",
+            "uk": "Горілка, томатний сік, лайм, сіль, перець, Табаско"
           },
           "note": {
             "en": "Spicy &amp; sinister 🩸",
             "cz": "Spicy &amp; sinister 🩸",
-            "de": "Spicy &amp; sinister 🩸"
+            "de": "Spicy &amp; sinister 🩸",
+            "uk": "Гостро й зловісно 🩸"
           },
           "scale": "M"
         },
@@ -76,12 +85,14 @@
           "desc": {
             "en": "Bacardi Spiced, cherry, cranberry, honey, lime",
             "cz": "Bacardi Spiced, třešeň, brusinka, med, limeta",
-            "de": "Bacardi Spiced, Kirsche, Cranberry, Honig, Limette"
+            "de": "Bacardi Spiced, Kirsche, Cranberry, Honig, Limette",
+            "uk": "Bacardi Spiced, вишня, журавлина, мед, лайм"
           },
           "note": {
             "en": "Howl at the moon 🐺",
             "cz": "Howl at the moon 🐺",
-            "de": "Howl at the moon 🐺"
+            "de": "Howl at the moon 🐺",
+            "uk": "Вий на місяць 🐺"
           },
           "scale": "M"
         },
@@ -91,12 +102,14 @@
           "desc": {
             "en": "Vodka, Prosecco, lemon, grenadine",
             "cz": "Vodka, Prosecco, citron, grenadina",
-            "de": "Wodka, Prosecco, Zitrone, Grenadine"
+            "de": "Wodka, Prosecco, Zitrone, Grenadine",
+            "uk": "Горілка, Prosecco, лимон, гренадин"
           },
           "note": {
             "en": "Wickedly sweet 🍒",
             "cz": "Wickedly sweet 🍒",
-            "de": "Wickedly sweet 🍒"
+            "de": "Wickedly sweet 🍒",
+            "uk": "Підступно солодкий 🍒"
           },
           "scale": "M"
         },
@@ -106,12 +119,14 @@
           "desc": {
             "en": "Bacardi, coconut, pineapple, grenadine",
             "cz": "Bacardi, kokos, ananas, grenadina",
-            "de": "Bacardi, Kokos, Ananas, Grenadine"
+            "de": "Bacardi, Kokos, Ananas, Grenadine",
+            "uk": "Bacardi, кокос, ананас, гренадин"
           },
           "note": {
             "en": "Trick or treat 🍬",
             "cz": "Trick or treat 🍬",
-            "de": "Trick or treat 🍬"
+            "de": "Trick or treat 🍬",
+            "uk": "Цукерка чи каверза 🍬"
           },
           "scale": "M"
         },
@@ -121,12 +136,14 @@
           "desc": {
             "en": "Gin, lemon, Blue Curaçao, cherry",
             "cz": "Gin, citron, Blue Curaçao, třešeň",
-            "de": "Gin, Zitrone, Blue Curaçao, Kirsche"
+            "de": "Gin, Zitrone, Blue Curaçao, Kirsche",
+            "uk": "Джин, лимон, Blue Curaçao, вишня"
           },
           "note": {
             "en": "A ghostly glow 👻",
             "cz": "A ghostly glow 👻",
-            "de": "A ghostly glow 👻"
+            "de": "A ghostly glow 👻",
+            "uk": "Примарне сяйво 👻"
           },
           "scale": "M"
         },
@@ -136,12 +153,14 @@
           "desc": {
             "en": "Jim Beam, Disaronno, Blue Curaçao, cranberry",
             "cz": "Jim Beam, Disaronno, Blue Curaçao, brusinka",
-            "de": "Jim Beam, Disaronno, Blue Curaçao, Cranberry"
+            "de": "Jim Beam, Disaronno, Blue Curaçao, Cranberry",
+            "uk": "Jim Beam, Disaronno, Blue Curaçao, журавлина"
           },
           "note": {
             "en": "Why so serious? 🃏",
             "cz": "Why so serious? 🃏",
-            "de": "Why so serious? 🃏"
+            "de": "Why so serious? 🃏",
+            "uk": "Чому такий серйозний? 🃏"
           },
           "scale": "S"
         },
@@ -151,12 +170,14 @@
           "desc": {
             "en": "Hot spiced red wine",
             "cz": "Horké kořeněné červené víno",
-            "de": "Heißer Glühwein"
+            "de": "Heißer Glühwein",
+            "uk": "Гаряче пряне червоне вино"
           },
           "note": {
             "en": "Warm your bones 🔥",
             "cz": "Warm your bones 🔥",
-            "de": "Warm your bones 🔥"
+            "de": "Warm your bones 🔥",
+            "uk": "Зігрій кістки 🔥"
           },
           "scale": "L"
         },
@@ -166,12 +187,14 @@
           "desc": {
             "en": "Kahlúa, Jägermeister, Stroh — flamed",
             "cz": "Kahlúa, Jägermeister, Stroh — flambované",
-            "de": "Kahlúa, Jägermeister, Stroh — flambiert"
+            "de": "Kahlúa, Jägermeister, Stroh — flambiert",
+            "uk": "Kahlúa, Jägermeister, Stroh — фламбе"
           },
           "note": {
             "en": "On fire 🐈‍⬛",
             "cz": "On fire 🐈‍⬛",
-            "de": "On fire 🐈‍⬛"
+            "de": "On fire 🐈‍⬛",
+            "uk": "У вогні 🐈‍⬛"
           },
           "scale": "S"
         },
@@ -181,12 +204,14 @@
           "desc": {
             "en": "Peach liqueur, Baileys, grenadine",
             "cz": "Broskvový likér, Baileys, grenadina",
-            "de": "Pfirsichlikör, Baileys, Grenadine"
+            "de": "Pfirsichlikör, Baileys, Grenadine",
+            "uk": "Персиковий лікер, Baileys, гренадин"
           },
           "note": {
             "en": "Not for the squeamish 🧠",
             "cz": "Not for the squeamish 🧠",
-            "de": "Not for the squeamish 🧠"
+            "de": "Not for the squeamish 🧠",
+            "uk": "Не для вразливих 🧠"
           },
           "scale": "M"
         },
@@ -196,12 +221,14 @@
           "desc": {
             "en": "Kahlúa, Kraken rum, a drop of &ldquo;blood&rdquo;",
             "cz": "Kahlúa, Kraken rum, kapka &bdquo;krve&ldquo;",
-            "de": "Kahlúa, Kraken Rum, ein Tropfen &bdquo;Blut&ldquo;"
+            "de": "Kahlúa, Kraken Rum, ein Tropfen &bdquo;Blut&ldquo;",
+            "uk": "Kahlúa, Kraken rum, крапля «крові»"
           },
           "note": {
             "en": "Deadly &amp; dark 🕷️",
             "cz": "Deadly &amp; dark 🕷️",
-            "de": "Deadly &amp; dark 🕷️"
+            "de": "Deadly &amp; dark 🕷️",
+            "uk": "Смертельно й темно 🕷️"
           },
           "scale": "S"
         },
@@ -211,12 +238,14 @@
           "desc": {
             "en": "Absinthe, melon liqueur, lime",
             "cz": "Absint, melounový likér, limeta",
-            "de": "Absinth, Melonenlikör, Limette"
+            "de": "Absinth, Melonenlikör, Limette",
+            "uk": "Абсент, динний лікер, лайм"
           },
           "note": {
             "en": "Mischief in a shot 👺",
             "cz": "Mischief in a shot 👺",
-            "de": "Mischief in a shot 👺"
+            "de": "Mischief in a shot 👺",
+            "uk": "Витівка в чарці 👺"
           },
           "scale": "S"
         }
@@ -228,7 +257,8 @@
       "name": {
         "en": "Signature Cocktails",
         "cz": "Autorské koktejly",
-        "de": "Signature-Cocktails"
+        "de": "Signature-Cocktails",
+        "uk": "Авторські коктейлі"
       },
       "flat": null,
       "items": [
@@ -238,7 +268,8 @@
           "desc": {
             "en": "Stroh, Bacardi Spiced, Triple sec liqueur, Grenadine, Blue Curaçao",
             "cz": "Stroh, Bacardi Spiced, Triple sec likér, Grenadina, Blue Curaçao",
-            "de": "Stroh, Bacardi Spiced, Triple-Sec-Likör, Grenadine, Blue Curaçao"
+            "de": "Stroh, Bacardi Spiced, Triple-Sec-Likör, Grenadine, Blue Curaçao",
+            "uk": "Stroh, Bacardi Spiced, лікер Triple sec, гренадин, Blue Curaçao"
           },
           "finder": {
             "name": "Ferrari",
@@ -258,7 +289,8 @@
           "note": {
             "en": "Our flaming showstopper 🔥",
             "cz": "Naše hořící show 🔥",
-            "de": "Unsere flammende Show 🔥"
+            "de": "Unsere flammende Show 🔥",
+            "uk": "Наше вогняне шоу 🔥"
           },
           "scale": "S"
         },
@@ -268,7 +300,8 @@
           "desc": {
             "en": "Baileys, Kahlua, Sambuca, Blue Curaçao",
             "cz": "Baileys, Kahlua, Sambuca, Blue Curaçao",
-            "de": "Baileys, Kahlua, Sambuca, Blue Curaçao"
+            "de": "Baileys, Kahlua, Sambuca, Blue Curaçao",
+            "uk": "Baileys, Kahlua, Sambuca, Blue Curaçao"
           },
           "finder": {
             "name": "Lamborghini",
@@ -287,7 +320,8 @@
           "note": {
             "en": "Layered &amp; set alight 🔥",
             "cz": "Vrstvený a zapálený 🔥",
-            "de": "Geschichtet &amp; flambiert 🔥"
+            "de": "Geschichtet &amp; flambiert 🔥",
+            "uk": "Шаровий і підпалений 🔥"
           },
           "allergens": "7",
           "scale": "M"
@@ -298,12 +332,14 @@
           "desc": {
             "en": "Amaretto, Triple sec liqueur, Bacardi Spiced, cream, caramelized sugar",
             "cz": "Amaretto, Triple sec likér, Bacardi Spiced, smetana, karamelizovaný cukr",
-            "de": "Amaretto, Triple-Sec-Likör, Bacardi Spiced, Sahne, karamellisierter Zucker"
+            "de": "Amaretto, Triple-Sec-Likör, Bacardi Spiced, Sahne, karamellisierter Zucker",
+            "uk": "Amaretto, лікер Triple sec, Bacardi Spiced, вершки, карамелізований цукор"
           },
           "note": {
             "en": "Toasted caramel, up in flames 🔥",
             "cz": "Karamel v plamenech 🔥",
-            "de": "Karamell in Flammen 🔥"
+            "de": "Karamell in Flammen 🔥",
+            "uk": "Карамель у полум'ї 🔥"
           },
           "scale": "S"
         },
@@ -313,7 +349,8 @@
           "desc": {
             "en": "2x Limoncello, 2x Koskenkorva peach liqueur, honey syrup, lemon juice, strawberry puree, Skittles",
             "cz": "2x Limoncello, 2x likér Koskenkorva, medový sirup, citronová šťáva, jahodové pyré, Skittles",
-            "de": "2x Limoncello, 2x Koskenkorva-Likör, Honigsirup, Zitronensaft, Erdbeerpüree, Skittles"
+            "de": "2x Limoncello, 2x Koskenkorva-Likör, Honigsirup, Zitronensaft, Erdbeerpüree, Skittles",
+            "uk": "2x Limoncello, 2x лікер Koskenkorva, медовий сироп, лимонний сік, полуничне пюре, Skittles"
           },
           "finder": {
             "name": "Skittles",
@@ -333,7 +370,8 @@
           "note": {
             "en": "Tastes just like the candy 🌈",
             "cz": "Chutná jako ty bonbony 🌈",
-            "de": "Schmeckt wie die Bonbons 🌈"
+            "de": "Schmeckt wie die Bonbons 🌈",
+            "uk": "На смак як ті цукерки 🌈"
           },
           "scale": "S"
         },
@@ -343,7 +381,8 @@
           "desc": {
             "en": "2x Malibu, Rum Bacardi Bianco, passion fruit syrup, cranberry &amp; lime juice",
             "cz": "Bacardi Bianco, 2x Malibu, sirup z marakuji, brusinková &amp; limetková šťáva",
-            "de": "Bacardi Bianco, 2x Malibu, Passionsfruchtsirup, Cranberry- &amp; Limettensaft"
+            "de": "Bacardi Bianco, 2x Malibu, Passionsfruchtsirup, Cranberry- &amp; Limettensaft",
+            "uk": "Bacardi Bianco, 2x Malibu, сироп з маракуйї, журавлиновий &amp; лаймовий сік"
           },
           "finder": {
             "name": "Pirate Dream",
@@ -361,7 +400,8 @@
           "note": {
             "en": "Tropical treasure 🏴‍☠️",
             "cz": "Tropický poklad 🏴‍☠️",
-            "de": "Tropischer Schatz 🏴‍☠️"
+            "de": "Tropischer Schatz 🏴‍☠️",
+            "uk": "Тропічний скарб 🏴‍☠️"
           },
           "scale": "S"
         },
@@ -371,7 +411,8 @@
           "desc": {
             "en": "Vodka, Koskenkorva peach liqueur, lemon &amp; apple juice",
             "cz": "Vodka, broskvový likér Koskenkorva, citronová &amp; jablečná šťáva",
-            "de": "Wodka, Koskenkorva-Pfirsichlikör, Zitronen- &amp; Apfelsaft"
+            "de": "Wodka, Koskenkorva-Pfirsichlikör, Zitronen- &amp; Apfelsaft",
+            "uk": "Горілка, персиковий лікер Koskenkorva, лимонний &amp; яблучний сік"
           },
           "finder": {
             "name": "Killer",
@@ -389,7 +430,8 @@
           "note": {
             "en": "Deceptively smooth 😈",
             "cz": "Zákeřně jemný 😈",
-            "de": "Hinterhältig weich 😈"
+            "de": "Hinterhältig weich 😈",
+            "uk": "Підступно м'який 😈"
           },
           "scale": "M"
         },
@@ -399,7 +441,8 @@
           "desc": {
             "en": "Vodka, gin, tequila, rum, Triple sec liqueur, lemon juice, Pepsi",
             "cz": "Vodka, gin, tequila, rum, Triple sec likér, citronová šťáva, Pepsi",
-            "de": "Wodka, Gin, Tequila, Rum, Triple-Sec-Likör, Zitronensaft, Pepsi"
+            "de": "Wodka, Gin, Tequila, Rum, Triple-Sec-Likör, Zitronensaft, Pepsi",
+            "uk": "Горілка, джин, текіла, ром, лікер Triple sec, лимонний сік, Pepsi"
           },
           "finder": {
             "name": "Long Island",
@@ -418,7 +461,8 @@
           "note": {
             "en": "Five spirits, one legend 🥃",
             "cz": "Pět lihovin, jedna legenda 🥃",
-            "de": "Fünf Spirituosen, eine Legende 🥃"
+            "de": "Fünf Spirituosen, eine Legende 🥃",
+            "uk": "П'ять напоїв, одна легенда 🥃"
           },
           "scale": "S"
         },
@@ -428,7 +472,8 @@
           "desc": {
             "en": "Jack Daniel&#x27;s Apple, lemon &amp; apple juice, sugar syrup",
             "cz": "Jack Daniel&#x27;s Apple, citronová &amp; jablečná šťáva, cukrový sirup",
-            "de": "Jack Daniel&#x27;s Apple, Zitronen- &amp; Apfelsaft, Zuckersirup"
+            "de": "Jack Daniel&#x27;s Apple, Zitronen- &amp; Apfelsaft, Zuckersirup",
+            "uk": "Jack Daniel&#x27;s Apple, лимонний &amp; яблучний сік, цукровий сироп"
           },
           "finder": {
             "name": "Apple Whiskey Sour",
@@ -448,7 +493,8 @@
           "note": {
             "en": "Crisp apple, Jack's kick 🍏",
             "cz": "Svěží jablko s whiskey 🍏",
-            "de": "Frischer Apfel mit Whiskey 🍏"
+            "de": "Frischer Apfel mit Whiskey 🍏",
+            "uk": "Свіже яблуко з віскі 🍏"
           },
           "scale": "M"
         },
@@ -458,7 +504,8 @@
           "desc": {
             "en": "Bacardi Bianco, Malibu, lime &amp; pineapple juice, mango puree",
             "cz": "Bacardi Bianco, Malibu, limetková &amp; ananasová šťáva, mangové pyré",
-            "de": "Bacardi Bianco, Malibu, Limetten- &amp; Ananassaft, Mangopüree"
+            "de": "Bacardi Bianco, Malibu, Limetten- &amp; Ananassaft, Mangopüree",
+            "uk": "Bacardi Bianco, Malibu, лаймовий &amp; ананасовий сік, пюре манго"
           },
           "finder": {
             "name": "Tropical Paradise",
@@ -478,7 +525,8 @@
           "note": {
             "en": "A holiday in a glass 🏝️",
             "cz": "Dovolená ve sklenici 🏝️",
-            "de": "Urlaub im Glas 🏝️"
+            "de": "Urlaub im Glas 🏝️",
+            "uk": "Відпустка у склянці 🏝️"
           },
           "allergens": "7",
           "scale": "M"
@@ -489,7 +537,8 @@
           "desc": {
             "en": "Vodka, Absinth, Malibu, Blue Curaçao, pineapple juice",
             "cz": "Vodka, Absint, Malibu, Blue Curaçao, ananasová šťáva",
-            "de": "Wodka, Absinth, Malibu, Blue Curaçao, Ananassaft"
+            "de": "Wodka, Absinth, Malibu, Blue Curaçao, Ananassaft",
+            "uk": "Горілка, абсент, Malibu, Blue Curaçao, ананасовий сік"
           },
           "finder": {
             "name": "Shrek",
@@ -509,7 +558,8 @@
           "note": {
             "en": "Big, green &amp; boozy 💚",
             "cz": "Velký, zelený a pořádný 💚",
-            "de": "Groß, grün &amp; kräftig 💚"
+            "de": "Groß, grün &amp; kräftig 💚",
+            "uk": "Великий, зелений і серйозний 💚"
           },
           "scale": "S"
         },
@@ -519,12 +569,14 @@
           "desc": {
             "en": "Stroh, Absinth, Red chilli Absinth, Grenadine, Blue Curaçao",
             "cz": "Stroh, Absinth, Red chilli Absinth, Grenadina, Blue Curaçao",
-            "de": "Stroh, Absinth, Red Chilli Absinth, Grenadine, Blue Curaçao"
+            "de": "Stroh, Absinth, Red Chilli Absinth, Grenadine, Blue Curaçao",
+            "uk": "Stroh, абсент, Red chilli абсент, гренадин, Blue Curaçao"
           },
           "note": {
             "en": "Only for the brave 🌶️",
             "cz": "Jen pro odvážné 🌶️",
-            "de": "Nur für Mutige 🌶️"
+            "de": "Nur für Mutige 🌶️",
+            "uk": "Лише для сміливих 🌶️"
           },
           "scale": "S"
         },
@@ -534,7 +586,8 @@
           "desc": {
             "en": "Vodka, gin, rum, pineapple &amp; lemon juice",
             "cz": "Vodka, gin, rum, ananasová &amp; citronová šťáva",
-            "de": "Wodka, Gin, Rum, Ananas- &amp; Zitronensaft"
+            "de": "Wodka, Gin, Rum, Ananas- &amp; Zitronensaft",
+            "uk": "Горілка, джин, ром, ананасовий &amp; лимонний сік"
           },
           "finder": {
             "name": "Fitness",
@@ -553,7 +606,8 @@
           "note": {
             "en": "Guilt-free (not really) 💪",
             "cz": "Bez výčitek (skoro) 💪",
-            "de": "Ohne Reue (fast) 💪"
+            "de": "Ohne Reue (fast) 💪",
+            "uk": "Майже без докорів сумління 💪"
           },
           "scale": "S"
         },
@@ -563,7 +617,8 @@
           "desc": {
             "en": "2x Bacardi Spiced, cranberry &amp; lime juice, lime, cherry syrup",
             "cz": "2x Kořeněný rum, brusinková &amp; limetková šťáva, limetka, třešňový sirup",
-            "de": "2x Spiced Rum, Cranberry- &amp; Limettensaft, Limette, Kirschsirup"
+            "de": "2x Spiced Rum, Cranberry- &amp; Limettensaft, Limette, Kirschsirup",
+            "uk": "2x пряний ром, журавлиновий &amp; лаймовий сік, лайм, вишневий сироп"
           },
           "finder": {
             "name": "Wolf Blood",
@@ -582,7 +637,8 @@
           "note": {
             "en": "Blood-red &amp; wild 🐺",
             "cz": "Krvavě rudý a divoký 🐺",
-            "de": "Blutrot &amp; wild 🐺"
+            "de": "Blutrot &amp; wild 🐺",
+            "uk": "Криваво-червоний і дикий 🐺"
           },
           "scale": "M"
         },
@@ -592,7 +648,8 @@
           "desc": {
             "en": "Pink Gin, strawberry puree, lemon &amp; cranberry juice",
             "cz": "Pink Gin, jahodové pyré, citronová & brusinková šťáva",
-            "de": "Pink Gin, Erdbeerpüree, Zitronen- & Cranberrysaft"
+            "de": "Pink Gin, Erdbeerpüree, Zitronen- & Cranberrysaft",
+            "uk": "Pink Gin, полуничне пюре, лимонний & журавлиновий сік"
           },
           "finder": {
             "name": "Strawberry Boom",
@@ -612,7 +669,8 @@
           "note": {
             "en": "Berry explosion 🍓",
             "cz": "Jahodová exploze 🍓",
-            "de": "Erdbeer-Explosion 🍓"
+            "de": "Erdbeer-Explosion 🍓",
+            "uk": "Полунична вибухівка 🍓"
           },
           "scale": "M"
         },
@@ -622,7 +680,8 @@
           "desc": {
             "en": "Aperol, vodka, cherry puree, lemon juice, cream",
             "cz": "Aperol, vodka, třešňové pyré, citronová šťáva, smetana",
-            "de": "Aperol, Wodka, Kirschpüree, Zitronensaft, Sahne"
+            "de": "Aperol, Wodka, Kirschpüree, Zitronensaft, Sahne",
+            "uk": "Aperol, горілка, вишневе пюре, лимонний сік, вершки"
           },
           "finder": {
             "name": "Cherry Aperol",
@@ -642,7 +701,8 @@
           "note": {
             "en": "A cherry twist on Aperol 🍒",
             "cz": "Třešňový Aperol 🍒",
-            "de": "Aperol mit Kirsche 🍒"
+            "de": "Aperol mit Kirsche 🍒",
+            "uk": "Вишневий Aperol 🍒"
           },
           "allergens": "7",
           "scale": "L"
@@ -653,7 +713,8 @@
           "desc": {
             "en": "Rum Bacardi Bianco, Amaretto, lime, orange &amp; cranberry juice, Grenadine",
             "cz": "Bacardi Bianco, Amaretto, Grenadina, limetková &amp; pomerančová &amp; brusinková šťáva",
-            "de": "Bacardi Bianco, Amaretto, Grenadine, Limetten-, Orangen- &amp; Cranberrysaft"
+            "de": "Bacardi Bianco, Amaretto, Grenadine, Limetten-, Orangen- &amp; Cranberrysaft",
+            "uk": "Bacardi Bianco, Amaretto, гренадин, лаймовий &amp; апельсиновий &amp; журавлиновий сік"
           },
           "finder": {
             "name": "Crimson Kiss",
@@ -672,7 +733,8 @@
           "note": {
             "en": "Smooth, sweet &amp; scarlet 💋",
             "cz": "Jemný, sladký, šarlatový 💋",
-            "de": "Weich, süß &amp; scharlachrot 💋"
+            "de": "Weich, süß &amp; scharlachrot 💋",
+            "uk": "М'який, солодкий, багряний 💋"
           },
           "scale": "M"
         },
@@ -682,7 +744,8 @@
           "desc": {
             "en": "2x Bacardi Spiced, Triple sec liqueur, apple juice",
             "cz": "2x Bacardi Spiced, Triple sec likér, jablečná šťáva, pomeranč",
-            "de": "2x Bacardi Spiced, Triple-Sec-Likör, Apfelsaft, Orange"
+            "de": "2x Bacardi Spiced, Triple-Sec-Likör, Apfelsaft, Orange",
+            "uk": "2x Bacardi Spiced, лікер Triple sec, яблучний сік, апельсин"
           },
           "finder": {
             "name": "Cold Night",
@@ -700,7 +763,8 @@
           "note": {
             "en": "Spiced &amp; cozy 🍎",
             "cz": "Kořeněný a hřejivý 🍎",
-            "de": "Würzig &amp; wärmend 🍎"
+            "de": "Würzig &amp; wärmend 🍎",
+            "uk": "Пряний і зігріваючий 🍎"
           },
           "scale": "S"
         },
@@ -710,7 +774,8 @@
           "desc": {
             "en": "2x Gin, Blue Curaçao, Coconut syrup, tonic, lime juice",
             "cz": "2x Gin Bombay Sapphire, Blue Curaçao, kokosový sirup, tonic, limetková šťáva",
-            "de": "2x Gin Bombay Sapphire, Blue Curaçao, Kokossirup, Tonic, Limettensaft"
+            "de": "2x Gin Bombay Sapphire, Blue Curaçao, Kokossirup, Tonic, Limettensaft",
+            "uk": "2x Gin Bombay Sapphire, Blue Curaçao, кокосовий сироп, тонік, лаймовий сік"
           },
           "finder": {
             "name": "Panagel Tonic",
@@ -730,7 +795,8 @@
           "note": {
             "en": "Blue coconut cooler 🥥",
             "cz": "Modrý kokosový chladič 🥥",
-            "de": "Blauer Kokos-Cooler 🥥"
+            "de": "Blauer Kokos-Cooler 🥥",
+            "uk": "Синій кокосовий освіжник 🥥"
           },
           "scale": "S"
         },
@@ -740,7 +806,8 @@
           "desc": {
             "en": "Jägermeister, Red Bull",
             "cz": "Jägermeister, Red Bull",
-            "de": "Jägermeister, Red Bull"
+            "de": "Jägermeister, Red Bull",
+            "uk": "Jägermeister, Red Bull"
           },
           "finder": {
             "name": "Jager Bomb",
@@ -759,7 +826,8 @@
           "note": {
             "en": "The classic bomb 💥",
             "cz": "Klasická bomba 💥",
-            "de": "Die klassische Bombe 💥"
+            "de": "Die klassische Bombe 💥",
+            "uk": "Класична бомба 💥"
           },
           "scale": "L"
         },
@@ -769,7 +837,8 @@
           "desc": {
             "en": "2x Limoncello, Prosecco, pineapple juice",
             "cz": "2x Limoncello, Prosecco, ananasová šťáva",
-            "de": "2x Limoncello, Prosecco, Ananassaft"
+            "de": "2x Limoncello, Prosecco, Ananassaft",
+            "uk": "2x Limoncello, Prosecco, ананасовий сік"
           },
           "finder": {
             "name": "Sponge Bob",
@@ -789,7 +858,8 @@
           "note": {
             "en": "Fizzy &amp; fun 🧽",
             "cz": "Bublinkový a zábavný 🧽",
-            "de": "Prickelnd &amp; lustig 🧽"
+            "de": "Prickelnd &amp; lustig 🧽",
+            "uk": "Бульбашковий і веселий 🧽"
           },
           "allergens": "12",
           "scale": "S"
@@ -802,7 +872,8 @@
       "name": {
         "en": "Classic Cocktails",
         "cz": "Klasické koktejly",
-        "de": "Klassische Cocktails"
+        "de": "Klassische Cocktails",
+        "uk": "Класичні коктейлі"
       },
       "flat": null,
       "items": [
@@ -812,7 +883,8 @@
           "desc": {
             "en": "Vodka, Kahlua, cream",
             "cz": "Vodka, Kahlua, Baileys, smetana",
-            "de": "Wodka, Kahlua, Baileys, Sahne"
+            "de": "Wodka, Kahlua, Baileys, Sahne",
+            "uk": "Горілка, Kahlua, Baileys, вершки"
           },
           "finder": {
             "name": "White Russian",
@@ -832,7 +904,8 @@
           "note": {
             "en": "Creamy &amp; dreamy 🥛",
             "cz": "Krémový sen 🥛",
-            "de": "Cremig &amp; sanft 🥛"
+            "de": "Cremig &amp; sanft 🥛",
+            "uk": "Вершкова мрія 🥛"
           },
           "scale": "M"
         },
@@ -842,7 +915,8 @@
           "desc": {
             "en": "Kahlua, Vodka, espresso, vanilla syrup",
             "cz": "Vodka, Baileys, Kahlua, espresso",
-            "de": "Wodka, Baileys, Kahlua, Espresso"
+            "de": "Wodka, Baileys, Kahlua, Espresso",
+            "uk": "Горілка, Baileys, Kahlua, еспресо"
           },
           "finder": {
             "name": "Espresso Martini",
@@ -862,7 +936,8 @@
           "note": {
             "en": "Your coffee buzz ☕",
             "cz": "Kávový restart ☕",
-            "de": "Dein Koffein-Kick ☕"
+            "de": "Dein Koffein-Kick ☕",
+            "uk": "Кавовий перезапуск ☕"
           },
           "scale": "M"
         },
@@ -872,7 +947,8 @@
           "desc": {
             "en": "Vodka, lemon juice, passion fruit puree, vanilla syrup, Prosecco",
             "cz": "Vodka, citronová šťáva, pyré z marakuji, vanilkový sirup, prosecco",
-            "de": "Wodka, Zitronensaft, Passionsfruchtpüree, Vanillesirup, Prosecco"
+            "de": "Wodka, Zitronensaft, Passionsfruchtpüree, Vanillesirup, Prosecco",
+            "uk": "Горілка, лимонний сік, пюре з маракуйї, ванільний сироп, prosecco"
           },
           "finder": {
             "name": "Porn Star Martini",
@@ -894,7 +970,8 @@
           "note": {
             "en": "Passion in a glass 😏",
             "cz": "Vášeň ve skle 😏",
-            "de": "Leidenschaft im Glas 😏"
+            "de": "Leidenschaft im Glas 😏",
+            "uk": "Пристрасть у склі 😏"
           },
           "scale": "M"
         },
@@ -904,7 +981,8 @@
           "desc": {
             "en": "Vodka, Triple sec liqueur, lime &amp; cranberry juice",
             "cz": "Vodka, Triple sec likér, limetková &amp; brusinková šťáva",
-            "de": "Wodka, Triple-Sec-Likör, Limetten- &amp; Cranberrysaft"
+            "de": "Wodka, Triple-Sec-Likör, Limetten- &amp; Cranberrysaft",
+            "uk": "Горілка, лікер Triple sec, лаймовий &amp; журавлиновий сік"
           },
           "finder": {
             "name": "Cosmopolitan",
@@ -924,7 +1002,8 @@
           "note": {
             "en": "The city classic 💅",
             "cz": "Městská klasika 💅",
-            "de": "Der City-Klassiker 💅"
+            "de": "Der City-Klassiker 💅",
+            "uk": "Міська класика 💅"
           },
           "scale": "M"
         },
@@ -934,7 +1013,8 @@
           "desc": {
             "en": "Vodka, peach liqueur, orange &amp; cranberry juice, almond syrup",
             "cz": "Vodka, broskvový likér, pomerančová &amp; brusinková šťáva, mandlový sirup",
-            "de": "Wodka, Pfirsichlikör, Orangen- &amp; Cranberrysaft, Mandelsirup"
+            "de": "Wodka, Pfirsichlikör, Orangen- &amp; Cranberrysaft, Mandelsirup",
+            "uk": "Горілка, персиковий лікер, апельсиновий &amp; журавлиновий сік, мигдалевий сироп"
           },
           "finder": {
             "name": "Sex on the Bitch",
@@ -953,7 +1033,8 @@
           "note": {
             "en": "Fruity &amp; flirty 🍑",
             "cz": "Ovocné svádění 🍑",
-            "de": "Fruchtig &amp; frech 🍑"
+            "de": "Fruchtig &amp; frech 🍑",
+            "uk": "Фруктова спокуса 🍑"
           },
           "scale": "M"
         },
@@ -963,7 +1044,8 @@
           "desc": {
             "en": "Vodka, lime juice, soda / +fruit puree",
             "cz": "Vodka, limetková šťáva, soda / +ovocné pyré",
-            "de": "Wodka, Limettensaft, Soda / + Fruchtpüree"
+            "de": "Wodka, Limettensaft, Soda / + Fruchtpüree",
+            "uk": "Горілка, лаймовий сік, сода / +фруктове пюре"
           },
           "finder": {
             "name": "Skinny Bitch",
@@ -982,7 +1064,8 @@
           "note": {
             "en": "Light &amp; guilt-free 🤍",
             "cz": "Lehké bez výčitek 🤍",
-            "de": "Leicht &amp; ohne Reue 🤍"
+            "de": "Leicht &amp; ohne Reue 🤍",
+            "uk": "Легко й без докорів 🤍"
           },
           "scale": "M"
         },
@@ -992,7 +1075,8 @@
           "desc": {
             "en": "Vodka, Triple sec liqueur, blue Curaçao, Sprite",
             "cz": "Vodka, Triple sec likér, blue Curaçao, Sprite",
-            "de": "Wodka, Triple-Sec-Likör, Blue Curaçao, Sprite"
+            "de": "Wodka, Triple-Sec-Likör, Blue Curaçao, Sprite",
+            "uk": "Горілка, лікер Triple sec, blue Curaçao, Sprite"
           },
           "finder": {
             "name": "Blue Lagoon",
@@ -1012,7 +1096,8 @@
           "note": {
             "en": "Blue paradise 🏖️",
             "cz": "Modrý ráj 🏖️",
-            "de": "Blaues Paradies 🏖️"
+            "de": "Blaues Paradies 🏖️",
+            "uk": "Блакитний рай 🏖️"
           },
           "scale": "M"
         },
@@ -1022,7 +1107,8 @@
           "desc": {
             "en": "Vodka, lime juice, ginger beer",
             "cz": "Vodka, limetková šťáva, zázvorové pivo",
-            "de": "Wodka, Limettensaft, Ginger Beer"
+            "de": "Wodka, Limettensaft, Ginger Beer",
+            "uk": "Горілка, лаймовий сік, імбирне пиво"
           },
           "finder": {
             "name": "Moscow Mule",
@@ -1042,7 +1128,8 @@
           "note": {
             "en": "Ginger kick 🫚",
             "cz": "Zázvorový kop 🫚",
-            "de": "Ingwer-Kick 🫚"
+            "de": "Ingwer-Kick 🫚",
+            "uk": "Імбирний удар 🫚"
           },
           "scale": "M"
         },
@@ -1052,7 +1139,8 @@
           "desc": {
             "en": "Vodka, tomato juice, pepper, tabasco, Worcestershire, celery",
             "cz": "Vodka, rajčatová šťáva, pepř, tabasco, celer",
-            "de": "Wodka, Tomatensaft, Pfeffer, Tabasco, Sellerie"
+            "de": "Wodka, Tomatensaft, Pfeffer, Tabasco, Sellerie",
+            "uk": "Горілка, томатний сік, перець, табаско, селера"
           },
           "finder": {
             "name": "Bloody Mary",
@@ -1072,7 +1160,8 @@
           "note": {
             "en": "Spicy brunch icon 🍅",
             "cz": "Pikantní ikona 🍅",
-            "de": "Pikante Ikone 🍅"
+            "de": "Pikante Ikone 🍅",
+            "uk": "Пікантна ікона 🍅"
           },
           "scale": "M"
         },
@@ -1082,12 +1171,14 @@
           "desc": {
             "en": "Vodka, Red Bull",
             "cz": "Vodka, Red Bull",
-            "de": "Wodka, Red Bull"
+            "de": "Wodka, Red Bull",
+            "uk": "Горілка, Red Bull"
           },
           "note": {
             "en": "Wings for the night ⚡",
             "cz": "Křídla na noc ⚡",
-            "de": "Flügel für die Nacht ⚡"
+            "de": "Flügel für die Nacht ⚡",
+            "uk": "Крила на ніч ⚡"
           },
           "scale": "M"
         },
@@ -1097,7 +1188,8 @@
           "desc": {
             "en": "Bombay Sapphire, Martini Rosso, Campari",
             "cz": "Gin Bombay Sapphire, Martini Rosso, Campari",
-            "de": "Gin Bombay Sapphire, Martini Rosso, Campari"
+            "de": "Gin Bombay Sapphire, Martini Rosso, Campari",
+            "uk": "Gin Bombay Sapphire, Martini Rosso, Campari"
           },
           "finder": {
             "name": "Negroni",
@@ -1117,7 +1209,8 @@
           "note": {
             "en": "Bittersweet &amp; bold 🧡",
             "cz": "Hořko-sladká klasika 🧡",
-            "de": "Bittersüß &amp; stark 🧡"
+            "de": "Bittersüß &amp; stark 🧡",
+            "uk": "Гірко-солодка класика 🧡"
           },
           "scale": "S"
         },
@@ -1127,7 +1220,8 @@
           "desc": {
             "en": "Gin, tonic, cucumber syrup (opt)",
             "cz": "Gin, tonic",
-            "de": "Gin, Tonic"
+            "de": "Gin, Tonic",
+            "uk": "Джин, тонік"
           },
           "finder": {
             "name": "Gin Tonic",
@@ -1147,7 +1241,8 @@
           "note": {
             "en": "Crisp &amp; classic 🌿",
             "cz": "Svěží klasika 🌿",
-            "de": "Frisch &amp; klassisch 🌿"
+            "de": "Frisch &amp; klassisch 🌿",
+            "uk": "Свіжа класика 🌿"
           },
           "scale": "M"
         },
@@ -1157,7 +1252,8 @@
           "desc": {
             "en": "Gin Hendrick&#x27;s, tonic Thomas Henry",
             "cz": "Gin Hendricks, tonic botanical",
-            "de": "Gin Hendricks, Tonic Botanical"
+            "de": "Gin Hendricks, Tonic Botanical",
+            "uk": "Gin Hendricks, тонік botanical"
           },
           "finder": {
             "name": "Hendricks GT Premium",
@@ -1176,7 +1272,8 @@
           "note": {
             "en": "Cucumber elegance 🥒",
             "cz": "Okurková elegance 🥒",
-            "de": "Gurken-Eleganz 🥒"
+            "de": "Gurken-Eleganz 🥒",
+            "uk": "Огіркова елегантність 🥒"
           },
           "scale": "L"
         },
@@ -1186,7 +1283,8 @@
           "desc": {
             "en": "Gin Mare, tonic Thomas Henry",
             "cz": "Gin Mare, tonic Thomas Henry",
-            "de": "Gin Mare, Tonic Thomas Henry"
+            "de": "Gin Mare, Tonic Thomas Henry",
+            "uk": "Gin Mare, тонік Thomas Henry"
           },
           "finder": {
             "name": "Gin Mare GT Premium",
@@ -1205,7 +1303,8 @@
           "note": {
             "en": "Mediterranean botanicals 🌊",
             "cz": "Středomořské byliny 🌊",
-            "de": "Mediterrane Botanik 🌊"
+            "de": "Mediterrane Botanik 🌊",
+            "uk": "Середземноморські трави 🌊"
           },
           "scale": "L"
         },
@@ -1215,7 +1314,8 @@
           "desc": {
             "en": "Bombay Sapphire, lemon &amp; apple juice, ginger beer",
             "cz": "Gin Bombay Sapphire, citronová šťáva, zázvorové pivo",
-            "de": "Gin Bombay Sapphire, Zitronensaft, Ginger Beer"
+            "de": "Gin Bombay Sapphire, Zitronensaft, Ginger Beer",
+            "uk": "Gin Bombay Sapphire, лимонний сік, імбирне пиво"
           },
           "finder": {
             "name": "Gin Garden",
@@ -1234,7 +1334,8 @@
           "note": {
             "en": "Garden fresh 🌱",
             "cz": "Zahradní svěžest 🌱",
-            "de": "Gartenfrisch 🌱"
+            "de": "Gartenfrisch 🌱",
+            "uk": "Садова свіжість 🌱"
           },
           "scale": "M"
         },
@@ -1244,7 +1345,8 @@
           "desc": {
             "en": "2x Bacardi Bianco rum, lime juice, sugar syrup",
             "cz": "2x Bacardi Bianco rum, limetková šťáva, cukrový sirup",
-            "de": "2x Bacardi Bianco Rum, Limettensaft, Zuckersirup"
+            "de": "2x Bacardi Bianco Rum, Limettensaft, Zuckersirup",
+            "uk": "2x Bacardi Bianco rum, лаймовий сік, цукровий сироп"
           },
           "finder": {
             "name": "Daiquiri",
@@ -1263,7 +1365,8 @@
           "note": {
             "en": "Simply perfect 🍈",
             "cz": "Prostě dokonalý 🍈",
-            "de": "Einfach perfekt 🍈"
+            "de": "Einfach perfekt 🍈",
+            "uk": "Просто досконалий 🍈"
           },
           "scale": "S"
         },
@@ -1273,7 +1376,8 @@
           "desc": {
             "en": "Bacardi Spiced rum, Triple sec liqueur, pineapple juice, lime",
             "cz": "Bacardi Spice rum, Triple sec likér, ananasová šťáva, limetka, Angostura",
-            "de": "Bacardi Spiced Rum, Triple-Sec-Likör, Ananassaft, Limette, Angostura"
+            "de": "Bacardi Spiced Rum, Triple-Sec-Likör, Ananassaft, Limette, Angostura",
+            "uk": "Bacardi Spice rum, лікер Triple sec, ананасовий сік, лайм, Angostura"
           },
           "finder": {
             "name": "Bengal",
@@ -1293,7 +1397,8 @@
           "note": {
             "en": "Spiced &amp; tropical 🌶️",
             "cz": "Kořeněné tropy 🌶️",
-            "de": "Würzig &amp; tropisch 🌶️"
+            "de": "Würzig &amp; tropisch 🌶️",
+            "uk": "Пряні тропіки 🌶️"
           },
           "scale": "M"
         },
@@ -1303,7 +1408,8 @@
           "desc": {
             "en": "Cachaça, Brown sugar, Lime",
             "cz": "Cachaça, třtinový cukr, limetka",
-            "de": "Cachaça, brauner Zucker, Limette"
+            "de": "Cachaça, brauner Zucker, Limette",
+            "uk": "Cachaça, тростинний цукор, лайм"
           },
           "finder": {
             "name": "Caipirinha",
@@ -1323,7 +1429,8 @@
           "note": {
             "en": "Brazil in a glass 🇧🇷",
             "cz": "Brazílie ve skle 🇧🇷",
-            "de": "Brasilien im Glas 🇧🇷"
+            "de": "Brasilien im Glas 🇧🇷",
+            "uk": "Бразилія у склі 🇧🇷"
           },
           "scale": "M"
         },
@@ -1333,7 +1440,8 @@
           "desc": {
             "en": "2x Bacardi Spiced, apricot brandy, almond syrup, lime &amp; pineapple juice",
             "cz": "2x Bacardi Spiced, meruňková brandy, mandlový sirup, limetková &amp; ananasová šťáva",
-            "de": "2x Bacardi Spiced, Aprikosenbrand, Mandelsirup, Limetten- &amp; Ananassaft"
+            "de": "2x Bacardi Spiced, Aprikosenbrand, Mandelsirup, Limetten- &amp; Ananassaft",
+            "uk": "2x Bacardi Spiced, абрикосовий бренді, мигдалевий сироп, лаймовий &amp; ананасовий сік"
           },
           "finder": {
             "name": "Mai Tai",
@@ -1353,7 +1461,8 @@
           "note": {
             "en": "Tiki classic 🗿",
             "cz": "Tiki klasika 🗿",
-            "de": "Tiki-Klassiker 🗿"
+            "de": "Tiki-Klassiker 🗿",
+            "uk": "Класика тікі 🗿"
           },
           "scale": "S"
         },
@@ -1363,7 +1472,8 @@
           "desc": {
             "en": "2x Bacardi Bianco rum, lime juice, Pepsi",
             "cz": "2x Bacardi Bianco rum, limetková šťáva, Pepsi",
-            "de": "2x Bacardi Bianco Rum, Limettensaft, Pepsi"
+            "de": "2x Bacardi Bianco Rum, Limettensaft, Pepsi",
+            "uk": "2x Bacardi Bianco rum, лаймовий сік, Pepsi"
           },
           "finder": {
             "name": "Cuba Libre",
@@ -1382,7 +1492,8 @@
           "note": {
             "en": "Rum &amp; cola done right 🥤",
             "cz": "Rum a cola 🥤",
-            "de": "Rum &amp; Cola, richtig 🥤"
+            "de": "Rum &amp; Cola, richtig 🥤",
+            "uk": "Ром і кола 🥤"
           },
           "scale": "S"
         },
@@ -1392,7 +1503,8 @@
           "desc": {
             "en": "Bacardi Bianco rum, coconut syrup, pineapple juice, cream",
             "cz": "Bacardi Bianco rum, kokosový sirup, ananasová šťáva, smetana",
-            "de": "Bacardi Bianco Rum, Kokossirup, Ananassaft, Sahne"
+            "de": "Bacardi Bianco Rum, Kokossirup, Ananassaft, Sahne",
+            "uk": "Bacardi Bianco rum, кокосовий сироп, ананасовий сік, вершки"
           },
           "finder": {
             "name": "Pina Colada",
@@ -1414,7 +1526,8 @@
           "note": {
             "en": "Holiday vibes 🥥",
             "cz": "Dovolenková nálada 🥥",
-            "de": "Urlaubsgefühl 🥥"
+            "de": "Urlaubsgefühl 🥥",
+            "uk": "Відпустковий настрій 🥥"
           },
           "scale": "L"
         },
@@ -1424,7 +1537,8 @@
           "desc": {
             "en": "Bacardi Bianco rum, Lime, Brown sugar, soda, Cordial syrup / +fruit puree",
             "cz": "Rum Bacardi Bianco, Limetka, hnědý cukr, soda, Cordial sirup / +ovocné pyré",
-            "de": "Bacardi Bianco Rum, Limette, brauner Zucker, Soda, Cordial-Sirup / +Fruchtpüree"
+            "de": "Bacardi Bianco Rum, Limette, brauner Zucker, Soda, Cordial-Sirup / +Fruchtpüree",
+            "uk": "Rum Bacardi Bianco, лайм, коричневий цукор, сода, Cordial сироп / +фруктове пюре"
           },
           "finder": {
             "name": "Mojito",
@@ -1445,7 +1559,8 @@
           "note": {
             "en": "Minty &amp; fresh 🌿",
             "cz": "Mátová svěžest 🌿",
-            "de": "Minzig &amp; frisch 🌿"
+            "de": "Minzig &amp; frisch 🌿",
+            "uk": "М'ятна свіжість 🌿"
           },
           "scale": "M"
         },
@@ -1455,7 +1570,8 @@
           "desc": {
             "en": "Tequila, Triple sec liqueur, lime juice, sugar",
             "cz": "Tequila, limetková šťáva, cukr / ovocné pyré",
-            "de": "Tequila, Limettensaft, Zucker / Fruchtpüree"
+            "de": "Tequila, Limettensaft, Zucker / Fruchtpüree",
+            "uk": "Текіла, лаймовий сік, цукор / фруктове пюре"
           },
           "finder": {
             "name": "Margarita",
@@ -1474,7 +1590,8 @@
           "note": {
             "en": "Tequila classic 🧂",
             "cz": "Tequilová klasika 🧂",
-            "de": "Tequila-Klassiker 🧂"
+            "de": "Tequila-Klassiker 🧂",
+            "uk": "Класика з текілою 🧂"
           },
           "scale": "M"
         },
@@ -1484,7 +1601,8 @@
           "desc": {
             "en": "2x Tequila, grenadine syrup, orange juice",
             "cz": "2x Tequila, grenadinový sirup, pomerančová šťáva",
-            "de": "2x Tequila, Grenadinesirup, Orangensaft"
+            "de": "2x Tequila, Grenadinesirup, Orangensaft",
+            "uk": "2x Текіла, сироп гренадин, апельсиновий сік"
           },
           "finder": {
             "name": "Tequila Sunrise",
@@ -1504,7 +1622,8 @@
           "note": {
             "en": "Sunset in a glass 🌅",
             "cz": "Západ slunce ve skle 🌅",
-            "de": "Sonnenuntergang im Glas 🌅"
+            "de": "Sonnenuntergang im Glas 🌅",
+            "uk": "Захід сонця у склі 🌅"
           },
           "scale": "S"
         },
@@ -1514,7 +1633,8 @@
           "desc": {
             "en": "2x Tequila, Blue Curaçao, pineapple &amp; lime juice",
             "cz": "2x Tequila, Blue Curaçao, ananasová &amp; limetková šťáva",
-            "de": "2x Tequila, Blue Curaçao, Ananas- &amp; Limettensaft"
+            "de": "2x Tequila, Blue Curaçao, Ananas- &amp; Limettensaft",
+            "uk": "2x Текіла, Blue Curaçao, ананасовий &amp; лаймовий сік"
           },
           "finder": {
             "name": "Envy",
@@ -1533,7 +1653,8 @@
           "note": {
             "en": "Tropical blue 💙",
             "cz": "Tropická modř 💙",
-            "de": "Tropisches Blau 💙"
+            "de": "Tropisches Blau 💙",
+            "uk": "Тропічна блакить 💙"
           },
           "scale": "S"
         },
@@ -1543,7 +1664,8 @@
           "desc": {
             "en": "2x Tequila, lime &amp; grapefruit juice, soda",
             "cz": "2x Tequila, limetková &amp; grapefruitová šťáva, soda",
-            "de": "2x Tequila, Limetten- &amp; Grapefruitsaft, Soda"
+            "de": "2x Tequila, Limetten- &amp; Grapefruitsaft, Soda",
+            "uk": "2x Текіла, лаймовий &amp; грейпфрутовий сік, сода"
           },
           "finder": {
             "name": "Paloma",
@@ -1563,7 +1685,8 @@
           "note": {
             "en": "Grapefruit cooler 🍊",
             "cz": "Grapefruitový chladič 🍊",
-            "de": "Grapefruit-Cooler 🍊"
+            "de": "Grapefruit-Cooler 🍊",
+            "uk": "Грейпфрутовий освіжник 🍊"
           },
           "scale": "S"
         },
@@ -1573,7 +1696,8 @@
           "desc": {
             "en": "Jameson, Martini Rosso",
             "cz": "Jameson, Martini Rosso, Angostura",
-            "de": "Jameson, Martini Rosso, Angostura"
+            "de": "Jameson, Martini Rosso, Angostura",
+            "uk": "Jameson, Martini Rosso, Angostura"
           },
           "finder": {
             "name": "Manhattan",
@@ -1593,7 +1717,8 @@
           "note": {
             "en": "Timeless &amp; strong 🎩",
             "cz": "Nadčasová síla 🎩",
-            "de": "Zeitlos &amp; stark 🎩"
+            "de": "Zeitlos &amp; stark 🎩",
+            "uk": "Позачасова сила 🎩"
           },
           "scale": "S"
         },
@@ -1603,7 +1728,8 @@
           "desc": {
             "en": "Jack Daniel&#x27;s, sugar syrup, Angostura",
             "cz": "Jack Daniel&#x27;s, cukrový sirup, Angostura",
-            "de": "Jack Daniel&#x27;s, Zuckersirup, Angostura"
+            "de": "Jack Daniel&#x27;s, Zuckersirup, Angostura",
+            "uk": "Jack Daniel&#x27;s, цукровий сироп, Angostura"
           },
           "finder": {
             "name": "Old Fashioned",
@@ -1623,7 +1749,8 @@
           "note": {
             "en": "The original 🥃",
             "cz": "Originál 🥃",
-            "de": "Das Original 🥃"
+            "de": "Das Original 🥃",
+            "uk": "Оригінал 🥃"
           },
           "scale": "M"
         },
@@ -1633,7 +1760,8 @@
           "desc": {
             "en": "Jameson, sugar syrup, lemon juice",
             "cz": "Whiskey Jameson, cukrový sirup, citronová šťáva",
-            "de": "Whiskey Jameson, Zuckersirup, Zitronensaft"
+            "de": "Whiskey Jameson, Zuckersirup, Zitronensaft",
+            "uk": "Віскі Jameson, цукровий сироп, лимонний сік"
           },
           "finder": {
             "name": "Whiskey Sour Español",
@@ -1652,7 +1780,8 @@
           "note": {
             "en": "Smooth &amp; sour 🍋",
             "cz": "Jemně kyselý 🍋",
-            "de": "Weich &amp; sauer 🍋"
+            "de": "Weich &amp; sauer 🍋",
+            "uk": "Делікатно кислий 🍋"
           },
           "scale": "M"
         }
@@ -1664,7 +1793,8 @@
       "name": {
         "en": "Wine Cocktails &amp; Spritz",
         "cz": "Vinné koktejly &amp; Spritz",
-        "de": "Wein-Cocktails &amp; Spritz"
+        "de": "Wein-Cocktails &amp; Spritz",
+        "uk": "Винні коктейлі &amp; Spritz"
       },
       "flat": null,
       "items": [
@@ -1674,7 +1804,8 @@
           "desc": {
             "en": "2x Limoncello, Prosecco, soda",
             "cz": "2x Limoncello, Prosecco, soda",
-            "de": "2x Limoncello, Prosecco, Soda"
+            "de": "2x Limoncello, Prosecco, Soda",
+            "uk": "2x Limoncello, Prosecco, сода"
           },
           "finder": {
             "name": "Limoncello Spritz",
@@ -1695,7 +1826,8 @@
           "note": {
             "en": "Zesty &amp; bubbly 🍋",
             "cz": "Svěží bublinky 🍋",
-            "de": "Spritzig &amp; frisch 🍋"
+            "de": "Spritzig &amp; frisch 🍋",
+            "uk": "Свіжі бульбашки 🍋"
           },
           "scale": "S"
         },
@@ -1705,7 +1837,8 @@
           "desc": {
             "en": "Campari, Prosecco, soda",
             "cz": "Campari, Prosecco, soda",
-            "de": "Campari, Prosecco, Soda"
+            "de": "Campari, Prosecco, Soda",
+            "uk": "Campari, Prosecco, сода"
           },
           "finder": {
             "name": "Campari Spritz",
@@ -1725,7 +1858,8 @@
           "note": {
             "en": "Bitter &amp; bright 🧡",
             "cz": "Hořko-svěží 🧡",
-            "de": "Bitter &amp; spritzig 🧡"
+            "de": "Bitter &amp; spritzig 🧡",
+            "uk": "Гірко-свіжий 🧡"
           },
           "scale": "M"
         },
@@ -1735,7 +1869,8 @@
           "desc": {
             "en": "Sarti, Prosecco, soda",
             "cz": "Sarti, prosecco, soda",
-            "de": "Sarti, Prosecco, Soda"
+            "de": "Sarti, Prosecco, Soda",
+            "uk": "Sarti, prosecco, сода"
           },
           "finder": {
             "name": "Sarti Spritz",
@@ -1756,7 +1891,8 @@
           "note": {
             "en": "Berry bubbles 🍓",
             "cz": "Bobulové bublinky 🍓",
-            "de": "Beerige Bläschen 🍓"
+            "de": "Beerige Bläschen 🍓",
+            "uk": "Ягідні бульбашки 🍓"
           },
           "scale": "M"
         },
@@ -1766,7 +1902,8 @@
           "desc": {
             "en": "Aperol, Prosecco, soda",
             "cz": "Aperol, prosecco, soda",
-            "de": "Aperol, Prosecco, Soda"
+            "de": "Aperol, Prosecco, Soda",
+            "uk": "Aperol, prosecco, сода"
           },
           "finder": {
             "name": "Aperol Spritz",
@@ -1789,7 +1926,8 @@
           "note": {
             "en": "The summer classic 🧡",
             "cz": "Letní klasika 🧡",
-            "de": "Der Sommerklassiker 🧡"
+            "de": "Der Sommerklassiker 🧡",
+            "uk": "Літня класика 🧡"
           },
           "scale": "L"
         },
@@ -1799,7 +1937,8 @@
           "desc": {
             "en": "Prosecco, orange juice",
             "cz": "Prosecco, pomerančová šťáva",
-            "de": "Prosecco, Orangensaft"
+            "de": "Prosecco, Orangensaft",
+            "uk": "Prosecco, апельсиновий сік"
           },
           "finder": {
             "name": "Mimosa",
@@ -1820,7 +1959,8 @@
           "note": {
             "en": "Brunch favourite 🥂",
             "cz": "Brunch favorit 🥂",
-            "de": "Brunch-Liebling 🥂"
+            "de": "Brunch-Liebling 🥂",
+            "uk": "Фаворит бранчу 🥂"
           },
           "scale": "L"
         },
@@ -1830,7 +1970,8 @@
           "desc": {
             "en": "Elderflower syrup, Prosecco, soda",
             "cz": "Prosecco, bezinkový sirup, soda",
-            "de": "Prosecco, Holundersirup, Soda"
+            "de": "Prosecco, Holundersirup, Soda",
+            "uk": "Prosecco, сироп із бузини, сода"
           },
           "finder": {
             "name": "Hugo Spritz",
@@ -1850,7 +1991,8 @@
           "note": {
             "en": "Elderflower fresh 🌸",
             "cz": "Bezinková svěžest 🌸",
-            "de": "Holunder-frisch 🌸"
+            "de": "Holunder-frisch 🌸",
+            "uk": "Бузинова свіжість 🌸"
           },
           "scale": "L"
         },
@@ -1860,7 +2002,8 @@
           "desc": {
             "en": "Prosecco, Vodka, Strawberry puree, Cranberry &amp; lime juice",
             "cz": "Prosecco, vodka, jahodové pyré, brusinková &amp; limetková šťáva",
-            "de": "Prosecco, Wodka, Erdbeerpüree, Cranberry- &amp; Limettensaft"
+            "de": "Prosecco, Wodka, Erdbeerpüree, Cranberry- &amp; Limettensaft",
+            "uk": "Prosecco, горілка, полуничне пюре, журавлиновий &amp; лаймовий сік"
           },
           "finder": {
             "name": "Berry Muscade",
@@ -1880,7 +2023,8 @@
           "note": {
             "en": "Berry fizz 🍓",
             "cz": "Bobulová šumivost 🍓",
-            "de": "Beeren-Prickeln 🍓"
+            "de": "Beeren-Prickeln 🍓",
+            "uk": "Ягідна шумність 🍓"
           },
           "scale": "M"
         },
@@ -1890,7 +2034,8 @@
           "desc": {
             "en": "White wine, Pineapple &amp; Lime juice, Coconut syrup",
             "cz": "Bílé víno, ananasová šťáva, kokosový sirup",
-            "de": "Weißwein, Ananassaft, Kokossirup"
+            "de": "Weißwein, Ananassaft, Kokossirup",
+            "uk": "Біле вино, ананасовий сік, кокосовий сироп"
           },
           "finder": {
             "name": "Calypso",
@@ -1910,7 +2055,8 @@
           "note": {
             "en": "Tropical white 🏝️",
             "cz": "Tropické víno 🏝️",
-            "de": "Tropischer Weißwein 🏝️"
+            "de": "Tropischer Weißwein 🏝️",
+            "uk": "Тропічне вино 🏝️"
           },
           "scale": "L"
         },
@@ -1920,7 +2066,8 @@
           "desc": {
             "en": "Red wine, Rum Bacardi Bianco, Passion fruit syrup, Orange juice",
             "cz": "Červené víno, pomerančový rum, sirup z marakuji, pomerančová šťáva",
-            "de": "Rotwein, Orangen-Rum, Passionsfruchtsirup, Orangensaft"
+            "de": "Rotwein, Orangen-Rum, Passionsfruchtsirup, Orangensaft",
+            "uk": "Червоне вино, апельсиновий ром, сироп з маракуйї, апельсиновий сік"
           },
           "finder": {
             "name": "Luna Sanguinia",
@@ -1939,7 +2086,8 @@
           "note": {
             "en": "Dark &amp; fruity 🌙",
             "cz": "Temné ovoce 🌙",
-            "de": "Dunkel &amp; fruchtig 🌙"
+            "de": "Dunkel &amp; fruchtig 🌙",
+            "uk": "Темні фрукти 🌙"
           },
           "scale": "M"
         },
@@ -1949,7 +2097,8 @@
           "desc": {
             "en": "Red wine, Pepsi, Lemon",
             "cz": "Červené víno, Pepsi, citron",
-            "de": "Rotwein, Pepsi, Zitrone"
+            "de": "Rotwein, Pepsi, Zitrone",
+            "uk": "Червоне вино, Pepsi, лимон"
           },
           "finder": {
             "name": "Kalimotxo",
@@ -1968,7 +2117,8 @@
           "note": {
             "en": "Spanish street classic 🍷",
             "cz": "Španělská klasika 🍷",
-            "de": "Spanischer Klassiker 🍷"
+            "de": "Spanischer Klassiker 🍷",
+            "uk": "Іспанська класика 🍷"
           },
           "scale": "L"
         },
@@ -1978,7 +2128,8 @@
           "desc": {
             "en": "Red wine, Tonic, Strawberry puree, Cranberry &amp; lime juice",
             "cz": "Červené víno, tonic, jahodové pyré, brusinková &amp; limetková šťáva",
-            "de": "Rotwein, Tonic, Erdbeerpüree, Cranberry- &amp; Limettensaft"
+            "de": "Rotwein, Tonic, Erdbeerpüree, Cranberry- &amp; Limettensaft",
+            "uk": "Червоне вино, тонік, полуничне пюре, журавлиновий &amp; лаймовий сік"
           },
           "finder": {
             "name": "Tinto Verano",
@@ -1998,7 +2149,8 @@
           "note": {
             "en": "Summer red 🍒",
             "cz": "Letní červené 🍒",
-            "de": "Sommer-Rot 🍒"
+            "de": "Sommer-Rot 🍒",
+            "uk": "Літнє червоне 🍒"
           },
           "scale": "L"
         }
@@ -2010,7 +2162,8 @@
       "name": {
         "en": "Special Shots",
         "cz": "Speciální panáky",
-        "de": "Besondere Shots"
+        "de": "Besondere Shots",
+        "uk": "Спеціальні шоти"
       },
       "flat": null,
       "items": [
@@ -2020,7 +2173,8 @@
           "desc": {
             "en": "🧭 4 shots: L-Limoncello, O-Orange Jägermeister, S-Slivovice, T-Tequila",
             "cz": "🧭 4 panáky: L-Limoncello, O-Orange Jägermeister, S-Slivovice, T-Tequila",
-            "de": "🧭 4 Shots: L-Limoncello, O-Orange Jägermeister, S-Slivovice, T-Tequila"
+            "de": "🧭 4 Shots: L-Limoncello, O-Orange Jägermeister, S-Slivovice, T-Tequila",
+            "uk": "🧭 4 шоти: L-Limoncello, O-Orange Jägermeister, S-Slivovice, T-Текіла"
           },
           "scale": "S"
         },
@@ -2030,7 +2184,8 @@
           "desc": {
             "en": "🌈 6 shots: Vodka, Becherovka, Limoncello, Mint Liqueur, Božkov Liqueur, Tequila",
             "cz": "🌈 6 panáků: Vodka, Becherovka, Limoncello, Mátový likér, Božkov likér, Tequila",
-            "de": "🌈 6 Shots: Wodka, Becherovka, Limoncello, Minzlikör, Božkov-Likör, Tequila"
+            "de": "🌈 6 Shots: Wodka, Becherovka, Limoncello, Minzlikör, Božkov-Likör, Tequila",
+            "uk": "🌈 6 шотів: Горілка, Becherovka, Limoncello, М'ятний лікер, лікер Božkov, Текіла"
           },
           "scale": "S"
         },
@@ -2040,7 +2195,8 @@
           "desc": {
             "en": "🇨🇿 6 shots: Božkov green, Božkov blue, Slivovice, Hruškovice, Becherovka, Fernet",
             "cz": "🇨🇿 6 panáků: Božkov green, Božkov blue, Slivovice, Hruškovice, Becherovka, Fernet",
-            "de": "🇨🇿 6 Shots: Božkov green, Božkov blue, Slivovice, Hruškovice, Becherovka, Fernet"
+            "de": "🇨🇿 6 Shots: Božkov green, Božkov blue, Slivovice, Hruškovice, Becherovka, Fernet",
+            "uk": "🇨🇿 6 шотів: Božkov green, Božkov blue, Slivovice, Hruškovice, Becherovka, Fernet"
           },
           "scale": "S"
         },
@@ -2050,7 +2206,8 @@
           "desc": {
             "en": "☠️ 6 shots: Stroh, Green Absinth, Red chilli Absinth, Cachaça, Metaxa, Sambuca",
             "cz": "☠️ 6 panáků: Stroh, Zelený absint, Red chilli absint, Cachaça, Metaxa, Sambuca",
-            "de": "☠️ 6 Shots: Stroh, Grüner Absinth, Red Chilli Absinth, Cachaça, Metaxa, Sambuca"
+            "de": "☠️ 6 Shots: Stroh, Grüner Absinth, Red Chilli Absinth, Cachaça, Metaxa, Sambuca",
+            "uk": "☠️ 6 шотів: Stroh, Зелений абсент, Red chilli абсент, Cachaça, Metaxa, Sambuca"
           },
           "scale": "S"
         },
@@ -2060,7 +2217,8 @@
           "desc": {
             "en": "🚦 Vodka + cranberry juice; Limoncello; lemon juice + mint liqueur",
             "cz": "🚦 Limetková &amp; brusinková šťáva + vodka; pyré z marakuji + Bacardi Bianco; citronová šťáva + mátový likér + tequila",
-            "de": "🚦 Cranberry- &amp; Limettensaft + Wodka; Passionsfruchtpüree + Bacardi Bianco; Zitronensaft + Minzlikör + Tequila"
+            "de": "🚦 Cranberry- &amp; Limettensaft + Wodka; Passionsfruchtpüree + Bacardi Bianco; Zitronensaft + Minzlikör + Tequila",
+            "uk": "🚦 Лаймовий &amp; журавлиновий сік + горілка; пюре з маракуйї + Bacardi Bianco; лимонний сік + м'ятний лікер + текіла"
           },
           "scale": "M"
         },
@@ -2070,7 +2228,8 @@
           "desc": {
             "en": "🍫 Stroh, Chocolates",
             "cz": "🍫 Stroh, čokoláda",
-            "de": "🍫 Stroh, Pralinen"
+            "de": "🍫 Stroh, Pralinen",
+            "uk": "🍫 Stroh, шоколад"
           },
           "scale": "S"
         },
@@ -2080,7 +2239,8 @@
           "desc": {
             "en": "🥃 Vodka, lime cordial syrup",
             "cz": "🥃 Vodka, limetková šťáva, cordial sirup",
-            "de": "🥃 Wodka, Limettensaft, Cordial-Sirup"
+            "de": "🥃 Wodka, Limettensaft, Cordial-Sirup",
+            "uk": "🥃 Горілка, лаймовий сік, cordial сироп"
           },
           "scale": "L"
         },
@@ -2090,7 +2250,8 @@
           "desc": {
             "en": "😏 Amaretto, Baileys, cream",
             "cz": "😏 Amaretto, Baileys, smetana navrchu",
-            "de": "😏 Amaretto, Baileys, Sahne obenauf"
+            "de": "😏 Amaretto, Baileys, Sahne obenauf",
+            "uk": "😏 Amaretto, Baileys, вершки зверху"
           },
           "allergens": "7",
           "scale": "L"
@@ -2101,7 +2262,8 @@
           "desc": {
             "en": "✈️ Kahlua, Baileys, triple sec",
             "cz": "✈️ Kahlua, Baileys, triple sec",
-            "de": "✈️ Kahlua, Baileys, Triple Sec"
+            "de": "✈️ Kahlua, Baileys, Triple Sec",
+            "uk": "✈️ Kahlua, Baileys, triple sec"
           },
           "allergens": "7",
           "scale": "L"
@@ -2112,7 +2274,8 @@
           "desc": {
             "en": "🔥 Kahlua, Baileys, Absinthe",
             "cz": "🔥 Kahlua, Baileys, absinth",
-            "de": "🔥 Kahlua, Baileys, Absinth"
+            "de": "🔥 Kahlua, Baileys, Absinth",
+            "uk": "🔥 Kahlua, Baileys, абсент"
           },
           "allergens": "7",
           "scale": "L"
@@ -2123,7 +2286,8 @@
           "desc": {
             "en": "⚔️ Stroh, Absinthe, Tequila Silver",
             "cz": "⚔️ Stroh, absinth, Tequila Silver",
-            "de": "⚔️ Stroh, Absinth, Tequila Silver"
+            "de": "⚔️ Stroh, Absinth, Tequila Silver",
+            "uk": "⚔️ Stroh, абсент, Tequila Silver"
           },
           "scale": "S"
         },
@@ -2133,7 +2297,8 @@
           "desc": {
             "en": "🌶️ Vodka, grenadine, tabasco",
             "cz": "🌶️ Vodka, grenadina, tabasco",
-            "de": "🌶️ Wodka, Grenadine, Tabasco"
+            "de": "🌶️ Wodka, Grenadine, Tabasco",
+            "uk": "🌶️ Горілка, гренадин, табаско"
           },
           "scale": "L"
         }
@@ -2145,7 +2310,8 @@
       "name": {
         "en": "Hookah",
         "cz": "Vodní dýmka",
-        "de": "Shisha"
+        "de": "Shisha",
+        "uk": "Кальян"
       },
       "flat": "535 CZK",
       "items": [
@@ -2155,7 +2321,8 @@
           "desc": {
             "en": "🌴 Mango, peach, melon, and refreshing tropical notes — sweet &amp; fruity",
             "cz": "🌴 Mango, broskev, meloun a osvěžující tropické tóny — sladké &amp; ovocné",
-            "de": "🌴 Mango, Pfirsich, Melone und erfrischende tropische Noten — süß &amp; fruchtig"
+            "de": "🌴 Mango, Pfirsich, Melone und erfrischende tropische Noten — süß &amp; fruchtig",
+            "uk": "🌴 Манго, персик, диня та освіжаючі тропічні ноти — солодке &amp; фруктове"
           }
         },
         {
@@ -2164,7 +2331,8 @@
           "desc": {
             "en": "🫐 Raspberry, blueberry, and forest fruits — sweet &amp; juicy",
             "cz": "🫐 Malina, borůvka a lesní ovoce — sladké &amp; šťavnaté",
-            "de": "🫐 Himbeere, Blaubeere und Waldfrüchte — süß &amp; saftig"
+            "de": "🫐 Himbeere, Blaubeere und Waldfrüchte — süß &amp; saftig",
+            "uk": "🫐 Малина, чорниця та лісові ягоди — солодке &amp; соковите"
           }
         },
         {
@@ -2173,7 +2341,8 @@
           "desc": {
             "en": "🍋 Sweet and sour grapefruit with a touch of refreshing mint — citrusy &amp; fresh",
             "cz": "🍋 Sladkokyselý grapefruit s nádechem osvěžující máty — citrusové &amp; svěží",
-            "de": "🍋 Süß-saure Grapefruit mit einem Hauch erfrischender Minze — zitrisch &amp; frisch"
+            "de": "🍋 Süß-saure Grapefruit mit einem Hauch erfrischender Minze — zitrisch &amp; frisch",
+            "uk": "🍋 Солодко-кислий грейпфрут з нотою освіжаючої м'яти — цитрусове &amp; свіже"
           }
         },
         {
@@ -2182,7 +2351,8 @@
           "desc": {
             "en": "🧇 A creamy dessert with strawberry hints and Belgian waffles — smooth &amp; sweet",
             "cz": "🧇 Krémový dezert s náznakem jahod a belgických vaflí — jemné &amp; sladké",
-            "de": "🧇 Ein cremiges Dessert mit Erdbeernote und belgischen Waffeln — sanft &amp; süß"
+            "de": "🧇 Ein cremiges Dessert mit Erdbeernote und belgischen Waffeln — sanft &amp; süß",
+            "uk": "🧇 Вершковий десерт із натяком на полуницю та бельгійські вафлі — ніжне &amp; солодке"
           }
         },
         {
@@ -2191,7 +2361,8 @@
           "desc": {
             "en": "🍑 A refreshing duo of sweet peach and banana — sweet &amp; fresh",
             "cz": "🍑 Osvěžující duo sladké broskve a banánu — sladké &amp; svěží",
-            "de": "🍑 Ein erfrischendes Duo aus süßem Pfirsich und Banane — süß &amp; frisch"
+            "de": "🍑 Ein erfrischendes Duo aus süßem Pfirsich und Banane — süß &amp; frisch",
+            "uk": "🍑 Освіжаюче дуо солодкого персика й банана — солодке &amp; свіже"
           }
         },
         {
@@ -2200,7 +2371,8 @@
           "desc": {
             "en": "🌿 Nicotine-free tobacco — ask our Hookah Master",
             "cz": "🌿 Beznikotinový tabák — zeptejte se našeho hookah mistra",
-            "de": "🌿 Nikotinfreier Tabak — frag unseren Shisha-Meister"
+            "de": "🌿 Nikotinfreier Tabak — frag unseren Shisha-Meister",
+            "uk": "🌿 Безнікотиновий тютюн — запитайте нашого hookah майстра"
           }
         },
         {
@@ -2209,7 +2381,8 @@
           "desc": {
             "en": "💨 Our Hookah Master can craft a unique mix just for you, with love ))) 💜",
             "cz": "💨 Náš Hookah Master ti namíchá jedinečnou směs na míru, s láskou ))) 💜",
-            "de": "💨 Unser Shisha-Meister mixt mit Liebe eine einzigartige Mischung nur für dich ))) 💜"
+            "de": "💨 Unser Shisha-Meister mixt mit Liebe eine einzigartige Mischung nur für dich ))) 💜",
+            "uk": "💨 Наш Hookah Master намішає тобі унікальну суміш на замовлення, з любов'ю ))) 💜"
           }
         }
       ]
@@ -2220,7 +2393,8 @@
       "name": {
         "en": "Non-Alcoholic &amp; Food",
         "cz": "Nealko &amp; Jídlo",
-        "de": "Alkoholfrei &amp; Essen"
+        "de": "Alkoholfrei &amp; Essen",
+        "uk": "Безалкогольне &amp; Їжа"
       },
       "flat": null,
       "items": [
@@ -2230,7 +2404,8 @@
           "desc": {
             "en": "🥥 Coconut syrup, pineapple juice, cream",
             "cz": "🥥 Kokosový sirup, ananasová šťáva, smetana",
-            "de": "🥥 Kokossirup, Ananassaft, Sahne"
+            "de": "🥥 Kokossirup, Ananassaft, Sahne",
+            "uk": "🥥 Кокосовий сироп, ананасовий сік, вершки"
           },
           "finder": {
             "name": "Virgin Colada 0.0%",
@@ -2256,7 +2431,8 @@
           "desc": {
             "en": "🌅 Pineapple &amp; orange &amp; lime juice, grenadine",
             "cz": "🌅 Ananasová &amp; pomerančová &amp; limetková šťáva, grenadina",
-            "de": "🌅 Ananas-, Orangen- &amp; Limettensaft, Grenadine"
+            "de": "🌅 Ananas-, Orangen- &amp; Limettensaft, Grenadine",
+            "uk": "🌅 Ананасовий &amp; апельсиновий &amp; лаймовий сік, гренадин"
           },
           "finder": {
             "name": "Miami 0.0%",
@@ -2280,7 +2456,8 @@
           "desc": {
             "en": "🦩 Grapefruit, orange, pineapple &amp; lime juice, grenadine",
             "cz": "🦩 Grapefruit, pomerančová &amp; limetková šťáva, grenadina",
-            "de": "🦩 Grapefruit-, Orangen- &amp; Limettensaft, Grenadine"
+            "de": "🦩 Grapefruit-, Orangen- &amp; Limettensaft, Grenadine",
+            "uk": "🦩 Грейпфрут, апельсиновий &amp; лаймовий сік, гренадин"
           },
           "finder": {
             "name": "Flamingo 0.0%",
@@ -2304,7 +2481,8 @@
           "desc": {
             "en": "🥒 Gin (Non-alco), tonic, cucumber syrup",
             "cz": "🥒 Gin (nealko), tonic, okurkový sirup",
-            "de": "🥒 Gin (alkoholfrei), Tonic, Gurkensirup"
+            "de": "🥒 Gin (alkoholfrei), Tonic, Gurkensirup",
+            "uk": "🥒 Джин (безалк.), тонік, огірковий сироп"
           },
           "finder": {
             "name": "Gin Tonic 0.0%",
@@ -2327,7 +2505,8 @@
           "desc": {
             "en": "🥤 Rum (Non-alco), lime juice, Pepsi",
             "cz": "🥤 Rum (nealko), limetková šťáva, Pepsi",
-            "de": "🥤 Rum (alkoholfrei), Limettensaft, Pepsi"
+            "de": "🥤 Rum (alkoholfrei), Limettensaft, Pepsi",
+            "uk": "🥤 Ром (безалк.), лаймовий сік, Pepsi"
           },
           "finder": {
             "name": "Cuba Libre 0.0%",
@@ -2350,7 +2529,8 @@
           "desc": {
             "en": "🌿 Rum (Non-alco), Lime, Brown sugar, Soda, Cordial &amp; fruity syrup",
             "cz": "🌿 Rum (nealko), limetka, třtinový cukr, tonic, cordial &amp; ovocný sirup",
-            "de": "🌿 Rum (alkoholfrei), Limette, brauner Zucker, Tonic, Cordial- &amp; Fruchtsirup"
+            "de": "🌿 Rum (alkoholfrei), Limette, brauner Zucker, Tonic, Cordial- &amp; Fruchtsirup",
+            "uk": "🌿 Ром (безалк.), лайм, тростинний цукор, тонік, cordial &amp; фруктовий сироп"
           },
           "finder": {
             "name": "Mojito Fruity 0.0%",
@@ -2375,7 +2555,8 @@
           "desc": {
             "en": "🍓 Gin (Non-alco), strawberry puree, lemon &amp; cranberry juice",
             "cz": "🍓 Gin (nealko), jahodové pyré, citronová &amp; brusinková šťáva",
-            "de": "🍓 Gin (alkoholfrei), Erdbeerpüree, Zitronen- &amp; Cranberrysaft"
+            "de": "🍓 Gin (alkoholfrei), Erdbeerpüree, Zitronen- &amp; Cranberrysaft",
+            "uk": "🍓 Джин (безалк.), полуничне пюре, лимонний &amp; журавлиновий сік"
           },
           "finder": {
             "name": "Strawberry Boom 0.0%",
@@ -2399,7 +2580,8 @@
           "desc": {
             "en": "🍋 Mango, Cherry, Cucumber, Strawberry, others",
             "cz": "🍋 Mango, třešeň, okurka, jahoda, další",
-            "de": "🍋 Mango, Kirsche, Gurke, Erdbeere, u. a."
+            "de": "🍋 Mango, Kirsche, Gurke, Erdbeere, u. a.",
+            "uk": "🍋 Манго, вишня, огірок, полуниця, інше"
           }
         },
         {
@@ -2408,7 +2590,8 @@
           "desc": {
             "en": "🥜 Mixed nuts",
             "cz": "🥜 Směs oříšků",
-            "de": "🥜 Gemischte Nüsse"
+            "de": "🥜 Gemischte Nüsse",
+            "uk": "🥜 Суміш горіхів"
           },
           "allergens": "5,8"
         },
@@ -2418,7 +2601,8 @@
           "desc": {
             "en": "🥔 Cheese, Onion, Salted",
             "cz": "🥔 Sýr, cibule, solené",
-            "de": "🥔 Käse, Zwiebel, Gesalzen"
+            "de": "🥔 Käse, Zwiebel, Gesalzen",
+            "uk": "🥔 Сир, цибуля, солоні"
           },
           "allergens": "7"
         },
@@ -2428,7 +2612,8 @@
           "desc": {
             "en": "🧀 Cheese, Salsa, Guacamole (100g + 100g sauce)",
             "cz": "🧀 Sýr, salsa, guacamole (100g + 100g omáčka)",
-            "de": "🧀 Käse, Salsa, Guacamole (100 g + 100 g Soße)"
+            "de": "🧀 Käse, Salsa, Guacamole (100 g + 100 g Soße)",
+            "uk": "🧀 Сир, сальса, гуакамоле (100g + 100g соус)"
           },
           "allergens": "7"
         },
@@ -2438,7 +2623,8 @@
           "desc": {
             "en": "🍿 Freshly popped, salted",
             "cz": "🍿 Čerstvě vypražený, solený",
-            "de": "🍿 Frisch gepoppt, gesalzen"
+            "de": "🍿 Frisch gepoppt, gesalzen",
+            "uk": "🍿 Свіжоприготований, солоний"
           }
         },
         {
@@ -2447,7 +2633,8 @@
           "desc": {
             "en": "🫙 Salsa, Cheese, Guacamole, Cream",
             "cz": "🫙 Salsa, sýr, guacamole, smetana",
-            "de": "🫙 Salsa, Käse, Guacamole, Sahne"
+            "de": "🫙 Salsa, Käse, Guacamole, Sahne",
+            "uk": "🫙 Сальса, сир, гуакамоле, вершки"
           }
         }
       ]
