@@ -776,3 +776,10 @@ section{padding:104px 0}
 .menu-intro,.about-grid p,.content-block p,.faq-a p{max-width:660px}
 .content-block{margin-bottom:48px}
 .zones{margin-bottom:56px}
+
+/* --- audit pass 3: photos in cards --- */
+.zones .zone{position:relative;overflow:hidden;isolation:isolate}
+.zones .zone .zone-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
+.zones .zone::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,6,14,.5) 0%,rgba(8,6,14,.86) 100%);z-index:-1}
+.content-block .cb-img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin-bottom:20px}
+@media(max-width:860px){.content-block .cb-img{aspect-ratio:3/2}}
