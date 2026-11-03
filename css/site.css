@@ -269,7 +269,7 @@ section{padding:84px 0;position:relative}
 .visit-info a{color:var(--ink);text-decoration:none}
 .visit-info a:hover{color:var(--violet)}
 
-.map-embed{border:1px solid var(--line);border-radius:18px;overflow:hidden;min-height:340px;background:#0b0b10}
+.map-embed{border:1px solid var(--line);border-radius:18px;overflow:hidden;min-height:340px}
 .map-embed iframe{width:100%;height:100%;min-height:340px;border:0;filter:invert(.92) hue-rotate(180deg) saturate(.7)}
 
 footer{border-top:1px solid var(--line);padding:50px 0 40px;text-align:center;position:relative;z-index:1}
@@ -752,40 +752,3 @@ a[href*="firmy.cz"]::before{background-image:url('data:image/svg+xml;utf8,<svg x
   
   
 }
-
-/* --- audit quick-wins: calm tags, neutral messenger buttons --- */
-.about-tags{gap:0 !important}
-.about-tags .tag{background:transparent !important;border:none !important;box-shadow:none !important;color:var(--muted) !important;padding:0 !important;font-size:13px;letter-spacing:.01em}
-.about-tags .tag:not(:last-child)::after{content:"·";margin:0 9px;color:var(--line)}
-.visit-info a[href^="tel:"],.visit-info a[href*="wa.me"],.visit-info a[href*="t.me/"]{background:transparent !important;color:var(--ink) !important;border:1px solid var(--line) !important}
-.visit-info a[href^="tel:"]:hover,.visit-info a[href*="wa.me"]:hover,.visit-info a[href*="t.me/"]:hover{border-color:var(--cyan) !important;color:var(--cyan) !important}
-
-/* --- audit pass 1: calm the glow, flatten button gradients --- */
-.sec-head h2{text-shadow:0 0 10px rgba(200,85,181,.18)}
-.hero .eyebrow,.sec-head .kicker,.menu-section h3,.menu-section .sub,.hero-late-val,.ep-title,.ep-free,.ep-date-num,.upcoming-title,.uc-date,.upcoming-free,.featured-in-label,#finder .cf-eyebrow{text-shadow:none}
-.events-detail a:hover,.faq-a a:hover,.past-link:hover{text-shadow:none}
-.faq-item summary::after,.faq-item[open] summary::after{text-shadow:none}
-.nav-cta,.btn-primary,.grp-cta,.events-calc-btn,.sticky-cta .sc-reserve,#finder .cf-cta,.cf-lure .cf-lgo{background:var(--magenta);background-image:none}
-.nav-cta-menu{background:transparent;background-image:none;border:1px solid rgba(255,255,255,.45);color:#fff}
-.nav-cta-menu:hover{border-color:#fff;background:rgba(255,255,255,.06)}
-
-/* --- audit pass 2: air & rhythm (content unchanged) --- */
-section{padding:104px 0}
-@media(max-width:860px){section{padding:64px 0}}
-.sec-head{margin-bottom:40px}
-.menu-intro,.about-grid p,.content-block p,.faq-a p{max-width:660px}
-.content-block{margin-bottom:48px}
-.zones{margin-bottom:56px}
-
-/* --- audit pass 3: photos in cards --- */
-.zones .zone{position:relative;overflow:hidden;isolation:isolate}
-.zones .zone .zone-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
-.zones .zone::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,6,14,.5) 0%,rgba(8,6,14,.86) 100%);z-index:-1}
-.content-block .cb-img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin-bottom:20px}
-@media(max-width:860px){.content-block .cb-img{aspect-ratio:3/2}}
-
-/* --- gallery --- */
-.gallery-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
-.gallery-grid img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:12px;cursor:pointer;display:block;transition:transform .2s,filter .2s}
-.gallery-grid img:hover{transform:scale(1.015);filter:brightness(1.1)}
-@media(max-width:860px){.gallery-grid{grid-template-columns:repeat(2,1fr);gap:8px}}
