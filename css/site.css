@@ -759,3 +759,12 @@ a[href*="firmy.cz"]::before{background-image:url('data:image/svg+xml;utf8,<svg x
 .about-tags .tag:not(:last-child)::after{content:"·";margin:0 9px;color:var(--line)}
 .visit-info a[href^="tel:"],.visit-info a[href*="wa.me"],.visit-info a[href*="t.me/"]{background:transparent !important;color:var(--ink) !important;border:1px solid var(--line) !important}
 .visit-info a[href^="tel:"]:hover,.visit-info a[href*="wa.me"]:hover,.visit-info a[href*="t.me/"]:hover{border-color:var(--cyan) !important;color:var(--cyan) !important}
+
+/* --- audit pass 1: calm the glow, flatten button gradients --- */
+.sec-head h2{text-shadow:0 0 10px rgba(200,85,181,.18)}
+.hero .eyebrow,.sec-head .kicker,.menu-section h3,.menu-section .sub,.hero-late-val,.ep-title,.ep-free,.ep-date-num,.upcoming-title,.uc-date,.upcoming-free,.featured-in-label,#finder .cf-eyebrow{text-shadow:none}
+.events-detail a:hover,.faq-a a:hover,.past-link:hover{text-shadow:none}
+.faq-item summary::after,.faq-item[open] summary::after{text-shadow:none}
+.nav-cta,.btn-primary,.grp-cta,.events-calc-btn,.sticky-cta .sc-reserve,#finder .cf-cta,.cf-lure .cf-lgo{background:var(--magenta);background-image:none}
+.nav-cta-menu{background:transparent;background-image:none;border:1px solid rgba(255,255,255,.45);color:#fff}
+.nav-cta-menu:hover{border-color:#fff;background:rgba(255,255,255,.06)}
