@@ -36,13 +36,13 @@ document.addEventListener('click', function(e){
 
 (function(){
   try{
-    if(localStorage.getItem('lf_age_ok')==='1') return;
+    var _ag=localStorage.getItem('lf_age_ok'); if(_ag && Date.now()-(+_ag)<2592000000) return;
   }catch(e){}
   var g=document.getElementById('age-gate');
   if(g){g.classList.remove('hidden');document.body.style.overflow='hidden';}
 })();
 function ageConfirm(){
-  try{localStorage.setItem('lf_age_ok','1');}catch(e){}
+  try{localStorage.setItem('lf_age_ok',String(Date.now()));}catch(e){}
   var g=document.getElementById('age-gate');
   if(g){g.classList.add('hidden');document.body.style.overflow='';}
 }
