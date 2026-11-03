@@ -768,3 +768,11 @@ a[href*="firmy.cz"]::before{background-image:url('data:image/svg+xml;utf8,<svg x
 .nav-cta,.btn-primary,.grp-cta,.events-calc-btn,.sticky-cta .sc-reserve,#finder .cf-cta,.cf-lure .cf-lgo{background:var(--magenta);background-image:none}
 .nav-cta-menu{background:transparent;background-image:none;border:1px solid rgba(255,255,255,.45);color:#fff}
 .nav-cta-menu:hover{border-color:#fff;background:rgba(255,255,255,.06)}
+
+/* --- audit pass 2: air & rhythm (content unchanged) --- */
+section{padding:104px 0}
+@media(max-width:860px){section{padding:64px 0}}
+.sec-head{margin-bottom:40px}
+.menu-intro,.about-grid p,.content-block p,.faq-a p{max-width:660px}
+.content-block{margin-bottom:48px}
+.zones{margin-bottom:56px}
