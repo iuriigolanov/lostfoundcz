@@ -59,3 +59,27 @@ function ageDeny(){
 (function(){var b=document.getElementById("peMore"),o=document.getElementById("peOlder");if(!b||!o)return;b.addEventListener("click",function(){o.classList.add("pe-open");b.style.display="none";});})();
 (function(){function t(n,p){try{if(typeof gtag==='function')gtag('event',n,p||{});}catch(e){}}document.querySelectorAll('a[href*="resmio.com"]').forEach(function(a){a.addEventListener('click',function(){t('reserve_click',{location:(a.className||'link').trim()});});});document.querySelectorAll('a[href="#finder"]').forEach(function(a){a.addEventListener('click',function(){t('finder_open',{source:(a.className||'link').trim()});});});document.querySelectorAll('[data-poster]').forEach(function(el){el.addEventListener('click',function(){t('poster_open',{poster:el.getAttribute('data-poster')});});});})();
 (function(){try{var p=location.pathname;var onCS=/^\/cs(\/|$)/.test(p),onDE=/^\/de(\/|$)/.test(p),onUA=/^\/ua(\/|$)/.test(p);var L=(navigator.languages&&navigator.languages.length?navigator.languages:[navigator.language||'']).map(function(s){return(s||'').toLowerCase();});var wDE=L.some(function(l){return l.indexOf('de')===0;}),wCS=L.some(function(l){return l.indexOf('cs')===0||l.indexOf('cz')===0;}),wUK=L.some(function(l){return l.indexOf('uk')===0;});var t=null;if(wUK&&!onUA)t={h:'/ua/',x:'🇺🇦 Переглянути цю сторінку українською →',k:'uk'};else if(wDE&&!onDE)t={h:'/de/',x:'🇩🇪 Diese Seite auf Deutsch anzeigen →',k:'de'};else if(wCS&&!onCS)t={h:'/cs/',x:'🇨🇿 Zobrazit tuto stránku česky →',k:'cs'};if(!t)return;try{if(localStorage.getItem('lf-lh-'+t.k)==='1')return;}catch(e){}var b=document.createElement('div');b.id='lf-lang-bar';var a=document.createElement('a');a.href=t.h;a.textContent=t.x;var c=document.createElement('button');c.className='lf-x';c.setAttribute('aria-label','Close');c.textContent='×';c.onclick=function(){b.parentNode&&b.parentNode.removeChild(b);try{localStorage.setItem('lf-lh-'+t.k,'1');}catch(e){}};b.appendChild(a);b.appendChild(c);document.body.insertBefore(b,document.body.firstChild);}catch(e){}})();
+/* open-now status (v1.29). Hours: Su-Tu 18-00, We-Th 17-01, Fr-Sa 17-03 (Europe/Prague) */
+(function(){try{
+var el=document.getElementById('scStatus');if(!el)return;
+var H={0:[18,24],1:[18,24],2:[18,24],3:[17,25],4:[17,25],5:[17,27],6:[17,27]};
+var L=(document.documentElement.lang||'en').slice(0,2);
+var T={en:{o:'Open now · till ',s:'Closing soon · till ',c:'Closed · opens ',t:'today ',m:'tomorrow '},
+cs:{o:'Otevřeno · do ',s:'Brzy zavíráme · do ',c:'Zavřeno · otevíráme ',t:'dnes v ',m:'zítra v '},
+de:{o:'Jetzt geöffnet · bis ',s:'Schließt bald · bis ',c:'Geschlossen · öffnet ',t:'heute ',m:'morgen '},
+uk:{o:'Відчинено · до ',s:'Скоро зачиняємось · до ',c:'Зачинено · відчиняємось ',t:'сьогодні о ',m:'завтра о '}}[L]||null;
+if(!T)T={o:'Open now · till ',s:'Closing soon · till ',c:'Closed · opens ',t:'today ',m:'tomorrow '};
+function hh(h){h=h%24;return(h<10?'0':'')+h+':00';}
+function upd(){
+ var p=new Intl.DateTimeFormat('en-GB',{timeZone:'Europe/Prague',weekday:'short',hour:'2-digit',minute:'2-digit',hour12:false}).formatToParts(new Date());
+ var g={};p.forEach(function(x){g[x.type]=x.value;});
+ var d=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'].indexOf(g.weekday),t=(+g.hour%24)+(+g.minute)/60;
+ var y=(d+6)%7,cls,txt,cl=null;
+ if(t<H[y][1]-24){cl=H[y][1];}            /* after midnight, still yesterday's shift */
+ else if(t>=H[d][0]){cl=H[d][1];}
+ if(cl!==null){var left=(cl>=24&&t<H[d][0]?cl-24:cl)-t;cls=left<=1?'soon':'open';txt=(left<=1?T.s:T.o)+hh(cl);}
+ else{cls='closed';txt=T.c+(t<H[d][0]?T.t+hh(H[d][0]):T.m+hh(H[(d+1)%7][0]));}
+ el.className='sc-status on '+cls;el.innerHTML='<i></i>';el.appendChild(document.createTextNode(txt));
+}
+upd();setInterval(upd,60000);
+}catch(e){}})();
