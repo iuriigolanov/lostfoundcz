@@ -1,0 +1,397 @@
+From a0eecc351b5ba68ad4c532d08e666356c4392e34 Mon Sep 17 00:00:00 2001
+From: Claude <noreply@anthropic.com>
+Date: Sun, 18 Oct 2026 22:26:36 +0200
+Subject: [PATCH] =?UTF-8?q?Events:=20move=20Tobias/Techno-16=20to=20past,?=
+ =?UTF-8?q?=20add=20Techno=20Night=2023=E2=80=9324.10,=20bump=20reviews=20?=
+ =?UTF-8?q?to=201,240?=
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+- Upcoming: two new TECHNO Night · DJ SHØGUN banners (Fri 23.10, Sat 24.10)
+- Past: add Tobias Mann (17.10) and Techno Night (16.10) with correct labels
+- Sticky bar updated to 23–24.10 lineup
+- Review count 1,235 -> 1,240 across all pages + calculator (EN/CS/DE formats)
+
+Co-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>
+Claude-Session: https://claude.ai/code/session_01KJpkZxSv1uydPRT4RRc461
+---
+ catering-calculator/index.html | 16 ++++++++--------
+ cs/index.html                  | 32 ++++++++++++++++++++------------
+ de/index.html                  | 34 +++++++++++++++++++++-------------
+ index.html                     | 32 ++++++++++++++++++++------------
+ 4 files changed, 69 insertions(+), 45 deletions(-)
+
+diff --git a/catering-calculator/index.html b/catering-calculator/index.html
+index 3aff3f0..7089cc1 100644
+--- a/catering-calculator/index.html
++++ b/catering-calculator/index.html
+@@ -180,7 +180,7 @@
+       <p class="text-brand-cyan text-xs font-semibold uppercase tracking-wider mb-1" data-i18n="atmosphere.eyebrow">The atmosphere</p>
+       <h2 id="atmosphere-heading" class="font-heading text-2xl font-semibold text-white mb-2" data-i18n="atmosphere.heading">Feel the Room</h2>
+       <p class="text-sm text-brand-muted mb-4" data-i18n="atmosphere.copy">
+-        Neon-lit, no-pretense, and rated 4.9★ by over 1,235 guests — this is the room your event will happen in.
++        Neon-lit, no-pretense, and rated 4.9★ by over 1,240 guests — this is the room your event will happen in.
+       </p>
+       <ul class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6 text-sm">
+         <li class="bg-brand-surface border border-brand-border rounded-lg p-4">
+@@ -318,7 +318,7 @@
+       <p class="text-brand-cyan text-xs font-semibold uppercase tracking-wider mb-1" data-i18n="reviews.eyebrow">On Google Maps</p>
+       <h2 id="reviews-heading" class="font-heading text-2xl font-semibold text-white mb-2" data-i18n="reviews.heading">Google Maps Reviews</h2>
+       <p class="text-sm text-brand-muted mb-4">
+-        <span class="inline-block font-semibold text-brand-pink bg-brand-pink/10 px-3 py-1 rounded-full" data-i18n="reviews.rating">4.9★ · 1,235+ Google reviews</span>
++        <span class="inline-block font-semibold text-brand-pink bg-brand-pink/10 px-3 py-1 rounded-full" data-i18n="reviews.rating">4.9★ · 1,240+ Google reviews</span>
+       </p>
+ 
+       <!-- "group" lets the arrow buttons stay invisible until the user
+@@ -621,7 +621,7 @@
+       en: {
+         'hero.subtitle': 'Venue For Your Perfect Event',
+         'hero.period': '(November, December)',
+-        'hero.tagline': "A neon‑lit craft‑cocktail bar just off Karlovo Náměstí (4.9★, 1,235+ reviews) — signature drinks, warm energy, and a relaxed, easy‑going atmosphere. Lost & Found is where nights feel natural and unpretentious.",
++        'hero.tagline': "A neon‑lit craft‑cocktail bar just off Karlovo Náměstí (4.9★, 1,240+ reviews) — signature drinks, warm energy, and a relaxed, easy‑going atmosphere. Lost & Found is where nights feel natural and unpretentious.",
+         'eventDetails.heading': 'Event Details',
+         'eventDetails.date': 'Date',
+         'eventDetails.guests': 'Guests',
+@@ -632,7 +632,7 @@
+         'eventDetails.note': "These details are based on your initial enquiry — let us know if anything's changed.",
+         'atmosphere.eyebrow': 'The atmosphere',
+         'atmosphere.heading': 'Feel the Room',
+-        'atmosphere.copy': "Neon-lit, no-pretense, and rated 4.9★ by over 1,235 guests — this is the room your event will happen in.",
++        'atmosphere.copy': "Neon-lit, no-pretense, and rated 4.9★ by over 1,240 guests — this is the room your event will happen in.",
+         'atmosphere.space1.name': 'Entrance & Bar Counter',
+         'atmosphere.space1.desc': '7 dynamic seats with a front‑row view of the bar, ideal for solo visitors.',
+         'atmosphere.space2.name': 'Main Floor',
+@@ -685,7 +685,7 @@
+         'addons.totalNote': '(fixed price per event — not multiplied by guest count)',
+         'reviews.eyebrow': 'On Google Maps',
+         'reviews.heading': 'Google Maps Reviews',
+-        'reviews.rating': '4.9★ · 1,235+ Google reviews',
++        'reviews.rating': '4.9★ · 1,240+ Google reviews',
+         'reviews.seeAllLink': 'See all reviews on Google Maps →',
+         'grandTotal.heading': 'Grand Total',
+         'grandTotal.catering': 'Bar package',
+@@ -718,7 +718,7 @@
+       cz: {
+         'hero.subtitle': 'Prostor pro vaši dokonalou akci',
+         'hero.period': '(listopad, prosinec)',
+-        'hero.tagline': 'Neonový craft cocktail bar kousek od Karlova náměstí (4,9★, 1 235+ recenzí) — signature drinky, vřelá energie a uvolněná, nenucená atmosféra. Lost & Found je místo, kde se noci prožívají přirozeně a bez přetvářky.',
++        'hero.tagline': 'Neonový craft cocktail bar kousek od Karlova náměstí (4,9★, 1 240+ recenzí) — signature drinky, vřelá energie a uvolněná, nenucená atmosféra. Lost & Found je místo, kde se noci prožívají přirozeně a bez přetvářky.',
+         'eventDetails.heading': 'Informace o akci',
+         'eventDetails.date': 'Datum',
+         'eventDetails.guests': 'Počet hostů',
+@@ -729,7 +729,7 @@
+         'eventDetails.note': 'Tyto údaje vycházejí z vaší úvodní poptávky — dejte nám vědět, pokud se něco změnilo.',
+         'atmosphere.eyebrow': 'Atmosféra',
+         'atmosphere.heading': 'Pocit z prostoru',
+-        'atmosphere.copy': 'Neonové osvětlení, žádná přetvářka a hodnocení 4,9★ od více než 1 235 hostů — přesně v tomto prostoru se bude odehrávat vaše akce.',
++        'atmosphere.copy': 'Neonové osvětlení, žádná přetvářka a hodnocení 4,9★ od více než 1 240 hostů — přesně v tomto prostoru se bude odehrávat vaše akce.',
+         'atmosphere.space1.name': 'Vstup a barový pult',
+         'atmosphere.space1.desc': '7 dynamických míst s výhledem na bar v první řadě, ideální pro jednotlivé návštěvníky.',
+         'atmosphere.space2.name': 'Hlavní sál',
+@@ -782,7 +782,7 @@
+         'addons.totalNote': '(pevná cena za akci — nenásobí se počtem hostů)',
+         'reviews.eyebrow': 'Na Google Maps',
+         'reviews.heading': 'Recenze z Google Maps',
+-        'reviews.rating': '4,9★ · 1 235+ recenzí na Google',
++        'reviews.rating': '4,9★ · 1 240+ recenzí na Google',
+         'reviews.seeAllLink': 'Zobrazit všechny recenze na Google Maps →',
+         'grandTotal.heading': 'Celková cena',
+         'grandTotal.catering': 'Barový balíček',
+diff --git a/cs/index.html b/cs/index.html
+index 3468a05..451d158 100644
+--- a/cs/index.html
++++ b/cs/index.html
+@@ -24,7 +24,7 @@
+ <link rel="canonical" href="https://lostfoundcz.com/cs/">
+ <meta property="og:type" content="website">
+ <meta property="og:title" content="Lost &amp; Found Bar Praha — Koktejlový bar a vodní dýmka">
+-<meta property="og:description" content="Autorské koktejly, prémiová vodní dýmka a noční atmosféra v srdci Prahy. Hodnocení 4,9★ z 1 235+ recenzí na Googlu.">
++<meta property="og:description" content="Autorské koktejly, prémiová vodní dýmka a noční atmosféra v srdci Prahy. Hodnocení 4,9★ z 1 240+ recenzí na Googlu.">
+ <meta property="og:image" content="https://lostfoundcz.com/og-image.jpg">
+ <meta property="og:image:width" content="1200">
+ <meta property="og:image:height" content="630">
+@@ -903,8 +903,8 @@ a[href*="firmy.cz"]::before{background-image:url('data:image/svg+xml;utf8,<svg x
+ </div>
+ 
+ <a class="event-banner" href="#upcoming">
+-  <span class="event-banner-text event-banner-l1">🎧 TOBIAS MANN · 17.10 · 21:00</span>
+-  <span class="event-banner-text event-banner-l2">+ Techno Night 16.10 · SHØGUN · Vstup zdarma</span>
++  <span class="event-banner-text event-banner-l1">🎧 TECHNO NIGHT · 23–24.10 · 21:00</span>
++  <span class="event-banner-text event-banner-l2">+ DJ SHØGUN · Vstup zdarma</span>
+   <span class="event-banner-cta">Zobrazit akce →</span>
+ </a>
+ <header id="top">
+@@ -938,7 +938,7 @@ a[href*="firmy.cz"]::before{background-image:url('data:image/svg+xml;utf8,<svg x
+       <svg class="grp-g" viewBox="0 0 24 24" width="26" height="26"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84A11 11 0 0 0 12 23z"/><path fill="#FBBC05" d="M5.84 14.1a6.6 6.6 0 0 1 0-4.2V7.06H2.18a11 11 0 0 0 0 9.88l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84C6.71 7.3 9.14 5.38 12 5.38z"/></svg>
+       <div class="grp-stars">
+         <div class="grp-rating-row"><span class="grp-num">4.9</span><span class="grp-star-icons">★★★★★</span></div>
+-        <div class="grp-count">1 235+ pozitivních recenzí na Googlu</div>
++        <div class="grp-count">1 240+ pozitivních recenzí na Googlu</div>
+       </div>
+     </a>
+     <a class="grp-cta" href="https://g.page/r/CRuq5bPC7DCyEBM/review" target="_blank" rel="noopener" aria-label="Napsat recenzi na Googlu">Ohodnotit nás</a>
+@@ -948,12 +948,12 @@ a[href*="firmy.cz"]::before{background-image:url('data:image/svg+xml;utf8,<svg x
+       <span class="upcoming-kicker">Upcoming Nights 🎧</span>
+       <div class="upcoming-title">LOST PARTIES</div>
+     </div>
+-    <div class="upcoming-djs evt-djs"><span><a class="dj-ig" href="https://www.instagram.com/tobias_mann_official/" target="_blank" rel="noopener">DJ TOBIAS MANN</a></span> <span class="dj-origin">(z Německa, Lipsko)</span></div>
+-    <div class="evt-banner" data-poster="../img/events/tobias-mann-1710.webp" role="button" tabindex="0" aria-label="Zobrazit plakát Tobias Mann" style="background-image:url('../img/events/tobias-mann-banner.webp')">
++    <div class="upcoming-djs evt-djs"><span>TECHNO Night · DJ SHØGUN</span></div>
++    <div class="evt-banner evt-techno" data-poster="../img/events/techno-1610.webp" role="button" tabindex="0" aria-label="Zobrazit plakát Techno Night" style="background-image:url('../img/events/techno-0910-bg.webp');background-position:center top">
+       <div class="evt-banner-info">
+-        <div class="uc-day">SO</div>
++        <div class="uc-day">PÁ</div>
+         <div class="evt-when-row">
+-          <div class="uc-date">17.10</div>
++          <div class="uc-date">23.10</div>
+           <div class="uc-time">21:00</div>
+           <div class="evt-free">Vstup zdarma</div>
+         </div>
+@@ -963,9 +963,9 @@ a[href*="firmy.cz"]::before{background-image:url('data:image/svg+xml;utf8,<svg x
+     <div class="upcoming-djs evt-djs"><span>TECHNO Night · DJ SHØGUN</span></div>
+     <div class="evt-banner evt-techno" data-poster="../img/events/techno-1610.webp" role="button" tabindex="0" aria-label="Zobrazit plakát Techno Night" style="background-image:url('../img/events/techno-0910-bg.webp');background-position:center top">
+       <div class="evt-banner-info">
+-        <div class="uc-day">PÁ</div>
++        <div class="uc-day">SO</div>
+         <div class="evt-when-row">
+-          <div class="uc-date">16.10</div>
++          <div class="uc-date">24.10</div>
+           <div class="uc-time">21:00</div>
+           <div class="evt-free">Vstup zdarma</div>
+         </div>
+@@ -983,6 +983,14 @@ a[href*="firmy.cz"]::before{background-image:url('data:image/svg+xml;utf8,<svg x
+   <details class="past-events" id="past-events">
+     <summary>Uplynulé akce</summary>
+     <div class="past-list" id="pastList">
++      <div class="past-item">
++        <div class="past-date">17.10</div>
++        <div class="past-info"><div class="past-name past-link" data-poster="../img/events/tobias-mann-1710.webp" role="button" tabindex="0">TOBIAS MANN</div><div class="past-desc">DJ Tobias Mann (Lipsko)</div></div>
++      </div>
++      <div class="past-item">
++        <div class="past-date">16.10</div>
++        <div class="past-info"><div class="past-name past-link" data-poster="../img/events/techno-1610.webp" role="button" tabindex="0">TECHNO NIGHT</div><div class="past-desc">SHØGUN</div></div>
++      </div>
+       <div class="past-item">
+         <div class="past-date">10.10</div>
+         <div class="past-info"><div class="past-name past-link" data-poster="../img/events/techno-0910.webp" role="button" tabindex="0">TECHNO NIGHT</div><div class="past-desc">SHØGUN · LEX MIRA</div></div>
+@@ -1080,7 +1088,7 @@ a[href*="firmy.cz"]::before{background-image:url('data:image/svg+xml;utf8,<svg x
+   <div class="about-grid">
+     <div>
+       <p>Lost &amp; Found je koktejlový bar a hookah lounge pár minut od Václavského náměstí v pražském Novém Městě. Autorské koktejly, prémiová vodní dýmka, deskové hry a šipky — místo, kam jednou zabloudíš a pak se vracíš.</p>
+-      <p>Pořádáme také <strong>soukromé akce v Praze</strong>: narozeniny, firemní večírky a hudební večery, s cateringem a koktejlovým menu na míru. Hodnocení <strong>4,9★ z 1 235+ recenzí na Googlu</strong> — jeden z nejlépe hodnocených koktejlových barů v Praze a špičkové místo pro noční život v Novém Městě.</p>
++      <p>Pořádáme také <strong>soukromé akce v Praze</strong>: narozeniny, firemní večírky a hudební večery, s cateringem a koktejlovým menu na míru. Hodnocení <strong>4,9★ z 1 240+ recenzí na Googlu</strong> — jeden z nejlépe hodnocených koktejlových barů v Praze a špičkové místo pro noční život v Novém Městě.</p>
+       <p class="award-about">Jeden z <strong>23 nejlepších barů v Česku podle <a href="https://barmagazine.com/bars/country/czech-republic" target="_blank" rel="nofollow noopener">BarMagazine</a></strong> (Guide 2026). 🏆</p>
+       <p class="pride-about">Lost &amp; Found je hrdě <strong>LGBT-friendly bar</strong> a <a href="https://www.qalendar.cz/doporucene-podniky/" target="_blank" rel="noopener">oficiální partner Prague Pride</a>. Všichni jsou u nás vítáni, po celý rok. 💜</p>
+       <div class="about-tags">
+@@ -1875,7 +1883,7 @@ a[href*="firmy.cz"]::before{background-image:url('data:image/svg+xml;utf8,<svg x
+ <!-- REVIEWS -->
+ <section id="reviews" class="wrap">
+   <div class="sec-head">
+-    <span class="kicker">4,9★ · 1 235+ recenzí na Googlu</span>
++    <span class="kicker">4,9★ · 1 240+ recenzí na Googlu</span>
+     <h2>Co říkají hosté</h2>
+     <p>Skutečné recenze od skutečných hostů — podívej se, proč je Lost &amp; Found nejlépe hodnocený koktejlový bar v Praze</p>
+   </div>
+diff --git a/de/index.html b/de/index.html
+index 1eea12f..dfbe5d8 100644
+--- a/de/index.html
++++ b/de/index.html
+@@ -9,7 +9,7 @@
+ 
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Lost &amp; Found Prag — Cocktailbar &amp; Shisha-Lounge, Prag 1</title>
+-<meta name="description" content="Cocktailbar &amp; Shisha-Lounge nahe dem Wenzelsplatz. 4,9★ bei 1.235+ Google-Bewertungen, 60 Cocktails ab 165 Kč, Shisha 495 Kč, Darts &amp; Brettspiele. Fr–Sa bis 3 Uhr.">
++<meta name="description" content="Cocktailbar &amp; Shisha-Lounge nahe dem Wenzelsplatz. 4,9★ bei 1.240+ Google-Bewertungen, 60 Cocktails ab 165 Kč, Shisha 495 Kč, Darts &amp; Brettspiele. Fr–Sa bis 3 Uhr.">
+ <meta name="keywords" content="cocktail bar Prague, Lost and Found Bar Prague, craft cocktails Prague, hookah lounge Prague, bar Žitná, nightlife Prague, shisha Prague, cocktails Nové Město, private events Prague, party venue Prague, bar buyout Prague, corporate events Prague, birthday venue Prague, catering Prague">
+ <link rel="preload" as="image" type="image/webp" href="../img/hero-bg.webp" fetchpriority="high">
+ <link rel="preload" as="image" href="../img/logo.webp" type="image/webp" fetchpriority="high">
+@@ -24,7 +24,7 @@
+ <link rel="canonical" href="https://lostfoundcz.com/de/">
+ <meta property="og:type" content="website">
+ <meta property="og:title" content="Lost &amp; Found Bar Prag — Cocktailbar &amp; Shisha-Lounge">
+-<meta property="og:description" content="Signature-Cocktails, Premium-Shisha und Neon-Vibes im Zentrum von Prag. 4,9★ bei 1.235+ Google-Bewertungen.">
++<meta property="og:description" content="Signature-Cocktails, Premium-Shisha und Neon-Vibes im Zentrum von Prag. 4,9★ bei 1.240+ Google-Bewertungen.">
+ <meta property="og:image" content="https://lostfoundcz.com/og-image.jpg">
+ <meta property="og:image:width" content="1200">
+ <meta property="og:image:height" content="630">
+@@ -913,8 +913,8 @@ a[href*="firmy.cz"]::before{background-image:url('data:image/svg+xml;utf8,<svg x
+ </div>
+ 
+ <a class="event-banner" href="#upcoming">
+-  <span class="event-banner-text event-banner-l1">🎧 TOBIAS MANN · 17.10 · 21:00</span>
+-  <span class="event-banner-text event-banner-l2">+ Techno Night 16.10 · SHØGUN · Eintritt frei</span>
++  <span class="event-banner-text event-banner-l1">🎧 TECHNO NIGHT · 23–24.10 · 21:00</span>
++  <span class="event-banner-text event-banner-l2">+ DJ SHØGUN · Eintritt frei</span>
+   <span class="event-banner-cta">Events ansehen →</span>
+ </a>
+ <header id="top">
+@@ -948,7 +948,7 @@ a[href*="firmy.cz"]::before{background-image:url('data:image/svg+xml;utf8,<svg x
+       <svg class="grp-g" viewBox="0 0 24 24" width="26" height="26"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84A11 11 0 0 0 12 23z"/><path fill="#FBBC05" d="M5.84 14.1a6.6 6.6 0 0 1 0-4.2V7.06H2.18a11 11 0 0 0 0 9.88l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84C6.71 7.3 9.14 5.38 12 5.38z"/></svg>
+       <div class="grp-stars">
+         <div class="grp-rating-row"><span class="grp-num">4.9</span><span class="grp-star-icons">★★★★★</span></div>
+-        <div class="grp-count">1.235+ Positive Google-Bewertungen</div>
++        <div class="grp-count">1.240+ Positive Google-Bewertungen</div>
+       </div>
+     </a>
+     <a class="grp-cta" href="https://g.page/r/CRuq5bPC7DCyEBM/review" target="_blank" rel="noopener" aria-label="Google-Bewertung abgeben">Bewerten</a>
+@@ -958,12 +958,12 @@ a[href*="firmy.cz"]::before{background-image:url('data:image/svg+xml;utf8,<svg x
+       <span class="upcoming-kicker">Kommende Nächte 🎧</span>
+       <div class="upcoming-title">LOST PARTIES</div>
+     </div>
+-    <div class="upcoming-djs evt-djs"><span><a class="dj-ig" href="https://www.instagram.com/tobias_mann_official/" target="_blank" rel="noopener">DJ TOBIAS MANN</a></span> <span class="dj-origin">(aus Deutschland, Leipzig)</span></div>
+-    <div class="evt-banner" data-poster="../img/events/tobias-mann-1710.webp" role="button" tabindex="0" aria-label="Tobias-Mann-Poster ansehen" style="background-image:url('../img/events/tobias-mann-banner.webp')">
++    <div class="upcoming-djs evt-djs"><span>TECHNO Night · DJ SHØGUN</span></div>
++    <div class="evt-banner evt-techno" data-poster="../img/events/techno-1610.webp" role="button" tabindex="0" aria-label="Techno-Night-Poster ansehen" style="background-image:url('../img/events/techno-0910-bg.webp');background-position:center top">
+       <div class="evt-banner-info">
+-        <div class="uc-day">SA</div>
++        <div class="uc-day">FR</div>
+         <div class="evt-when-row">
+-          <div class="uc-date">17.10</div>
++          <div class="uc-date">23.10</div>
+           <div class="uc-time">21:00</div>
+           <div class="evt-free">Eintritt frei</div>
+         </div>
+@@ -973,9 +973,9 @@ a[href*="firmy.cz"]::before{background-image:url('data:image/svg+xml;utf8,<svg x
+     <div class="upcoming-djs evt-djs"><span>TECHNO Night · DJ SHØGUN</span></div>
+     <div class="evt-banner evt-techno" data-poster="../img/events/techno-1610.webp" role="button" tabindex="0" aria-label="Techno-Night-Poster ansehen" style="background-image:url('../img/events/techno-0910-bg.webp');background-position:center top">
+       <div class="evt-banner-info">
+-        <div class="uc-day">FR</div>
++        <div class="uc-day">SA</div>
+         <div class="evt-when-row">
+-          <div class="uc-date">16.10</div>
++          <div class="uc-date">24.10</div>
+           <div class="uc-time">21:00</div>
+           <div class="evt-free">Eintritt frei</div>
+         </div>
+@@ -993,6 +993,14 @@ a[href*="firmy.cz"]::before{background-image:url('data:image/svg+xml;utf8,<svg x
+   <details class="past-events" id="past-events">
+     <summary>Vergangene Events</summary>
+     <div class="past-list" id="pastList">
++      <div class="past-item">
++        <div class="past-date">17.10</div>
++        <div class="past-info"><div class="past-name past-link" data-poster="../img/events/tobias-mann-1710.webp" role="button" tabindex="0">TOBIAS MANN</div><div class="past-desc">DJ Tobias Mann (Leipzig)</div></div>
++      </div>
++      <div class="past-item">
++        <div class="past-date">16.10</div>
++        <div class="past-info"><div class="past-name past-link" data-poster="../img/events/techno-1610.webp" role="button" tabindex="0">TECHNO NIGHT</div><div class="past-desc">SHØGUN</div></div>
++      </div>
+       <div class="past-item">
+         <div class="past-date">10.10</div>
+         <div class="past-info"><div class="past-name past-link" data-poster="../img/events/techno-0910.webp" role="button" tabindex="0">TECHNO NIGHT</div><div class="past-desc">SHØGUN · LEX MIRA</div></div>
+@@ -1090,7 +1098,7 @@ a[href*="firmy.cz"]::before{background-image:url('data:image/svg+xml;utf8,<svg x
+   <div class="about-grid">
+     <div>
+       <p>Lost &amp; Found ist eine Cocktailbar und Shisha-Lounge nur wenige Minuten vom Wenzelsplatz in Prags Nové Město. Signature-Cocktails, Premium-Shisha, Brettspiele und Darts — der Late-Night-Raum, in den man einmal stolpert und immer wiederkommt.</p>
+-      <p>Wir richten auch <strong>private Events in Prag</strong> aus: Geburtstage, Firmenfeiern und Musiknächte, mit Catering und maßgeschneidertem Cocktail-Menü. Bewertet mit <strong>4,9★ bei 1.235+ Google-Bewertungen</strong> — eine der bestbewerteten Cocktailbars Prags und ein Top-Nachtleben-Spot in Nové Město.</p>
++      <p>Wir richten auch <strong>private Events in Prag</strong> aus: Geburtstage, Firmenfeiern und Musiknächte, mit Catering und maßgeschneidertem Cocktail-Menü. Bewertet mit <strong>4,9★ bei 1.240+ Google-Bewertungen</strong> — eine der bestbewerteten Cocktailbars Prags und ein Top-Nachtleben-Spot in Nové Město.</p>
+       <p class="award-about">Ausgezeichnet als eine der <strong>23 besten Bars Tschechiens von <a href="https://barmagazine.com/bars/country/czech-republic" target="_blank" rel="nofollow noopener">BarMagazine</a></strong> (Guide 2026). 🏆</p>
+       <p class="pride-about">Lost &amp; Found ist eine stolze <strong>LGBT-freundliche Bar</strong> und <a href="https://www.qalendar.cz/recommended-businesses/?lang=en" target="_blank" rel="noopener">offizieller Partner von Prague Pride</a>. Hier ist jeder willkommen, das ganze Jahr über. 💜</p>
+       <div class="about-tags">
+@@ -1885,7 +1893,7 @@ a[href*="firmy.cz"]::before{background-image:url('data:image/svg+xml;utf8,<svg x
+ <!-- REVIEWS -->
+ <section id="reviews" class="wrap">
+   <div class="sec-head">
+-    <span class="kicker">4,9★ · 1.235+ Google-Bewertungen</span>
++    <span class="kicker">4,9★ · 1.240+ Google-Bewertungen</span>
+     <h2>Was Gäste sagen</h2>
+     <p>Echte Bewertungen echter Gäste — erfahre, warum Lost &amp; Found Prags bestbewertete Cocktailbar ist</p>
+   </div>
+diff --git a/index.html b/index.html
+index 0803c5f..070943b 100644
+--- a/index.html
++++ b/index.html
+@@ -24,7 +24,7 @@
+ <link rel="canonical" href="https://lostfoundcz.com/">
+ <meta property="og:type" content="website">
+ <meta property="og:title" content="Lost &amp; Found Bar Prague — Cocktail Bar &amp; Hookah Lounge">
+-<meta property="og:description" content="Craft cocktails, premium hookah and late-night vibes in the heart of Prague. Rated 4.9★ across 1,235+ Google reviews.">
++<meta property="og:description" content="Craft cocktails, premium hookah and late-night vibes in the heart of Prague. Rated 4.9★ across 1,240+ Google reviews.">
+ <meta property="og:image" content="https://lostfoundcz.com/og-image.jpg">
+ <meta property="og:image:width" content="1200">
+ <meta property="og:image:height" content="630">
+@@ -913,8 +913,8 @@ a[href*="firmy.cz"]::before{background-image:url('data:image/svg+xml;utf8,<svg x
+ </div>
+ 
+ <a class="event-banner" href="#upcoming">
+-  <span class="event-banner-text event-banner-l1">🎧 TOBIAS MANN · 17.10 · 21:00</span>
+-  <span class="event-banner-text event-banner-l2">+ Techno Night 16.10 · SHØGUN · Free entry</span>
++  <span class="event-banner-text event-banner-l1">🎧 TECHNO NIGHT · 23–24.10 · 21:00</span>
++  <span class="event-banner-text event-banner-l2">+ DJ SHØGUN · Free entry</span>
+   <span class="event-banner-cta">See events →</span>
+ </a>
+ <header id="top">
+@@ -948,7 +948,7 @@ a[href*="firmy.cz"]::before{background-image:url('data:image/svg+xml;utf8,<svg x
+       <svg class="grp-g" viewBox="0 0 24 24" width="26" height="26"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84A11 11 0 0 0 12 23z"/><path fill="#FBBC05" d="M5.84 14.1a6.6 6.6 0 0 1 0-4.2V7.06H2.18a11 11 0 0 0 0 9.88l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84C6.71 7.3 9.14 5.38 12 5.38z"/></svg>
+       <div class="grp-stars">
+         <div class="grp-rating-row"><span class="grp-num">4.9</span><span class="grp-star-icons">★★★★★</span></div>
+-        <div class="grp-count">1,235+ Positive Google reviews</div>
++        <div class="grp-count">1,240+ Positive Google reviews</div>
+       </div>
+     </a>
+     <a class="grp-cta" href="https://g.page/r/CRuq5bPC7DCyEBM/review" target="_blank" rel="noopener" aria-label="Leave a Google review">Rate Us</a>
+@@ -958,12 +958,12 @@ a[href*="firmy.cz"]::before{background-image:url('data:image/svg+xml;utf8,<svg x
+       <span class="upcoming-kicker">Upcoming Nights 🎧</span>
+       <div class="upcoming-title">LOST PARTIES</div>
+     </div>
+-    <div class="upcoming-djs evt-djs"><span><a class="dj-ig" href="https://www.instagram.com/tobias_mann_official/" target="_blank" rel="noopener">DJ TOBIAS MANN</a></span> <span class="dj-origin">(from Germany, Leipzig)</span></div>
+-    <div class="evt-banner" data-poster="img/events/tobias-mann-1710.webp" role="button" tabindex="0" aria-label="View Tobias Mann poster" style="background-image:url('img/events/tobias-mann-banner.webp')">
++    <div class="upcoming-djs evt-djs"><span>TECHNO Night · DJ SHØGUN</span></div>
++    <div class="evt-banner evt-techno" data-poster="img/events/techno-1610.webp" role="button" tabindex="0" aria-label="View Techno Night poster" style="background-image:url('img/events/techno-0910-bg.webp');background-position:center top">
+       <div class="evt-banner-info">
+-        <div class="uc-day">SAT</div>
++        <div class="uc-day">FRI</div>
+         <div class="evt-when-row">
+-          <div class="uc-date">17.10</div>
++          <div class="uc-date">23.10</div>
+           <div class="uc-time">21:00</div>
+           <div class="evt-free">Free entry</div>
+         </div>
+@@ -973,9 +973,9 @@ a[href*="firmy.cz"]::before{background-image:url('data:image/svg+xml;utf8,<svg x
+     <div class="upcoming-djs evt-djs"><span>TECHNO Night · DJ SHØGUN</span></div>
+     <div class="evt-banner evt-techno" data-poster="img/events/techno-1610.webp" role="button" tabindex="0" aria-label="View Techno Night poster" style="background-image:url('img/events/techno-0910-bg.webp');background-position:center top">
+       <div class="evt-banner-info">
+-        <div class="uc-day">FRI</div>
++        <div class="uc-day">SAT</div>
+         <div class="evt-when-row">
+-          <div class="uc-date">16.10</div>
++          <div class="uc-date">24.10</div>
+           <div class="uc-time">21:00</div>
+           <div class="evt-free">Free entry</div>
+         </div>
+@@ -994,6 +994,14 @@ a[href*="firmy.cz"]::before{background-image:url('data:image/svg+xml;utf8,<svg x
+   <details class="past-events" id="past-events">
+     <summary>Past events</summary>
+     <div class="past-list" id="pastList">
++      <div class="past-item">
++        <div class="past-date">17.10</div>
++        <div class="past-info"><div class="past-name past-link" data-poster="img/events/tobias-mann-1710.webp" role="button" tabindex="0">TOBIAS MANN</div><div class="past-desc">DJ Tobias Mann (Leipzig)</div></div>
++      </div>
++      <div class="past-item">
++        <div class="past-date">16.10</div>
++        <div class="past-info"><div class="past-name past-link" data-poster="img/events/techno-1610.webp" role="button" tabindex="0">TECHNO NIGHT</div><div class="past-desc">SHØGUN</div></div>
++      </div>
+       <div class="past-item">
+         <div class="past-date">10.10</div>
+         <div class="past-info"><div class="past-name past-link" data-poster="img/events/techno-0910.webp" role="button" tabindex="0">TECHNO NIGHT</div><div class="past-desc">SHØGUN · LEX MIRA</div></div>
+@@ -1091,7 +1099,7 @@ a[href*="firmy.cz"]::before{background-image:url('data:image/svg+xml;utf8,<svg x
+   <div class="about-grid">
+     <div>
+       <p>Lost &amp; Found is a cocktail bar and hookah lounge minutes from Wenceslas Square in Prague's Nové Město. Signature craft cocktails, premium hookah, board games and darts — the kind of late-night room you stumble into once and keep coming back to.</p>
+-      <p>We also host <strong>private events in Prague</strong>: birthdays, company parties and music nights, with catering and a bespoke cocktail menu. Rated <strong>4.9★ across 1,235+ Google reviews</strong> — one of the highest-rated cocktail bars in Prague and a top-rated nightlife spot in Nové Město.</p>
++      <p>We also host <strong>private events in Prague</strong>: birthdays, company parties and music nights, with catering and a bespoke cocktail menu. Rated <strong>4.9★ across 1,240+ Google reviews</strong> — one of the highest-rated cocktail bars in Prague and a top-rated nightlife spot in Nové Město.</p>
+       <p class="award-about">Named one of <strong>BarMagazine's <a href="https://barmagazine.com/bars/country/czech-republic" target="_blank" rel="nofollow noopener">23 Best Bars in Czech Republic</a></strong> (2026 Guide). 🏆</p>
+       <p class="pride-about">Lost &amp; Found is a proud <strong>LGBT-friendly bar</strong> and an <a href="https://www.qalendar.cz/recommended-businesses/?lang=en" target="_blank" rel="noopener">official partner of Prague Pride</a>. Everyone is welcome here, all year round. 💜</p>
+       <div class="about-tags">
+@@ -1886,7 +1894,7 @@ a[href*="firmy.cz"]::before{background-image:url('data:image/svg+xml;utf8,<svg x
+ <!-- REVIEWS -->
+ <section id="reviews" class="wrap">
+   <div class="sec-head">
+-    <span class="kicker">4.9★ · 1,235+ Google reviews</span>
++    <span class="kicker">4.9★ · 1,240+ Google reviews</span>
+     <h2>What guests say</h2>
+     <p>Real reviews from real guests — see why Lost &amp; Found is Prague's top-rated cocktail bar</p>
+   </div>
+-- 
+2.43.0
+
