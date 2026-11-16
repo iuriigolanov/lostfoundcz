@@ -129,6 +129,10 @@
     <lastmod>2026-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lostfoundcz.com/hookah/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://lostfoundcz.com/cs/hookah/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lostfoundcz.com/de/hookah/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lostfoundcz.com/hookah/"/>
   </url>
   <url>
     <loc>https://lostfoundcz.com/halloween/</loc>
@@ -153,5 +157,25 @@
     <lastmod>2026-08-30</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://lostfoundcz.com/cs/hookah/</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lostfoundcz.com/hookah/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://lostfoundcz.com/cs/hookah/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lostfoundcz.com/de/hookah/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lostfoundcz.com/hookah/"/>
+  </url>
+  <url>
+    <loc>https://lostfoundcz.com/de/hookah/</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lostfoundcz.com/hookah/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://lostfoundcz.com/cs/hookah/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lostfoundcz.com/de/hookah/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lostfoundcz.com/hookah/"/>
   </url>
 </urlset>
