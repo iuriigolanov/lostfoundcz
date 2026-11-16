@@ -752,3 +752,6 @@ a[href*="firmy.cz"]::before{background-image:url('data:image/svg+xml;utf8,<svg x
   
   
 }
+
+/* open-now status in sticky CTA (v1.29) */
+@media(max-width:860px){.sticky-cta{flex-wrap:wrap}.sc-status{flex:0 0 100%;display:none;align-items:center;justify-content:center;gap:6px;font-size:12px;font-weight:600;letter-spacing:.02em;color:var(--muted);padding:0 0 2px}.sc-status.on{display:flex}.sc-status i{width:8px;height:8px;border-radius:50%;background:#555;flex:0 0 8px}.sc-status.open{color:var(--ink)}.sc-status.open i{background:#2ee59d;box-shadow:0 0 8px #2ee59d}.sc-status.soon i{background:#ffb020;box-shadow:0 0 8px #ffb020}.sc-status.closed i{background:#ff4d6d}body{padding-bottom:calc(110px + env(safe-area-inset-bottom))}}
