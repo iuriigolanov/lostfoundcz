@@ -130,6 +130,15 @@
   Still NOT in scope: price calculation logic (Phase 4), Google Sheets
   submit (Phase 6).
 -->
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RN92YY342H"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-RN92YY342H');
+</script>
+<script defer src="/js/track.js?v=1"></script>
 </head>
 <body class="bg-brand-bg text-brand-text font-sans antialiased pb-24 md:pb-0">
 
@@ -1437,6 +1446,7 @@
         .then(function () {
           document.getElementById('contact-form').classList.add('hidden');
           document.getElementById('submit-success').classList.remove('hidden');
+          try { if (typeof gtag === 'function') gtag('event', 'generate_lead', { form_name: 'catering_calculator' }); } catch (e) {}
         })
         .catch(function (err) {
           console.error('Submit failed:', err);
