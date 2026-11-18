@@ -4,9 +4,7 @@ Usage (from repo root):  python tools/bump-reviews.py 1385
 Handles all three formats: 1,370 (EN) · 1.370 (DE) · 1 370 (CS/UA, incl. nbsp)."""
 import re, sys, datetime, pathlib
 
-FILES = ['index.html', 'cs/index.html', 'de/index.html', 'ua/index.html',
-         'catering-calculator/index.html', 'hookah/index.html']
-PAGES = ['', 'cs/', 'de/', 'ua/', 'catering-calculator/', 'hookah/']
+SKIP = ('.git', 'tools', 'node_modules')
 
 def main():
     if len(sys.argv) != 2 or not sys.argv[1].isdigit() or len(sys.argv[1]) != 4:
@@ -23,18 +21,22 @@ def main():
         sys.exit(f'already {new}')
     pat = re.compile(r'(?<!\d)' + old[0] + r'([,.   ]?)' + old[1:] + r'(?!\d)')
     total = 0
-    for f in FILES:
-        p = root / f
+    files = sorted(p for p in root.rglob('*.html') if not any(x in p.parts for x in SKIP))
+    pages = []
+    for p in files:
+        f = p.relative_to(root).as_posix()
         s = p.read_text(encoding='utf-8')
         s2, n = pat.subn(lambda mm: new[0] + mm.group(1) + new[1:], s)
         if n:
             p.write_text(s2, encoding='utf-8')
+            if f.endswith('index.html'):
+                pages.append(f[:-len('index.html')])
+            print(f'{f:34} {n}')
         total += n
-        print(f'{f:34} {n}')
     sm = root / 'sitemap.xml'
     x = sm.read_text(encoding='utf-8')
     today = datetime.date.today().isoformat()
-    for pg in PAGES:
+    for pg in pages:
         x = re.sub(r'(<loc>https://lostfoundcz\.com/%s</loc>\s*<lastmod>)[^<]+' % re.escape(pg),
                    r'\g<1>' + today, x, count=1)
     sm.write_text(x, encoding='utf-8')
