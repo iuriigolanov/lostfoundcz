@@ -88,3 +88,5 @@ function upd(){
 }
 upd();setInterval(upd,60000);
 }catch(e){}})();
+
+(function(){var u=document.querySelector(".upcoming"),e=document.querySelector(".evt-empty");if(!u||!e)return;var any=[].some.call(u.querySelectorAll(".evt-banner,.uc"),function(x){return x.offsetParent!==null;});if(!any)e.hidden=false;})();
