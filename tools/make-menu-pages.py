@@ -27,7 +27,7 @@ STATIC = {
   note='Ceny v Kč, mohou se změnit. Fotky tištěného menu najdete na <a href="/cs/#menu-photos">hlavní stránce</a>.',
   faq_h='Časté dotazy k menu', reserve='Rezervovat stůl', directions='Navigovat',
   f1='Lost &amp; Found Bar Prague — koktejlový bar a hookah lounge', open='Otevřeno: Ne–Út 18–00 | St–Čt 17–01 | Pá–So 17–03',
-  flinks=[('/cs/', 'Domů'), ('/cs/menu/', 'Menu'), ('/cs/hookah/', 'Vodní dýmka'), ('/halloween/', 'Halloween'), ('/cs/privacy.html', 'Ochrana soukromí')]),
+  flinks=[('/cs/', 'Domů'), ('/cs/menu/', 'Menu'), ('/cs/hookah/', 'Vodní dýmka'), ('/halloween/', 'Halloween'), ('/privacy.html', 'Ochrana soukromí')]),
  'de': dict(lang='de', locale='de_DE', title='Karte &amp; Preise — Lost &amp; Found Bar Prague',
   desc='Komplette Cocktailkarte mit Preisen: 60 Cocktails ab 165 Kč, Signature-Drinks, Spritz, Shots, Shisha 535 Kč, alkoholfreie Drinks und Pizza. Žitná 11, Prag 1.',
   nav=[('/de/menu/', 'Karte'), ('/de/hookah/', 'Shisha'), ('/halloween/', 'Halloween'), ('/de/#events', 'Private Events'), ('/de/#visit', 'Anfahrt')],

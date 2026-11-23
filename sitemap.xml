@@ -186,18 +186,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://lostfoundcz.com/privacy.html</loc>
-    <lastmod>2026-11-23</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://lostfoundcz.com/cs/privacy.html</loc>
-    <lastmod>2026-11-23</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
     <loc>https://lostfoundcz.com/cs/hookah/</loc>
     <lastmod>2026-11-23</lastmod>
     <changefreq>monthly</changefreq>
