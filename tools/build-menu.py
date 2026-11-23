@@ -5,7 +5,7 @@ Edit tools/menu-data.json (prices, descriptions EN/CS/DE, optional "note"),
 then run:  python tools/build-menu.py
 It regenerates — in index.html, cs/index.html, de/index.html — the menu
 accordion (all 6 categories), the Menu JSON-LD, and the drink finder DB,
-keeping all three languages and all three surfaces in sync.
+keeping all languages in sync, then refreshes /menu/ via sync-menu-page.py.
 
 "2x" in any description is auto-highlighted as a double-portion perk.
 An optional per-item "note" (an enticing one-liner, per language) is shown
@@ -158,3 +158,6 @@ def main():
 
 if __name__=='__main__':
     main()
+    # keep the standalone /menu/ page in sync with the home-page menu
+    import runpy
+    runpy.run_path(os.path.join(ROOT,'tools','sync-menu-page.py'),run_name='__main__')
