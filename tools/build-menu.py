@@ -44,7 +44,7 @@ def mi_html(item,lang):
     nm=f'<span class="mi-name">{name}</span>'
     if allerg:
         _ns=[int(x) for x in allerg.replace(' ','').split(',') if x]
-        _tip='; '.join(ALLERG_14[lang][i-1] for i in _ns)
+        _tip='; '.join(ALLERG_TIP[lang][i-1] for i in _ns)
         nm+=f'<span class="mi-allerg" tabindex="0" role="note" aria-label="Allergens: {_tip}" data-tip="{_tip}">({allerg})<i class="mi-i">i</i></span>'
     sc=item.get('scale')
     if sc: nm+=LF_SCALE.get(sc,'')
@@ -102,6 +102,8 @@ ALLERG_14={
  'de':['Glutenhaltiges Getreide','Krebstiere','Eier','Fisch','Erdnüsse','Soja','Milch (Laktose)','Schalenfrüchte (Nüsse)','Sellerie','Senf','Sesam','Schwefeldioxid und Sulfite','Lupinen','Weichtiere'],
  'uk':['Злаки, що містять глютен','Ракоподібні','Яйця','Риба','Арахіс','Соя','Молоко (лактоза)','Горіхи','Селера','Гірчиця','Кунжут','Діоксид сірки та сульфіти','Люпин','Молюски'],
 }
+# short labels used in item tooltips (legend keeps the full EU wording)
+ALLERG_TIP={l:[{'en':'Gluten','cz':'Lepek','de':'Gluten','uk':'Глютен'}[l]]+v[1:] for l,v in ALLERG_14.items()}
 ALLERG_L={
  'en':('Allergens — what the numbers mean','The number(s) after an item show its declarable allergens. Drinks may contain traces of others. <a href="/seznam-alergenu-a4.pdf" target="_blank" rel="noopener" style="color:var(--cyan,#3fc5f0);text-decoration:underline">Full allergen list (PDF)</a>'),
  'cz':('Alergeny — co znamenají čísla','Čísla u položky označují obsažené alergeny. Nápoje mohou obsahovat stopy dalších. <a href="/seznam-alergenu-a4.pdf" target="_blank" rel="noopener" style="color:var(--cyan,#3fc5f0);text-decoration:underline">Úplný seznam alergenů (PDF)</a>'),
@@ -117,6 +119,10 @@ def build_legend(lang):
             '<div class="al-foot">'+foot+'</div></div></details>')
 
 def ensure_css(h):
+    # rules live in css/site.css since v1.4x — don't re-inject inline
+    try:
+        if '.mi-allerg{' in open(os.path.join(ROOT,'css','site.css'),encoding='utf-8').read(): return h
+    except OSError: pass
     if '.mi-allerg{' not in h:
         h=h.replace('</style>', ALLERG_CSS+'</style>',1)
     if '.mi-x2{' in h: return h
@@ -127,9 +133,9 @@ def ensure_legend(h,lang):
     # remove any existing legend, then insert before the menu-photos toggle
     h=re.sub(r'\s*<div class="lf-legend">.*?</div>','',h,flags=re.S)
     h=re.sub(r'\s*<details class="allergen-legend">.*?</details>','',h,flags=re.S)
-    anchor='\n  <details class="menu-photos-toggle">'
-    if anchor in h:
-        h=h.replace(anchor,'\n  '+leg+anchor,1)
+    m=re.search(r'\n  <details class="menu-photos-toggle"[^>]*>',h)
+    if m:
+        h=h[:m.start()]+'\n  '+leg+h[m.start():]
     return h
 
 def main():
