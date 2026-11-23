@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
 """Sync the standalone menu pages from the home-page menu accordion.
 
-  index.html     -> menu/index.html     (EN)
-  cs/index.html  -> cs/menu/index.html  (CS)
+  index.html -> menu/index.html (EN), cs/ -> cs/menu/, de/ -> de/menu/, ua/ -> ua/menu/
 
 The home page of each language is the source of truth (it is itself built
 from tools/menu-data.json by build-menu.py, which calls this script at the end).
@@ -75,6 +74,52 @@ LANGS = {
    ('Podáváte jídlo?', f'Ano — pizza od {v["pz"]} Kč, quesadilly od {v["qs"]} Kč, nachos, ořechy a chipsy.'),
    ('Máte nealkoholické nápoje?', f'Ano: koktejly 0,0 % jako Virgin Colada, nealko Gin Tonic a Mojito, plus domácí limonády od {v["lem"]} Kč.'),
    ('Můžu platit kartou?', 'Ano, přijímáme kartu i hotovost.')]),
+ 'de': dict(
+  src='de/index.html', dst='de/menu/index.html', home='/de/', url='https://lostfoundcz.com/de/menu/', inlang='de',
+  intro={
+   'cat-halloween': 'Halloween-Cocktails &amp; Shots für kurze Zeit — den ganzen November.',
+   'cat-signature': 'Eigene Kreationen unserer Barkeeper — die gibt es nirgendwo sonst in Prag.',
+   'cat-classic': 'Alle Klassiker: Espresso Martini, Negroni, Mojito, Mai Tai, Margarita, Old Fashioned und mehr.',
+   'cat-wine': 'Spritz, Mimosa und Cocktails mit Wein.',
+   'cat-shots': 'Signature-Shots und Shot-Sets für den ganzen Tisch.',
+   'cat-hookah': 'Premium-Shisha, ein Preis für jede Sorte. <a href="/de/hookah/">Mehr über unsere Shisha-Lounge →</a>',
+   'cat-nonalco': 'Alkoholfreie 0,0-%-Cocktails und hausgemachte Limonaden.',
+   'cat-food': 'Pizza und Quesadillas aus unserer Küche, dazu Nachos, Nüsse und Chips.'},
+  facts=lambda v: f'🍸 Signature-Cocktails ab {v["s_lo"]} Kč · 🌿 Shisha {v["hook"]} Kč · 🍕 Pizza &amp; Quesadillas · 0,0 % alkoholfreie Cocktails · 💳 Karte &amp; bar',
+  finder='🍹 Finde deinen Drink', photos='📸 Ganze Karte (Fotos)', nav_label='Kategorien',
+  count_re=(r'\d+ Cocktails ab \d+ Kč', '{n} Cocktails ab {lo} Kč'),
+  faq=lambda v: [
+   ('Was kostet ein Cocktail im Lost & Found?',
+    f'Cocktails kosten {v["c_lo"]}–{v["c_hi"]} Kč. Klassiker wie Mojito, Negroni oder Margarita {v["k_lo"]}–{v["k_hi"]} Kč, Signature-Cocktails {v["s_lo"]}–{v["s_hi"]} Kč, alkoholfreie Cocktails {v["n_lo"]}–{v["n_hi"]} Kč.'),
+   ('Welche Signature-Cocktails gibt es?', f"{v['sig']} und mehr — {v['n_sig']} hauseigene Kreationen, die es sonst nirgends in Prag gibt."),
+   ('Wie stark sind die Cocktails?', 'Jeder Drink auf der Karte hat eine Stärke-Skala: 💪 leicht, 💪💪 mittel, 💪💪💪 stark, 0,0 % für alkoholfrei.'),
+   ('Was kostet eine Shisha?', f'Jede Shisha kostet {v["hook"]} Kč, egal welche Sorte.'),
+   ('Gibt es Essen?', f'Ja — Pizza ab {v["pz"]} Kč, Quesadillas ab {v["qs"]} Kč, Nachos, Nüsse und Chips.'),
+   ('Gibt es alkoholfreie Getränke?', f'Ja: 0,0-%-Cocktails wie Virgin Colada, alkoholfreier Gin Tonic und Mojito, dazu hausgemachte Limonaden ab {v["lem"]} Kč.'),
+   ('Kann ich mit Karte zahlen?', 'Ja, wir akzeptieren Karte und Bargeld.')]),
+ 'uk': dict(
+  src='ua/index.html', dst='ua/menu/index.html', home='/ua/', url='https://lostfoundcz.com/ua/menu/', inlang='uk',
+  intro={
+   'cat-halloween': 'Хелловінські коктейлі та шоти на обмежений час — увесь листопад.',
+   'cat-signature': 'Авторські творіння наших барменів — більше ніде в Празі.',
+   'cat-classic': 'Уся класика: Espresso Martini, Negroni, Mojito, Mai Tai, Margarita, Old Fashioned та інші.',
+   'cat-wine': 'Спритци, Mimosa та коктейлі на основі вина.',
+   'cat-shots': 'Авторські шоти та сети шотів для всієї компанії.',
+   'cat-hookah': 'Преміальний кальян, одна ціна за будь-який мікс. <a href="/hookah/">Більше про наш кальянний лаунж →</a>',
+   'cat-nonalco': 'Безалкогольні коктейлі 0,0 % та домашні лимонади.',
+   'cat-food': 'Піца та кесадильї з нашої кухні, а також начос, горіхи й чипси.'},
+  facts=lambda v: f'🍸 Авторські коктейлі від {v["s_lo"]} Kč · 🌿 Кальян {v["hook"]} Kč · 🍕 Піца та кесадильї · 0,0 % безалкогольні коктейлі · 💳 Картка й готівка',
+  finder='🍹 Знайди свій напій', photos='📸 Повне меню (фото)', nav_label='Розділи меню',
+  count_re=(r'\d+ коктейлів від \d+ Kč', '{n} коктейлів від {lo} Kč'),
+  faq=lambda v: [
+   ('Скільки коштує коктейль у Lost & Found?',
+    f'Коктейлі коштують {v["c_lo"]}–{v["c_hi"]} Kč. Класика на кшталт Mojito, Negroni чи Margarita — {v["k_lo"]}–{v["k_hi"]} Kč, авторські коктейлі — {v["s_lo"]}–{v["s_hi"]} Kč, безалкогольні — {v["n_lo"]}–{v["n_hi"]} Kč.'),
+   ('Які у вас авторські коктейлі?', f"{v['sig']} та інші — {v['n_sig']} авторських напоїв, яких більше ніде в Празі немає."),
+   ('Наскільки міцні коктейлі?', 'Кожен напій у меню має шкалу міцності: 💪 легкий, 💪💪 середній, 💪💪💪 міцний, 0,0 % — безалкогольний.'),
+   ('Скільки коштує кальян?', f'Кожен кальян коштує {v["hook"]} Kč, незалежно від міксу.'),
+   ('Чи є у вас їжа?', f'Так — піца від {v["pz"]} Kč, кесадильї від {v["qs"]} Kč, начос, горіхи та чипси.'),
+   ('Чи є безалкогольні напої?', f'Так: коктейлі 0,0 % — Virgin Colada, безалкогольний Gin Tonic і Mojito, а також домашні лимонади від {v["lem"]} Kč.'),
+   ('Чи можна платити карткою?', 'Так, приймаємо картку й готівку.')]),
 }
 
 

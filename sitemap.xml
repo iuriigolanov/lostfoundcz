@@ -126,6 +126,8 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://lostfoundcz.com/menu/"/>
     <xhtml:link rel="alternate" hreflang="cs" href="https://lostfoundcz.com/cs/menu/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lostfoundcz.com/de/menu/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://lostfoundcz.com/ua/menu/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://lostfoundcz.com/menu/"/>
   </url>
   <url>
@@ -135,6 +137,30 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://lostfoundcz.com/menu/"/>
     <xhtml:link rel="alternate" hreflang="cs" href="https://lostfoundcz.com/cs/menu/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lostfoundcz.com/de/menu/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://lostfoundcz.com/ua/menu/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lostfoundcz.com/menu/"/>
+  </url>
+  <url>
+    <loc>https://lostfoundcz.com/de/menu/</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lostfoundcz.com/menu/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://lostfoundcz.com/cs/menu/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lostfoundcz.com/de/menu/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://lostfoundcz.com/ua/menu/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lostfoundcz.com/menu/"/>
+  </url>
+  <url>
+    <loc>https://lostfoundcz.com/ua/menu/</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lostfoundcz.com/menu/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://lostfoundcz.com/cs/menu/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lostfoundcz.com/de/menu/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://lostfoundcz.com/ua/menu/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://lostfoundcz.com/menu/"/>
   </url>
   <url>
