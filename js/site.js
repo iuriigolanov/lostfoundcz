@@ -92,3 +92,6 @@ upd();setInterval(upd,60000);
 (function(){var u=document.querySelector(".upcoming"),e=document.querySelector(".evt-empty");if(!u||!e)return;var any=[].some.call(u.querySelectorAll(".evt-banner,.uc"),function(x){return x.offsetParent!==null;});if(!any)e.hidden=false;})();
 
 (function(){function o(){if(location.hash==="#menu-photos"){var d=document.getElementById("menu-photos");if(d){d.open=true;d.scrollIntoView({block:"start"});}}}o();window.addEventListener("hashchange",o);})();
+
+/* logo -> home page top; if already on home, smooth-scroll to top and clear the hash */
+(function(){var a=document.querySelector(".brand-home");if(!a)return;a.addEventListener("click",function(e){var t=new URL(a.href,location.href);if(t.pathname===location.pathname){e.preventDefault();try{history.replaceState(null,"",location.pathname+location.search)}catch(_){}window.scrollTo({top:0,behavior:"smooth"});}});})();

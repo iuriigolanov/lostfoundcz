@@ -155,7 +155,7 @@ def sync(L):
     # top block: facts line + buttons + sticky category bar
     links = ''.join((f'<a class="hw-only" href="#{ANCHORS[c["id"]]}">' if c['seasonal'] else f'<a href="#{ANCHORS[c["id"]]}">') + c['title'] + '</a>' for c in cats)
     top = (f'  <p class="facts-line">{L["facts"](v)}</p>\n'
-           f'  <div class="btns menu-links"><a class="btn btn-g" href="{L["home"]}#finder">{L["finder"]}</a>'
+           f'  <div class="btns menu-links"><a class="btn btn-p" href="{L["home"]}#finder">{L["finder"]}</a>'
            f'<a class="btn btn-g" href="{L["home"]}#menu-photos">{L["photos"]}</a></div>\n'
            f'  <nav class="cat-nav" aria-label="{L["nav_label"]}">{links}</nav>')
 
