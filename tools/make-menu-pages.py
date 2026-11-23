@@ -39,13 +39,13 @@ STATIC = {
   flinks=[('/de/', 'Startseite'), ('/de/menu/', 'Karte'), ('/de/hookah/', 'Shisha'), ('/halloween/', 'Halloween'), ('/privacy.html', 'Datenschutz')]),
  'uk': dict(lang='uk', locale='uk_UA', title='Меню та ціни — Lost &amp; Found Bar Prague',
   desc='Повне коктейльне меню з цінами: 60 коктейлів від 165 Kč, авторські напої, спритци, шоти, кальян 535 Kč, безалкогольні напої та піца. Žitná 11, Прага 1.',
-  nav=[('/ua/menu/', 'Меню'), ('/hookah/', 'Кальян'), ('/halloween/', 'Halloween'), ('/ua/#events', 'Приватні події'), ('/ua/#visit', 'Як дістатися')],
+  nav=[('/ua/menu/', 'Меню'), ('/ua/hookah/', 'Кальян'), ('/halloween/', 'Halloween'), ('/ua/#events', 'Приватні події'), ('/ua/#visit', 'Як дістатися')],
   h1='Коктейльне меню та ціни',
   lead='Повне меню напоїв і страв Lost &amp; Found — коктейль-бару та кальянного лаунжу на вулиці Žitná у Празі 1, за кілька хвилин пішки від Вацлавської площі. 60 коктейлів від 165 Kč, авторські шоти, преміальний кальян, безалкогольні напої та піца.',
   note='Ціни в CZK, можуть змінюватися. Фото друкованого меню — на <a href="/ua/#menu-photos">головній сторінці</a>.',
   faq_h='Питання про меню', reserve='Забронювати стіл', directions='Прокласти маршрут',
   f1='Lost &amp; Found Bar Prague — коктейль-бар і кальянний лаунж', open='Відчинено: Нд–Вт 18–00 | Ср–Чт 17–01 | Пт–Сб 17–03',
-  flinks=[('/ua/', 'Головна'), ('/ua/menu/', 'Меню'), ('/hookah/', 'Кальян'), ('/halloween/', 'Halloween'), ('/privacy.html', 'Конфіденційність')]),
+  flinks=[('/ua/', 'Головна'), ('/ua/menu/', 'Меню'), ('/ua/hookah/', 'Кальян'), ('/halloween/', 'Halloween'), ('/privacy.html', 'Конфіденційність')]),
 }
 
 def switcher(cur):

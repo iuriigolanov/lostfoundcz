@@ -13,7 +13,6 @@
     <xhtml:link rel="alternate" hreflang="uk" href="https://lostfoundcz.com/ua/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://lostfoundcz.com/"/>
     <image:image><image:loc>https://lostfoundcz.com/img/hero-bg.jpg</image:loc></image:image>
-    <image:image><image:loc>https://lostfoundcz.com/img/events/lost-party-2011.jpg</image:loc></image:image>
     <image:image><image:loc>https://lostfoundcz.com/img/logo.png</image:loc></image:image>
     <image:image><image:loc>https://lostfoundcz.com/og-image.jpg</image:loc></image:image>
     <image:image><image:loc>https://lostfoundcz.com/img/events/20260925_20260926.jpg</image:loc></image:image>
@@ -171,6 +170,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://lostfoundcz.com/hookah/"/>
     <xhtml:link rel="alternate" hreflang="cs" href="https://lostfoundcz.com/cs/hookah/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://lostfoundcz.com/de/hookah/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://lostfoundcz.com/ua/hookah/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://lostfoundcz.com/hookah/"/>
   </url>
   <url>
@@ -205,6 +205,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://lostfoundcz.com/hookah/"/>
     <xhtml:link rel="alternate" hreflang="cs" href="https://lostfoundcz.com/cs/hookah/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://lostfoundcz.com/de/hookah/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://lostfoundcz.com/ua/hookah/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://lostfoundcz.com/hookah/"/>
   </url>
   <url>
@@ -215,6 +216,18 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://lostfoundcz.com/hookah/"/>
     <xhtml:link rel="alternate" hreflang="cs" href="https://lostfoundcz.com/cs/hookah/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://lostfoundcz.com/de/hookah/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://lostfoundcz.com/ua/hookah/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lostfoundcz.com/hookah/"/>
+  </url>
+  <url>
+    <loc>https://lostfoundcz.com/ua/hookah/</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lostfoundcz.com/hookah/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://lostfoundcz.com/cs/hookah/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lostfoundcz.com/de/hookah/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://lostfoundcz.com/ua/hookah/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://lostfoundcz.com/hookah/"/>
   </url>
 </urlset>
