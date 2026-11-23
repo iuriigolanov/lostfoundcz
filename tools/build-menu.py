@@ -138,7 +138,7 @@ def main():
         p=os.path.join(ROOT,fname); h=open(p,encoding='utf-8').read()
         acc=build_accordion(data,lang)
         for cid,items in acc.items():
-            m=re.search(r'(<details class="menu-cat"[^>]*id="'+cid+r'">.*?<div class="cat-items">\n)(.*?)(\n    </div>\n  </details>)', h, re.S)
+            m=re.search(r'(<details class="menu-cat[^"]*"[^>]*id="'+cid+r'">.*?<div class="cat-items">\n)(.*?)(\n    </div>\n  </details>)', h, re.S)
             if not m: sys.exit('cat not found: %s in %s'%(cid,fname))
             h=h[:m.start(2)]+items.rstrip('\n')+h[m.end(2):]
         # hookah flat price
