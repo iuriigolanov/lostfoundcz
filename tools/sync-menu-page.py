@@ -231,6 +231,10 @@ def sync(L):
         return a, p.index('<p style="margin-top:22px">')
     p = block(p, 'body', '\n'.join(out), body_fb)
     p = re.sub(r'(<!-- menu:body:end -->)\s*', r'\1\n  ', p)
+    # photos button again under the menu
+    bottom = f'  <div class="btns menu-links"><a class="btn btn-g" href="{L["home"]}#menu-photos">{L["photos"]}</a></div>'
+    p = block(p, 'photos', bottom, lambda p: (p.index('<!-- menu:body:end -->') + len('<!-- menu:body:end -->\n  '),) * 2)
+    p = re.sub(r'(<!-- menu:photos:end -->)(?!\n)', r'\1\n  ', p)
 
     # FAQ
     qa = L['faq'](v)
