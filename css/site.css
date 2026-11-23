@@ -758,3 +758,6 @@ a[href*="firmy.cz"]::before{background-image:url('data:image/svg+xml;utf8,<svg x
 
 .rev-more{text-align:center;margin-top:26px}
 .evt-empty{text-align:center;color:var(--muted);font-size:16px;margin:10px auto 18px;max-width:560px}.evt-empty a{color:var(--cyan)}
+
+/* v1.50: soft-fade the black logo plate edges */
+.hero-logo,.brand-home img,.ag-logo{-webkit-mask-image:linear-gradient(to right,transparent 0,#000 7%,#000 93%,transparent 100%),linear-gradient(to bottom,transparent 0,#000 14%,#000 86%,transparent 100%);-webkit-mask-composite:source-in;mask-image:linear-gradient(to right,transparent 0,#000 7%,#000 93%,transparent 100%),linear-gradient(to bottom,transparent 0,#000 14%,#000 86%,transparent 100%);mask-composite:intersect}
